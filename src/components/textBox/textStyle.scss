@@ -1,0 +1,28 @@
+.border-container{
+    padding: 50px 50px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    @media (max-width: 1000px) {
+        padding: 30px 30px;
+      }
+    .flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .text-container{
+            padding-top: 4em;
+            text-align: left;
+            width: 500px;            
+        }
+        p{
+            font-size: 12pt;
+            padding-left: 2.5em;
+            line-height: 2;
+            margin-right: 2.5em;
+        }
+    }

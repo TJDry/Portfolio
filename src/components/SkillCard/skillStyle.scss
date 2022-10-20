@@ -1,0 +1,40 @@
+.skill-container{
+    padding: 100px 80px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    @media (max-width: 1000px) {
+        padding: 50px 50px;
+      }
+    .flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        .personal-photo{
+            background-image: url('../../assets/images/me.JPG');
+            background-size: contain;
+            background-repeat: no-repeat;
+            float: right;
+            width: 400px;
+            height: 400px;
+            clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+        }
+        .intro-container{
+            padding: 4.5em;
+            text-align: left;
+            // top: 25%;
+            width: 50%;
+            position: relative;
+            p{
+                font-size: 1.4em;
+            }
+            @media (max-width: 1000px) {
+                padding: 0;
+                text-align: center;
+              }
+        }
+    }
+    }

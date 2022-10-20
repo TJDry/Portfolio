@@ -1,0 +1,21 @@
+.img-container{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    img{
+        width: 80%;
+        padding: 80px 100px;
+        filter: drop-shadow(0px 16px 10px rgba(0,0,0,0.1));
+    }
+}   
+.flex{
+    justify-content: center;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+    img{   
+        padding: 1em;
+        display: inline;
+    }
+}

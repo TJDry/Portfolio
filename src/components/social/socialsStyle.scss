@@ -1,0 +1,40 @@
+.social-container{
+    z-index: 1;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    text-align: right;
+    display: inline-grid;
+    a{
+        padding: 1em;
+        display: flow-root;
+        // clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+        // background-color: rgba(0,0,0,0.5);
+    }
+    a:hover{
+        opacity: 1;
+    }
+    h3{
+        display: inline;
+        font-weight: 100;
+        font-size: 12pt;
+    }
+}
+.arrow-container{
+    position: absolute;
+    top: 80.5%;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    left: 9.4%;
+}
+.down-container{
+    z-index: 1;
+    cursor: pointer;
+    padding: 16px;
+    h3{
+        display: inline;
+        font-weight: 100;
+        font-size: 12pt;
+    }
+}

@@ -1,0 +1,29 @@
+.nextProject-container{
+    padding: 200px 80px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (max-width: 1000px) {
+        padding: 70px 30px;
+      }
+    h2{
+        color: white;
+        font-size: 24pt;
+        font-weight: 500;
+    }
+    h3{
+        font-weight: 100;
+        text-transform: uppercase;
+        color: rgb(200,200,210);
+    }
+    .nextHeader{
+        font-size: 28pt;
+        color: rgb(200,200,210);
+    }
+}
+.nextProject-container:hover{
+    filter: brightness(1.25);
+}

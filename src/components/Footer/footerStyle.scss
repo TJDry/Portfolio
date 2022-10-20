@@ -1,0 +1,45 @@
+.flexFoot{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 5em;
+}
+.foot-container{
+    padding: 80px 60px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(9, 8, 43, 0.3);
+    
+    @media (max-width: 1000px) {
+        padding: 70px 30px;
+      }
+    .messageMe{
+      text-decoration: none;
+      display: contents;
+      ul{
+        padding-left: 5%;
+      }
+      li{
+        list-style-type: none;
+      }
+      a{
+        color: white;
+        float: left;
+        padding: 20px 10px;
+        text-align: left;
+        border-bottom: 2px solid white;
+        width: 200px;
+        transition: all 1s ease-in-out;
+      }
+      a:hover{
+        background-color: rgba(255,255,255,0.2);
+      }
+    }
+    .right{
+      float: right;
+      display: inline;
+  }
+}

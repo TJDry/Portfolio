@@ -1,0 +1,55 @@
+.project-container{
+    padding: 400px 80px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    border-radius: 10px;
+    margin: 1em;
+    transition: all 1s ease-in-out;
+    filter: grayscale(70%);
+    @media (max-width: 1000px) {
+        padding: 250px 30px;
+      }
+    .project-overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .1s infinite ease-in;
+        background-color: rgba(19, 18, 48, 0.5);
+    }
+    .project-overlay:hover{
+        opacity: 1;
+    }
+    h1{
+        font-size: 48pt;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    h3{
+        font-size: 18pt;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        font-weight: 300;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+.project-container:hover{
+    filter: brightness(1.0);
+    scale: 1.05;
+}
