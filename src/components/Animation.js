@@ -1,7 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { gsap } from gsap;
+import {useEffect,useRef} from 'react';
+import gsap from gsap;
 
-export function fadeIn(){
+
+export default function Animations(){
+    const gsapRef = useRef();
+
+    useEffect(() => {
+        gsap.to(gsapRef.current, { rotation: "+=480" });
+      });
     
 }

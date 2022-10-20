@@ -1,7 +1,7 @@
 import React from 'react';
 import './textStyle.scss'
 
-export default function textBox(text){
+export default function TextBox(text){
     return(
         <div className='border-container'>
         <h1>{text.heading}</h1>

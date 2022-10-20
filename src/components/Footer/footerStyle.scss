@@ -28,14 +28,14 @@
       a{
         color: white;
         float: left;
-        padding: 20px 10px;
+        padding: 20px 8px;
         text-align: left;
         border-bottom: 2px solid white;
         width: 200px;
-        transition: all 1s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
       a:hover{
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.3);
       }
     }
     .right{
