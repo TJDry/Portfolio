@@ -5,7 +5,6 @@ import './aboutUSStyle.scss'
 
 const Aboutus = () =>{
     return(
-        
         <div className='about-container'>
             <div className='flex'>
                 <div className='personal-photo'></div>
