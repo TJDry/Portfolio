@@ -1,5 +1,5 @@
 .border-container{
-    padding: 50px 50px;
+    padding: 40px 40px;
     position: relative;
     width: 100%;
     text-align: center;
@@ -15,12 +15,13 @@
         align-items: flex-start;
     }
     .text-container{
-            padding-top: 4em;
+            padding-top: 2em;
             text-align: left;
-            width: 500px;            
+            width: 33%;
+            min-width: 500px;            
         }
         p{
-            font-size: 12pt;
+            font-size: 13pt;
             padding-left: 2.5em;
             line-height: 2;
             margin-right: 2.5em;

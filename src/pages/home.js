@@ -7,6 +7,8 @@ import Project from '../components/Projects/projects'
 // import Skills from '../components/SkillCard/skill'
 import { DownArrow } from '../components/social/socials'
 import TextBox from '../components/textBox/text'
+import Hexagon from '../components/Hexagons/hexagon'
+import HexagonProjekts from '../components/Hexagons copy/hexagon'
 
 export default function Home() {
   useEffect(() => {
@@ -21,11 +23,8 @@ export default function Home() {
         <DownArrow />
         <Aboutus />
         {/* <Skills /> */}
-        <div className='projectList' style={{'width':'80%','display': 'flex', flexWrap: 'wrap',justifyContent:'center',alignTtems:'stretch', alignContent:'center', flexDirection:'wrap', 'position': 'relative', 'left': '10vw', textAlign: 'center', 'margin-bottom': '10vh'}}>
-          <Project name="TYREWATCHER" role="UI DESIGNER & PROJECT MANAGER" image={require("../assets/images/tw/hero.png")} link='projects/tyrewatcher' width='50%'/>
-          <Project name="OBDSCANZ" role="UI DESIGNER & PROJECT MANAGER" image={require("../assets/images/obdsz/hero.png")} link="projects/OBDScanz" width='50%'/>
-          <Project name="GREMIO" role="UI UX DESIGNER" image={require("../assets/images/gr/hero.png")} link="projects/gremio" width='100%' />
-          <Project name="BATTERY WATCHER" role="UI DESIGNER & PROJECT MANAGER" image={require("../assets/images/bw/hero.png")} link="projects/battwatcher" width='100%' />
+        <div className='projectList'>
+        <HexagonProjekts />
         </div>
         <Footer />
     </div>
