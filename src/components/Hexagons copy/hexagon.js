@@ -15,6 +15,8 @@ export default function HexagonProjekts(){
           <Project name="GREMIO" role="UI UX DESIGNER" image={require("../../assets/images/gr/hero.png")} link="projects/gremio" />
         </div><div>
           <Project name="BATTERY WATCHER" role="UI DESIGNER & PROJECT MANAGER" image={require("../../assets/images/bw/hero.png")} link="projects/battwatcher" />
+        </div><div>
+          <Project name="ANDROID 11" role="UI DESIGNER" image={require("../../assets/images/a11/hero.png")} link="projects/android11" />
         </div>
     </div>
     </div>

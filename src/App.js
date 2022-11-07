@@ -1,7 +1,7 @@
 import React, { useRef , useEffect, useState} from 'react'
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/home'
-import Tyrewatcher from './pages/work/projectCollection';
+import Tyrewatcher, { Android11 } from './pages/work/projectCollection';
 import './styles/master.scss'
 import {OBDScanz} from './pages/work/projectCollection';
 import {Gremio} from './pages/work/projectCollection';
@@ -63,6 +63,7 @@ return (
           <Route path="/projects/OBDScanz" element={<OBDScanz/>} />
           <Route path="/projects/gremio" element={<Gremio/>} />
           <Route path="/projects/battwatcher" element={<BattWatcher/>} />
+          <Route path="/projects/android11" element={<Android11/>} />
         </Routes>
         </div>
         }

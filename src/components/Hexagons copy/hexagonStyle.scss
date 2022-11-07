@@ -18,10 +18,20 @@
   --f: calc(2*var(--s)*var(--r) + 4*var(--mv)  - 2*var(--vc) - 2px);
 
   height: 100vh;
+  @media only screen and (max-width: 1800px) {
+    --s: 500px
   }
-  @media screen {
-    
+  @media only screen and (max-width: 1210px) {
+    --s: 400px
   }
+  @media only screen and (max-width: 820px) {
+    --s: 300px
+  }
+  @media only screen and (max-width: 620px) {
+    --mh: 4px;
+  }
+  }
+
   .hexpro-container {
     font-size: 0;
     grid-column: 1/-1;

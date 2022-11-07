@@ -10,20 +10,20 @@
     justify-content: center;
     h1{
         // color: rgba(0,0,0,0.1);
-        font-weight: 300;
-        font-size: 32pt;
+        font-weight:300;
+        font-size: 36pt;
         text-overflow: wrap;
-        width: 350px;
-        color: #2791F3;
+        width: 400px;
+        color: #11224d;
         // -webkit-text-stroke: 1px #FFFFFF;
     }
     h2{
         font-weight: 200;
         font-size: 24pt;
-        color: #283044;
+        color: #2791F3;
     }
     .lineTwo{
-        color: #283044;
+        color: #2791F3;
     }
     .hero-image{
         position: absolute;
@@ -41,7 +41,7 @@
     }
     .backgroundImage{
         filter: blur(10px);
-        opacity: 0.2;
+        opacity: 0.4;
         width: 100vw;
         height: 100vh;
         scale: 1.01;

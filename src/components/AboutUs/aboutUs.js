@@ -1,9 +1,11 @@
 import React from 'react';
+import Hexagon from '../Hexagons/hexagon';
 import TextBox from '../textBox/text';
 import './aboutUSStyle.scss'
 
 const Aboutus = () =>{
     return(
+        
         <div className='about-container'>
             <div className='flex'>
                 <div className='personal-photo'></div>
@@ -21,6 +23,9 @@ const Aboutus = () =>{
                 contentA="I'm a Project & Design Manager, I love UI/UX & Software Development & Also dabble in graphic design and photography from time to time."
                 contentB="I'm a Project & Design Manager, I love UI/UX & Software Development & Also dabble in graphic design and photography from time to time."
                 contentC="I'm a Project & Design Manager, I love UI/UX & Software Development & Also dabble in graphic design and photography from time to time."
+                headerA="I'm a Project & Design Manager"
+                headerB="I'm a Project & Design Manager"
+                headerC="I'm a Project & Design Manager"
             />
         </div>
     )

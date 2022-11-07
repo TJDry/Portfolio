@@ -11,7 +11,7 @@ export default function ProjectPagePhone (props) {
   }, []);
   return (
     <div className="projectContainer">
-        <Hero header={props.heading} role={props.roles} bgImg={props.hero}/>
+        <Hero header={props.heading} role={props.roles} bgImg={props.hero} color={props.color}/>
         <DownArrow />
         <Text heading="Project Overview" contentA={props.overviewA} contentB={props.overviewB} contentC={props.overviewC} />
         <Images imgCont={props.Img} />

@@ -5,7 +5,7 @@ export default function Tyrewatcher(){
     return(
         <div className="container">
             <ProjectPagePhone
-                // color="#EE8E33"
+                color="linear-gradient(45deg,#ee8e33,#f85e45)"
                 heading="Tyrewatcher"
                 roles="Project & Design Manager"
                 hero={require("../../assets/images/tw/hero.png")}
@@ -19,6 +19,33 @@ export default function Tyrewatcher(){
                 pressure and status of your tyres
                 and be notified if anything unusual
                 like a puncture or overheat occurs"
+
+                overviewB="Battery Watcher utilises our
+                BattWatcher product to connect to
+                your car battery and transmits
+                data directly to your phone
+                through a Bluetooth connection to
+                this app where you can view the
+                voltage and health of your battery,
+                the consumption of power per
+                second and run various tests such
+                as the Cranking, Charging and
+                Battery tests to make sure you get
+                the most out of your battery."
+
+                overviewC="Battery Watcher utilises our
+                BattWatcher product to connect to
+                your car battery and transmits
+                data directly to your phone
+                through a Bluetooth connection to
+                this app where you can view the
+                voltage and health of your battery,
+                the consumption of power per
+                second and run various tests such
+                as the Cranking, Charging and
+                Battery tests to make sure you get
+                the most out of your battery."
+
                 processA="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 
                 Img={require("../../assets/images/tw/hero.png")}
@@ -42,7 +69,7 @@ export function OBDScanz(){
     return(
         <div className="container">
             <ProjectPagePhone
-                color="#252424"
+                color="linear-gradient(45deg,#ff1900,#380a05)"
                 heading="OBDScanz"
                 roles="Project Manager"
                 hero={require("../../assets/images/obdsz/hero.png")}
@@ -158,6 +185,59 @@ export function BattWatcher(){
                 thirdImg={require("../../assets/images/bw/phone5.png")}
                 thirdImg2={require("../../assets/images/bw/phone3.png")}
                 thirdImg3={require("../../assets/images/bw/phone4.png")}
+
+                nextName="TyreWatcher"
+                nextRole="Project & Design Manager" 
+                nextImage={require("../../assets/images/tw/hero.png")}
+                nextPage="projects/tyrewatcher"
+            />
+        </div>
+    )
+}
+export function Android11(){
+    return(
+        <div className="container">
+            <ProjectPage
+                // color="rgb(95,0,0)"
+                heading="Android 11"
+                roles="Project & Design Manager"
+                hero={require("../../assets/images/a11/hero.png")}
+
+                overviewA="Battery Watcher utilises our
+                BattWatcher product to connect to
+                your car battery and transmits
+                data directly to your phone
+                through a Bluetooth connection to
+                this app where you can view the
+                voltage and health of your battery,
+                the consumption of power per
+                second and run various tests such
+                as the Cranking, Charging and
+                Battery tests to make sure you get
+                the most out of your battery."
+
+                overviewB="Battery Watcher utilises our
+                BattWatcher product to connect to
+                your car battery and transmits
+                data directly to your phone
+                through a Bluetooth connection to
+                this app where you can view the
+                voltage and health of your battery,
+                the consumption of power per
+                second and run various tests such
+                as the Cranking, Charging and
+                Battery tests to make sure you get
+                the most out of your battery."
+
+                processA="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                Img={require("../../assets/images/a11/hero.png")}
+                
+                secImg={require("../../assets/images/a11/tablet0.png")}
+                secImg2={require("../../assets/images/a11/tablet1.png")}
+
+                thirdImg={require("../../assets/images/a11/tablet2.png")}
+                thirdImg2={require("../../assets/images/a11/tablet1.png")}
+                thirdImg3={require("../../assets/images/a11/tablet2.png")}
 
                 nextName="TyreWatcher"
                 nextRole="Project & Design Manager" 
