@@ -3,7 +3,6 @@ import ProjectPagePhone from "./projectTemplatePhone";
 
 export default function Tyrewatcher(){
     return(
-        <div className="container">
             <ProjectPagePhone
                 color="linear-gradient(45deg,#ee8e33,#f85e45)"
                 heading="Tyrewatcher"
@@ -62,12 +61,10 @@ export default function Tyrewatcher(){
                 nextImage={require("../../assets/images/obdsz/hero.png")}
                 nextPage="projects/obdscanz"
             />
-        </div>
     )
 }
 export function OBDScanz(){
     return(
-        <div className="container">
             <ProjectPagePhone
                 color="linear-gradient(45deg,#ff1900,#380a05)"
                 heading="OBDScanz"
@@ -104,12 +101,10 @@ export function OBDScanz(){
                 nextImage={require("../../assets/images/gr/1.png")}
                 nextPage="projects/gremio"
             />
-        </div>
     )
 }
 export function Gremio(){
     return(
-        <div className="container">
             <ProjectPage
                 color="rgb(52,1,76)"
                 heading="Gremio"
@@ -151,12 +146,10 @@ export function Gremio(){
                 nextImage={require("../../assets/images/bw/hero.png")}
                 nextPage="projects/battwatcher"
             />
-        </div>
     )
 }
 export function BattWatcher(){
     return(
-        <div className="container">
             <ProjectPagePhone
                 // color="rgb(95,0,0)"
                 heading="BattWatcher"
@@ -191,12 +184,10 @@ export function BattWatcher(){
                 nextImage={require("../../assets/images/tw/hero.png")}
                 nextPage="projects/tyrewatcher"
             />
-        </div>
     )
 }
 export function Android11(){
     return(
-        <div className="container">
             <ProjectPage
                 // color="rgb(95,0,0)"
                 heading="Android 11"
@@ -244,6 +235,5 @@ export function Android11(){
                 nextImage={require("../../assets/images/tw/hero.png")}
                 nextPage="projects/tyrewatcher"
             />
-        </div>
     )
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Socials from "../social/socials";
 import './footerStyle.scss'
 const Footer = () => {

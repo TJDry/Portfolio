@@ -2,11 +2,11 @@ import './socialsStyle.scss'
 import { Icon } from '@iconify/react';
 
 
-export default function Socials(){
+export default function Socials(props){
 
 
     return (
-        <div className="social-container">
+        <div className="social-container" style={{top:`${props.top}`,right:`${props.right}`}}>
             <a href="https://behance.net/jay" target="rel=noopener">
                 <h3>BEHANCE</h3>
                 <Icon icon="bxl:behance" className='icon' style={{
@@ -33,12 +33,12 @@ export default function Socials(){
         </div>
     )
 }
-export function DownArrow(){
+export function DownArrow(props){
     function ScrollDown(){
         window.scrollTo({top: 1200, left: 0, behavior: 'smooth'});
     }
     return(
-    <div className='arrow-container'>
+    <div className='arrow-container'  style={{top:`${props.top}`,right:`${props.right}`}}>
         <div className='down-container' onClick={ScrollDown}><h3>VIEW MY WORK</h3><h4>→</h4></div>
     </div>
     )

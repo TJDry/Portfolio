@@ -4,7 +4,6 @@ import Footer from '../components/Footer/footer'
 import Hero from '../components/Hero/hero'
 import Aboutus from '../components/AboutUs/aboutUs'
 // import Skills from '../components/SkillCard/skill'
-import { DownArrow } from '../components/social/socials'
 import Hexagon from '../components/Hexagons/hexagon'
 import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
   return (
     <div className="container">
         <Hero heading="Hi, I'm Jayden Dry" headingLineTwo="Project & Design Manager" bgImg={require('../assets/images/background.jpg')}/>
-        <DownArrow />
         <Aboutus />
         {/* <Skills /> */}
         <Hexagon top="17.5%" right="55%"/>
