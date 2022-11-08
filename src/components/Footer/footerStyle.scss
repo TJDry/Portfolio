@@ -16,6 +16,9 @@
     @media (max-width: 1000px) {
         padding: 70px 30px;
       }
+    @media (max-width: 600px) {
+      bottom: -70vh;
+    }
     .messageMe{
       text-decoration: none;
       display: contents;
