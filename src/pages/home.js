@@ -3,13 +3,10 @@ import React, {useEffect} from 'react'
 import Footer from '../components/Footer/footer'
 import Hero from '../components/Hero/hero'
 import Aboutus from '../components/AboutUs/aboutUs'
-import Project from '../components/Projects/projects'
 // import Skills from '../components/SkillCard/skill'
 import { DownArrow } from '../components/social/socials'
-import TextBox from '../components/textBox/text'
 import Hexagon from '../components/Hexagons/hexagon'
-import HexagonProjekts from '../components/Hexagons copy/hexagon'
-
+import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 export default function Home() {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});

@@ -33,20 +33,20 @@ body{
     overflow-x: hidden;
 }
 .mouse{
-    position:fixed;
-    z-index:999;
-    top:0;
-    left:0;
-    font:10px/10px monospace;
-    overflow:hidden;
-    pointer-events:none;
-    width: 16px;
-    height: 16px;
+    pointer-events: none;
+    position: fixed;
+    padding: 1rem;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
     // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
-    background-color: $accent-colour;
+    background-color: rgb(214, 76, 22);
     clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
     z-index: 10;
 }
+div:hover ~ .mouse {
+    transform:translate(-50%, -50%) scale(8);
+  }
 
 Link{
     color: $text-colour;

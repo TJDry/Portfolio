@@ -1,5 +1,5 @@
 import React from 'react';
-import gsap from 'gsap';
+import {gsap} from 'gsap';
 import { useImperativeHandle, useRef, forwardRef } from 'react';
 
 export const Mouse = forwardRef((props, ref) => {
