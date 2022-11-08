@@ -25,12 +25,15 @@ width: 0px;
 // ::-webkit-scrollbar-thumb:hover {
 // background: rgb(20, 19, 88); 
 // }
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     background: $background-colour;
     color: $text-colour;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 .mouse{
     pointer-events: none;

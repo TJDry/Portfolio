@@ -20,12 +20,12 @@ export default function Home() {
         <DownArrow />
         <Aboutus />
         {/* <Skills /> */}
-        <Hexagon top="55%" right="55%"/>
+        <Hexagon top="17.5%" right="55%"/>
         <div className='projectList'>
         <HexagonProjekts />
         </div>
         <Footer />
-        <Hexagon top="210vh" right="0%"/>
+        <Hexagon top="70%" right="0%"/>
     </div>
   )
 }

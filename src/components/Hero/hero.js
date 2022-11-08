@@ -8,7 +8,7 @@ import Hexagon from "../Hexagons/hexagon";
 export default function Hero(props) {
   return (
    <div className="hero-container">
-    <Hexagon top="-55%" right="-15%" color={props.color}/>
+    <Hexagon top="-20%" right="-20%" color={props.color}/>
     <Socials />
     <Navigation />
     <Link to="/"><img src={require("../../assets/images/BRANDMARK/BrandMarkFullColour.png")} width="48" className="hero-image" alt="Jayden Dry"></img></Link>
