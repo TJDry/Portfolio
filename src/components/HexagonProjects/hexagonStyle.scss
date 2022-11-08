@@ -30,6 +30,7 @@
   @media only screen and (max-width: 660px) {
     --mh: 4px;
   }
+
   }
 
   .hexpro-container {
@@ -44,7 +45,10 @@
     display: inline-block;
     font-size:initial;
     clip-path: polygon(var(--hc) 0, calc(100% - var(--hc)) 0,100% var(--vc),100% calc(100% - var(--vc)), calc(100% - var(--hc)) 100%,var(--hc) 100%,0 calc(100% - var(--vc)),0 var(--vc));
-    margin-bottom: calc(var(--mv) - var(--vc)); 
+    margin-bottom: calc(var(--mv) - var(--vc));
+    @media (max-width: 600px) {
+      margin: 0;
+    } 
   }
   .hexpro-container div:hover{
     transition: 0.1s ease-in-out;

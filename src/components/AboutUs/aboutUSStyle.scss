@@ -4,8 +4,8 @@
     width: 100%;
     text-align: center;
     display: inline-block;
-    @media (max-width: 1000px) {
-        padding: 50px 50px;
+    @media (max-width: 600px) {
+        padding: 0;
       }
     .flex{
         display: flex;
@@ -13,6 +13,9 @@
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row-reverse;
+        @media (max-width: 600px) {
+            padding: 0em;
+        }
         .personal-photo{
             background-image: url('../../assets/images/me.JPG');
             background-size: contain;
@@ -22,6 +25,9 @@
             height: 400px;
             // clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
             clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
+            @media (max-width: 600px) {
+                height: 300px;
+            }
         }
         .intro-container{
             padding: 4.5em;
@@ -33,11 +39,21 @@
             letter-spacing: 0.7pt;
             p{
                 font-size: 12pt;
+                @media (max-width: 1000px) {
+                    padding: 0;
+                    text-align: center;
+                  }
+                @media (max-width: 600px) {
+                    width: 100%;
+                }
             }
             @media (max-width: 1000px) {
                 padding: 0;
                 text-align: center;
               }
+            @media (max-width: 600px) {
+                width: 100%;
+            }
         }
         button{
             background: rgba(255,255,255,0);
@@ -64,6 +80,9 @@
             font-weight: bold;
             h4{
                 color: #62abff;
+            }
+            @media (max-width: 600px) {
+                display: none;
             }
         }
     }

@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    transition: all 0.2s ease-in-out;
+    transition: all 2s ease-in-out;
     
     .project-overlay{
         position: absolute;
@@ -15,8 +15,8 @@
         width: 100%;
         opacity: 0;
         color: white;
-        transition: opacity 0.5s ease-in-out;
-        background: linear-gradient(180deg,rgba(0,0,0,0.3),rgba(34, 34, 34,0.6));
+        transition: opacity 1s ease-in-out;
+        background: linear-gradient(180deg,rgba(0, 0, 0, 0.452),rgba(34, 34, 34, 0.808));
     }
     .project-overlay:hover{
         opacity: 1;
@@ -35,7 +35,7 @@
         letter-spacing: 1pt;
     }
     h3{
-        font-size: 16pt;
+        font-size: 14pt;
         position: absolute;
         top: 60%;
         color: whitesmoke;

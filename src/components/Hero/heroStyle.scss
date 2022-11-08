@@ -17,6 +17,12 @@
         color: #11224d;
         // -webkit-text-stroke: 1px #FFFFFF;
     }
+    @media (max-width: 600px) {
+        h1{
+            width: 100%;
+            font-size: 26pt;
+        }
+    }
     h2{
         font-weight: 200;
         font-size: 24pt;
