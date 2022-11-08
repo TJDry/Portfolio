@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Hexagon from "../Hexagons/hexagon";
 import './footerStyle.scss'
 const Footer = () => {
   return (

@@ -39,7 +39,7 @@ export function DownArrow(){
     }
     return(
     <div className='arrow-container'>
-        <div className='down-container' onClick={ScrollDown}><h3>VIEW MY WORK <h4>→</h4></h3></div>
+        <div className='down-container' onClick={ScrollDown}><h3>VIEW MY WORK</h3><h4>→</h4></div>
     </div>
     )
 }

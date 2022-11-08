@@ -1,5 +1,4 @@
 import React from 'react';
-import Hexagon from '../Hexagons/hexagon';
 import TextBox from '../textBox/text';
 import './aboutUSStyle.scss'
 
