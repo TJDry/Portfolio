@@ -18,7 +18,7 @@ export default function Socials(){
                 <Icon icon="bxl:github" className='icon'  style={{
             }} />
             </a>
-            <a href="https://instagram.com/jaytdry"  target="rel=noopener">
+            <a href="https://instagram.com/jayden.dry"  target="rel=noopener">
                 <h3>INSTAGRAM</h3>
                 <Icon icon="bxl:instagram"  className='icon' style={{
             }} />
