@@ -60,6 +60,7 @@
     text-align: center;
     right: 30%;
     top: 20%;
+    font-weight: 100;
     @media (max-width: 600px) {
       right: 0;
     }
@@ -73,6 +74,7 @@
     height: 100%;
     display: flex;
     align-items: left;
+    transition: scale 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     opacity: 0.9;
     @media (max-width: 600px) {
       font-size: 24pt;
@@ -81,7 +83,8 @@
   
   .nav-text a:hover {
     font-weight: bold;
-    scale: 1.2;
+    scale: 1.1;
+    color: #0075FF;
   }
   
   .nav-menu-items {

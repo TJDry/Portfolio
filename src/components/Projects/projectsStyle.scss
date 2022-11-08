@@ -3,8 +3,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    transition: all 2s ease-in-out;
-    
+    transition: all 3s cubic-bezier(0.47, 0, 0.745, 0.715);
     .project-overlay{
         position: absolute;
         top: 0;
@@ -12,10 +11,10 @@
         left: 0;
         right: 0;
         height: 100%;
+        transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
         width: 100%;
         opacity: 0;
         color: white;
-        transition: opacity 1s ease-in-out;
         background: linear-gradient(180deg,rgba(0, 0, 0, 0.452),rgba(34, 34, 34, 0.808));
     }
     .project-overlay:hover{
@@ -50,5 +49,5 @@
 }
 .project-container:hover{
     filter: brightness(110%) drop-shadow(20%, 8px 8px 10px rgb(1, 1, 1));
-    scale: 1.01;
+    scale: 1.1;
 }

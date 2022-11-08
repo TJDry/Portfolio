@@ -56,7 +56,7 @@ return (
           :
 
         <div className='App-Header'>
-        <Mouse ref={addMouseRef} delay={0.05}/>
+        <Mouse ref={addMouseRef} delay={0}/>
         <Routes> 
           <Route path="/" element={<Home />} />
           <Route path="/projects/tyrewatcher" element={<Tyrewatcher/>} />
