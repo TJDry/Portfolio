@@ -31,6 +31,7 @@
     }
     .icon{
         clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
+        -webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
         background-color: rgba(#000000, $alpha: 0.15);
         margin-left: 1em;
         position: relative;
@@ -81,6 +82,7 @@
     h4{
         background-color: rgba($color: #000000, $alpha: 0.15);
         clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
+        -webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
         display: inline;
         padding: 0.8em;
         padding-top: 0.6em;

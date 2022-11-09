@@ -1,5 +1,6 @@
 import './socialsStyle.scss'
 import { Icon } from '@iconify/react';
+import Resume from '../../assets/images/JaydenDryResume.pdf'
 
 
 export default function Socials(props){
@@ -26,6 +27,13 @@ export default function Socials(props){
             <a href="https://linkedin.com/in/jaydendry"  target="rel=noopener">
                 <h3>LINKEDIN</h3>
                 <Icon icon="bxl:linkedin" className='icon'  style={{
+                    // 'backgroundColor': 'rgba(0,255,0,0.8)',
+                    // "clip-path": 'polygon(0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5)'
+            }} />
+            </a>
+            <a href={Resume}  target="_blank" rel="noreferrer">
+                <h3>RESUME</h3>
+                <Icon icon="carbon:document" className='icon'  style={{
                     // 'backgroundColor': 'rgba(0,255,0,0.8)',
                     // "clip-path": 'polygon(0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5)'
             }} />

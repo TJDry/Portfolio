@@ -106,7 +106,7 @@ export function OBDScanz(){
 export function Gremio(){
     return(
             <ProjectPage
-                color="rgb(52,1,76)"
+                color="linear-gradient(45deg,#552586,#9969C7)"
                 heading="Gremio"
                 roles="UI Designer"
                 hero={require("../../assets/images/gr/hero.png")}
@@ -151,7 +151,7 @@ export function Gremio(){
 export function BattWatcher(){
     return(
             <ProjectPagePhone
-                // color="rgb(95,0,0)"
+                color="linear-gradient(45deg,#DC1C13,#F1959B)"
                 heading="BattWatcher"
                 roles="Project & Design Manager"
                 hero={require("../../assets/images/bw/hero.png")}
@@ -189,7 +189,7 @@ export function BattWatcher(){
 export function Android11(){
     return(
             <ProjectPage
-                // color="rgb(95,0,0)"
+                color="linear-gradient(45deg,#8B0001,#C34632)"
                 heading="Android 11"
                 roles="Project & Design Manager"
                 hero={require("../../assets/images/a11/hero.png")}

@@ -6,9 +6,9 @@
     text-decoration: none;
 }
 /* width */
-// ::-webkit-scrollbar {
-// width: 0px;
-// }
+::-webkit-scrollbar {
+width: 0px;
+}
 
 // /* Track */
 // ::-webkit-scrollbar-track {
@@ -48,7 +48,7 @@ body{
     --webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
     z-index: 10;
     @media (max-width: 600px) {
-        display: none;
+        display: n;
     }
 }
 div:hover ~ .mouse {
