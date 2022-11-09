@@ -1,5 +1,5 @@
 .border-container{
-    padding: 30px 40px;
+    padding: 20px 30px;
     width: 100%;
     text-align: center;
     align-items: center;
@@ -16,11 +16,13 @@
         flex-wrap: wrap;
         align-items: flex-start;
     }
+
     .text-container{
+            text-overflow: wrap;
             padding-top: 2em;
             text-align: left;
-            width: 25%;
-            min-width: 500px;
+            width: 100%;
+            max-width: 500px;
             font-weight: 100;            
         }
         p{
@@ -28,6 +30,11 @@
             padding-left: 2.5em;
             line-height: 2;
             margin-right: 2.5em;
+            @media (max-width: 600px) {
+                padding: 0em;
+                margin-right: 0;
+                text-align: center;
+            }
         }
         h3{
             font-size: 14pt;
@@ -35,10 +42,16 @@
             line-height: 2;
             margin-right: 2.5em;
             text-transform: uppercase;
+            @media (max-width: 600px) {
+                padding: 0em;
+                margin-right: 0;
+                text-align: center;
+            }
         }
         @media (max-width: 600px) {
             width: 25%;
             min-width: 100%;
-            padding: 1em;
+            padding: 0em;
+            margin-right: 0;
         }
     }

@@ -9,7 +9,7 @@ const Aboutus = () =>{
                 <div className='personal-photo'></div>
                     <div className="intro-container">
                         <h2>ABOUT ME</h2><br></br>
-                        <p>Heyo! I'm Jay<br></br>
+                        <p>Hi! I'm Jay<br></br>
                             I'm passionate about everything from Database design to Colour Psychology (bit of a wide spectrum hey).
                             I enjoy being pushed to the limits & want to change the world one solution at a time</p>
                         {/* <button>

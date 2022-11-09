@@ -6,6 +6,7 @@ import Aboutus from '../components/AboutUs/aboutUs'
 // import Skills from '../components/SkillCard/skill'
 import Hexagon from '../components/Hexagons/hexagon'
 import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
+import Showreel from '../components/Showreel/showreel'
 export default function Home() {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -18,12 +19,13 @@ export default function Home() {
         <Hero heading="Hi, I'm Jayden Dry" headingLineTwo="Project & Design Manager" bgImg={require('../assets/images/background.jpg')}/>
         <Aboutus />
         {/* <Skills /> */}
-        <Hexagon top="17.5%" right="55%"/>
+        <Hexagon top="15%" right="55%"/>
+        <Showreel />
         <div className='projectList'>
         <HexagonProjekts />
         </div>
         <Footer />
-        <Hexagon top="70%" right="0%"/>
+        <Hexagon top="77.5%" right="0%"/>
     </div>
   )
 }

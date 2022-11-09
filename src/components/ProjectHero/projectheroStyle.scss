@@ -39,7 +39,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-    }
+        @media (max-width: 600px) {
+            opacity: 0;
+        }
     .backgroundImage{
         // filter: blur(5px);
         width: 100%;
@@ -52,4 +54,5 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.13) 0%, rgba(0, 102, 255, 0.01) 100%, rgba(61, 62, 63, 0.1) 100%);
         z-index: -9;
     }
+}
 }

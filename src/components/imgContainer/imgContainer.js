@@ -29,17 +29,17 @@ export function Triimages(images){
 export function TriimagesPhone(images){
     return(
         <div className="img-container flex">
-            <img src={images.imgCont} style={{'width':'20%'}} alt="imageGoesHere"></img>
-            <img src={images.imgCont2} style={{'width':'20%'}} alt="imageGoesHere"></img>
-            <img src={images.imgCont3} style={{'width':'20%'}} alt="imageGoesHere"></img>
+            <img src={images.imgCont} style={{'width':'30%'}} alt="imageGoesHere"></img>
+            <img src={images.imgCont2} style={{'width':'30%'}} alt="imageGoesHere"></img>
+            <img src={images.imgCont3} style={{'width':'30%'}} alt="imageGoesHere"></img>
         </div>
     )
 }
 export function DualimagesPhone(images){
     return(
         <div className="img-container flex">
-            <img src={images.imgCont} style={{'width':'20%'}} alt="imageGoesHere"></img>
-            <img src={images.imgCont2} style={{'width':'20%'}} alt="imageGoesHere"></img>
+            <img src={images.imgCont} style={{'width':'30%'}} alt="imageGoesHere"></img>
+            <img src={images.imgCont2} style={{'width':'30%'}} alt="imageGoesHere"></img>
         </div>
     )
 }
