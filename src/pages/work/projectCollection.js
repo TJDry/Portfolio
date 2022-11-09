@@ -70,8 +70,11 @@ export function OBDScanz(){
                 dev team responsible to produce the app."
 
 
-                processA="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                processA="It has been a long and hard year long project, with over 40 APK builds and adjustments."
+
+                processB="From adding new features to refining performance and functionality, it becomes hard to tell if the project is making any haste towards production level."
                 
+                processC="The project needs to be able to run smoothly across all android versions making it hard for the developers i manage communications with to develop the app in a way that can run smoothly on all"                
                 Img={require("../../assets/images/obdsz/hero.png")}
                 
                 secImg={require("../../assets/images/obdsz/phone1.png")}
