@@ -11,7 +11,7 @@ export default function Navigation(){
             <div className="navigation-container" onClick={showNav}>
                 <div className="nav-btn"></div>
             </div>
-            <div className={navBar ? 'nav-menu active' : 'nav-menu'}>
+            <div className={navBar ? 'nav-menu active' : 'nav-menu'}>                <div className="nav-btn"></div>
                 <ul>
                     {NavBarData.map((item, index) => {
                         return(

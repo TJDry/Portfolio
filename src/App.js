@@ -12,7 +12,6 @@ import { ScaleLoader } from 'react-spinners';
 const override = {
   display: "inline",
   margin: "0 auto",
-  borderColor: "red",
   position:"relative",
   left: "50%",
   top: "50vh",
@@ -52,10 +51,10 @@ return (
       <div className="app">
         {
           loading ?
-          <ScaleLoader loading={loading} color={"#ffffff"} cssOverride={override} size={150} />
+          <ScaleLoader loading={loading} color={"#0075FF"} cssOverride={override} size={200} />
           :
 
-        <div className='App-Header'>
+        <>
         <Mouse ref={addMouseRef} delay={0}/>
         <Routes> 
           <Route path="/" element={<Home />} />
@@ -65,7 +64,7 @@ return (
           <Route path="/projects/battwatcher" element={<BattWatcher/>} />
           <Route path="/projects/android11" element={<Android11/>} />
         </Routes>
-        </div>
+        </>
         }
       </div>
   );

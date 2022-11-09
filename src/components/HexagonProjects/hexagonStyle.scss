@@ -27,8 +27,8 @@
   @media only screen and (max-width: 900px) {
     --s: 350px
   }
-  @media only screen and (max-width: 660px) {
-    --mh: 4px;
+  @media only screen and (max-width: 720px) {
+    --s: 300px
   }
 
   }
@@ -46,7 +46,7 @@
     font-size:initial;
     clip-path: polygon(var(--hc) 0, calc(100% - var(--hc)) 0,100% var(--vc),100% calc(100% - var(--vc)), calc(100% - var(--hc)) 100%,var(--hc) 100%,0 calc(100% - var(--vc)),0 var(--vc));
     margin-bottom: calc(var(--mv) - var(--vc));
-    @media (max-width: 600px) {
+    @media (max-width: 720px) {
       margin: 0;
       margin-bottom: calc(var(--mv) - var(--vc));
     } 
