@@ -12,41 +12,26 @@ export default function Tyrewatcher(){
                 to maintain your tyres health,
                 being provided with a dashboard
                 directly connected via Bluetooth to
-                your wheel tyre pressure sensors.
-                From here you will be able to view
+                your wheel tyre pressure sensors."
+
+                overviewB="From here you will be able to view
                 and manage the temperature,
-                pressure and status of your tyres
+                pressure and status of your tyres   
                 and be notified if anything unusual
                 like a puncture or overheat occurs"
 
-                overviewB="Battery Watcher utilises our
-                BattWatcher product to connect to
-                your car battery and transmits
-                data directly to your phone
-                through a Bluetooth connection to
-                this app where you can view the
-                voltage and health of your battery,
-                the consumption of power per
-                second and run various tests such
-                as the Cranking, Charging and
-                Battery tests to make sure you get
-                the most out of your battery."
+                overviewC="The task was split into two categories, both a mobile app upgrade ontop of the existing one that I assisted in testing & publishing on IOS/Android and a new tablet version for our headunits so you can check your tyre status right from the cabin of your car."
 
-                overviewC="Battery Watcher utilises our
-                BattWatcher product to connect to
-                your car battery and transmits
-                data directly to your phone
-                through a Bluetooth connection to
-                this app where you can view the
-                voltage and health of your battery,
-                the consumption of power per
-                second and run various tests such
-                as the Cranking, Charging and
-                Battery tests to make sure you get
-                the most out of your battery."
+                processA="In a similar fashion to my other projects, I was presented with an old version that wasn't very developed and made the decision to redesign it utilising the same branding. I also needed to adapt the design to tablet which was also a challenge given the sizing of the tablet."
 
-                processA="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                processB="I started off by grabbing the most notable features and identifying what should go where and also redefining the strong orange colour palette to something slightly more appealing and toned down, leading to accents of orange to red gradients appearing in small doses throughout the app"
+
+                processC="I also researched the best methods to display tyre pressures and compared our potential app to competitors and tried to match or improve our features to make it a competitor in the market."
+
+                conclusionA="Currently the tablet app is being developed however we're struggling with matching the bluetooth communication protocols of the base head unit to the tyre sensors so the project is process waiting on both the supplier and developers to resolve the issue."
                 
+                conclusionB="The New phone app however is currently on hold due to currently ongoing number of tasks and is awaiting a ready signal from my boss"
+
                 Img={require("../../assets/images/tw/hero.png")}
                 
                 secImg={require("../../assets/images/tw/phone1.png")}
@@ -130,7 +115,7 @@ export function Gremio(){
                 fashion designers to senior developers
                 and managers."
 
-                processA="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                processA=""
                 
                 Img={require("../../assets/images/gr/hero.png")}
                 
@@ -161,7 +146,9 @@ export function BattWatcher(){
                 your car battery and transmits
                 data directly to your phone
                 through a Bluetooth connection to
-                this app where you can view the
+                this app."
+
+                overviewB="You can view the
                 voltage and health of your battery,
                 the consumption of power per
                 second and run various tests such
@@ -169,7 +156,22 @@ export function BattWatcher(){
                 Battery tests to make sure you get
                 the most out of your battery."
 
-                processA="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                overviewC="The app utilises BLE technology to hold up to 4 devices at the same time.
+                It requires a full scale app with all tests, results and report creation as this is an industry
+                standard application usable by the public"
+
+                processA="To start this project I was presented with an underdeveloped version of the app and the inspiration behind it.
+                From here I researched similar apps and created a list of necessary features that the app should include to be successful."
+
+                processB="I then went on to do design & colour palette research, with the original colour palette being shown as RGB green and red.
+                I researched popular trends and display types for graphs, navigations and data presentation and created a first mockup of the app."
+
+                processC="From here I utilised Figma to create a fully mocked up prototype after receiving consistent feedback from peers and improving the design of the app to the point where it has 3 new versions that are refined each time."
+
+                conclusionA="Once the app design was mostly finalised, I was tasked to find a suitable development team to develop the app. So I began the interview process via upwork and filtered through the many applicants for the project and ended up interviewing 4 development teams."
+                conclusionB="From those 4 teams, we tested one, who never responded and thus we re-interviewed a couple and are waiting for project approval from my boss for the project to go ahead as we received the communication medium for the BLE device."
+                conclusionC="Since those interviews I have been slowly improving the app's UI integrating a better navigation and sizings both for button and text and refining the BattWatcher brand."
+
                 Img={require("../../assets/images/bw/hero.png")}
                 
                 secImg={require("../../assets/images/bw/phone2.png")}
@@ -194,33 +196,18 @@ export function Android11(){
                 roles="Project & Design Manager"
                 hero={require("../../assets/images/a11/hero.png")}
 
-                overviewA="Battery Watcher utilises our
-                BattWatcher product to connect to
-                your car battery and transmits
-                data directly to your phone
-                through a Bluetooth connection to
-                this app where you can view the
-                voltage and health of your battery,
-                the consumption of power per
-                second and run various tests such
-                as the Cranking, Charging and
-                Battery tests to make sure you get
-                the most out of your battery."
+                overviewA="VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays."
 
-                overviewB="Battery Watcher utilises our
-                BattWatcher product to connect to
-                your car battery and transmits
-                data directly to your phone
-                through a Bluetooth connection to
-                this app where you can view the
-                voltage and health of your battery,
-                the consumption of power per
-                second and run various tests such
-                as the Cranking, Charging and
-                Battery tests to make sure you get
-                the most out of your battery."
+                overviewB="I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen"
 
-                processA="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                overviewC="Although this wont be possible for a period of time, we have started to formally implement it partially as a theme and are waiting on the suppliers to get back to us with the new theme."
+
+                processA="For this theme I was given the old theme plus a BMW design and given the colour scheme, I utilised this similar layout whilst also combining it with aspects of more modern gradient logos with dropshadows."
+
+                processB="I created a clean design for multiple sections of the software, keeping it simple with no bezels or embossing and making sure its easily accessible and usable whilst also keeping it within reason of an upgrade."
+
+                processC="I also created a dynamic resting page with multiple gradients to help promote a cleaner and more modern creative look, with gradient bubbles blurred out to create distance between the sharper time and the background colours"
+
                 Img={require("../../assets/images/a11/hero.png")}
                 
                 secImg={require("../../assets/images/a11/tablet0.png")}

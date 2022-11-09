@@ -15,7 +15,7 @@ export default function ProjectPage (props) {
       <Images imgCont={props.Img} />
       <Text heading="Process" contentA={props.processA} contentB={props.processB} contentC={props.processC}/>
       <Triimages imgCont={props.thirdImg} imgCont2={props.thirdImg2} imgCont3={props.thirdImg3} />
-      <Text heading="" contentA={props.processA} contentB={props.processB} contentC={props.processC}/>
+      <Text heading="" contentA={props.conclusionA} contentB={props.conclusionB} contentC={props.conclusionC}/>
       <Dualimages imgCont={props.secImg} imgCont2={props.secImg2} />
       <NextProject name={props.nextName} role={props.nextRole} image={props.nextImage} link={props.nextPage} />
     </div> 

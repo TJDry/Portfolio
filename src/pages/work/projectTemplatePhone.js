@@ -15,7 +15,7 @@ export default function ProjectPagePhone (props) {
         <Images imgCont={props.Img} />
         <Text heading="Process" contentA={props.processA} contentB={props.processB} contentC={props.processC}/>
         <TriimagesPhone imgCont={props.thirdImg} imgCont2={props.thirdImg2} imgCont3={props.thirdImg3} />
-        <Text heading="" contentA={props.processA} contentB={props.processB} contentC={props.processC}/>
+        <Text heading="" contentA={props.conclusionA} contentB={props.conclusionB} contentC={props.conclusionC}/>
         <DualimagesPhone imgCont={props.secImg} imgCont2={props.secImg2} />
         <NextProject name={props.nextName} role={props.nextRole} image={props.nextImage} link={props.nextPage} />
     </div> 
