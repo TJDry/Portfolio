@@ -16,8 +16,6 @@
   --mh: calc(var(--mv) + (var(--s) - 2*var(--hc))/2); /* horizontal */
   /* for the float*/
   --f: calc(2*var(--s)*var(--r) + 4*var(--mv)  - 2*var(--vc) - 2px);
-
-  height: 100vh;
   @media only screen and (max-width: 1850px) {
     --s: 450px
   }
@@ -49,7 +47,7 @@
     margin-bottom: calc(var(--mv) - var(--vc));
     @media (max-width: 720px) {
       margin: 0;
-      margin-bottom: calc(var(--mv) - var(--vc));
+      margin-bottom: 1em;
     } 
   }
   .hexpro-container div:hover{
