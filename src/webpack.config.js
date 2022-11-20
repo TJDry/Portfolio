@@ -1,5 +1,13 @@
 rules: [
     {
-        test: /\.(png|jpg)$/,
-        loader: 'url-loader'
-    }]
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+            },
+          },
+        ],
+      },
+    ]

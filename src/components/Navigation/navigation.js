@@ -9,14 +9,13 @@ export default function Navigation(){
     return(
         <>
             <div className="navigation-container" onClick={showNav}>
-                <div className="nav-btn"></div>
+                <div className={navBar ? 'nav-btn active' : 'nav-btn'}></div>
             </div>
             <div className={navBar ? 'nav-menu active' : 'nav-menu'}>
                 <ul>
                     {NavBarData.map((item, index) => {
                         return(
-                            <li key={index} className={item.cName}>
-                                <Link to={item.path}>
+                            <li key={index} className={item.cName}>                                <Link to={item.path}>
                                     <span>{item.title}</span>
                                 </Link>
                             </li>
