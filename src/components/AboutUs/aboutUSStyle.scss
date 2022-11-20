@@ -1,5 +1,5 @@
 .about-container{
-    padding: 50px 80px;
+    padding: 50px 0px;
     position: relative;
     width: 100%;
     text-align: center;
@@ -34,12 +34,12 @@
             }
         }
         .intro-container{
-            padding: 4.5em;
+            padding-right: 11em;
             text-align: left;
-            // top: 25%;
             width: 50%;
             position: relative;
             font-weight: 400;
+            margin-right: 5%;
             letter-spacing: 0.4pt;
             p{
                 font-size: 13pt;

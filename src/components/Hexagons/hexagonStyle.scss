@@ -1,12 +1,12 @@
 .hex-main {
     position: absolute;
     display:flex;
-    --s: 160px;  /* size  */
+    --s: 180px;  /* size  */
     --m: 4px;    /* margin */
     --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
     z-index: -10;
     width: 600px;
-    rotate: (90deg);
+    rotate: (120deg);
     transition: 2s;
     filter: drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.2)); 
   }
@@ -22,12 +22,12 @@
     display: inline-block;
     font-size: initial;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-    background: linear-gradient(90deg,#2791F3,#2746f3);
-    opacity: 30%;
+    background: linear-gradient(30deg,#0056A3,#242477);
+    opacity: 100%;
     margin-bottom: calc(var(--m) - var(--s)*0.2885);
   }
   .hex-container div:nth-child(4n+2) {
-    opacity: 20%;
+    opacity: 80%;
   }
   .hex-container div:hover{
     opacity: 60%;

@@ -19,13 +19,12 @@ export default function Home() {
         <Hero heading="Hi, I'm Jayden Dry" headingLineTwo="Project & Design Manager" bgImg={require('../assets/images/background.jpg')}/>
         <Aboutus />
         {/* <Skills /> */}
-        <Hexagon top="15%" right="55%"/>
         <Showreel />
         <div className='projectList'>
         <HexagonProjekts />
         </div>
         <Footer />
-        <Hexagon top="77.5%" right="0%"/>
+        <Hexagon top="65%" right="-20%"/>
     </div>
   )
 }
