@@ -4,11 +4,11 @@ import './styles/master.scss'
 import { Mouse } from './Mouse';
 
 const Home = lazy(()=> import('./pages/home'));
-const TyreWatcher = lazy(()=> import('./pages/work/Projects/tyreWatcher'));
-const OBDScanz = lazy(()=> import('./pages/work/Projects/obdScanz'));
-const BattWatcher = lazy(()=> import('./pages/work/Projects/battWatcher'));
-const Gremio = lazy(()=> import('./pages/work/Projects/gremio'));
-const Android11 = lazy(()=> import('./pages/work/Projects/android11'));
+const TyreWatcher = lazy(()=> import('./pages/work/tyreWatcher'));
+const OBDScanz = lazy(()=> import('./pages/work/obdScanz'));
+const BattWatcher = lazy(()=> import('./pages/work/battWatcher'));
+const Gremio = lazy(()=> import('./pages/work/gremio'));
+const Android11 = lazy(()=> import('./pages/work/android11'));
 
 function App(){
   const mouseRefs = useRef([]);

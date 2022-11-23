@@ -5,7 +5,9 @@
     align-items: center;
     display: inline-block;
     h2{
+        padding-left: 2.5em;
         text-align: left;
+        font-size: 18pt;
     }
     @media (max-width: 1000px) {
         padding: 28px;

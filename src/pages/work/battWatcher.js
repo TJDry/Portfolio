@@ -1,13 +1,12 @@
-import ProjectPagePhone from "../projectTemplatePhone";
+import ProjectPage from "../projectTemplate";
 
 export default function BattWatcher(){
     return(
-            <ProjectPagePhone
+            <ProjectPage
                 color="linear-gradient(45deg,#DC1C13,#F1959B)"
                 colorFlat="#DC1C13"
                 heading="BattWatcher"
                 roles="Project & Design Manager"
-                hero={require("../../../assets/images/bw/hero.png")}
 
                 overviewA="Battery Watcher utilises our
                 BattWatcher product to connect to
@@ -39,19 +38,27 @@ export default function BattWatcher(){
                 conclusionA="Once the app design was mostly finalised, I was tasked to find a suitable development team to develop the app. So I began the interview process via upwork and filtered through the many applicants for the project and ended up interviewing 4 development teams."
                 conclusionB="From those 4 teams, we tested one, who never responded and thus we re-interviewed a couple and are waiting for project approval from my boss for the project to go ahead as we received the communication medium for the BLE device."
                 conclusionC="Since those interviews I have been slowly improving the app's UI integrating a better navigation and sizings both for button and text and refining the BattWatcher brand."
-
-                Img={require("../../../assets/images/bw/hero.png")}
                 
-                secImg={require("../../../assets/images/bw/phone2.png")}
-                secImg2={require("../../../assets/images/bw/phone1.png")}
+                abrProject="bw"
 
-                thirdImg={require("../../../assets/images/bw/phone5.png")}
-                thirdImg2={require("../../../assets/images/bw/phone3.png")}
-                thirdImg3={require("../../../assets/images/bw/phone4.png")}
+                image1="hero"
 
+                image2="1"
+                image3="2"
+
+                image5="phone1"
+                image6="phone2"
+                image7="phone3"
+
+                image8="phone4"
+                image9="phone5"
+                image10="phone6"
+                
+                
                 nextName="TyreWatcher"
+
                 nextRole="Project & Design Manager" 
-                nextImage={require("../../../assets/images/tw/hero.png")}
+                nextImage= "/images/tw/hero.png"
                 nextPage="projects/tyrewatcher"
             />
     )

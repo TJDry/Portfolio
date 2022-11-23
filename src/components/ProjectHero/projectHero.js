@@ -12,10 +12,9 @@ export default function ProjectHero(props) {
     <Socials />
     <DownArrow buttonText="VIEW PROJECT"/>
     <Navigation />
-    <Link to="/"><img src={require("../../assets/images/BRANDMARK/BrandMarkFullColour.png")} width="48" className="hero-image" alt="Jayden Dry"></img></Link>
+    <Link to="/"><img src={process.env.PUBLIC_URL + '/images/BrandMarkFullColour.png'} width="48" className="hero-image" alt="Jayden Dry"></img></Link>
     <h1>{props.heading}</h1><h1 className="lineTwo" style={{color: `${props.colorFlat}`}}>{props.headingLineTwo}</h1>
     <div className="backgroundOverlay">
-      <img className="backgroundImage" src={props.bgImg} alt="background"></img>
     </div>
    </div>
   );

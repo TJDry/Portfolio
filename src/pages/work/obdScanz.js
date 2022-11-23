@@ -1,13 +1,13 @@
-import ProjectPagePhone from "../projectTemplatePhone";
+import ProjectPage from "../projectTemplate";
 
 export default function OBDScanz(){
     return(
-            <ProjectPagePhone
+            <ProjectPage
                 color="linear-gradient(45deg,#ff1900,#380a05)"
                 colorFlat="#ff1900"
                 heading="OBDScanz"
                 roles="Project Manager"
-                hero={require("../../../assets/images/obdsz/hero.png")}
+
                 overviewA="It's an all-in-one inclusive app that
                 uses our OBD2 Scanner to connect your
                 phone to the car via Bluetooth and manage the codes, test various aspects of your vehicle and help
@@ -28,18 +28,21 @@ export default function OBDScanz(){
                 processB="From adding new features to refining performance and functionality, it becomes hard to tell if the project is making any haste towards production level."
                 
                 processC="The project needs to be able to run smoothly across all android versions making it hard for the developers i manage communications with to develop the app in a way that can run smoothly on all"                
-                Img={require("../../../assets/images/obdsz/hero.png")}
-                
-                secImg={require("../../../assets/images/obdsz/phone1.png")}
-                secImg2={require("../../../assets/images/obdsz/phone2.png")}
-                
-                thirdImg={require("../../../assets/images/obdsz/phone3.png")}
-                thirdImg2={require("../../../assets/images/obdsz/phone4.png")}
-                thirdImg3={require("../../../assets/images/obdsz/phone2.png")}
-                
-                nextName="OBDScanz"
-                nextRole="Project & Design Manager" 
-                nextImage={require("../../../assets/images/gr/1.png")}
+
+                abrProject="obdsz"
+                image1="hero"
+
+                image2="1"
+
+                image5="phone1"
+                image6="phone2"
+                image7="phone3"
+
+                image8="phone4"
+
+                nextName="Gremio"
+                nextRole="UI/UX Designer" 
+                nextImage= '/images/gr/1.png'
                 nextPage="projects/gremio"
             />
     )

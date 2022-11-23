@@ -7,7 +7,6 @@ export default function Android11(){
                 colorFlat="#C34632"
                 heading="Android 11"
                 roles="Project & Design Manager"
-                hero={require("../../../assets/images/a11/hero.png")}
 
                 overviewA="VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays."
 
@@ -20,19 +19,23 @@ export default function Android11(){
                 processB="I created a clean design for multiple sections of the software, keeping it simple with no bezels or embossing and making sure its easily accessible and usable whilst also keeping it within reason of an upgrade."
 
                 processC="I also created a dynamic resting page with multiple gradients to help promote a cleaner and more modern creative look, with gradient bubbles blurred out to create distance between the sharper time and the background colours"
-
-                Img={require("../../../assets/images/a11/hero.png")}
                 
-                secImg={require("../../../assets/images/a11/tablet0.png")}
-                secImg2={require("../../../assets/images/a11/tablet1.png")}
+                image1="hero"
 
-                thirdImg={require("../../../assets/images/a11/tablet2.png")}
-                thirdImg2={require("../../../assets/images/a11/tablet1.png")}
-                thirdImg3={require("../../../assets/images/a11/tablet2.png")}
+                image2=""
+                image3=""
+
+                image5="tablet0"
+                image6="tablet1"
+                image7=""
+
+                image8="tablet2"
+                
+
 
                 nextName="TyreWatcher"
                 nextRole="Project & Design Manager" 
-                nextImage={require("../../../assets/images/tw/hero.png")}
+                nextImage= '/images/tw/hero.png'
                 nextPage="projects/tyrewatcher"
             />
     )

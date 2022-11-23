@@ -1,13 +1,13 @@
-import ProjectPagePhone from "../projectTemplatePhone";
+import ProjectPage from "../projectTemplate";
 
 export default function Tyrewatcher(){
     return(
-            <ProjectPagePhone
+            <ProjectPage
                 color="linear-gradient(45deg,#ee8e33,#f85e45)"
                 colorFlat="#ee8e33"
                 heading="Tyrewatcher"
                 roles="Project & Design Manager"
-                hero={require("../../../assets/images/tw/hero.png")}
+
                 overviewA="Tyrewatcher is a mobile app used
                 to maintain your tyres health,
                 being provided with a dashboard
@@ -31,19 +31,26 @@ export default function Tyrewatcher(){
                 conclusionA="Currently the tablet app is being developed however we're struggling with matching the bluetooth communication protocols of the base head unit to the tyre sensors so the project is process waiting on both the supplier and developers to resolve the issue."
                 
                 conclusionB="The New phone app however is currently on hold due to currently ongoing number of tasks and is awaiting a ready signal from my boss"
-
-                Img={require("../../../assets/images/tw/hero.png")}
                 
-                secImg={require("../../../assets/images/tw/phone1.png")}
-                secImg2={require("../../../assets/images/tw/phone3.png")}
+                abrProject="tw"
 
-                thirdImg={require("../../../assets/images/tw/tablet0.png")}
-                thirdImg2={require("../../../assets/images/tw/tablet2.png")}
-                thirdImg3={require("../../../assets/images/tw/tablet3.png")}
+                image1="hero"
+
+                image2="1"
+                image3="2"
+
+                image5="phone1"
+                image6="phone2"
+                image7="phone3"
+
+                image8="tablet0"
+                image9="tablet1"
+                image10="tablet2"
+
 
                 nextName="OBDScanz"
                 nextRole="Project & Design Manager" 
-                nextImage={require("../../../assets/images/obdsz/hero.png")}
+                nextImage= '/images/obdsz/hero.png'
                 nextPage="projects/obdscanz"
             />
     )

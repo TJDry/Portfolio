@@ -12,7 +12,7 @@ export default function Hero(props) {
     <Socials />
     <DownArrow  buttonText="VIEW MY WORK"/>
     <Navigation />
-    <Link to="/"><img src={require("../../assets/images/BRANDMARK/BrandMarkFullColour.png")} width="48" className="hero-image" alt="Jayden Dry"></img></Link>
+    <Link to="/"><img src={process.env.PUBLIC_URL + "/images/BrandMarkFullColour.png"} width="48" className="hero-image" alt="Jayden Dry"></img></Link>
     <h1>{props.heading}</h1><h1 className="lineTwo">{props.headingLineTwo}</h1>
     <div className="backgroundOverlay">
       <img className="backgroundImage" src={props.bgImg} alt="background"></img>

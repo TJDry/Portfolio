@@ -7,7 +7,6 @@ export default function Gremio(){
                 colorFlat="#552586"
                 heading="Gremio"
                 roles="UI Designer"
-                hero={require("../../../assets/images/gr/hero.png")}
 
                 overviewA="Gremio, the spanish word for Guild, is a fictional
                 company based in Perth, Western Australia, looking to bring the sparse design
@@ -30,18 +29,27 @@ export default function Gremio(){
 
                 processA=""
                 
-                Img={require("../../../assets/images/gr/hero.png")}
-                
-                secImg={require("../../../assets/images/gr/1.png")}
-                secImg2={require("../../../assets/images/gr/2.png")}
+                abrProject="gr"
 
-                thirdImg={require("../../../assets/images/gr/Landinguwu-1.png")}
-                thirdImg2={require("../../../assets/images/gr/Landinguwu-2.png")}
-                thirdImg3={require("../../../assets/images/gr/Landing.png")}
+                image1="hero"
+
+                image2="1"
+                image3="2"
+
+                image5="hero2"
+                image6="Landing"
+                image7="Landinguwu-1"
+
+                image8="Landinguwu-2"
+                image9="Landinguwu"
+
+                // image4={require("Landinguwu-1.png")}
+                // image5={require("Landinguwu-2.png")}
+                // image6={require("Landing.png")}
                 
                 nextName="Battwatcher"
                 nextRole="Project & Design Manager" 
-                nextImage={require("../../../assets/images/bw/hero.png")}
+                nextImage= "/images/bw/hero.png"
                 nextPage="projects/battwatcher"
             />
     )
