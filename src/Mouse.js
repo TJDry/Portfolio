@@ -4,6 +4,8 @@ import { useImperativeHandle, useRef, forwardRef } from 'react';
 
 export const Mouse = forwardRef((props, ref) => {
     const el = useRef();
+
+
     
     useImperativeHandle(ref, () => {           
           
@@ -15,5 +17,11 @@ export const Mouse = forwardRef((props, ref) => {
           };
     }, []);
         
-    return <div className="mouse" ref={el}></div>;
+    return( <div className="mouse" ref={el}></div>);
 });
+
+
+export function mouseHoverEvent(e) {
+    const mouseFollow = document.querySelector('.mouse');
+    e.mouseFollow.style.background = 'red';
+}

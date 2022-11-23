@@ -9,9 +9,16 @@
     @media (max-width: 1000px) {
         padding: 70px 30px;
       }
+    h1{
+        font-size: 28pt;
+        color: white;
+        font-weight: bold;
+    }
     h2{
         color: white;
+        opacity: 0.7;
         font-size: 24pt;
+        padding: 1em;
         font-weight: 500;
     }
     h3{
@@ -20,7 +27,6 @@
         color: rgb(200,200,210);
     }
     .nextHeader{
-        font-size: 28pt;
         color: rgb(200,200,210);
     }
 }

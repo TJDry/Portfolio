@@ -2,8 +2,9 @@ import React, {useEffect} from 'react'
 import Text from '../../components/textBox/text'
 import Images, {DualimagesPhone, TriimagesPhone} from '../../components/imgContainer/imgContainer'
 import NextProject from '../../components/nextProject/nextProject'
-import './projectTemplateStyle.scss'
 import ProjectHero from '../../components/ProjectHero/projectHero'
+import Footer from '../../components/Footer/footer'
+
 export default function ProjectPagePhone (props) {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -18,6 +19,7 @@ export default function ProjectPagePhone (props) {
         <Text heading="" contentA={props.conclusionA} contentB={props.conclusionB} contentC={props.conclusionC}/>
         <DualimagesPhone imgCont={props.secImg} imgCont2={props.secImg2} />
         <NextProject name={props.nextName} role={props.nextRole} image={props.nextImage} link={props.nextPage} />
+        <Footer />
     </div> 
   )
 }

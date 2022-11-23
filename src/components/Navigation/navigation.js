@@ -15,9 +15,10 @@ export default function Navigation(){
                 <ul>
                     {NavBarData.map((item, index) => {
                         return(
-                            <li key={index} className={item.cName}>                                <Link to={item.path}>
-                                    <span>{item.title}</span>
-                                </Link>
+                            <li key={index} className={item.cName}>
+                                    <Link to={`/${item.path}`}>
+                                        <span>{item.title}</span>
+                                    </Link>
                             </li>
                         );
                     })}

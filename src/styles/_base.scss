@@ -41,7 +41,7 @@ body{
     padding: 1rem;
     border-radius: 50%;
     mix-blend-mode: difference;
-    transition: transform 0.3s ease;
+    transition: transform 0.1s ease;
     // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
     background-color: rgb(214, 76, 22);
     clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
@@ -73,6 +73,25 @@ p{
 }
 h3{
     color: $text-colour;
+}
+.loading{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: $accent-colour;
+    justify-items: center;
+    transition: all .8s ease;
+    animation: expand .8s ease forwards;
+}
+
+@keyframes loadAnimation{
+        0% {
+          transform: translateX(1400px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
 }
 // .App span{
 //     color: $accent-colour;
