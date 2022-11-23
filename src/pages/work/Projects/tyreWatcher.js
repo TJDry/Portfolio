@@ -4,6 +4,7 @@ export default function Tyrewatcher(){
     return(
             <ProjectPagePhone
                 color="linear-gradient(45deg,#ee8e33,#f85e45)"
+                colorFlat="#ee8e33"
                 heading="Tyrewatcher"
                 roles="Project & Design Manager"
                 hero={require("../../../assets/images/tw/hero.png")}

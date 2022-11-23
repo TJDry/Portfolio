@@ -4,6 +4,7 @@ export default function BattWatcher(){
     return(
             <ProjectPagePhone
                 color="linear-gradient(45deg,#DC1C13,#F1959B)"
+                colorFlat="#DC1C13"
                 heading="BattWatcher"
                 roles="Project & Design Manager"
                 hero={require("../../../assets/images/bw/hero.png")}

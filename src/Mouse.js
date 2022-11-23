@@ -21,7 +21,7 @@ export const Mouse = forwardRef((props, ref) => {
 });
 
 
-export function mouseHoverEvent(e) {
-    const mouseFollow = document.querySelector('.mouse');
-    e.mouseFollow.style.background = 'red';
-}
+// export function mouseHoverEvent(e) {
+//     const mouseFollow = document.querySelector('.mouse');
+//     // e.mouseFollow.style.background = 'red';
+// }

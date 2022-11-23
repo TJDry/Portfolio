@@ -4,6 +4,7 @@ export default function Gremio(){
     return(
             <ProjectPage
                 color="linear-gradient(45deg,#552586,#9969C7)"
+                colorFlat="#552586"
                 heading="Gremio"
                 roles="UI Designer"
                 hero={require("../../../assets/images/gr/hero.png")}

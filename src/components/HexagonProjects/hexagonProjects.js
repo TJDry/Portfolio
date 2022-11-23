@@ -3,7 +3,6 @@ import './hexagonStyle.scss';
 import Project from "../Projects/projects";
 import { useRef,useLayoutEffect } from "react";
 import { gsap, ScrollTrigger } from "gsap/all";
-import { mouseHoverEvent } from "../../Mouse";
 gsap.registerPlugin(ScrollTrigger)
 
 export default function HexagonProjekts(){
@@ -30,7 +29,7 @@ export default function HexagonProjekts(){
   }, []);
     return(
     <div className="hexpro-main">
-        <div onMouseOver={mouseHoverEvent} className="hexpro-container" ref={el}>
+        <div className="hexpro-container" ref={el}>
           <div>
             <Project name="TYREWATCHER" role="UI DESIGNER & PROJECT MANAGER" image={require("../../assets/images/tw/hero.png")} link='projects/tyrewatcher' />
           </div>

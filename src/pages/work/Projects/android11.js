@@ -4,6 +4,7 @@ export default function Android11(){
     return(
             <ProjectPage
                 color="linear-gradient(45deg,#8B0001,#C34632)"
+                colorFlat="#C34632"
                 heading="Android 11"
                 roles="Project & Design Manager"
                 hero={require("../../../assets/images/a11/hero.png")}

@@ -10,7 +10,7 @@ export default function ProjectPage (props) {
   }, []);
   return (
     <div className="container">
-      <ProjectHero heading={props.heading} headingLineTwo={props.roles} bgImg={props.hero} color={props.color}/>
+      <ProjectHero heading={props.heading} headingLineTwo={props.roles} bgImg={props.hero} color={props.color} colorFlat={props.colorFlat}/>
       <Text heading="Project Overview" contentA={props.overviewA} contentB={props.overviewB} contentC={props.overviewC} />
       <Images imgCont={props.Img} />
       <Text heading="Process" contentA={props.processA} contentB={props.processB} contentC={props.processC}/>

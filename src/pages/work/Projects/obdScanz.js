@@ -4,6 +4,7 @@ export default function OBDScanz(){
     return(
             <ProjectPagePhone
                 color="linear-gradient(45deg,#ff1900,#380a05)"
+                colorFlat="#ff1900"
                 heading="OBDScanz"
                 roles="Project Manager"
                 hero={require("../../../assets/images/obdsz/hero.png")}
