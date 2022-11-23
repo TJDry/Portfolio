@@ -7,14 +7,18 @@
 }
 .textArea{
   width: 100%;
+  h1, h3{
+    color: white;
+  }
 }
 .foot-container{
+    margin-top: 15em;
     padding: 170px 60px;
     position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
-    background: rgba(9, 8, 43, 0);
+    background: #242477;
     
     @media (max-width: 1000px) {
         padding: 70px 30px;

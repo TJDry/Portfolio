@@ -19,7 +19,7 @@ export default function ProjectPage (props) {
       <Text colorFlat={props.colorFlat} heading="CONCLUSION" contentA={props.conclusionA} contentB={props.conclusionB} contentC={props.conclusionC}/>
       <ImgContainer abrProject={props.abrProject} image1={props.image8} image2={props.image9} image3={props.image10}/>
       <NextProject name={props.nextName} role={props.nextRole} image={props.nextImage} link={props.nextPage} />
-      <Footer />
+      <Footer colorFlat={props.colorFlat}/>
     </div> 
   )
 }
