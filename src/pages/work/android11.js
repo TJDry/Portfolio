@@ -24,12 +24,8 @@ export default function Android11(){
                 
                 image1="hero"
 
-                image2=""
-                image3=""
-
                 image5="tablet0"
                 image6="tablet1"
-                image7=""
 
                 image8="tablet2"
                 
