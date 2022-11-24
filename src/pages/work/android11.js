@@ -20,6 +20,8 @@ export default function Android11(){
 
                 processC="I also created a dynamic resting page with multiple gradients to help promote a cleaner and more modern creative look, with gradient bubbles blurred out to create distance between the sharper time and the background colours"
                 
+                abrProject="a11"
+                
                 image1="hero"
 
                 image2=""
