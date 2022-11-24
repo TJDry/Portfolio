@@ -16,7 +16,7 @@ export default function Home() {
   // onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=>setIsHovering(false)}
   return (
     <div className="container">
-        <Hero heading="Hi, I'm Jayden Dry" headingLineTwo="Project & Design Manager" bgImg={require('../assets/images/background.jpg')}/>
+        <Hero heading="Hi, I'm Jayden Dry" headingLineTwo="Project & Design Manager" bgImg="url('/images/background.jpg')" />
         <Aboutus />
         {/* <Skills /> */}
         <Showreel />

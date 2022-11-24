@@ -7,21 +7,36 @@
 }
 .textArea{
   width: 100%;
+  h1, h3{
+    color: white;
+  }
+  h1{
+    font-size: 42pt;
+    font-weight: bolder;
+  }
+  h3{
+    font-size: 24pt;
+    font-weight: 300;
+  }
+  a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: all 1s ease-in-out;
+  }
 }
 .foot-container{
+    margin-top: 15em;
     padding: 170px 60px;
     position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
-    background: rgba(9, 8, 43, 0);
+    background: #242477;
+    opacity: 1;
     
     @media (max-width: 1000px) {
         padding: 70px 30px;
       }
-    @media (max-width: 620px) {
-      bottom: -70vh;
-    }
     .messageMe{
       text-decoration: none;
       display: contents;
