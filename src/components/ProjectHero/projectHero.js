@@ -8,7 +8,7 @@ import Hexagon from "../Hexagons/hexagon";
 export default function ProjectHero(props) {
   return (
    <div className="project-hero-container">
-    <Hexagon top="-10.5%" right="-15%" color={props.color}/>
+    <Hexagon top="-5.5%" right="-10%" color={props.color}/>
     <Socials />
     <DownArrow buttonText="VIEW PROJECT"/>
     <Navigation />
@@ -19,3 +19,5 @@ export default function ProjectHero(props) {
    </div>
   );
 }
+
+// top="-10.5%" right="-15%"
