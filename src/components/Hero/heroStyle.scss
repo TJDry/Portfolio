@@ -23,6 +23,13 @@
             font-size: 26pt;
         }
     }
+    @media (max-width: 400px) {
+        h1{
+            width: 100%;
+            font-size: 26pt;
+            color: white;
+        }
+    }
     h2{
         font-weight: 200;
         font-size: 24pt;
