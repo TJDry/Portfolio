@@ -6,7 +6,7 @@ const Aboutus = () =>{
     return(
         <div className='about-container'>
             <div className='flex'>
-                <div className='personal-photo'></div>
+                <div className='personal-photo' style={{backgroundImage: 'url("/images/me.JPG")'}}></div>
                     <div className="intro-container">
                         <h2>ABOUT ME</h2><br></br>
                         <p>Hi! I'm Jay<br></br>
@@ -29,3 +29,5 @@ const Aboutus = () =>{
     )
 }
 export default Aboutus
+
+

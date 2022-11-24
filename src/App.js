@@ -1,32 +1,16 @@
-import React, { useRef , useEffect, useState} from 'react'
+import React, { useRef , useEffect, lazy, Suspense} from 'react'
 import { Routes, Route } from "react-router-dom";
-import Home from './pages/home'
-import Tyrewatcher, { Android11 } from './pages/work/projectCollection';
 import './styles/master.scss'
-import {OBDScanz} from './pages/work/projectCollection';
-import {Gremio} from './pages/work/projectCollection';
-import {BattWatcher} from './pages/work/projectCollection';
 import { Mouse } from './Mouse';
-import { ScaleLoader } from 'react-spinners';
 
-const override = {
-  display: "inline",
-  margin: "0 auto",
-  position:"relative",
-  left: "50%",
-  top: "50vh",
-};
+const Home = lazy(()=> import('./pages/home'));
+const TyreWatcher = lazy(()=> import('./pages/work/tyreWatcher'));
+const OBDScanz = lazy(()=> import('./pages/work/obdScanz'));
+const BattWatcher = lazy(()=> import('./pages/work/battWatcher'));
+const Gremio = lazy(()=> import('./pages/work/gremio'));
+const Android11 = lazy(()=> import('./pages/work/android11'));
 
 function App(){
-  const [loading,setLoading] = useState(false);
-
-  useEffect(() =>{
-    setLoading(true)
-    setTimeout(()=>{
-      setLoading(false)
-    }, 2000)
-  }, [])
-
   const mouseRefs = useRef([]);
   // reset on re-renders
   mouseRefs.current = [];
@@ -49,23 +33,19 @@ function App(){
 
 return (  
       <div className="app">
-        {
-          loading ?
-          <ScaleLoader loading={loading} color={"#0075FF"} cssOverride={override} size={200} />
-          :
-
-        <>
         <Mouse ref={addMouseRef} delay={0}/>
-        <Routes> 
-          <Route path="/" element={<Home />} />
-          <Route path="/projects/tyrewatcher" element={<Tyrewatcher/>} />
-          <Route path="/projects/OBDScanz" element={<OBDScanz/>} />
-          <Route path="/projects/gremio" element={<Gremio/>} />
-          <Route path="/projects/battwatcher" element={<BattWatcher/>} />
-          <Route path="/projects/android11" element={<Android11/>} />
-        </Routes>
-        </>
-        }
+        <Suspense fallback={
+          <div className='Loading'></div>
+        }>
+          <Routes> 
+            <Route path="/" element={<Home />} />
+            <Route path="/projects/tyrewatcher" element={<TyreWatcher/>} />
+            <Route path="/projects/OBDScanz" element={<OBDScanz/>} />
+            <Route path="/projects/gremio" element={<Gremio/>} />
+            <Route path="/projects/battwatcher" element={<BattWatcher/>} />
+            <Route path="/projects/android11" element={<Android11/>} />
+          </Routes>{" "}
+        </Suspense>
       </div>
   );
 };

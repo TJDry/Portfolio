@@ -60,5 +60,9 @@
     height: 120%;
     shape-outside: repeating-linear-gradient(     
                      #0000 0 calc(var(--f) - 2px),      
-                     #000  0 var(--f));
+                     #000  0 var(--f)
+    );
+    @media only screen and (max-width: 814px) {
+      height: 0%;
+    }
   }

@@ -7,26 +7,26 @@ export const NavBarData = [
     {
         title:'TyreWatcher',
         path: 'projects/tyrewatcher',
-        cName: 'nav-text',
+        cName: 'nav-text tyreWatcher',
     },
     {
         title:'OBDScanz',
         path: 'projects/obdscanz',
-        cName: 'nav-text',
+        cName: 'nav-text obdScanz',
     },
     {
         title:'Gremio',
         path: 'projects/gremio',
-        cName: 'nav-text',
+        cName: 'nav-text gremio',
     },
     {
         title:'Battery Watcher',
         path: 'projects/battwatcher',
-        cName: 'nav-text',
+        cName: 'nav-text battWatcher',
     },
     {
         title:'Android 11',
         path: 'projects/android11',
-        cName: 'nav-text',
+        cName: 'nav-text android11',
     },
 ]
