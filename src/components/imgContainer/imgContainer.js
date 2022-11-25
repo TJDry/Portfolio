@@ -17,11 +17,13 @@ export default function ImgContainer(props){
                 <img src={process.env.PUBLIC_URL + `/images/${props.abrProject}/${props.image2}.png`} alt="imageGoesHere"></img>
             </div>
         )
-    } else {
+    } else if (props.image1 !== undefined) {
         return(
             <div className = {`imgContainer flex ${props.class}`}>
                 <img src={process.env.PUBLIC_URL + `/images/${props.abrProject}/${props.image1}.png`} alt="imageGoesHere"></img>
             </div> 
         )
+    } else {
+            return('')
     }
 }

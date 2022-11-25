@@ -3,8 +3,8 @@ import ProjectPage from "../projectTemplate";
 export default function Android11(){
     return(
             <ProjectPage
-                color="linear-gradient(45deg,#8B0001,#C34632)"
-                colorFlat="#C34632"
+                color="linear-gradient(45deg,#f20004,#C34632)"
+                colorFlat="#f20004"
                 heading="Android 11"
                 roles="Project & Design Manager"
 

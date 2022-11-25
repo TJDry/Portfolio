@@ -4,10 +4,10 @@
     --s: 180px;  /* size  */
     --m: 4px;    /* margin */
     --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
-    z-index: -10;
+    z-index: -5;
     width: 600px;
     rotate: (120deg);
-    transition: 2s;
+    transition: 1s ease-in-out;
     filter: drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.2)); 
   }
   
@@ -25,14 +25,13 @@
     background: linear-gradient(30deg,#0056A3,#242477);
     opacity: 100%;
     margin-bottom: calc(var(--m) - var(--s)*0.2885);
+    transition: all 0.2s ease-in-out;
   }
   .hex-container div:nth-child(4n+2) {
     opacity: 80%;
   }
   .hex-container div:hover{
-    opacity: 60%;
-    transition: 1s ease-in-out;
-    animation: animate 4s linear infinite;
+    filter: brightness(2);
   }
   .hex-container::before {
     content: "";
@@ -42,13 +41,4 @@
     shape-outside: repeating-linear-gradient(     
                      #0000 0 calc(var(--f) - 3px),      
                      #000  0 var(--f));
-  }
-
-  @keyframes animate{
-    0%{
-      filter: hue-rotate(0deg);
-    }
-    100%{
-      filter: hue-rotate(360deg);
-    }
   }

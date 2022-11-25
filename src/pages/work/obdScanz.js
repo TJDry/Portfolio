@@ -12,16 +12,16 @@ export default function OBDScanz(){
                 uses our OBD2 Scanner to connect your
                 phone to the car via Bluetooth and manage the codes, test various aspects of your vehicle and help
                 to maintain your car & keep it working at its full potential. OBD2 is the physical port where devices
-                can connect to a car's ECU and provide insight into errors and statistics present in the ECU. Our tools
-                utilise the port and decode specific data through calculations named PIDs."
+                can connect to a car's ECU and provide insight into errors and statistics present in the ECU."
                 
-                overviewB="As I was handed this
+                overviewB="Our tools utilise the port and decode specific data through calculations named PIDs.As I was handed this
                 project halfway, existing designs for the app were unable to be modified and thus having to stick
-                with the current design style for the new screens I needed to create to finish the app's designs. It's a
-                large-scale app with many APIs and calculations that need to be functional before release. The
+                with the current design style for the new screens I needed to create to finish the app's designs. "
+
+                overviewC="It's a
+                large-scale app with many APIs and calculations that need to be functional before release.The
                 complexity of this app makes it hard to communicate and clarify functionality with the outsourced
                 dev team responsible to produce the app."
-
 
                 processA="It has been a long and hard year long project, with over 40 APK builds and adjustments."
 

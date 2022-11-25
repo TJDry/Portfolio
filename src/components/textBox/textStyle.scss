@@ -15,43 +15,43 @@
     .flex{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: flex-start;
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
     }
 
     .text-container{
-            text-overflow: wrap;
-            padding-top: 2em;
+            overflow-wrap: break-word;
+            padding: 2em;
             text-align: left;
-            width: 100%;
-            max-width: 500px;
-            font-weight: 100;            
+            font-weight: 100;         
         }
         p{
             font-size: 13pt;
-            padding-left: 2.5em;
             line-height: 2;
-            margin-right: 2.5em;
-            margin-bottom: 1em;
-            @media (max-width: 600px) {
+            // margin-right: 2.5em;
+            // margin-bottom: 1em;
+            @media (max-width: 800px) {
                 padding: 0em;
                 margin-right: 0;
-                text-align: center;
+                text-align: left;
             }
         }
         h3{
             font-size: 14pt;
-            padding-left: 2.5em;
-            line-height: 2;
-            margin-right: 2.5em;
+            // padding-left: 2.5em;
+            // line-height: 2;
+            // margin-right: 2.5em;
             text-transform: uppercase;
-            @media (max-width: 600px) {
+            @media (max-width: 800px) {
                 padding: 0em;
                 margin-right: 0;
                 text-align: center;
             }
         }
-        @media (max-width: 600px) {
+        @media (max-width: 1900px) {
             width: 25%;
             min-width: 100%;
             padding: 0em;

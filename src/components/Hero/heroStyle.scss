@@ -15,6 +15,7 @@
         text-overflow: wrap;
         width: 400px;
         color: #11224d;
+        z-index: 10;
         // -webkit-text-stroke: 1px #FFFFFF;
     }
     @media (max-width: 600px) {
@@ -37,11 +38,13 @@
     }
     .lineTwo{
         color: #2791F3;
+        z-index: 10;
     }
     .hero-image{
         position: absolute;
         left: 10%;
         top: 2%;
+        z-index: 10;
     }
     .backgroundImage, .backgroundOverlay{
         z-index: -10;

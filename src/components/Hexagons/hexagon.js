@@ -24,7 +24,7 @@ export default function Hexagon(props){
     //   return () => ctx.revert();
     // }, []);
     return(
-    <div className="hex-main" style={{top:`${props.top}`,right:`${props.right}`}}>
+    <div className="hex-main" style={{top:`${props.top}`,right:`${props.right}`,zIndex:`${props.zIndex}`}}>
         <div className="hex-container">
             <div style={{background:`${props.color}`}}></div>
             <div style={{background:`${props.color}`}}></div>
