@@ -37,13 +37,14 @@ body{
 }
 .mouse{
     pointer-events: none;
+    transform-style: preserve-3d;
     position: fixed;
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 50%;
     mix-blend-mode: difference;
     // transition: transform 0.1s ease;
     // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
-    background-color: rgb(214, 76, 22);
+    background-color: rgb(201, 124, 24);
     clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
     --webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
     z-index: 10;
