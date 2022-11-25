@@ -2,6 +2,7 @@
     z-index: 10;
     position: relative;
     right: 0;
+    bottom: 20%;
     text-align: right;
     float: right;
     display: inline-grid;
@@ -75,7 +76,7 @@
     position: relative;
     align-items: center;
     text-align: left;
-    top: 50%;
+    top: 100%;
     justify-content: center;
     letter-spacing: 1pt;
     @media (max-width: 600px) {
