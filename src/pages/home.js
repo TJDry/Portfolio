@@ -24,7 +24,6 @@ export default function Home() {
         <HexagonProjekts />
         </div>
         <Footer />
-        <Hexagon top="65%" right="-20%"/>
     </div>
   )
 }
