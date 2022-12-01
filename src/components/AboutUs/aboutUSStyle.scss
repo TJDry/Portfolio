@@ -1,5 +1,4 @@
 .about-container{
-    padding: 50px 0px;
     position: relative;
     width: 100%;
     text-align: center;
@@ -12,6 +11,7 @@
         justify-content: center;
         flex-wrap: nowrap;
         flex-direction: row-reverse;
+        align-items: center;
         @media (max-width: 800px) {
             padding: 0em;
             flex-wrap: wrap;
@@ -30,7 +30,7 @@
             }
         }
         .intro-container{
-            padding-right: 11em;
+            padding-right: 9em;
             text-align: left;
             width: 50%;
             position: relative;

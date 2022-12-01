@@ -1,18 +1,19 @@
 .border-container{
-    padding: 20px 30px;
+    padding: 50px 0px;
     width: 100%;
     text-align: center;
     align-items: center;
+    justify-content: center;
     display: inline-block;
     h2{
         padding-left: 2.5em;
         text-align: left;
-        font-size: 18pt;
+        font-size: 20pt;
     }
     @media (max-width: 1000px) {
-        padding: 28px;
       }
     .flex{
+        padding: 50px 0px;
         display: flex;
         justify-content: center;
         flex-wrap: nowrap;
@@ -24,13 +25,14 @@
 
     .text-container{
             overflow-wrap: break-word;
-            padding: 2em;
+            padding: 3em;
             text-align: left;
             font-weight: 100;         
         }
         p{
-            font-size: 13pt;
+            font-size: 14pt;
             line-height: 2;
+            padding-left: 2.5em;
             // margin-right: 2.5em;
             // margin-bottom: 1em;
             @media (max-width: 800px) {
@@ -40,9 +42,11 @@
             }
         }
         h3{
-            font-size: 14pt;
+            font-size: 15pt;
             // padding-left: 2.5em;
             // line-height: 2;
+            margin-bottom: 1em;
+            padding-left: 2em;
             // margin-right: 2.5em;
             text-transform: uppercase;
             @media (max-width: 800px) {
@@ -50,11 +54,5 @@
                 margin-right: 0;
                 text-align: center;
             }
-        }
-        @media (max-width: 1900px) {
-            width: 25%;
-            min-width: 100%;
-            padding: 0em;
-            margin-right: 0;
         }
     }

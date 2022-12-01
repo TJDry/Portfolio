@@ -1,5 +1,5 @@
 *{
-    font-family: $second-font;
+    font-family: var(--second-font);
     padding: 0;
     box-sizing: border-box;
     margin: 0;
@@ -31,8 +31,8 @@ html,body{
     padding: 0;
 }
 body{
-    background: $background-colour;
-    color: $text-colour;
+    background: var(--background-colour);
+    color: var(--text-colour);
     scroll-behavior: smooth;
 }
 .mouse{
@@ -44,7 +44,7 @@ body{
     mix-blend-mode: difference;
     // transition: transform 0.1s ease;
     // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
-    background-color: rgb(201, 124, 24);
+    background-color: var(--accent-colour);
     clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
     --webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
     z-index: 10;
@@ -53,30 +53,30 @@ body{
     }
 }
 Link{
-    color: $text-colour;
+    color: var(--text-colour);
 }
 h1{
-    font-family: $primary-font;
+    font-family: var(--primary-font);
     font-size: 30pt;
     font-weight: 400;
-    color: $text-colour;
+    color: var(--text-colour);
 }
 
 p{
     font-size: 14pt;
     line-height: 2;
-    color: $text-colour;
+    color: var(--text-colour);
     padding-right: 2.5em;
 }
 h3{
-    color: $text-colour;
+    color: var(--text-colour);
 }
 .loading{
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: $accent-colour;
+    background-color: var(--accent-colour);
     justify-items: center;
     transition: all .8s ease;
     animation: expand .8s ease forwards;

@@ -18,10 +18,10 @@
         scale: 1.1;
         h3{
             font-weight: bold;
-            color: #242477;
+            color: var(--accent-colour);
         }
         .icon{
-            color: #242477;
+            color: var(--accent-colour);
         }
     }
     h3{
@@ -42,7 +42,7 @@
         width: 3.5rem;
         overflow: hidden;
         height: 3.5rem;
-        color: white;
+        color: var(--text-colour);
         transition: scale 2s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
         @media (max-width: 400px) {
@@ -108,5 +108,5 @@
     opacity: 1;
     scale: 1.1;
     font-weight: bold;
-    color: #242477;
+    color: var(--accent-colour);
 }

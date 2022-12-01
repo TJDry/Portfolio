@@ -3,7 +3,9 @@
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    transition: all 1s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 2s cubic-bezier(0.47, 0, 0.745, 0.715);
+    opacity: 0.3;
+    filter: grayscale(100);
     .project-overlay{
         position: absolute;
         top: 0;
@@ -15,7 +17,7 @@
         width: 100%;
         opacity: 0;
         color: white;
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0.452),rgba(34, 34, 34, 0.808));
+        background: linear-gradient(180deg,rgba(18, 13, 44, 0.452),rgba(35, 36, 43, 0.808));
     }
     .project-overlay:hover{
         opacity: 1;
@@ -24,7 +26,7 @@
         font-size: 36pt;
         position: absolute;
         top: 45%;
-        color: whitesmoke;
+        color: var(--background-colour);
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -37,7 +39,7 @@
         font-size: 14pt;
         position: absolute;
         top: 60%;
-        color: whitesmoke;
+        color: var(--background-colour);
         left: 50%;
         font-weight: 100;
         -webkit-transform: translate(-50%, -50%);
@@ -48,6 +50,7 @@
     }
 }
 .project-container:hover{
-    filter: brightness(110%) drop-shadow(20%, 8px 8px 10px rgb(1, 1, 1));
+    filter: brightness(110%);
     scale: 1.1;
+    opacity: 1;
 }
