@@ -1,7 +1,7 @@
 export const NavBarData = [
     {
         title:'Home',
-        path: '/',
+        path: '',
         cName: 'nav-text',
     },
     {

@@ -1,17 +1,27 @@
 .nextProject-container{
-    padding: 200px 80px;
+    padding: 5em;
     position: relative;
+    height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     @media (max-width: 1000px) {
         padding: 70px 30px;
       }
+    .nextProject{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: grayscale(100%);
+    }
     h1{
         font-size: 28pt;
         color: white;
