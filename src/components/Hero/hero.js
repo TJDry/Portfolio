@@ -8,8 +8,8 @@ import Hexagon from "../Hexagons/hexagon";
 export default function Hero(props) {
   return (
    <div className="hero-container">
-    <Hexagon />  
-    <Link to="/"><img src={process.env.PUBLIC_URL + "/images/BrandMarkWhite.png"} width="48" className="hero-image" alt="Jayden Dry"></img></Link>
+    <Hexagon color={props.color}/>  
+    <Link to="/"><img src={process.env.PUBLIC_URL + "/images/BrandMarkFullColour.png"} width="48" className="hero-image" alt="Jayden Dry"></img></Link>
     <h1>{props.heading}</h1><h1 className="lineTwo" style={{color: `${props.colorFlat}`}}>{props.headingLineTwo}</h1>
 
     <Socials />

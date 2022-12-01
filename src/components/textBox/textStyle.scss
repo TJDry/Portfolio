@@ -25,7 +25,7 @@
 
     .text-container{
             overflow-wrap: break-word;
-            padding: 2em;
+            padding: 3em;
             text-align: left;
             font-weight: 100;         
         }
@@ -46,6 +46,7 @@
             // padding-left: 2.5em;
             // line-height: 2;
             margin-bottom: 1em;
+            padding-left: 2em;
             // margin-right: 2.5em;
             text-transform: uppercase;
             @media (max-width: 800px) {

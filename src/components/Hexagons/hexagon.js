@@ -47,6 +47,7 @@ export default function Hexagon(props){
             <div style={{background:`${props.color}`}}></div>
             <div style={{background:`${props.color}`}}></div>
             <div style={{background:`${props.color}`}}></div>
+            
 
         </div>
     </div>
