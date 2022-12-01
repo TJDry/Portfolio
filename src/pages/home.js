@@ -4,7 +4,6 @@ import Footer from '../components/Footer/footer'
 import Hero from '../components/Hero/hero'
 import Aboutus from '../components/AboutUs/aboutUs'
 // import Skills from '../components/SkillCard/skill'
-import Hexagon from '../components/Hexagons/hexagon'
 import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 import Showreel from '../components/Showreel/showreel'
 export default function Home() {
