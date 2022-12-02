@@ -106,7 +106,12 @@
 }
 .down-container:hover{
     opacity: 1;
-    scale: 1.1;
-    font-weight: bold;
-    color: var(--accent-colour);
+    scale: 1.05;
+    h3{
+        font-weight: bold;
+        color: var(--accent-colour);
+    }
+    h4{
+        color: var(--accent-colour);
+    }
 }

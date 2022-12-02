@@ -53,6 +53,7 @@
   }
   .hexpro-container div:hover{
     transition: 0.1s ease-in-out;
+    transform: scale(1.02);
   }
   .hexpro-container::before {
     content: "";
