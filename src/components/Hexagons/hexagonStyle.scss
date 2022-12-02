@@ -29,6 +29,9 @@
     opacity: 100%;
     margin-bottom: calc(var(--m) - var(--s)*0.2885);
     transition: all 0.2s ease-in-out;
+    @media (max-width: 400px){
+      opacity: 30%;
+    }
   }
   .hex-container div:nth-child(4n+2) {
     opacity: 80%;
