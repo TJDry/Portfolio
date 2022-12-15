@@ -29,6 +29,12 @@
     opacity: 100%;
     margin-bottom: calc(var(--m) - var(--s)*0.2885);
     transition: all 0.2s ease-in-out;
+    animation: fade-animate 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) alternate;
+    @for $x from 2 through 21 {
+        &:nth-child(#{$x}) {
+          animation-delay: 200ms * ($x - 1);
+    }
+  }
     @media (max-width: 400px){
       opacity: 30%;
     }
@@ -47,4 +53,15 @@
     shape-outside: repeating-linear-gradient(     
                      #0000 0 calc(var(--f) - 3px),      
                      #000  0 var(--f));
+  }
+
+  @keyframes hex-fade-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }

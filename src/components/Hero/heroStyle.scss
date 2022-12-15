@@ -18,6 +18,9 @@
         color: var(--accent-colour);
         z-index: 10;
         position: relative;
+        transition: all 2s ease-in-out;
+        animation-delay: 200ms;
+        animation: fade-animate 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) alternate;
         // -webkit-text-stroke: 1px #FFFFFF;
     }
     @media (max-width: 600px) {
@@ -68,3 +71,14 @@
         }
     }
 }
+
+@keyframes fade-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

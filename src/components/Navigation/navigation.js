@@ -2,7 +2,6 @@ import React, { useState , useRef } from "react";
 import { Link } from "react-router-dom";
 import './navigationStyle.scss';
 import { NavBarData } from "./NavBarData";
-import { SocialsMinimal } from "../social/socials";
 
 export default function Navigation(){
     const [isOpen,setIsOpen] = useState(false);
@@ -41,14 +40,14 @@ export default function Navigation(){
                                 opacity: "0"
                             }}
                             >
-                                    <Link to={`/${item.path}`}>
-                                        <span>{item.title}</span>
-                                    </Link>
+                                <Link to={`/${item.path}`}>
+                                    <span>{item.title}</span>
+                                </Link>
                             </li>
                             </>
                         );
                     })}
-                    </ul>
+                </ul>
             </div>
         </>
     );

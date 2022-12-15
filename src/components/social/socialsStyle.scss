@@ -10,9 +10,16 @@
     a{
         padding: 1em;
         display: flow-root;
-        transition: scale 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 1s ease-in-out;
+        animation: fade-animate 3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
         // background-color: rgba(0,0,0,0.5);
+        @for $x from 2 through 5 {
+            &:nth-child(#{$x}) {
+              animation-delay: 100ms * ($x - 1);
+        }
     }
+    }
+    
     a:hover{
         opacity: 1;
         scale: 1.1;
@@ -88,6 +95,8 @@
     cursor: pointer;
     padding: 16px;
     transition: scale 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1s ease-in-out;
+    animation: fade-animate 3s cubic-bezier(0.895, 0.03, 0.685, 0.22) alternate;
     h3{
         display: inline;
         font-weight: 100;
@@ -115,3 +124,14 @@
         color: var(--accent-colour);
     }
 }
+
+@keyframes fade-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

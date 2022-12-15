@@ -42,21 +42,21 @@ export function DownArrow(props){
 }
 export function SocialsMinimal(props){
     return (
-        <div className="social-container minimal" style={{top:`${props.top}`,right:`${props.right}`}}>
-            <a href="https://behance.net/jay" target="rel=noopener">
+        <div className= {`social-container minimal`} style={{top:`${props.top}`,right:`${props.right}`}}>
+            <a href="https://behance.net/jay" target="rel=noopener" className={`${props.class}`}>
                 <Icon icon="bxl:behance" className={`icon ${props.class}`}/>
             </a>
             
-            <a href="https://github.com/Jaydendry"  target="rel=noopener">                
+            <a href="https://github.com/Jaydendry"  target="rel=noopener" className={`${props.class}`}>                
             <Icon icon="bxl:github" className='icon'/>
             </a>
-            <a href="https://instagram.com/jayden.dry"  target="rel=noopener">                
+            <a href="https://instagram.com/jayden.dry"  target="rel=noopener" className={`${props.class}`}>                
                 <Icon icon="bxl:instagram"  className={`icon ${props.class}`} />
             </a>
-            <a href="https://linkedin.com/in/jaydendry"  target="rel=noopener">
+            <a href="https://linkedin.com/in/jaydendry"  target="rel=noopener" className={`${props.class}`}>
                 <Icon icon="bxl:linkedin" className={`icon ${props.class}`}/>
             </a>
-            <a href={Resume}  target="_blank" rel="noreferrer">
+            <a href={Resume}  target="_blank" rel="noreferrer" className={`${props.class}`}>
                 <Icon icon="carbon:document" className={`icon ${props.class}`}/>
             </a>
         </div>
