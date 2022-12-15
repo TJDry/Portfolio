@@ -33,7 +33,7 @@ export default function Navigation(){
                             className={item.cName}
                             style={isOpen 
                             ? {
-                                width: "50%",
+                                width: "40%",
                                 opacity: "1",
                             }:{
                                 width: "0",

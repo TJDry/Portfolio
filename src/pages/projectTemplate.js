@@ -2,14 +2,15 @@ import React, {useEffect} from 'react'
 import Text from '../components/textBox/text'
 import NextProject from '../components/nextProject/nextProject'
 import Hero from '../components/Hero/hero'
-import Footer from '../components/Footer/footer'
 import ImgContainer from '../components/imgContainer/imgContainer'
+import { Logo } from '../assets/icons'
 export default function ProjectPage (props) {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
   return (
     <div className="container">
+      <Logo />
       <Hero heading={props.heading} headingLineTwo={props.roles} bgImg={props.hero} color={props.color} colorFlat={props.colorFlat}/>
       <ImgContainer abrProject={props.abrProject} image1={props.image1}/>
       <Text colorFlat={props.colorFlat} heading="PROJECT OVERVIEW" contentA={props.overviewA} contentB={props.overviewB} contentC={props.overviewC}/>
@@ -19,7 +20,6 @@ export default function ProjectPage (props) {
       <Text colorFlat={props.colorFlat} heading="CONCLUSION" contentA={props.conclusionA} contentB={props.conclusionB} contentC={props.conclusionC}/>
       <ImgContainer abrProject={props.abrProject} image1={props.image8} image2={props.image9} image3={props.image10}/>
       <NextProject name={props.nextName} role={props.nextRole} image={props.nextImage} link={props.nextPage} />
-      <Footer colorFlat={props.colorFlat}/>
     </div> 
   )
 }

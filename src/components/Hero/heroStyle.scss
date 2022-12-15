@@ -45,31 +45,6 @@
         color: var(--text-colour);
         z-index: 10;
     }
-    .hero-image{
-        position: absolute;
-        left: 10%;
-        top: 2%;
-        z-index: 10;
-    }
-    .backgroundImage, .backgroundOverlay{
-        z-index: -10;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        object-fit: cover;
-    }
-    .backgroundImage{
-        filter: blur(10px);
-        opacity:0;
-        width: 100vw;
-        height: 100vh;
-        scale: 1.01;
-        @media (max-width: 600px) {
-            opacity: 0;
-        }
-    }
 }
 
 @keyframes fade-animate {
