@@ -24,10 +24,10 @@ export default function Android11(){
                 
                 image1="hero"
 
-                image5="tablet0"
-                image6="tablet1"
+                image2="tablet0"
+                image3="tablet1"
 
-                image8="tablet2"
+                image4="tablet2"
                 
 
 

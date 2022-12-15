@@ -8,33 +8,24 @@ export default function Socials(props){
         <div className="social-container" style={{top:`${props.top}`,right:`${props.right}`}}>
             <a href="https://behance.net/jay" target="rel=noopener">
                 <h3>BEHANCE</h3>
-                <Icon icon="bxl:behance" className='icon' style={{
-            }} />
+                <Icon icon="bxl:behance" className='icon'/>
             </a>
             
             <a href="https://github.com/Jaydendry"  target="rel=noopener">
                 <h3>GITHUB</h3>
-                <Icon icon="bxl:github" className='icon'  style={{
-            }} />
+                <Icon icon="bxl:github" className='icon'/>
             </a>
             <a href="https://instagram.com/jayden.dry"  target="rel=noopener">
                 <h3>INSTAGRAM</h3>
-                <Icon icon="bxl:instagram"  className='icon' style={{
-            }} />
+                <Icon icon="bxl:instagram"  className='icon'/>
             </a>
             <a href="https://linkedin.com/in/jaydendry"  target="rel=noopener">
                 <h3>LINKEDIN</h3>
-                <Icon icon="bxl:linkedin" className='icon'  style={{
-                    // 'backgroundColor': 'rgba(0,255,0,0.8)',
-                    // "clip-path": 'polygon(0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5)'
-            }} />
+                <Icon icon="bxl:linkedin" className='icon'/>
             </a>
             <a href={Resume}  target="_blank" rel="noreferrer">
                 <h3>RESUME</h3>
-                <Icon icon="carbon:document" className='icon'  style={{
-                    // 'backgroundColor': 'rgba(0,255,0,0.8)',
-                    // "clip-path": 'polygon(0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5)'
-            }} />
+                <Icon icon="carbon:document" className='icon' />
             </a>
         </div>
     )
@@ -53,29 +44,20 @@ export function SocialsMinimal(props){
     return (
         <div className="social-container minimal" style={{top:`${props.top}`,right:`${props.right}`}}>
             <a href="https://behance.net/jay" target="rel=noopener">
-                <Icon icon="bxl:behance" className='icon' style={{
-            }} />
+                <Icon icon="bxl:behance" className={`icon ${props.class}`}/>
             </a>
             
             <a href="https://github.com/Jaydendry"  target="rel=noopener">                
-            <Icon icon="bxl:github" className='icon'  style={{
-            }} />
+            <Icon icon="bxl:github" className='icon'/>
             </a>
             <a href="https://instagram.com/jayden.dry"  target="rel=noopener">                
-                <Icon icon="bxl:instagram"  className='icon' style={{
-            }} />
+                <Icon icon="bxl:instagram"  className={`icon ${props.class}`} />
             </a>
             <a href="https://linkedin.com/in/jaydendry"  target="rel=noopener">
-                <Icon icon="bxl:linkedin" className='icon'  style={{
-                    // 'backgroundColor': 'rgba(0,255,0,0.8)',
-                    // "clip-path": 'polygon(0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5)'
-            }} />
+                <Icon icon="bxl:linkedin" className={`icon ${props.class}`}/>
             </a>
             <a href={Resume}  target="_blank" rel="noreferrer">
-                <Icon icon="carbon:document" className='icon'  style={{
-                    // 'backgroundColor': 'rgba(0,255,0,0.8)',
-                    // "clip-path": 'polygon(0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5)'
-            }} />
+                <Icon icon="carbon:document" className={`icon ${props.class}`}/>
             </a>
         </div>
     )
