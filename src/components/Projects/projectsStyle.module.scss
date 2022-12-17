@@ -1,4 +1,4 @@
-.project-container{
+.projectContainer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -6,7 +6,7 @@
     transition: all 2s cubic-bezier(0.47, 0, 0.745, 0.715);
     opacity: 0.3;
     filter: grayscale(100);
-    .project-overlay{
+    .projectOverlay{
         position: absolute;
         top: 0;
         bottom: 0;
@@ -19,7 +19,7 @@
         color: white;
         background: linear-gradient(180deg,rgba(18, 13, 44, 0.452),rgba(35, 36, 43, 0.808));
     }
-    .project-overlay:hover{
+    .projectOverlay:hover{
         opacity: 1;
     }
     h1{
@@ -49,7 +49,7 @@
         letter-spacing: 0.8pt;
     }
 }
-.project-container:hover{
+.projectContainer:hover{
     filter: brightness(110%);
     scale: 1.1;
     opacity: 1;

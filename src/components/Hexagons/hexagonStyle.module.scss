@@ -1,4 +1,4 @@
-.hex-main {
+.hexMain {
     position: absolute;
     display:flex;
     --s: 180px;  /* size  */
@@ -13,11 +13,11 @@
     right: 0;
   }
   
-  .hex-container {
+  .hexContainer {
     font-size: 0; /*disable white space between inline block element */
   }
   
-  .hex-container div {
+  .hexContainer div {
     width: var(--s);
     margin: var(--m);
     height: calc(var(--s)*1.1547); 
@@ -39,13 +39,13 @@
       opacity: 30%;
     }
   }
-  .hex-container div:nth-child(4n+2) {
+  .hexContainer div:nth-child(4n+2) {
     opacity: 80%;
   }
-  .hex-container div:hover{
+  .hexContainer div:hover{
     filter: brightness(2);
   }
-  .hex-container::before {
+  .hexContainer::before {
     content: "";
     width: calc(var(--s)/2 + var(--m));
     float: left;
