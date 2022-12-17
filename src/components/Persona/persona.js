@@ -1,13 +1,12 @@
 import React from 'react';
-import TextBox from '../textBox/text';
-import './aboutUSStyle.scss'
+import './personaStyle.scss'
 
-export default Persona = () =>{
+export const Persona = (props) =>{
     return(
         <div className='persona-container'>
             <div className='flex'>
-                <div className='personal-photo' style={{backgroundImage: `url("/images/${props.personaImage}.JPG")`}}></div>
-                    <div className="intro-container">
+                <div className='persona-photo' style={{backgroundImage: `url("/images/persona/${props.personaImage}.JPG")`}}></div>
+                    <div className="persona-intro-container">
                         <h2>{props.personaName}</h2><br></br>
                         <p>{props.personaBio}</p>
                 </div>
@@ -16,4 +15,5 @@ export default Persona = () =>{
     )
 }
 
+export default Persona;
 
