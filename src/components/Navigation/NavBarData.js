@@ -2,31 +2,31 @@ export const NavBarData = [
     {
         title:'Home',
         path: '',
-        cName: 'nav-text',
+        cName: ``,
     },
     {
         title:'TyreWatcher',
         path: 'projects/tyrewatcher',
-        cName: 'nav-text tyreWatcher',
+        cName: `tyreWatcher`,
     },
     {
         title:'OBDScanz',
         path: 'projects/obdscanz',
-        cName: 'nav-text obdScanz',
+        cName: `obdScanz`,
     },
     {
         title:'Gremio',
         path: 'projects/gremio',
-        cName: 'nav-text gremio',
+        cName: `gremio`,
     },
     {
         title:'Battery Watcher',
         path: 'projects/battwatcher',
-        cName: 'nav-text battWatcher',
+        cName: `battWatcher`,
     },
     {
         title:'Android 11',
         path: 'projects/android11',
-        cName: 'nav-text android11',
+        cName: `android11`,
     },
 ]

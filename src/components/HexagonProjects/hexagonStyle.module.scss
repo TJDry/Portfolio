@@ -1,4 +1,4 @@
-.hexpro-main {
+.hexproMain {
   display: grid;
   grid-template-columns: repeat(auto-fit,calc(var(--s) + 2*var(--mh)));
   z-index: 20;
@@ -32,12 +32,12 @@
 
   }
 
-  .hexpro-container {
+  .hexproContainer {
     font-size: 0;
     grid-column: 1/-1;
   }
   
-  .hexpro-container div {
+  .hexproContainer div {
     width: var(--s);
     margin: var(--mv) var(--mh);
     height: calc(var(--s)*var(--r)); 
@@ -51,11 +51,11 @@
       margin-bottom: 1em;
     } 
   }
-  .hexpro-container div:hover{
+  .hexproContainer div:hover{
     transition: 0.1s ease-in-out;
     transform: scale(1.02);
   }
-  .hexpro-container::before {
+  .hexproContainer::before {
     content: "";
     width: calc(var(--s)/2 + var(--mh));
     float: left;

@@ -5,6 +5,9 @@ import Hero from '../components/Hero/hero'
 import ImgContainer from '../components/imgContainer/imgContainer'
 import { Logo } from '../assets/icons'
 import Persona from '../components/Persona/persona'
+import Footer from '../components/Footer/footer'
+import Navigation from '../components/Navigation/navigation'
+import Hexagon from '../components/Hexagons/hexagon'
 export default function ProjectPage (props) {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -12,6 +15,8 @@ export default function ProjectPage (props) {
   return (
     <div className="container">
       <Logo />
+      <Navigation />
+      <Hexagon color={props.color}/>  
       <Hero heading={props.heading} headingLineTwo={props.roles} bgImg={props.hero} color={props.color} colorFlat={props.colorFlat}/>
       <ImgContainer abrProject={props.abrProject} image1={props.image1}/>
       <Text colorFlat={props.colorFlat} heading="PROJECT OVERVIEW" contentA={props.overviewA} contentB={props.overviewB} contentC={props.overviewC}/>
@@ -24,6 +29,7 @@ export default function ProjectPage (props) {
       <Persona />
       <Persona />
       <NextProject name={props.nextName} role={props.nextRole} image={props.nextImage} link={props.nextPage} />
+      <Footer />
     </div> 
   )
 }

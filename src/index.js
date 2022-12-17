@@ -2,7 +2,6 @@ import React from 'react'
 import * as ReactDOMClient from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App'
-import Footer from './components/Footer/footer';
 import './styles/master.scss'
 const container = document.querySelector('#root');
 const root = ReactDOMClient.createRoot(container)
@@ -15,6 +14,5 @@ root.render(
             <Route path="*" element={ <App /> }></Route>
           </Routes>
         </BrowserRouter>
-      <Footer />
     </React.StrictMode>,
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import './hexagonStyle.scss';
+import styles from './hexagonStyle.module.scss';
 // import { useRef,useLayoutEffect } from "react";
 // import { gsap } from "gsap/all";
 

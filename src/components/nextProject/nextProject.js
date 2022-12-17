@@ -1,5 +1,5 @@
 import React from 'react';
-import './nextProject.scss'
+import styles from './nextProject.module.scss'
 import { Link } from 'react-router-dom';
 
 export default function nextProject(props) {

@@ -1,8 +1,8 @@
-.social-container{
+.socialContainer{
     z-index: 10;
-    position: relative;
-    right: 0;
-    bottom: 0%;
+    position: absolute;
+    right: 11vw;
+    top: 40vh;
     text-align: right;
     float: right;
     display: inline-grid;
@@ -41,11 +41,11 @@
         -webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
                 clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
         
-        background-color: rgba(#000000, $alpha: 0.15);
+        background-color: rgba(#000000, $alpha: 0.1);
         margin-left: 1em;
         position: relative;
         top: 20px;
-        padding: 8%;
+        padding: 1em;
         width: 3.5rem;
         overflow: hidden;
         height: 3.5rem;
@@ -71,6 +71,12 @@
 
     }
 }
+.socialMinimalContainer{
+    position: relative;
+    top: 0;
+    right: 1vw;
+}
+
 
 .minimal{
     display: flex;
@@ -79,21 +85,22 @@
     letter-spacing: 0;
 }
 
-.arrow-container{
+.arrowContainer{
     position: relative;
     align-items: center;
     text-align: left;
-    top: 100%;
     justify-content: center;
     letter-spacing: 1pt;
     @media (max-width: 600px) {
         display: none;
     }
 }
-.down-container{
+.downContainer{
     z-index: 1;
     cursor: pointer;
     padding: 16px;
+    margin-top: 15em;
+    display: inline-block;
     transition: scale 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: all 1s ease-in-out;
     animation: fade-animate 3s cubic-bezier(0.895, 0.03, 0.685, 0.22) alternate;
@@ -113,7 +120,7 @@
         text-align: center;
     }
 }
-.down-container:hover{
+.downContainer:hover{
     opacity: 1;
     scale: 1.05;
     h3{

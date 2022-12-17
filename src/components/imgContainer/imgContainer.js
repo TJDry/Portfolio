@@ -1,5 +1,5 @@
 import React from 'react';
-import './imgContainerStyle.scss'
+import styles from './imgContainerStyle.module.scss'
 
 export default function ImgContainer(props){
     if (props.image3 !== undefined) {

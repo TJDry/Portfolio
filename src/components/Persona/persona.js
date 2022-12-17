@@ -1,5 +1,5 @@
 import React from 'react';
-import './personaStyle.scss'
+import styles from './personaStyle.module.scss'
 
 export const Persona = (props) =>{
     return(

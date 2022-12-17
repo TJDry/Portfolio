@@ -1,20 +1,17 @@
 import React from 'react';
 import TextBox from '../textBox/text';
-import './aboutUSStyle.scss'
+import styles from './aboutUSStyle.module.scss'
 
 const Aboutus = () =>{
     return(
-        <div className='about-container'>
-            <div className='flex'>
-                <div className='personal-photo' style={{backgroundImage: 'url("/images/me.JPG")'}}></div>
-                    <div className="intro-container">
+        <div className={styles.aboutContainer}>
+            <div className={styles.flex}>
+                <div className={styles.personalPhoto} style={{backgroundImage: 'url("/images/me.JPG")'}}></div>
+                    <div className={styles.introContainer}>
                         <h2>ABOUT ME</h2><br></br>
                         <p>Hi! I'm Jay<br></br>
                             I'm passionate about everything from Database design to Colour Psychology (bit of a wide spectrum hey).
                             I enjoy being pushed to the limits & am working towards changing the world one solution at a time</p>
-                        {/* <button>
-                            ABOUT ME<h4>→</h4>
-                        </button> */}
                 </div>
             </div>
             <TextBox

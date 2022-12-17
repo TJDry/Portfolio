@@ -1,6 +1,6 @@
 import React, { useState , useRef } from "react";
 import { Link } from "react-router-dom";
-import './navigationStyle.scss';
+import styles from './navigationStyle.module.scss';
 import { NavBarData } from "./NavBarData";
 
 export default function Navigation(){
@@ -9,13 +9,11 @@ export default function Navigation(){
     const openRef = useRef();
     return(
         <>
-            <div className="navigation-container" onClick={() => setIsOpen(!isOpen)}>
-                <div className={isOpen ? 'nav-btn active' : 'nav-btn'}></div>
+            <div className={styles.navigationContainer} onClick={() => setIsOpen(!isOpen)}>
+                <div className={isOpen ? `${styles.navBtn} ${styles.active}` : `${styles.navBtn}`}></div>
             </div>
-            {/* <div className={isOpen ? 'nav-menu active' : 'nav-menu'}>
-             */}
                 <div 
-                    className="nav-menu" 
+                    className={styles.navMenu} 
                     ref={openRef}
                     style={isOpen 
                     ? {
@@ -30,7 +28,7 @@ export default function Navigation(){
                             <>
                             <li 
                             key={index} 
-                            className={item.cName}
+                            className={`${styles.navText} ${styles[item.cName]}`}
                             style={isOpen 
                             ? {
                                 width: "40%",

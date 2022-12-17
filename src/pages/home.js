@@ -5,8 +5,11 @@ import Aboutus from '../components/AboutUs/aboutUs'
 // import Skills from '../components/SkillCard/skill'
 import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 import Showreel from '../components/Showreel/showreel'
+import Footer from '../components/Footer/footer';
 import { Logo } from '../assets/icons'
-export default function Home() {
+import Hexagon from '../components/Hexagons/hexagon'
+import Navigation from '../components/Navigation/navigation'
+export default function Home(props) {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
@@ -14,15 +17,15 @@ export default function Home() {
   // const [isHovering, setIsHovering] = useState(false)
   // onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=>setIsHovering(false)}
   return (
-    <div className="container">
+    <div>
         <Logo />
+        <Navigation />
+        <Hexagon color={props.color}/>  
         <Hero heading="Hi, I'm Jayden Dry" headingLineTwo="Project & Design Manager" bgImg="url('/images/background.jpg')" />
         <Aboutus />
-        {/* <Skills /> */}
         <Showreel />
-        <div className='projectList'>
-          <HexagonProjekts />
-        </div>
+        <HexagonProjekts />
+        <Footer />
     </div>
   )
 }

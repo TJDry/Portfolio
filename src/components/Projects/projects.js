@@ -1,5 +1,5 @@
 import React from 'react';
-import './projectsStyle.scss'
+import styles from './projectsStyle.module.scss'
 import { Link } from 'react-router-dom';
 
 export default function Project(props) { 
