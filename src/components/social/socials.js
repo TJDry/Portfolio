@@ -11,9 +11,9 @@ export default function Socials(props){
                 <Icon icon="bxl:behance" className={`${styles.icon} ${styles[props.class]}`}/>
             </a>
             
-            <a href="https://github.com/Jaydendry"  target="rel=noopener" className={`${styles[props.class]}`}>                
-            <h3>GITHUB</h3>
-            <Icon icon="bxl:github" className={`${styles.icon} ${styles[props.class]}`}/>
+            <a href="https://medium.com/@jaydendry"  target="rel=noopener" className={`${styles[props.class]}`}>                
+            <h3>MEDIUM</h3>
+            <Icon icon="bxl:medium" className={`${styles.icon} ${styles[props.class]}`}/>
             </a>
             <a href="https://instagram.com/jayden.dry"  target="rel=noopener" className={`${styles[props.class]}`}>                
             <h3>INSTAGRAM</h3>
