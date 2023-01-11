@@ -12,15 +12,12 @@
     }
 }   
 .flex{
-    justify-content: center;    
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 2em;
+    justify-content: center;   
     display: flex;
     img{   
-        padding: 1em;
         display: inline;
-        // max-width: 800px;
+        padding: 1em;
+        max-width: 100vw;
         object-fit: contain;
         border-radius: 25px;
     }

@@ -1,15 +1,12 @@
 .socialContainer{
     z-index: 10;
-    position: absolute;
-    right: 11vw;
-    top: 40vh;
-    text-align: right;
     float: right;
-    display: inline-grid;
-    letter-spacing: 1pt;
     a{
-        padding: 1em;
-        display: flow-root;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1em;
+        align-items: center;
+        justify-content: flex-end;
         transition: all 1s ease-in-out;
         animation: fade-animate 3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
         // background-color: rgba(0,0,0,0.5);
@@ -22,7 +19,7 @@
     
     a:hover{
         opacity: 1;
-        scale: 1.1;
+        transform: translateY(10px);
         h3{
             font-weight: bold;
             color: var(--accent-colour);
@@ -33,18 +30,16 @@
     }
     h3{
         display: inline;
-        font-weight: 100;
+        font-weight: 400;
         font-size: 13pt;
         transition: 0.1s ease-in-out;
     }
     .icon{
         -webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
                 clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
-        
         background-color: rgba(#000000, $alpha: 0.1);
         margin-left: 1em;
         position: relative;
-        top: 20px;
         padding: 1em;
         width: 3.5rem;
         overflow: hidden;
@@ -140,5 +135,38 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+
+.scrollContainer{
+    position: absolute;
+    transform: rotate(90deg);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    h3{
+        color: var(--accent-colour);
+    }
+    .hexagonShape{
+        width: 14px;
+        height: 15px;
+        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+        background: var(--accent-colour);
+        margin: 1em;
+        animation: scrollButton-animate 2s infinite;
+    }
+}
+
+@keyframes scrollButton-animate {
+    0% {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(40px);
+
+    }
+    100% {
+        transform: translateX(0px);
     }
   }

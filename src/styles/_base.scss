@@ -37,13 +37,12 @@ body{
     scroll-behavior: smooth;
 }
 .mouse{
-    pointer-events: none;
-    transform-style: preserve-3d;
+    user-select: none;
     position: fixed;
-    padding: 1.2rem;
+    padding: 0.8rem;
     border-radius: 50%;
     mix-blend-mode: difference;
-    filter: hue-rotate(180deg);
+    filter: hue-rotate(200deg);
     // transition: transform 0.1s ease;
     // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
     background-color: var(--accent-colour);
@@ -65,7 +64,7 @@ h1{
 }
 
 p{
-    font-size: 14pt;
+    font-size: 16pt;
     line-height: 2;
     color: var(--text-colour);
     padding-right: 2.5em;
@@ -98,3 +97,14 @@ h3{
 //     top: 50vw;
 //     height: 50vh;
 // }
+
+
+.privacy-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent-colour);
+    z-index: 2;
+  }

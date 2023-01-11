@@ -15,6 +15,7 @@
             padding: 0em;
             flex-wrap: wrap;
         }
+
         .personalPhoto{
             background-size: contain;
             background-repeat: no-repeat;
@@ -36,8 +37,10 @@
             font-weight: 400;
             margin-right: 5%;
             letter-spacing: 0.4pt;
+            h2{
+                color: var(--accent-color);
+            }
             p{
-                font-size: 14pt;
                 @media (max-width: 1000px) {
                     padding: 0;
                     text-align: center;
@@ -52,36 +55,6 @@
               }
             @media (max-width: 600px) {
                 width: 100%;
-            }
-        }
-        button{
-            background: rgba(255,255,255,0);
-            border-radius: 5px;
-            color: #283044;
-            border: none;
-            font-size: 14pt;
-            margin-top: 75px;
-            font-weight: 100;
-            display: inline;
-            font-weight: 100;
-            h4{
-                background-color: rgba($color: #000000, $alpha: 0.15);
-                clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
-                display: inline;
-                padding: 0.8em;
-                padding-top: 0.6em;
-                margin: 0em 0.5em;
-                text-align: center;
-            }
-        }  button:hover{
-            opacity: 1;
-            scale: 1.1;
-            font-weight: bold;
-            h4{
-                color: #62abff;
-            }
-            @media (max-width: 600px) {
-                display: none;
             }
         }
     }
