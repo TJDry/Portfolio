@@ -1,7 +1,6 @@
 import styles from './socialsStyle.module.scss'
 import { Icon } from '@iconify/react';
 import Resume from '../../assets/images/JaydenDryResume.pdf'
-import { HexagonShape } from '../../assets/icons';
 import { onHoverEnter, onHoverLeave } from '../../Mouse';
 
 export default function Socials(props){
