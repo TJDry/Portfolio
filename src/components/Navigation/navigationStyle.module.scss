@@ -36,8 +36,8 @@
     }
   }
   .navBtn{
-    width: 24px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     margin: 1em;
     background: var(--accent-colour);
     border-radius: 5px;
@@ -51,7 +51,7 @@
     transform: translateX(10px);
     box-shadow: 0;
     transform: rotate(180deg);
-    width: 36px;
+    width: 30px;
   }
   .navBtn.active::before{
     transform: rotate(-45deg);
@@ -66,12 +66,12 @@
   .navBtn::before,.navBtn::after{
     content: '';
     position: absolute;
-    width: 36px;
-    height: 3px;
-    background: var(--text-colour);
+    width: 30px;
+    height: 2px;
+    background: var(--accent-colour);
     border-radius: 5px;
-    filter: invert(0.5);
     transition: 0.5s ease-in-out;
+    mix-blend-mode: difference;
     transform: rotate(180deg);
   }
   .navBtn::after{

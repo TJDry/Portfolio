@@ -7,7 +7,7 @@ import Showreel from '../components/Showreel/showreel'
 import Footer from '../components/Footer/footer';
 import { Logo } from '../assets/icons'
 import Navigation from '../components/Navigation/navigation'
-import TextBox from '../components/textBox/text'
+import TextBox, { Heading } from '../components/textBox/text'
 import { motion, useIsPresent } from "framer-motion";
 export default function Home(props) {
   const isPresent = useIsPresent();
@@ -23,9 +23,9 @@ export default function Home(props) {
         <Navigation />
         <Hero heading="Hi, I'm Jayden Dry" bgImg="url('/images/background.jpg')" />
         <TextBox colorFlat="var(--background-colour)" textColor="var(--background-colour)" backgroundColor="var(--accent-colour)" heading="ABOUT" contentA="I have recently graduated from Curtin University with a Bachelor of Design in Digital, Majoring in Experience and Interaction Design. I have been working as a project & design manager for the past year, working with teams of international app developers to create digital solutions. I am passionate about human-centred design & enjoy both front end & backend development. I enjoy working collaboratively in a team environment and also work well independently."/>
-        <TextBox heading="SHOWREEL" contentA="" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
+        <Heading heading="SHOWREEL" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
         <Showreel />
-        <TextBox heading="PROJECTS" contentA="" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
+        <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
         <HexagonProjekts />
         <TextBox heading="" contentA="" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
         <Footer textColor='var(--accent-colour)' />

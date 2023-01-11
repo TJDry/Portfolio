@@ -9,7 +9,7 @@
         h1{
             // color: rgba(0,0,0,0.1);
             font-weight:500;
-            font-size: 46pt;
+            font-size: 48pt;
             text-overflow: wrap;
             color: var(--accent-colour);
             z-index: 10;
@@ -20,16 +20,16 @@
             // -webkit-text-stroke: 1px #FFFFFF;
             @media (max-width: 600px) {
                 width: 100%;
-                font-size: 26pt;
+                font-size: 36pt;
             }
             @media (max-width: 400px) {
                 width: 100%;
-                font-size: 26pt;
+                font-size: 36pt;
             }
         }
     h2{
         font-weight: 200;
-        font-size: 24pt;
+        font-size: 34pt;
         color: var(--accent-colour);
     }
     .lineTwo{
@@ -39,8 +39,14 @@
     }
     .scrollContainer{
         position: absolute;
-        right: 11vw;
+        right: 13vw;
         top: 80vh;
+        @media (max-width: 1000px) {
+            right: 20vw;
+        }
+        @media (max-width: 600px) {
+            right: 30vw;
+        }
     }
 }
 

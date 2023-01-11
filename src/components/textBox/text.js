@@ -25,3 +25,10 @@ export default function TextBox(text){
         return('')
     }
 }
+export function Heading(text){
+        return(
+        <div className={`${styles.borderContainer} ${styles.borderSolo}`}>
+            <h2 className={styles.headingSolo} style={{color: `${text.colorFlat}`}}>{text.heading}</h2>
+        </div>
+        )
+}
