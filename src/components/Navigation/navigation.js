@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import styles from './navigationStyle.module.scss';
 import { NavBarData } from "./NavBarData";
 
-export default function Navigation(){
+export default function Navigation(props){
     const [isOpen,setIsOpen] = useState(false);
 
     const openRef = useRef();
     return(
         <>
             <div className={styles.navigationContainer} onClick={() => setIsOpen(!isOpen)}>
-                <div className={isOpen ? `${styles.navBtn} ${styles.active}` : `${styles.navBtn}`}></div>
+                <div className={isOpen ? `${styles.navBtn} ${styles.active}` : `${styles.navBtn}`}  style={{color: `${props.colorFlat}`}}></div>
             </div>
                 <div 
                     className={styles.navMenu} 

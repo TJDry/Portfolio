@@ -7,8 +7,11 @@ import { Logo } from '../assets/icons'
 import Persona from '../components/Persona/persona'
 import Footer from '../components/Footer/footer'
 import Navigation from '../components/Navigation/navigation'
-import Hexagon from '../components/Hexagons/hexagon'
+import { motion, useIsPresent } from "framer-motion";
+
+
 export default function ProjectPage (props) {
+  const isPresent = useIsPresent();
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
@@ -16,7 +19,6 @@ export default function ProjectPage (props) {
     <div className="container">
       <Logo />
       <Navigation />
-      <Hexagon color={props.color}/>  
       <Hero heading={props.heading} headingLineTwo={props.roles} bgImg={props.hero} color={props.color} colorFlat={props.colorFlat}/>
       <ImgContainer abrProject={props.abrProject} image1={props.image1}/>
       <Text colorFlat={props.colorFlat} heading="PROJECT OVERVIEW" contentA={props.overviewA} contentB={props.overviewB} contentC={props.overviewC}/>
@@ -30,6 +32,13 @@ export default function ProjectPage (props) {
       <Persona />
       <NextProject name={props.nextName} role={props.nextRole} image={props.nextImage} link={props.nextPage} />
       <Footer />
+      <motion.div
+          initial={{ scaleX: 1 }}
+          animate={{ scaleX: 0, transition: { duration: 1, ease: "circOut" } }}
+          exit={{ scaleX: 2, transition: { duration: 1, ease: "circIn" } }}
+          style={{ originX: isPresent ? 1 : 0 }}
+          className="privacy-screen"
+      />
     </div> 
   )
 }

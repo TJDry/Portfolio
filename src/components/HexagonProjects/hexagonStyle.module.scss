@@ -3,7 +3,7 @@
   grid-template-columns: repeat(auto-fit,calc(var(--s) + 2*var(--mh)));
   z-index: 20;
   justify-content:center;
-  --s: 600px; /* size */
+  --s: 800px; /* size */
   --r: 1.15; /* ratio */
   
   /* clip-path */
@@ -13,21 +13,18 @@
   --vc:calc(clamp(0,var(--v),0.5) * var(--s) * var(--r)); 
   
   /*margin */
-  --mv: 4px; /* vertical */
+  --mv: 5px; /* vertical */
   --mh: calc(var(--mv) + (var(--s) - 2*var(--hc))/2); /* horizontal */
   /* for the float*/
   --f: calc(2*var(--s)*var(--r) + 4*var(--mv)  - 2*var(--vc) - 2px);
   @media only screen and (max-width: 1850px) {
-    --s: 550px
+    --s: 600px
   }
   @media only screen and (max-width: 1280px) {
-    --s: 450px
+    --s: 600px
   }
   @media only screen and (max-width: 900px) {
     --s: 400px
-  }
-  @media only screen and (max-width: 720px) {
-    --s: 350px
   }
 
   }

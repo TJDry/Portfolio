@@ -1,7 +1,7 @@
 .navigationContainer{
     position: fixed;
-    right: 10%;
-    top: 2%;
+    right: 5vw;
+    top: 4vh;
     cursor: pointer;
     margin: 1em;
     padding: 1em 0.5em;
@@ -22,7 +22,6 @@
     z-index: 100;
     transition: 850ms;
     right: 0;
-    box-shadow: 0 100px 50px rgba(14, 14, 14, 0.2);
     transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     animation: right-animate 1s ease-in-out alternate;
     ul{
@@ -30,19 +29,18 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      top: 20%;
+      top: 20vh;
       flex-wrap: wrap;
       transition: all 2s ease-in-out;
       animation: opacity-animate 2s ease-in-out alternate;
     }
   }
   .navBtn{
-    width: 20px;
+    width: 24px;
     height: 3px;
     margin: 1em;
     background: var(--accent-colour);
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(14, 14, 14, 0.2);
     transition: all .5s ease-in-out;
     transform: rotate(180deg);
     scale: 1.1;
@@ -53,13 +51,16 @@
     transform: translateX(10px);
     box-shadow: 0;
     transform: rotate(180deg);
+    width: 36px;
   }
   .navBtn.active::before{
     transform: rotate(-45deg);
+    filter: invert(1);
   }
   
   .navBtn.active::after{
     transform: rotate(45deg);
+    filter: invert(1);
   }
 
   .navBtn::before,.navBtn::after{
@@ -67,12 +68,11 @@
     position: absolute;
     width: 36px;
     height: 3px;
-    background: var(--background-colour);
+    background: var(--text-colour);
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(14, 14, 14, 0.2);
+    filter: invert(0.5);
     transition: 0.5s ease-in-out;
     transform: rotate(180deg);
-    border: 1px solid var(--accent-color);
   }
   .navBtn::after{
     transform: translateY(12px);

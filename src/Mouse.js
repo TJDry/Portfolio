@@ -1,12 +1,36 @@
 import React from 'react';
 import {gsap} from 'gsap';
 import { useImperativeHandle, useRef, forwardRef } from 'react';
+import {motion} from 'framer-motion';
 
 export const Mouse = forwardRef((props, ref) => {
     const el = useRef();
 
+    const variants = {
+        default: {
+            opacity: 1,
+            height: 10,
+            width: 10,
+            fontSize: "20px",
+            backgroundColor: "var(--accent-colour)",
+            transition: {
+                type: "spring",
+                mass: 0.6,
+            },
+        },
+        hover: {
+            opacity: 1,
+            height: 50,
+            width: 50,
+            fontSize: "20px",
+            backgroundColor: "var(--accent-colour)",
+            transition: {
+                type: "spring",
+                mass: 0.2,
+            },
+        },
+    }
 
-    
     useImperativeHandle(ref, () => {           
           
           // return our API
@@ -17,11 +41,26 @@ export const Mouse = forwardRef((props, ref) => {
           };
     }, []);
         
-    return( <div className="mouse" ref={el}></div>);
+    return(<motion.div className="mouse"
+    animate={{
+        opacity: 1,
+        height: 10,
+        width: 10,
+        fontSize: "20px",
+        backgroundColor: "var(--accent-colour)",
+        transition: {
+            type: "spring",
+            mass: 0.6,
+        },
+    }}
+    ref={el}>
+    </motion.div>);
 });
 
+export function onHoverEnter(){
+    // setCursorVariant("hover")
+}
 
-// export function mouseHoverEvent(e) {
-//     const mouseFollow = document.querySelector('.mouse');
-//     // e.mouseFollow.style.background = 'red';
-// }
+export function onHoverLeave(){
+    // setCursorVariant("default")
+}

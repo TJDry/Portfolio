@@ -2,22 +2,20 @@
 .heroContainer{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .textContainer{
-        width: 600px;
-        position: absolute;
-        top: 35vh;
-        left: 10vw;
-        display: inline-block;
         h1{
             // color: rgba(0,0,0,0.1);
             font-weight:500;
             font-size: 46pt;
-            display: inline;
             text-overflow: wrap;
             color: var(--accent-colour);
             z-index: 10;
             transition: all 2s ease-in-out;
             animation-delay: 200ms;
+            text-align: center;
             animation: fade-animate 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) alternate;
             // -webkit-text-stroke: 1px #FFFFFF;
             @media (max-width: 600px) {
@@ -38,7 +36,12 @@
         color: var(--text-colour);
         z-index: 10;
     }
-}
+    }
+    .scrollContainer{
+        position: absolute;
+        right: 11vw;
+        top: 80vh;
+    }
 }
 
 @keyframes fade-animate {
@@ -51,3 +54,4 @@
       transform: translateY(0);
     }
   }
+  
