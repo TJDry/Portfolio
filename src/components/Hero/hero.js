@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './heroStyle.module.scss';
-import Socials, { DownArrow, ScrollArrow } from "../social/socials";
+import { ScrollArrow } from "../social/socials";
 export default function Hero(props) {
   return (
   <div className={styles.heroContainer}>

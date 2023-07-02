@@ -1,4 +1,4 @@
-import React, { useRef , useEffect, lazy, Suspense} from 'react'
+import React, { useRef , useEffect, Suspense} from 'react'
 import { Routes, Route } from "react-router-dom";
 import './styles/master.scss'
 import { Mouse } from './Mouse';

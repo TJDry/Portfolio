@@ -2,7 +2,6 @@ import React, { useState , useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from './navigationStyle.module.scss';
 import { NavBarData } from "./NavBarData";
-import { SocialsMinimal } from "../social/socials";
 
 export default function Navigation(props){
     const [isOpen,setIsOpen] = useState(false);
