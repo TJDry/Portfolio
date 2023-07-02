@@ -1,0 +1,33 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    min-height: 940px;
+    display: flex;
+    justify-content: center;
+    h1{
+        padding: 0em;
+        position: absolute;
+        top: 30vh;
+    }
+}
+
+    .scrollContainer{
+        position: absolute;
+        right: 13vw;
+        top: 80vh;
+        @media (max-width: 1000px) {
+            right: 20vw;
+        }
+        @media (max-width: 600px) {
+            right: 30vw;
+        }
+    }
+
+// @keyframes scale {
+//     from {
+//         transform: scale(1);
+//     }
+//     to {
+//         transform: scale(1.2);
+//     }
+//   }

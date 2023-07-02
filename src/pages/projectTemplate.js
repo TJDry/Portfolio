@@ -16,7 +16,7 @@ export default function ProjectPage (props) {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
   return (
-    <div className="container">
+    <div>
       <Logo />
       <Navigation />
       <Hero heading={props.heading} headingLineTwo={props.roles} bgImg={props.hero} color={props.color} colorFlat={props.colorFlat}/>

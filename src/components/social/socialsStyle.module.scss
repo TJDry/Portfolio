@@ -22,10 +22,10 @@
         transform: translateY(10px);
         h3{
             font-weight: bold;
-            color: var(--accent-colour);
+            color: var(--text-colour);
         }
         .icon{
-            color: var(--accent-colour);
+            color: var(--text-colour);
         }
     }
     h3{
@@ -120,10 +120,10 @@
     scale: 1.05;
     h3{
         font-weight: bold;
-        color: var(--accent-colour);
+        color: var(--text-colour);
     }
     h4{
-        color: var(--accent-colour);
+        color: var(--text-colour);
     }
 }
 
@@ -146,13 +146,13 @@
     grid-template-columns: auto auto auto;
     align-items: center;
     h3{
-        color: var(--accent-colour);
+        color: var(--text-colour);
     }
     .hexagonShape{
         width: 14px;
         height: 15px;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-        background: var(--accent-colour);
+        background: var(--text-colour);
         margin: 1em;
         animation: scrollButton-animate 2s infinite;
     }

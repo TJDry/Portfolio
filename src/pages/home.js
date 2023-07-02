@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 // import { Link } from 'react-router-dom'
-import Hero from '../components/Hero/hero'
 // import Skills from '../components/SkillCard/skill'
 import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 import Showreel from '../components/Showreel/showreel'
@@ -9,7 +8,9 @@ import { Logo } from '../assets/icons'
 import Navigation from '../components/Navigation/navigation'
 import TextBox, { Heading } from '../components/textBox/text'
 import { motion, useIsPresent } from "framer-motion";
-export default function Home(props) {
+import HomeHero from '../components/HomePage/Hero/homehero';
+
+export default function Home() {
   const isPresent = useIsPresent();
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -21,14 +22,20 @@ export default function Home(props) {
     <div>
         <Logo />
         <Navigation />
-        <Hero heading="Hi, I'm Jayden Dry" bgImg="url('/images/background.jpg')" />
-        <TextBox colorFlat="var(--background-colour)" textColor="var(--background-colour)" backgroundColor="var(--accent-colour)" heading="ABOUT" contentA="I have recently graduated from Curtin University with a Bachelor of Design in Digital, Majoring in Experience and Interaction Design. I have been working as a project & design manager for the past year, working with teams of international app developers to create digital solutions. I am passionate about human-centred design & enjoy both front end & backend development. I enjoy working collaboratively in a team environment and also work well independently."/>
-        <Heading heading="SHOWREEL" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
+        <HomeHero/>
+        <TextBox 
+          colorFlat="var(--text-colour)" 
+          textColor="var(--text-colour)" 
+          backgroundColor="" 
+          heading="ABOUT" 
+          contentA="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices faucibus ipsum a vehicula. Ut mattis vel lacus laoreet commodo. Fusce luctus cursus nisi aliquam interdum. Aenean enim purus, ornare euismod tellus id, euismod semper mi. Aenean vel neque ut lorem efficitur luctus. Pellentesque non ultrices quam. Proin ornare rutrum ultrices."
+        />
+        <Heading heading="SHOWREEL" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <Showreel />
-        <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
+        <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <HexagonProjekts />
-        <TextBox heading="" contentA="" backgroundColor="var(--background-colour)" colorFlat="var(--accent-colour)"/>
-        <Footer textColor='var(--accent-colour)' />
+        <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
+        <Footer textColor='var(--text-colour)' />
         <motion.div
           initial={{ scaleY: 1 }}
           animate={{ scaleY: 0, transition: { duration: 2, ease: "circOut" } }}

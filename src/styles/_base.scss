@@ -36,42 +36,38 @@ body{
     color: var(--text-colour);
     scroll-behavior: smooth;
 }
-.mouse{
-    user-select: none;
-    position: fixed;
-    padding: 0.8rem;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    filter: hue-rotate(200deg);
-    // transition: transform 0.1s ease;
-    // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
-    background-color: var(--accent-colour);
-    clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
-    --webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
-    z-index: 10;
-    @media (max-width: 600px) {
-        display: none;
-    }
-}
+
 Link{
     color: var(--text-colour);
 }
 h1{
     font-family: var(--primary-font);
-    font-size: 30pt;
-    font-weight: 400;
+    font-weight: 800;
+    font-size: 75px;
+    line-height: 88px;
+    text-align: center;
+    opacity: 88%;
+    z-index: 10;
     color: var(--text-colour);
-}
-
-p{
-    font-size: 16pt;
+}h2{
+    font-size: 50px;
+    z-index: 10;
+    font-weight: 800;
+    opacity: 88%;
+}h3{
+    color: var(--text-colour);
+    font-weight: 500;
+    font-size: 18pt;
+}p{
+    font-size: 1rem;
     line-height: 2;
     color: var(--text-colour);
     padding-right: 2.5em;
 }
-h3{
-    color: var(--text-colour);
-}
+
+
+
+
 .loading{
     width: 100vw;
     height: 100vh;
@@ -97,7 +93,23 @@ h3{
 //     top: 50vw;
 //     height: 50vh;
 // }
-
+.mouse{
+    user-select: none;
+    position: fixed;
+    padding: 0.8rem;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    filter: hue-rotate(-40deg);
+    // transition: transform 0.1s ease;
+    // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
+    background-color: var(--accent-colour);
+    clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
+    --webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
+    z-index: 10;
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
 
 .privacy-screen {
     position: fixed;
