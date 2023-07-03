@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from './navigationStyle.module.scss';
 import { NavBarData } from "./NavBarData";
 
-export default function Navigation(props){
+export default function NavigationMobile(props){
     const [isOpen,setIsOpen] = useState(false);
 
     const openRef = useRef();

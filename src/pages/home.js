@@ -4,7 +4,6 @@ import React, {useEffect} from 'react'
 import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 import Showreel from '../components/Showreel/showreel'
 import Footer from '../components/Footer/footer';
-import { Logo } from '../assets/icons'
 import Navigation from '../components/Navigation/navigation'
 import TextBox, { Heading } from '../components/textBox/text'
 import { motion, useIsPresent } from "framer-motion";
@@ -20,7 +19,6 @@ export default function Home() {
   // onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=>setIsHovering(false)}
   return (
     <div>
-        <Logo />
         <Navigation />
         <HomeHero/>
         <TextBox 
@@ -36,13 +34,13 @@ export default function Home() {
         <HexagonProjekts />
         <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
         <Footer textColor='var(--text-colour)' />
-        <motion.div
-          initial={{ scaleY: 1 }}
-          animate={{ scaleY: 0, transition: { duration: 2, ease: "circOut" } }}
-          exit={{ scaleY: 2, transition: { duration: 1, ease: "circIn" } }}
-          style={{ originY: isPresent ? 1 : 0 }}
-          className="privacy-screen"
-      />
+        {/* <motion.div
+        initial={{ scaleX: 2 }}
+        animate={{ scaleX: 0, transition: { duration: 3, ease: "circOut" } }}
+        exit={{ scaleX: 2, transition: { duration: 1, ease: "circIn" } }}
+        style={{ originX: isPresent ? 1 : 0 }}
+        className="privacy-screen"
+      /> */}
     </div>
   )
 }

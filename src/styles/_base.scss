@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
-    letter-spacing: -0.3px;
+    letter-spacing: 0.3px;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -56,37 +56,42 @@ h1{
     opacity: 88%;
 }h3{
     color: var(--text-colour);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18pt;
 }p{
     font-size: 1rem;
     line-height: 2;
+    font-weight: 500;
     color: var(--text-colour);
     padding-right: 2.5em;
+}span{
+    color: var(--text-colour);
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 
 
 
-.loading{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: var(--accent-colour);
-    justify-items: center;
-    transition: all .8s ease;
-    animation: expand .8s ease forwards;
-}
+// .loading{
+//     width: 100vw;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     background-color: var(--accent-colour);
+//     justify-items: center;
+//     transition: all .8s ease;
+//     animation: expand .8s ease forwards;
+// }
 
-@keyframes loadAnimation{
-        0% {
-          transform: translateX(1400px);
-        }
-        100% {
-          transform: translateX(0px);
-        }
-}
+// @keyframes loadAnimation{
+//         0% {
+//           transform: translateX(1400px);
+//         }
+//         100% {
+//           transform: translateX(0px);
+//         }
+// }
 // .App span{
 //     color: $accent-colour;
 //     position: relative;
@@ -118,5 +123,5 @@ h1{
     right: 0;
     bottom: 0;
     background-color: var(--accent-colour);
-    z-index: 2;
+    z-index: 12;
   }

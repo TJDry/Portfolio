@@ -12,7 +12,7 @@ export function DownButton(){
 
 export function GradientCircle(){
     const {scrollY} = useScroll();
-    const x = useTransform(scrollY, (value) => (-value / 5000)-1)
+    const x = useTransform(scrollY, (value) => (-value / 4000)-1)
     return(
     <>
         <motion.div className={styles.circle}
