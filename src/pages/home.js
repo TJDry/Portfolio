@@ -6,11 +6,9 @@ import Showreel from '../components/Showreel/showreel'
 import Footer from '../components/Footer/footer';
 import Navigation from '../components/Navigation/navigation'
 import TextBox, { Heading } from '../components/textBox/text'
-import { motion, useIsPresent } from "framer-motion";
 import HomeHero from '../components/HomePage/Hero/homehero';
 
 export default function Home() {
-  const isPresent = useIsPresent();
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);

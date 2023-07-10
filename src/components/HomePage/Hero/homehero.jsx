@@ -1,5 +1,5 @@
 import React from 'react'
-import { DownButton, GradientCircle } from '../../Button/button'
+import { GradientCircle } from '../../Button/button'
 import styles from './homehero.module.scss'
 import Socials, { ScrollArrow } from '../../social/socials'
 
