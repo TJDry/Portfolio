@@ -32,12 +32,12 @@ export default function Navigation() {
       animate={hidden ? "hidden" : "visible"}
       transition={{ ease: [0.2, 0.3, 0.4, 1], duration: 0.3 }}
     >
-      <h3><NavLink to='/'><Logo/></NavLink></h3>
+      <h3><Logo/></h3>
       <ul className={styles.navigation}>
         {navigationData.map(item => {
           return(
               <li key={item.id}>
-                  <NavLink to={`/${item.path}`}
+                  <NavLink to={`${item.path}`}
                   className={({ isActive }) =>
                     isActive ? activeClass : undefined
                 }

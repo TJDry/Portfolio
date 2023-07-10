@@ -5,13 +5,13 @@
     },{
         id: 1,
         title:'About',
-        path: 'about/',
+        path: '/about/',
     },{
         id: 2,
         title:'Projekts',
-        path: 'projekts/',
+        path: '/projects',
     },{
         id: 3,
         title:'Work With Us',
-        path: 'contact/',
+        path: '/contact/',
     }];

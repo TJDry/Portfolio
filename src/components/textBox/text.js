@@ -12,7 +12,7 @@ export default function TextBox(text){
                 </div>
         </div>
         )
-    } else if (text.contentA !== undefined) {
+    } else if (text.contentB !== undefined) {
         return(
         <div className={`${styles.borderContainer}`} style={{backgroundColor: `${text.backgroundColor}`}}>
             <h2 style={{color: `${text.colorFlat}`}}>{text.heading}</h2>

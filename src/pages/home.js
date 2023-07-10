@@ -20,13 +20,18 @@ export default function Home() {
   return (
     <div>
         <Navigation />
-        <HomeHero/>
+        <HomeHero headline="Creating dreams for the dreamers"/>
         <TextBox 
           colorFlat="var(--text-colour)" 
           textColor="var(--text-colour)" 
           backgroundColor="" 
           heading="ABOUT" 
-          contentA="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices faucibus ipsum a vehicula. Ut mattis vel lacus laoreet commodo. Fusce luctus cursus nisi aliquam interdum. Aenean enim purus, ornare euismod tellus id, euismod semper mi. Aenean vel neque ut lorem efficitur luctus. Pellentesque non ultrices quam. Proin ornare rutrum ultrices."
+          contentA="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
+          Majoring in Experience and Interaction Design. I have been working as a project & design
+          manager for the past year, working with teams of international app developers to create
+          digital solutions. I am passionate about human-centred design & enjoy both front end &
+          backend development. I enjoy working collaboratively in a team environment and also
+          work well independently."
         />
         <Heading heading="SHOWREEL" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <Showreel />
