@@ -16,6 +16,9 @@ import OBDScanz from './pages/work/obdScanz';
 import BattWatcher from './pages/work/battWatcher';
 import Tyrewatcher from './pages/work/tyreWatcher';
 import Home from './pages/home';
+import ProjectPage from './pages/projects';
+import About from './pages/About';
+import Contact from './pages/contactUs';
 
 function App(){
   const mouseRefs = useRef([]);
@@ -44,6 +47,9 @@ return (
         <Suspense>
           <Routes> 
             <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path='/projects' element={<ProjectPage/>} />
+            <Route path='/about' element={<About/>} />
             <Route path="/projects/tyrewatcher" element={<Tyrewatcher/>} />
             <Route path="/projects/OBDScanz" element={<OBDScanz/>} />
             <Route path="/projects/gremio" element={<Gremio/>} />

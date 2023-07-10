@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
-    letter-spacing: -0.3px;
+    letter-spacing: 0.3px;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -36,13 +36,75 @@ body{
     color: var(--text-colour);
     scroll-behavior: smooth;
 }
+
+Link{
+    color: var(--text-colour);
+}
+h1{
+    font-family: var(--primary-font);
+    font-weight: 800;
+    font-size: 78px;
+    line-height: 88px;
+    text-align: center;
+    opacity: 100%;
+    z-index: 10;
+    color: var(--text-colour);
+}h2{
+    font-size: 50px;
+    z-index: 10;
+    font-weight: 800;
+    opacity: 88%;
+}h3{
+    color: var(--text-colour);
+    font-weight: 600;
+    font-size: 18pt;
+}p{
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 500;
+    color: var(--text-colour);
+    padding-right: 2.5em;
+}span{
+    color: var(--text-colour);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+
+
+// .loading{
+//     width: 100vw;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     background-color: var(--accent-colour);
+//     justify-items: center;
+//     transition: all .8s ease;
+//     animation: expand .8s ease forwards;
+// }
+
+// @keyframes loadAnimation{
+//         0% {
+//           transform: translateX(1400px);
+//         }
+//         100% {
+//           transform: translateX(0px);
+//         }
+// }
+// .App span{
+//     color: $accent-colour;
+//     position: relative;
+//     top: 50vw;
+//     height: 50vh;
+// }
 .mouse{
     user-select: none;
     position: fixed;
     padding: 0.8rem;
     border-radius: 50%;
     mix-blend-mode: difference;
-    filter: hue-rotate(200deg);
+    filter: hue-rotate(-40deg);
     // transition: transform 0.1s ease;
     // background: linear-gradient(180deg, $accent-colour, rgb(35, 60, 129));
     background-color: var(--accent-colour);
@@ -53,51 +115,6 @@ body{
         display: none;
     }
 }
-Link{
-    color: var(--text-colour);
-}
-h1{
-    font-family: var(--primary-font);
-    font-size: 30pt;
-    font-weight: 400;
-    color: var(--text-colour);
-}
-
-p{
-    font-size: 16pt;
-    line-height: 2;
-    color: var(--text-colour);
-    padding-right: 2.5em;
-}
-h3{
-    color: var(--text-colour);
-}
-.loading{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: var(--accent-colour);
-    justify-items: center;
-    transition: all .8s ease;
-    animation: expand .8s ease forwards;
-}
-
-@keyframes loadAnimation{
-        0% {
-          transform: translateX(1400px);
-        }
-        100% {
-          transform: translateX(0px);
-        }
-}
-// .App span{
-//     color: $accent-colour;
-//     position: relative;
-//     top: 50vw;
-//     height: 50vh;
-// }
-
 
 .privacy-screen {
     position: fixed;
@@ -106,5 +123,5 @@ h3{
     right: 0;
     bottom: 0;
     background-color: var(--accent-colour);
-    z-index: 2;
+    z-index: 12;
   }

@@ -1,17 +1,32 @@
 :root{
-    --background-colour: #EBF2FA;
+// Brand
+--accent-colour: #232af8;
+// #000AFF;
+--secondary-colour: #171b9b;
+
+
+
+// Text
+--text-colour: #E5E6FC;
+
+// Background
+--background-colour: #242731;
+
+
+//OLD
+    // --background-colour: #EBF2FA;
     // #E8E8E8;
-    --accent-colour: #0047AB;
-    // #0056A3;
-    --secondary-colour: #1d289c;
-    --text-colour: #242325;
+    // --accent-colour: #0047AB;
+    // // #0056A3;
+    // --secondary-colour: #1d289c;
+    // --text-colour: #242325;
     // #292E3C;
-    --primary-font: 'urbanist';
-    --second-font: 'urbanist', 'Arial', 'Sans-Serif';
+    --primary-font: 'raleway';
+    --second-font: 'raleway', 'Arial', 'Sans-Serif';
 }
 
-$accent-colour: #0056A3;
-$secondary-colour: #242477;
+// $accent-colour: #0056A3;
+// $secondary-colour: #242477;
 // ecedf5
 
 

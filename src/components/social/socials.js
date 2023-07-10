@@ -32,11 +32,11 @@ export default function Socials(props){
 }
 export function DownArrow(props){
     function ScrollDown(){
-        window.scrollTo({top: 2000, left: 0, behavior: 'smooth'});
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     }
     return(
     <div onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave} className= {styles.arrowContainer}  style={{top:`${props.top}`,right:`${props.right}`}}>
-        <div className={styles.downContainer} onClick={ScrollDown}><h3>{props.buttonText}</h3><h4>→</h4></div>
+        <div className={styles.downContainer} onClick={ScrollDown}><h4>{props.buttonText}</h4><h4>→</h4></div>
     </div>
     )
 }
@@ -45,7 +45,7 @@ export function ScrollArrow(props){
 
     return(
     <div className= {styles.scrollContainer}  style={{top:`${props.top}`,right:`${props.right}`}}>
-        <h3>SCROLL</h3>
+        <h4>SCROLL</h4>
         <div className={styles.hexagonShape}></div>
     </div>
     )

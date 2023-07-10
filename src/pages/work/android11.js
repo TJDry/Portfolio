@@ -26,10 +26,7 @@ export default function Android11(){
 
                 image2="tablet0"
                 image3="tablet1"
-
                 image4="tablet2"
-                
-
 
                 nextName="TyreWatcher"
                 nextRole="Project & Design Manager" 

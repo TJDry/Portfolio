@@ -22,28 +22,28 @@
         transform: translateY(10px);
         h3{
             font-weight: bold;
-            color: var(--accent-colour);
+            color: var(--text-colour);
         }
         .icon{
-            color: var(--accent-colour);
+            color: var(--text-colour);
         }
     }
     h3{
         display: inline;
-        font-weight: 400;
-        font-size: 13pt;
+        font-weight: 600;
+        font-size: 10pt;
         transition: 0.1s ease-in-out;
     }
     .icon{
         -webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
                 clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
         background-color: rgba(#000000, $alpha: 0.1);
-        margin-left: 1em;
+        margin-left: 0.5em;
         position: relative;
-        padding: 1em;
-        width: 3.5rem;
+        padding: 0.75em;
+        width: 2.75rem;
         overflow: hidden;
-        height: 3.5rem;
+        height: 2.75rem;
         color: var(--text-colour);
         transition: scale 2s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
@@ -120,10 +120,10 @@
     scale: 1.05;
     h3{
         font-weight: bold;
-        color: var(--accent-colour);
+        color: var(--text-colour);
     }
     h4{
-        color: var(--accent-colour);
+        color: var(--text-colour);
     }
 }
 
@@ -146,13 +146,13 @@
     grid-template-columns: auto auto auto;
     align-items: center;
     h3{
-        color: var(--accent-colour);
+        color: var(--text-colour);
     }
     .hexagonShape{
         width: 14px;
         height: 15px;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-        background: var(--accent-colour);
+        background: var(--text-colour);
         margin: 1em;
         animation: scrollButton-animate 2s infinite;
     }

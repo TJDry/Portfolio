@@ -49,8 +49,8 @@
     } 
   }
   .hexproContainer div:hover{
-    transition: 0.1s ease-in-out;
-    transform: scale(1.02);
+    transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transform: rotate(1deg);
   }
   .hexproContainer::before {
     content: "";
