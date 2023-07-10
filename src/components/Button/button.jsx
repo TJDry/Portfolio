@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './button.module.scss'
-import { color, motion, useScroll, useTransform } from "framer-motion"; 
+import { motion, useScroll, useTransform } from "framer-motion"; 
 
 export function DownButton(){
     return(
