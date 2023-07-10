@@ -2,15 +2,12 @@ import React, {useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 // import Skills from '../components/SkillCard/skill'
 import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
-import Showreel from '../components/Showreel/showreel'
 import Footer from '../components/Footer/footer';
 import Navigation from '../components/Navigation/navigation'
-import TextBox, { Heading } from '../components/textBox/text'
-import { motion, useIsPresent } from "framer-motion";
+import { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePage/Hero/homehero';
 
 export default function ProjectPage() {
-  const isPresent = useIsPresent();
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
