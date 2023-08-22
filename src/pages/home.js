@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <div>
         <Navigation />
-        <HomeHero headline="Creating dreams for the dreamers"/>
-        <TextBox 
+        <HomeHero headline="crafting unique digital experiences"/>
+        {/* <TextBox 
           colorFlat="var(--text-colour)" 
           textColor="var(--text-colour)" 
           backgroundColor="" 
@@ -30,8 +30,7 @@ export default function Home() {
           digital solutions. I am passionate about human-centred design & enjoy both front end &
           backend development. I enjoy working collaboratively in a team environment and also
           work well independently."
-        />
-        <Heading heading="SHOWREEL" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        /> */}
         <Showreel />
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <HexagonProjekts />

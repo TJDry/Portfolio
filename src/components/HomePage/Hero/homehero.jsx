@@ -5,6 +5,7 @@ import Socials, { ScrollArrow } from '../../social/socials'
 
 export default function HomeHero(text) {
   return (
+    <>
     <div className={styles.container}>
       <h1 className={styles.bobble}>{text.headline}</h1>
       <div className={styles.scrollContainer}>
@@ -14,7 +15,13 @@ export default function HomeHero(text) {
       <div className={styles.socialsContainer}>
         <Socials/>
       </div>
-      <GradientCircle/>
     </div>
+    <div className={styles.bottomLeftCirclePosition}>
+        <GradientCircle/>
+      </div>
+      <div className={styles.topRightCirclePosition}>
+        <GradientCircle/>
+      </div>
+    </>
   )
 }

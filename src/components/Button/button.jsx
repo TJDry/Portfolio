@@ -11,18 +11,19 @@ export function DownButton(){
 }
 
 export function GradientCircle(){
-    const {scrollY} = useScroll();
-    const x = useTransform(scrollY, (value) => (-value / 4000)-1)
+    // const {scrollY} = useScroll();
+    // const x = useTransform(scrollY, (value) => (-value / 4000)-1)
     return(
     <>
         <motion.div className={styles.circle}
-            style= {{
-                scale: x,
-            }}
+            // style= {{
+            //     scale: x,
+            // }}
         />
     </>
     )
 }
+
 
 export function ProjectButton(){
     return(

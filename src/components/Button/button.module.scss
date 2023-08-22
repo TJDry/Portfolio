@@ -12,13 +12,7 @@
 .circle{
     width: 1202px;
     height: 1202px;
-    background: radial-gradient(50% 50% at 50% 50%, #000AFF 0%, rgba(0, 10, 255, 0.84) 0.01%, rgba(44, 52, 255, 0) 90.1%);
     border-radius: 100%;
-    z-index: -1;
-    top: 20vh;
-    position: fixed;
-    opacity: 0.8;
-    transform-origin: 50%;
 }
 
 @keyframes Bounce {

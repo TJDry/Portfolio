@@ -73,3 +73,33 @@
         right: 30vw;
     }
 }
+.bottomLeftCirclePosition{
+    z-index: -1;
+    top: 60vh;
+    right:70vw;
+    position: fixed;
+    filter: blur(10em);
+    border-radius: 100%;
+    opacity: 0.5;
+    transform-origin: 50%;
+    width: 50rem;
+    height: 50rem;
+    flex-shrink: 0;
+    // background: radial-gradient(50% 50% at 50% 50%, #000AFF 0%, rgba(0, 10, 255, 0.84) 0.01%, rgba(44, 52, 255, 0) 90.1%);
+    background: linear-gradient(180deg, #F00 0%, #FA00FF 48.44%, #F00 100%);
+
+}
+.topRightCirclePosition{
+    z-index: -1;
+    top: -20vh;
+    left:70vw;
+    position: fixed;
+    opacity: 0.5;
+    width: 50rem;
+    height: 50rem;
+    transform-origin: 50%;
+    filter: blur(10em);
+    border-radius: 100%;
+    background: linear-gradient(180deg, #0057FF 0%, #00FF85 100%);
+
+}
