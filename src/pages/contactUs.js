@@ -3,8 +3,9 @@ import React, {useEffect} from 'react'
 // import Skills from '../components/SkillCard/skill'
 import Footer from '../components/Footer/footer';
 import Navigation from '../components/Navigation/navigation'
-import TextBox from '../components/textBox/text'
+import TextBox, { Heading } from '../components/textBox/text'
 import { GradientCircle } from '../components/Button/button';
+import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 
 export default function Contact() {
   useEffect(() => {
@@ -16,15 +17,9 @@ export default function Contact() {
   return (
     <div>
         <Navigation/>
-        <GradientCircle/>
-        <TextBox 
-          colorFlat="var(--text-colour)" 
-          textColor="var(--text-colour)" 
-          backgroundColor="" 
-          heading="Work with us" 
-          contentA=""
-        />
-        <Footer/>
+        <HomeHero headline="Work with Us"/>
+        <Heading heading="Work With Us" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <Footer textColor='var(--text-colour)' />
     </div>
   )
 }

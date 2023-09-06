@@ -30,16 +30,6 @@ export default function Socials(props){
         </div>
     )
 }
-export function DownArrow(props){
-    function ScrollDown(){
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    }
-    return(
-    <div onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave} className= {styles.arrowContainer}  style={{top:`${props.top}`,right:`${props.right}`}}>
-        <div className={styles.downContainer} onClick={ScrollDown}><h4>{props.buttonText}</h4><h4>→</h4></div>
-    </div>
-    )
-}
 
 export function ScrollArrow(props){
 

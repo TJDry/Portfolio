@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialsMinimal } from "../social/socials";
+import { SocialsMinimal } from "../Socials/socials";
 import styles from './footerStyle.module.scss'
 const Footer = (props) => {
   return (

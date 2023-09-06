@@ -1,11 +1,12 @@
 import React, {useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 // import Skills from '../components/SkillCard/skill'
-import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 import Footer from '../components/Footer/footer';
 import Navigation from '../components/Navigation/navigation'
 import { Heading } from '../components/textBox/text'
-import HomeHero from '../components/HomePage/Hero/homehero';
+import HomeHero from '../components/HomePageHero/HomeHero/homehero';
+import Projects from './dynamicProjects';
+import ProjectGrid from '../components/ProjectGrid/projectGrid';
 
 export default function ProjectPage() {
   useEffect(() => {
@@ -19,15 +20,8 @@ export default function ProjectPage() {
         <Navigation/>
         <HomeHero headline="Projects"/>
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <HexagonProjekts />
+        <ProjectGrid/>
         <Footer textColor='var(--text-colour)' />
-        {/* <motion.div
-        initial={{ scaleX: 2 }}
-        animate={{ scaleX: 0, transition: { duration: 3, ease: "circOut" } }}
-        exit={{ scaleX: 2, transition: { duration: 1, ease: "circIn" } }}
-        style={{ originX: isPresent ? 1 : 0 }}
-        className="privacy-screen"
-      /> */}
     </div>
   )
 }

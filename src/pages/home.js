@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 // import Skills from '../components/SkillCard/skill'
-import HexagonProjekts from '../components/HexagonProjects/hexagonProjects'
 import Showreel from '../components/Showreel/showreel'
 import Footer from '../components/Footer/footer';
 import Navigation from '../components/Navigation/navigation'
 import TextBox, { Heading } from '../components/textBox/text'
-import HomeHero from '../components/HomePage/Hero/homehero';
+import HomeHero from '../components/HomePageHero/HomeHero/homehero';
+import ProjectGrid from '../components/ProjectGrid/projectGrid';
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Home() {
         /> */}
         <Showreel />
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <HexagonProjekts />
+        <ProjectGrid/>
         <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
         <Footer textColor='var(--text-colour)' />
         {/* <motion.div

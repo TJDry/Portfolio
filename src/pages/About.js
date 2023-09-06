@@ -3,8 +3,9 @@ import React, {useEffect} from 'react'
 // import Skills from '../components/SkillCard/skill'
 import Footer from '../components/Footer/footer';
 import Navigation from '../components/Navigation/navigation'
-import TextBox from '../components/textBox/text'
+import TextBox, { Heading } from '../components/textBox/text'
 import { GradientCircle } from '../components/Button/button';
+import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 
 export default function About() {
   useEffect(() => {
@@ -16,20 +17,9 @@ export default function About() {
   return (
     <div>
         <Navigation/>
-        <GradientCircle/>
-        <TextBox 
-          colorFlat="var(--text-colour)" 
-          textColor="var(--text-colour)" 
-          backgroundColor="" 
-          heading="ABOUT" 
-          contentA="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
-          Majoring in Experience and Interaction Design. I have been working as a project & design
-          manager for the past year, working with teams of international app developers to create
-          digital solutions. I am passionate about human-centred design & enjoy both front end &
-          backend development. I enjoy working collaboratively in a team environment and also
-          work well independently."
-        />
-        <Footer/>
+        <HomeHero headline="About Us"/>
+        <Heading heading="About Us" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <Footer textColor='var(--text-colour)' />
     </div>
   )
 }

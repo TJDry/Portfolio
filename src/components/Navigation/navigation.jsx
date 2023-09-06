@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useRef} from 'react'
 import { NavLink } from "react-router-dom";
 import styles from './navigation.module.scss'
 import { navigationData } from './navigationData';
@@ -50,4 +50,53 @@ export default function Navigation() {
       </ul>
     </motion.div>
   )
+}
+
+
+export function NavigationMobile(props){
+  const [isOpen,setIsOpen] = useState(false);
+
+  const openRef = useRef();
+  return(
+      <>
+          <div className={styles.navigationContainer} onClick={() => setIsOpen(!isOpen)}>
+              <div className={isOpen ? `${styles.navBtn} ${styles.active}` : `${styles.navBtn}`}  style={{color: `${props.colorFlat}`}}></div>
+          </div>
+              <div 
+                  className={styles.navMenu} 
+                  ref={openRef}
+                  style={isOpen 
+                  ? {
+                      width: "100vw",
+                  }:{
+                      width: "0px",
+                  }}
+                  >
+              <ul>
+                  {navigationData.map((item, index) => {
+                      return(
+                          <>
+                          <li 
+                          key={index} 
+                          className={`${styles.navText} ${styles[item.cName]}`}
+                          style={isOpen 
+                          ? {
+                              width: "40%",
+                              opacity: "1",
+                          }:{
+                              width: "0",
+                              opacity: "0"
+                          }}
+                          >
+                              <NavLink to={`/${item.path}`}>
+                                  <span>{item.title}</span>
+                              </NavLink>
+                          </li>
+                          </>
+                      );
+                  })}
+              </ul>
+          </div>
+      </>
+  );
 }

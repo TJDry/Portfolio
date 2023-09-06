@@ -1,11 +1,14 @@
 .container{
     position: absolute;
     top: 75vh;
+    padding: 3em 1em;
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 100%;
+    animation: 2s Bounce infinite alternate-reverse;
     h4{
         font-weight: 500;
-        font-style: italic;
-        filter: brightness(80%);
-        animation: 2s Bounce infinite alternate-reverse;
+        font-style: bold;
+        filter: brightness(100%);
     }
 }
 
@@ -20,6 +23,6 @@
         transform: translateY(0);
     }
     to{
-        transform: translateY(-15px) scale(1.05);
+        transform: translateY(-5px) scale(1.01);
     }
 }
