@@ -16,10 +16,10 @@ export default function HomeHero(text) {
       </div> */}
 
     </div>
-    <div className={styles.bottomLeftCirclePosition}>
+    <div className={styles.bottomLeftCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
         <GradientCircle/>
       </div>
-      <div className={styles.topRightCirclePosition}>
+      <div className={styles.topRightCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
         <GradientCircle/>
       </div>
     </>

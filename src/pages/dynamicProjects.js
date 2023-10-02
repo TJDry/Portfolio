@@ -4,10 +4,11 @@ import React, {useEffect} from 'react'
 import Footer from '../components/Footer/footer';
 import { projectData } from '../components/ProjectGrid/projectData';
 import Navigation from '../components/Navigation/navigation'
-import { Heading } from '../components/textBox/text'
+import TextBox, { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 import Overview from '../components/Overview/overview';
 import { useParams } from 'react-router-dom';
+import ImgContainer from '../components/ImageContainer/imgContainer';
 
 export default function Projects() {
   
@@ -34,8 +35,7 @@ export default function Projects() {
   }
   return (
     <div>
-        <Navigation/>
-        <HomeHero headline={project.title}/>
+        <HomeHero headline={project.title} gradientCircleColour={project.gradientColour}/>
         <Heading heading={project.title}/>
         <Overview 
           role={project.role} 
@@ -44,7 +44,11 @@ export default function Projects() {
           managementStyle={project.managementStyle} 
           projectType={project.projectType}
         />
-        <Footer/>
+        <ImgContainer image1={project.image[0]} abrProject={project.projectAbbreviation}/>
+        <TextBox headerA="" contentA={project.text[0]} contentB={project.text[1]} />
+        <ImgContainer image1={project.image[1]} image2={project.image[2]} abrProject={project.projectAbbreviation}/>
+        <TextBox headerA="" contentA={project.text[2]} contentB={project.text[3]} />
+        <ImgContainer image1={project.image[3]} image2={project.image[4]} abrProject={project.projectAbbreviation}/>
     </div>
   )
 }

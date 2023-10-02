@@ -16,6 +16,8 @@ import About from './pages/About';
 import Contact from './pages/contactUs';
 import { projectData } from './components/ProjectGrid/projectData';
 import Projects from './pages/dynamicProjects';
+import Navigation from './components/Navigation/navigation';
+import Footer from './components/Footer/footer';
 
 function App(){
   // const mouseRefs = useRef([]);
@@ -39,7 +41,8 @@ function App(){
   // };
 
   return (  
-    <div className="app">
+    <div className="app">'
+      <Navigation />
       <Suspense>
         <Routes> 
           <Route path="/" element={<Home />} />
@@ -49,6 +52,7 @@ function App(){
           <Route path='/about' element={<About />} />
         </Routes>
       </Suspense>
+      <Footer/>
     </div>
   );
 }

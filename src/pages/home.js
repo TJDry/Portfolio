@@ -8,21 +8,15 @@ import TextBox, { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 import ProjectGrid from '../components/ProjectGrid/projectGrid';
 
-export default function Home() {
+export default function Home(props) {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
 
-  // const [isHovering, setIsHovering] = useState(false)
-  // onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=>setIsHovering(false)}
   return (
     <div>
-        <Navigation />
         <HomeHero headline="crafting unique digital experiences"/>
         {/* <TextBox 
-          colorFlat="var(--text-colour)" 
-          textColor="var(--text-colour)" 
-          backgroundColor="" 
           heading="ABOUT" 
           contentA="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
           Majoring in Experience and Interaction Design. I have been working as a project & design
@@ -36,13 +30,6 @@ export default function Home() {
         <ProjectGrid/>
         <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
         <Footer textColor='var(--text-colour)' />
-        {/* <motion.div
-        initial={{ scaleX: 2 }}
-        animate={{ scaleX: 0, transition: { duration: 3, ease: "circOut" } }}
-        exit={{ scaleX: 2, transition: { duration: 1, ease: "circIn" } }}
-        style={{ originX: isPresent ? 1 : 0 }}
-        className="privacy-screen"
-      /> */}
     </div>
   )
 }

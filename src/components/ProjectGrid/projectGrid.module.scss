@@ -36,26 +36,26 @@
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-items: center;
     justify-content: center;
     column-gap: 4em;
     row-gap: 4em;
     width: 100vw;
     padding: 1em;
-  
-    @media only screen and (max-width: 1550px) {
+      
+    @media only screen and (min-width: 800px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-  
-    @media only screen and (max-width: 800px) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
+    @media only screen and (min-width: 1550px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+
   
     .projectItem {
       flex: 1;
       max-width: 600px;
-      min-width: 400px;
+      min-width: 300px;
     }
   
     .projectLink {

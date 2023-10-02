@@ -1,7 +1,7 @@
 import React, {useState,useRef} from 'react'
 import { NavLink } from "react-router-dom";
 import styles from './navigation.module.scss'
-import { navigationData } from './navigationData';
+import { navigationData } from '../Navigation/navigationData';
 import { motion, useScroll } from "framer-motion";
 import { Logo } from '../../assets/icons';
 

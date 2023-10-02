@@ -11,7 +11,7 @@ export default function ProjectGrid() {
           <NavLink to={`${process.env.PUBLIC_URL}/projects/${item.title}`} className={styles.projectLink}>
             <div className={styles.projectCard}>
               <img
-                src={item.image[0]}
+                src= {process.env.PUBLIC_URL + `/images/${item.projectAbbreviation}/${item.image[0]}`}
                 alt={item.title}
                 className={styles.projectImage}
               />

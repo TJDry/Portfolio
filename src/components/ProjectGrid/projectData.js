@@ -7,15 +7,17 @@ export const projectData = [
       role: 'UI UX Designer',
       year: '2023',
       status: 'Complete',
+      gradientColour: "linear-gradient(180deg, rgba(222,0,0,1) 0%, rgba(212,33,158,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
-      
+      projectAbbreviation: "a11",
       description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',      path: '/about/',
       image:[
-        `${process.env.PUBLIC_URL}/images/a11/hero.png`,
-        `${process.env.PUBLIC_URL}/images/a11/tablet0.png`,
-        `${process.env.PUBLIC_URL}/images/obdsz/tablet2.png`,
-        `${process.env.PUBLIC_URL}/images/obdsz/tablet1.png`,
+        `hero.png`,
+        `tablet0.png`,
+        `tablet1.png`,
+        `tablet2.png`,
+        `tablet3.png`,
       ],
       text:[
         "Lorem of the ipsolium discus",
@@ -30,17 +32,19 @@ export const projectData = [
       role: 'Design & Project Manager',
       year: '2023',
       status: 'Complete',
+      gradientColour: "linear-gradient(180deg, rgba(222,106,0,1) 0%, rgba(212,33,33,1) 100%)",
+      projectAbbreviation: "tw",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
       
       description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',
       image:[
-        `${process.env.PUBLIC_URL}/images/tw/hero.png`,
-        `${process.env.PUBLIC_URL}/images/tw/1.png`,
-        `${process.env.PUBLIC_URL}/images/tw/phone1.png`,
-        `${process.env.PUBLIC_URL}/images/tw/phone2.png`,
-        `${process.env.PUBLIC_URL}/images/tw/phone3.png`,
-        `${process.env.PUBLIC_URL}/images/tw/tablet1.png`,
+        `hero.png`,
+        `1.png`,
+        `phone1.png`,
+        `phone2.png`,
+        `phone3.png`,
+        `tablet1.png`,
       ],
       text:[
         "Lorem of the ipsolium discus",
@@ -55,18 +59,20 @@ export const projectData = [
       role: 'UI UX Designer',
       year: '2023',
       status: 'Complete',
+      gradientColour: "linear-gradient(180deg, rgba(0,92,222,1) 0%, rgba(255,0,0,1) 100%)",
+      projectAbbreviation: "bw",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
 
       description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',
       
       image:[
-        `${process.env.PUBLIC_URL}/images/bw/hero.png`,
-        `${process.env.PUBLIC_URL}/images/bw/1.png`,
-        `${process.env.PUBLIC_URL}/images/bw/phone1.png`,
-        `${process.env.PUBLIC_URL}/images/bw/phone2.png`,
-        `${process.env.PUBLIC_URL}/images/bw/phone3.png`,
-        `${process.env.PUBLIC_URL}/images/bw/phone4.png`,
+        `hero.png`,
+        `1.png`,
+        `phone1.png`,
+        `phone2.png`,
+        `phone3.png`,
+        `phone4.png`,
       ],
       
       text:[
@@ -82,18 +88,20 @@ export const projectData = [
     role: 'UI UX Designer',
     year: '2023',
     status: 'Complete',
+    gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
+    projectAbbreviation: "obdsz",
     managementStyle: 'Waterfall / Linear',
     projectType:'Mobile & Tablet App',
 
     description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',
     
     image:[
-      `${process.env.PUBLIC_URL}/images/obdsz/hero.png`,
-      `${process.env.PUBLIC_URL}/images/obdsz/1.png`,
-      `${process.env.PUBLIC_URL}/images/obdsz/phone1.png`,
-      `${process.env.PUBLIC_URL}/images/obdsz/phone2.png`,
-      `${process.env.PUBLIC_URL}/images/obdsz/phone3.png`,
-      `${process.env.PUBLIC_URL}/images/obdsz/phone4.png`,
+      `hero.png`,
+      `1.png`,
+      `phone1.png`,
+      `phone2.png`,
+      `phone3.png`,
+      `phone4.png`,
     ],
     
     text:[
