@@ -1,0 +1,53 @@
+.skillGrid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 1em 1em;
+    width: 100vw;
+    padding: 3em;
+    justify-items: stretch;  
+    @media only screen and (min-width: 800px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media only screen and (min-width: 1550px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+  
+    .skillItem {
+      flex: 1;
+      max-width: 700px;
+      min-width: 300px;
+    }
+    
+    .skillCard {
+      border: 4px solid rgba(255,255,255,0.6);
+      box-shadow: 0 1px 1px #DDD;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      height: 450px; /* Adjust the height as needed */
+      transition: filter 0.3s;
+    .skillImage {
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        object-fit: cover; /* Adjust image scaling as needed */
+        filter: blur(8px); /* Initial blur effect */
+        transition: filter 0.3s;
+      }
+    }.skillInfo {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-overflow: ellipsis;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      overflow-x: hidden;
+      padding: 2em;
+    }
+  }
+  
+  
+  
