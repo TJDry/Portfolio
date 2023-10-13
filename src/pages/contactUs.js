@@ -15,10 +15,8 @@ export default function Contact() {
   // onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=>setIsHovering(false)}
   return (
     <div>
-        <Navigation/>
         <HomeHero headline="Work with Us"/>
         <Heading heading="Work With Us" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <Footer textColor='var(--text-colour)' />
     </div>
   )
 }

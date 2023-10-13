@@ -15,16 +15,8 @@ export default function Projects() {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
-  const { projectTitle } = useParams();
-
-  console.log('projectTitle:', projectTitle);
-  console.log('projectData:', projectData);
-  
+  const { projectTitle } = useParams(); 
   const project = projectData.find((item) => item.title === projectTitle);
-  
-  console.log('project:', project);
-  
-
   if (!project) {
     return(
       <>
@@ -44,11 +36,11 @@ export default function Projects() {
           managementStyle={project.managementStyle} 
           projectType={project.projectType}
         />
-        <ImgContainer image1={project.image[0]} abrProject={project.projectAbbreviation}/>
+        <ImgContainer image1={project.image[0]} projectTitle={project.title}/>
         <TextBox headerA="" contentA={project.text[0]} contentB={project.text[1]} />
-        <ImgContainer image1={project.image[1]} image2={project.image[2]} abrProject={project.projectAbbreviation}/>
+        <ImgContainer image1={project.image[1]} image2={project.image[2]} projectTitle={project.title}/>
         <TextBox headerA="" contentA={project.text[2]} contentB={project.text[3]} />
-        <ImgContainer image1={project.image[3]} image2={project.image[4]} abrProject={project.projectAbbreviation}/>
+        <ImgContainer image1={project.image[3]} image2={project.image[4]} projectTitle={project.title}/>
     </div>
   )
 }

@@ -17,11 +17,9 @@ export default function ProjectPage() {
   // onMouseEnter={()=> setIsHovering(true)} onMouseLeave={()=>setIsHovering(false)}
   return (
     <div>
-        <Navigation/>
         <HomeHero headline="Projects"/>
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ProjectGrid/>
-        <Footer textColor='var(--text-colour)' />
     </div>
   )
 }
