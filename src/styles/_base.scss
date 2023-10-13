@@ -23,7 +23,7 @@ Link{
 }
 h1{
     font-family: var(--primary-font);
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: -0.5px;
     text-align: center;
     font-size: 4rem;
@@ -37,7 +37,7 @@ h1{
         font-size: 7rem;
     }
     @media screen and (min-width: 1000px) {
-        font-size: 8rem;
+        font-size: 7rem;
         line-height: 150px;
     }
 }h2{

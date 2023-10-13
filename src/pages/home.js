@@ -12,7 +12,7 @@ export default function Home(props) {
 
   return (
     <div>
-        <HomeHero headline="We Create Unique Digital Experiences"/>
+        <HomeHero headline="Creating Unique Digital Experiences"/>
         {/* <TextBox 
           heading="ABOUT" 
           contentA="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
