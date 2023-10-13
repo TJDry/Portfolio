@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 // import Skills from '../components/SkillCard/skill'
-import Footer from '../components/Footer/footer';
 import { projectData } from '../components/ProjectGrid/projectData';
 import Navigation from '../components/Navigation/navigation'
 import TextBox, { Heading } from '../components/textBox/text'

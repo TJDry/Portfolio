@@ -1,11 +1,8 @@
 import React, {useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 // import Skills from '../components/SkillCard/skill'
-import Footer from '../components/Footer/footer';
-import Navigation from '../components/Navigation/navigation'
 import { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
-import Projects from './dynamicProjects';
 import ProjectGrid from '../components/ProjectGrid/projectGrid';
 
 export default function ProjectPage() {

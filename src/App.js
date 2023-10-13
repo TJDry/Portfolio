@@ -1,4 +1,4 @@
-import React, { useRef , useEffect, Suspense} from 'react'
+import React, {Suspense} from 'react'
 import { Routes, Route } from "react-router-dom";
 import './styles/master.scss'
 // import { Mouse } from './Mouse';
@@ -14,7 +14,6 @@ import Home from './pages/home';
 import ProjectPage from './pages/projects';
 import About from './pages/About';
 import Contact from './pages/contactUs';
-import { projectData } from './components/ProjectGrid/projectData';
 import Projects from './pages/dynamicProjects';
 import Navigation from './components/Navigation/navigation';
 import Footer from './components/Footer/footer';
