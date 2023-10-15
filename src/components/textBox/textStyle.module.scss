@@ -22,7 +22,7 @@
     .flex{
         display: flex;
         justify-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
 
     }
@@ -31,7 +31,7 @@
             overflow-wrap: break-word;
             text-align: left;
             font-weight: 100; 
-            max-width: 60%;
+            max-width: 800px;
             padding: 2em 4em;
             border-radius: 20px;
             background-color: rgba(0,0,0,0.05);
