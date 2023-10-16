@@ -8,6 +8,7 @@ import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 import Overview from '../components/Overview/overview';
 import { useParams } from 'react-router-dom';
 import ImgContainer from '../components/ImageContainer/imgContainer';
+import ColourCard from '../components/ColourPalette/colourGrid';
 
 export default function Projects() {
   
@@ -36,10 +37,16 @@ export default function Projects() {
           projectType={project.projectType}
         />
         <ImgContainer image1={project.image[0]} projectTitle={project.title}/>
-        <TextBox headerA="" contentA={project.text[0]} contentB={project.text[1]} />
         <ImgContainer image1={project.image[1]} image2={project.image[2]} projectTitle={project.title}/>
-        <TextBox headerA="" contentA={project.text[2]} contentB={project.text[3]} />
-        <ImgContainer image1={project.image[3]} image2={project.image[4]} projectTitle={project.title}/>
+        <Heading heading="Mission" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <TextBox contentA={project.text[0]} contentB={project.text[1]} />
+        <Heading heading="Objective" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <TextBox contentA={project.text[2]} contentB={project.text[3]} />
+        <Heading heading="Obstacles" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <TextBox contentA={project.text[4]} contentB={project.text[5]} />
+        <Heading heading="Colour Palette" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <ColourCard colour1={project.colours[0]} colour2={project.colours[1]} colour3={project.colours[2]} colour4={project.colours[3]} colour5={project.colours[4]}/>
+        {/* <ImgContainer image1={project.image[3]} image2={project.image[4]} projectTitle={project.title}/> */}
     </div>
   )
 }

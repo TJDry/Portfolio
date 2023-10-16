@@ -27,6 +27,14 @@ export const projectData = [
         "I created a clean design for multiple sections of the software, keeping it simple with no bezels or embossing and making sure its easily accessible and usable whilst also keeping it within reason of an upgrade.",
         "I also created a dynamic resting page with multiple gradients to help promote a cleaner and more modern creative look, with gradient bubbles blurred out to create distance between the sharper time and the background colours",
       ],
+      colours:
+      [
+        "#590508",
+        "#8A020D",
+        "#901721",
+        "#01011E",
+        "#810182",
+      ]
     },
     
     {
@@ -54,6 +62,14 @@ export const projectData = [
         "You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",
         "The app utilises BLE technology to hold up to 4 devices at the same time. It requires a full scale app with all tests, results and report creation as this is an industry standard application usable by the public",
       ],
+      colours:
+      [
+        "#F8991C",
+        "#BB4430",
+        "#FFAA00",
+        '#E8E9EB',
+        "#1C1F20",
+      ]
     },
     
     {
@@ -89,6 +105,14 @@ export const projectData = [
         "From those 4 teams, we tested one, who never responded and thus we re-interviewed a couple and are waiting for project approval from my boss for the project to go ahead as we received the communication medium for the BLE device.",
         "Since those interviews I have been slowly improving the app's UI integrating a better navigation and sizings both for button and text and refining the BattWatcher brand."
       ],
+      colours:
+      [
+        "#5A9FF0",
+        "#75ECA5",
+        "#E70000",
+        "#FDFEFF",
+        "#132024",
+      ]
     },
     
     {
@@ -121,6 +145,14 @@ export const projectData = [
       "From adding new features to refining performance and functionality, it becomes hard to tell if the project is making any haste towards production level.",
       "The project needs to be able to run smoothly across all android versions making it hard for the developers i manage communications with to develop the app in a way that can run smoothly on all",
     ],
+    colours:
+    [
+      "#E90101",
+      "#F55454",
+      "#222222",
+      "#181414",
+      "white",
+    ]
   },
   ];
   
