@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import styles from './projectGrid.module.scss'
-import { projectData } from './projectData';
+import { projectData } from '../../projectData';
 
 export default function ProjectGrid() {
   return (

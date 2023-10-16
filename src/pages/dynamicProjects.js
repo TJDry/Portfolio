@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 // import Skills from '../components/SkillCard/skill'
-import { projectData } from '../components/ProjectGrid/projectData';
+import { projectData } from '../projectData';
 import Navigation from '../components/Navigation/navigation'
 import TextBox, { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';

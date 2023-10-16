@@ -86,9 +86,9 @@ export const projectData = [
       description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',
       
       image:[
-        `hero.png`,
-        `1.png`,
-        `phone1.png`,
+        `mobileHero.jpg`,
+        `mobileOne.jpg`,
+        `mobileTwo.jpg`,
         `phone2.png`,
         `phone3.png`,
         `phone4.png`,
