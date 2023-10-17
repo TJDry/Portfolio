@@ -1,9 +1,14 @@
+.skillGridBorder{  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 .skillGrid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1em 1em;
-  width: 100vw;
+  width: 80vw;
   justify-items: center;
     
   @media only screen and (min-width: 800px) {
@@ -15,17 +20,17 @@
   
     .skillItem {
       flex: 1;
-      max-width: 600px;
+      max-width: 450px;
       min-width: 300px;
+      width: 100%;
     }
     
     .skillCard {
       border-radius: 8px;
       overflow: hidden;
       position: relative;
-      height: 450px;
-      border: 1px black solid;
-
+      height: 500px;
+      background: linear-gradient(-45deg, rgba(255,255,255,0.04),rgba(255, 255, 255, 0.025),rgba(255,255,255,0.04));
     .skillImage {
         width: 64px;
         height: 64px;
@@ -37,7 +42,7 @@
       }
     }.skillInfo {
       position: absolute;
-      bottom: 0;
+      top: 40%;
       left: 0;
       text-overflow: ellipsis;
       right: 0;
@@ -46,8 +51,12 @@
       overflow-x: hidden;
       padding: 2em;
       overflow: hidden;
+      h4{
+        padding: 2em 0;
+        line-height: 2em;
+      }
     }
   }
-  
+}
   
   
