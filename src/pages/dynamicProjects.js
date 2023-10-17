@@ -9,6 +9,7 @@ import Overview from '../components/Overview/overview';
 import { useParams } from 'react-router-dom';
 import ImgContainer from '../components/ImageContainer/imgContainer';
 import ColourCard from '../components/ColourPalette/colourGrid';
+import ProjectHero from '../components/ProjectHero/HomeHero/projectHero';
 
 export default function Projects() {
   
@@ -27,7 +28,7 @@ export default function Projects() {
   }
   return (
     <div>
-        <HomeHero headline={project.title} gradientCircleColour={project.gradientColour}/>
+        <ProjectHero headline={project.title} gradientCircleColour={project.gradientColour} heroImage={project.image[0]} projectTitle={project.title}/>
         <Heading heading={project.title}/>
         <Overview 
           role={project.role} 

@@ -3,7 +3,7 @@
 export const projectData = [
     {
       id: 1,
-      title: 'Android 12',
+      title: 'Android12',
       role: 'UI UX Designer',
 
       year: '2023',
@@ -14,7 +14,7 @@ export const projectData = [
       description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',
       image:[
         `hero.png`,
-        `tablet0.jpg`,
+        `product1.webp`,
         `tablet1.jpg`,
         `tablet2.jpg`,
         `tablet3.jpg`,
@@ -51,8 +51,8 @@ export const projectData = [
       description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',
       image:[
         `hero.png`,
-        `1.png`,
-        `phone1.png`,
+        `Mobile1.jpg`,
+        `MobileTablet1.jpg`,
         `phone2.png`,
         `phone3.png`,
         `tablet1.png`,
@@ -74,7 +74,7 @@ export const projectData = [
     
     {
       id: 3,
-      title: 'Battery Watcher',
+      title: 'BatteryWatcher',
       role: 'UI UX Designer',
 
       year: '2023',
@@ -129,7 +129,7 @@ export const projectData = [
     description: 'This is a very descriptive description that should describe the descriptionw without exceeeding detailing',
     
     image:[
-      `hero.png`,
+      `mobileOne.jpg`,
       `1.png`,
       `phone1.png`,
       `phone2.png`,

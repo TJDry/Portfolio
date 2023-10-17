@@ -1,0 +1,103 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    min-height: 940px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    h1{
+        padding: 1em;
+        position: absolute;
+        top: 10vh;
+        width: 100%;
+        animation: fade-animate 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate;
+    }
+}
+
+.overlay{
+    background: rgba(0,0,0,0.5);
+}
+
+    .scrollContainer{
+        position: absolute;
+        left: 5vw;
+        animation: fade-animate 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate;
+        top: 80vh;
+        @media (max-width: 1000px) {
+            right: 20vw;
+        }
+        @media (max-width: 600px) {
+            right: 30vw;
+        }
+    }
+
+// @keyframes scale {
+//     from {
+//         transform: scale(1);
+//     }
+//     to {
+//         transform: scale(1.2);
+//     }
+//   }
+
+@keyframes fade-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(10);
+    }
+  }
+
+  @keyframes bobble{
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
+
+
+  .socialsContainer{
+    position: absolute;
+    right:5vw;
+    animation: fade-animate 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate;
+    top: 65vh;
+    @media (max-width: 1000px) {
+        right: 20vw;
+    }
+    @media (max-width: 600px) {
+        right: 30vw;
+    }
+}
+
+.bottomLeftCirclePosition, .topRightCirclePosition{
+    z-index: -1;
+    position: fixed;
+    opacity: 0.5;
+    width: 70rem;
+    height: 70rem;
+    transform-origin: 50%;
+    filter: blur(10em);
+    border-radius: 100%;
+}
+.bottomLeftCirclePosition{
+    top: 40vh;
+    right:60vw;
+    background: linear-gradient(180deg, #F00 0%, #FA00FF 48.44%, #F00 100%);
+
+}
+.topRightCirclePosition{
+    top: -30vh;
+    left:60vw;
+    background: linear-gradient(180deg, #0057FF 0%, #00FF85 100%);
+}

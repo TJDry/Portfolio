@@ -1,4 +1,4 @@
-import React, {useState,useRef,useEffect} from 'react'
+import React, {useState,useEffect} from 'react'
 import { NavLink } from "react-router-dom";
 import styles from './navigation.module.scss'
 import { navigationData } from '../Navigation/navigationData';
@@ -11,7 +11,6 @@ export default function Navigation() {
   const [hidden, setHidden] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen,setIsOpen] = useState(false);
-  const openRef = useRef();
 
 
   useEffect(() => {
@@ -54,7 +53,6 @@ export default function Navigation() {
                <div className={isOpen ? `${styles.navBtn} ${styles.active}` : `${styles.navBtn}`}></div>
            </div>
            <div className={styles.container}
-                  ref={openRef}
                   style={isOpen 
                    ? {
                        width: "100vw",
