@@ -2,28 +2,21 @@ import React from 'react';
 import styles from './textStyle.module.scss'
 
 export default function TextBox(text){
-    if (text.contentB !== undefined){
-        return(
-        <div className={styles.borderContainer}>
-            <h2 style={{color: `${text.brandColour}`}}>{text.heading}</h2>
-                <div className={styles.flex}>
-                    <div className={styles.textContainer}><h3>{text.headerA}</h3><p>{text.contentA}</p></div>
-                    <div className={styles.textContainer}><h3>{text.headerA}</h3><p>{text.contentB}</p></div>
-                </div>
+    return(
+    <div className={`${styles.borderContainer} ${text.contentB ? styles.hasContentB : ''}`} style={{ backgroundColor: `${text.brandColour}` }}>
+    <h2>{text.heading}</h2>
+    <div className={styles.textContainer}>
+        <h3>{text.headerA}</h3>
+        <p>{text.contentA}</p>
+    </div>
+    {text.contentB && (
+        <div className={styles.textContainer}>
+            <h3>{text.headerB}</h3>
+            <p>{text.contentB}</p>
         </div>
-        )
-    } else if (text.contentB !== undefined) {
-        return(
-        <div className={`${styles.borderContainer}`} style={{backgroundColor: `${text.brandColour}`}}>
-            <h2 style={{color: `${text.brandColour}`}}>{text.heading}</h2>
-                <div className={styles.flex}>
-                    <div className={styles.textContainer}><h3>{text.headerA}</h3><p style={{color: `${text.textColor}`}}>{text.contentA}</p></div>
-                </div>
-        </div>
-        )
-    } else {
-        return('')
-    }
+    )}
+</div>
+);
 }
 
 export function Heading(text){
