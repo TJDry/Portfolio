@@ -45,16 +45,16 @@ h1{
 }h2{
     font-size: 1.5rem;
     z-index: 10;
-    font-weight: 700;
+    font-weight: 800;
     opacity: 88%;
     word-wrap: break-word;
     @media screen and (min-width: 400px) {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
 }h3{
     color: var(--text-colour);
-    font-weight: 700;
-    font-size: 2.5rem;
+    font-weight: 600;
+    font-size: 1.7rem;
     @media screen and (min-width: 600px) {
     }
 }p{
