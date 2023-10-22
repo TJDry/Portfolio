@@ -10,6 +10,7 @@ import { useParams } from 'react-router-dom';
 import ImgContainer from '../components/ImageContainer/imgContainer';
 import ColourCard from '../components/ColourPalette/colourGrid';
 import ProjectHero from '../components/ProjectHero/HomeHero/projectHero';
+import NextPage from '../components/NextProject/nextProject';
 
 export default function Projects() {
   
@@ -48,6 +49,7 @@ export default function Projects() {
         <Heading heading="Colour Palette" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ColourCard colour1={project.colours[0]} colour2={project.colours[1]} colour3={project.colours[2]} colour4={project.colours[3]} colour5={project.colours[4]}/>
         {/* <ImgContainer image1={project.image[3]} image2={project.image[4]} projectTitle={project.title}/> */}
+        <NextPage/>
     </div>
   )
 }
