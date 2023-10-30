@@ -23,7 +23,8 @@ export default function Home(props) {
           work well independently."
         /> */}
         <Showreel />
-        <Heading heading="SKILLS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <Heading heading="ABILITIES" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <SkillGrid />
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ProjectGrid/>

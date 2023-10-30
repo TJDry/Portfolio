@@ -6,7 +6,7 @@ const Footer = (props) => {
    <div className={styles.footContainer}>
     <div className={styles.flexFoot}>
       <div className={styles.textArea}>
-        <h2 style={{color: `${props.textColor}`}}>Have an idea?<br></br>Send Me a Message</h2><a href="mailto:jay@jaydendry.com"><h2>jay@jaydendry.com</h2></a>
+        <h1 style={{color: `${props.textColor}`}}>Have an idea?<br></br>Send Me a Message</h1><a href="mailto:jay@jaydendry.com"><h1>jay@jaydendry.com</h1></a>
       </div>
         <SocialsMinimal />
     </div>
