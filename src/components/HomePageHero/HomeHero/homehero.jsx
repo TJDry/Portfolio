@@ -1,20 +1,14 @@
 import React from 'react'
 import { DownButton, GradientCircle } from '../../Button/button'
 import styles from './homehero.module.scss'
+import Showreel from '../../Showreel/showreel'
 
 export default function HomeHero(text) {
   return (
     <>
     <div className={styles.container}>
-      <h1 className={styles.bobble}>{text.headline}</h1>
-      {/* <div className={styles.scrollContainer}>
-        <ScrollArrow />
-      </div> */}
-      <DownButton/>
-      {/* <div className={styles.socialsContainer}>
-        <Socials/>
-      </div> */}
-
+      <h1 className={styles.bobble}>{text.headline}<h3 className={styles.bobble}>{text.subHeadline}</h3></h1>
+      {/* <DownButton/> */}
     </div>
     <div className={styles.bottomLeftCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
         <GradientCircle/>

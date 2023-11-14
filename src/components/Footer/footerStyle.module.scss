@@ -56,3 +56,17 @@
       display: inline;
   }
 }
+
+.centerCirclePosition{
+  z-index: -1;
+  position: absolute;
+  opacity: 0.5;
+  width: 20rem;
+  height: 20rem;
+  transform-origin: 50%;
+  filter: blur(10em);
+  border-radius: 100%;
+  overflow: hidden;  
+  background: linear-gradient(180deg, #F00 0%, #FA00FF 45%, #F00 100%);
+
+}

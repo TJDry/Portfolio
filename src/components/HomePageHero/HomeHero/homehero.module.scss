@@ -5,12 +5,20 @@
     display: flex;
     justify-content: center;
 
-    h1{
+    h1,h3{
         padding: 1em;
         position: absolute;
         top: 10vh;
         width: 100%;
         animation: fade-animate 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate;
+    }
+    h3{
+        font-weight: 300;
+        opacity: 0.6;
+        top: 0;
+        position: relative;
+        line-height: 1.25;
+        text-align: center;
     }
 }
 
@@ -76,7 +84,7 @@
 
 .bottomLeftCirclePosition, .topRightCirclePosition{
     z-index: -1;
-    position: fixed;
+    position: absolute;
     opacity: 0.5;
     width: 70rem;
     height: 70rem;
@@ -87,7 +95,7 @@
 .bottomLeftCirclePosition{
     top: 40vh;
     right:60vw;
-    background: linear-gradient(180deg, #F00 0%, #FA00FF 48.44%, #F00 100%);
+    background: linear-gradient(180deg, #F00 0%, #FA00FF 45%, #F00 100%);
 
 }
 .topRightCirclePosition{

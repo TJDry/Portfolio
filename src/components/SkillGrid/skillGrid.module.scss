@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1em 1em;
-  width: 80vw;
+  width: 90vw;
   justify-items: center;
     
   @media only screen and (min-width: 800px) {
@@ -21,7 +21,7 @@
   
     .skillItem {
       flex: 1;
-      max-width: 450px;
+      // max-width: 450px;
       min-width: 300px;
       width: 100%;
     }

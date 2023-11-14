@@ -9,7 +9,7 @@ export default function ProjectHero(text) {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      scrollDarkness.current.style.opacity = 1 - window.scrollY / 700;
+      // scrollDarkness.style.opacity = 1 - window.scrollY / 700;
     });
 
     return () => {

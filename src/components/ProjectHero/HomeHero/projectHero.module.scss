@@ -82,7 +82,7 @@
 
 .bottomLeftCirclePosition, .topRightCirclePosition{
     z-index: -1;
-    position: fixed;
+    position: absolute;
     opacity: 0.5;
     width: 70rem;
     height: 70rem;
@@ -91,13 +91,13 @@
     border-radius: 100%;
 }
 .bottomLeftCirclePosition{
-    top: 40vh;
+    top: 120vh;
     right:60vw;
     background: linear-gradient(180deg, #F00 0%, #FA00FF 48.44%, #F00 100%);
 
 }
 .topRightCirclePosition{
-    top: -30vh;
+    top: 60vh;
     left:60vw;
     background: linear-gradient(180deg, #0057FF 0%, #00FF85 100%);
 }

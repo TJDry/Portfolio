@@ -12,7 +12,8 @@ export default function Home(props) {
 
   return (
     <div>
-        <HomeHero headline="Creating Unique Digital Experiences"/>
+        <HomeHero headline="Creating Unique Digital Experiences" subHeadline="enjoy working collaboratively in a team environment and also
+          work well independently"/>
         {/* <TextBox 
           heading="ABOUT" 
           contentA="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
@@ -23,6 +24,7 @@ export default function Home(props) {
           work well independently."
         /> */}
         <Showreel />
+        <Heading heading="ABOUT" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <Heading heading="ABILITIES" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <SkillGrid />
