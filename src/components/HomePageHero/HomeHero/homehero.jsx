@@ -1,7 +1,6 @@
 import React from 'react'
-import { DownButton, GradientCircle } from '../../Button/button'
+import { GradientCircle } from '../../Button/button'
 import styles from './homehero.module.scss'
-import Showreel from '../../Showreel/showreel'
 
 export default function HomeHero(text) {
   return (
