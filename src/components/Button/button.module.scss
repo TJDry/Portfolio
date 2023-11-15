@@ -27,3 +27,12 @@
         transform: translateY(-5px) scale(1.01);
     }
 }
+.tagContainer{
+    h4{
+        display: inline;
+        margin:0.2em;
+        padding: 0.5em;
+        border: 1.5px solid white;
+        border-radius: 8px;
+    }   
+}

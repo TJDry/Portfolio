@@ -20,15 +20,9 @@ export function DownButton(){
     )
 }
 export function GradientCircle(){
-    // const {scrollY} = useScroll();
-    // const x = useTransform(scrollY, (value) => (-value / 4000)-1)
     return(
     <>
-        <motion.div className={styles.circle}
-            // style= {{
-            //     scale: x,
-            // }}
-        />
+        <motion.div className={styles.circle}/>
     </>
     )
 }
@@ -41,3 +35,10 @@ export function ProjectButton(){
     </div>
     )
 }
+
+
+export const Tag = (item) => (
+    <div className={styles.tagContainer}>
+        <h4>{item.tagTitle}</h4>
+    </div>
+);

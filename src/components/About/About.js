@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './textStyle.module.scss'
+import styles from './aboutUs.module.scss'
 
-export default function TextBox(text){
+export default function AboutUs(text){
     return(
     <div className={styles.textContainer}>
         <p>{text.content}</p>

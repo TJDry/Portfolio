@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import styles from './projectGrid.module.scss'
 import { projectData } from '../../projectData';
+import { Tag } from '../Button/button';
 
 export default function ProjectGrid() {
   return (
@@ -19,7 +20,14 @@ export default function ProjectGrid() {
                 <div className={styles.projectInfo}>
                   <h2>{item.title}</h2>
                   <h3>{item.role}</h3>
-                  <h4>{item.description}</h4>
+                  <div className={styles.tagList}>
+                    {item.tagList.map((tag,index) => (
+                      <Tag key={index} 
+                           tagTitle={tag}
+                      />
+                    ))
+                    }
+                  </div>
                 </div>
               </div>
             </NavLink>
