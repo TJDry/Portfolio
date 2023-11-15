@@ -3,7 +3,7 @@ import Showreel from '../components/Showreel/showreel'
 import TextBox, { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 import ProjectGrid from '../components/ProjectGrid/projectGrid';
-import SkillGrid from '../components/SkillGrid/skillGrid';
+// import SkillGrid from '../components/SkillGrid/skillGrid';
 
 export default function Home(props) {
   useEffect(() => {
@@ -24,10 +24,10 @@ export default function Home(props) {
           work well independently."
         /> */}
         <Showreel />
-        <Heading heading="ABOUT" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        {/* <Heading heading="ABOUT" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <Heading heading="ABILITIES" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <SkillGrid />
+        <SkillGrid /> */}
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ProjectGrid/>
         <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
