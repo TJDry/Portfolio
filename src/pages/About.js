@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import AboutUs, { Heading } from '../components/About/About';
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 
 export default function About() {
