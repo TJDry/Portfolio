@@ -14,7 +14,6 @@ export default function Contact() {
   return (
     <div>
         <HomeHero headline="Work with Us"/>
-        <Heading heading="Work With Us" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
     </div>
   )
 }
