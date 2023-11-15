@@ -1,11 +1,8 @@
-  export const navigationData = [{
-        id: 1,
-        title: 'Approach',
-        path: '/',
-    },{
-        id: 2,
-        title:'Abilities',
-        path: '/',
+  export const navigationData = [
+    {
+        id:1,
+        title:'Home',
+        path:'/'
     },{
         id:3,
         title:'Projects',
