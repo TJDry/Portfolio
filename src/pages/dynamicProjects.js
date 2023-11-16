@@ -46,10 +46,10 @@ export default function Projects() {
         <TextBox content={project.text[1]}/>
         <Heading heading="Obstacles" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <TextBox content={project.text[2]}/>
-        <Heading heading="Process" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        {/* <Heading heading="Process" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
         <Heading heading="Colour Palette" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ColourCard colour1={project.colours[0]} colour2={project.colours[1]} colour3={project.colours[2]} colour4={project.colours[3]} colour5={project.colours[4]}/>
-        <Heading heading="Persona" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        {/* <Heading heading="Persona" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
         {/* <ImgContainer image1={project.image[3]} image2={project.image[4]} projectTitle={project.title}/> */}
         <NextPage/>
     </div>

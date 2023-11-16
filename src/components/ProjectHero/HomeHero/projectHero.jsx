@@ -1,5 +1,5 @@
 import React from 'react'
-import { DownButton, GradientCircle } from '../../Button/button'
+import { DownButton, GradientCircle} from '../../Button/button'
 import styles from './projectHero.module.scss'
 import { useRef } from 'react'
 import { useEffect } from 'react';
@@ -22,7 +22,8 @@ export default function ProjectHero(text) {
     <>
     <div className={styles.container} style={{backgroundImage: `url(${process.env.PUBLIC_URL + `/images/${text.projectTitle}/${text.heroImage}`})`}}>
     <div className={`${styles.container} ${styles.overlay}`} ref={scrollDarkness}></div>
-      <h1 className={styles.bobble}>{text.headline}</h1>
+    <h1 className={styles.bobble}>{text.headline}</h1>
+
       <DownButton/>
     </div>
     <div className={styles.bottomLeftCirclePosition} style={{background: `${text.gradientCircleColour}`}}>

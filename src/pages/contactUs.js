@@ -1,7 +1,4 @@
 import React, {useEffect} from 'react'
-// import { Link } from 'react-router-dom'
-// import Skills from '../components/SkillCard/skill'
-import { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 
 export default function Contact() {
