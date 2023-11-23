@@ -22,7 +22,6 @@ const Showreel = () =>{
             scrub: true,
             start: "-100%",
             end: "top center",
-            markers: true
           }
         }
       );
