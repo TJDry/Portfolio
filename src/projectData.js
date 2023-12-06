@@ -13,7 +13,7 @@ export const projectData = [
       projectType:'Mobile & Tablet App',
       tagList: ['UI / UX','Project Management','QA Testing'],
       image:[
-        `hero.png`,
+        `hero.jpg`,
         `product1.webp`,
         `tablet1.jpg`,
         `tablet2.jpg`,

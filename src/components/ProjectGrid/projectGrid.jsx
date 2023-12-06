@@ -52,6 +52,7 @@ export default function ProjectGrid() {
                     {item.tagList.map((tag,index) => (
                       <Tag key={index} 
                            tagTitle={tag}
+                           className={styles.tag}
                       />
                     ))
                     }
