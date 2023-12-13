@@ -17,7 +17,10 @@ export default function NextPage(){
     const nextProject = projectData[nextProjectIndex];
   
     const navigateToNextProject = () => {
-        navigate(`/projects/${nextProject.title}`); // Use navigate to navigate to the next project
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        setTimeout(() => {
+            navigate(`/projects/${nextProject.title}`);
+        }, 100); // Use navigate to navigate to the next project
       };
     
     return(

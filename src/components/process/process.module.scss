@@ -1,0 +1,21 @@
+.overviewContainer{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    left: 10%;
+    margin-bottom: 5em;
+    position: relative;
+    ul{
+        list-style: none;
+        li{
+            h3{
+                font-size: 2.5rem;
+            }
+            padding: 0.5em;
+            p{
+                font-size: 1.25rem;
+                text-indent: 50px;
+            }
+        }
+    }
+}
