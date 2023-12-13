@@ -14,8 +14,13 @@ export default function Home(props) {
   return (
     <div>
         <HomeHero headline="Creating Unique Digital Experiences" subHeadline="Taking Web & App design to the next level"/>
-        <Showreel />
-        <Heading heading="ABOUT" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+
+        <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <ProjectGrid/>
+        {/* <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
+        <Heading heading="ABILITIES" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <SkillGrid />
+        <Heading heading="Hi, I'm Jay" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <AboutUs 
           content="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
           Majoring in Experience and Interaction Design. I have been working as a project & design
@@ -24,12 +29,7 @@ export default function Home(props) {
           backend development. I enjoy working collaboratively in a team environment and also
           work well independently."
         />
-
-        {/* <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
-        <Heading heading="ABILITIES" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <SkillGrid />
-        <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <ProjectGrid/>
+        <Showreel />
         <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
     </div>
   )

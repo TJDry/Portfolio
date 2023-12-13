@@ -101,3 +101,20 @@
     left:60vw;
     background: linear-gradient(180deg, #0057FF 0%, #00FF85 100%);
 }
+
+.projectBorder{
+
+    top: 30vh;
+    position: absolute;
+    .tagList{
+        display: flex;
+        flex-direction: row;
+        margin: 3em 0;
+        h4{
+          font-size: 0.8em;
+          @media only screen and (min-width: 1000px) {
+            font-size: 1em;
+          }
+        }
+    }
+  }

@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './overview.module.scss'
+import styles from './process.module.scss'
 
-export default function Overview(text){
+export default function Process(text){
     return(
     <div className={`${styles.overviewContainer}`}>
         <ul>
