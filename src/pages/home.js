@@ -18,6 +18,7 @@ export default function Home(props) {
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ProjectGrid/>
         {/* <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
+        <Showreel />
         <Heading heading="ABILITIES" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <SkillGrid />
         <Heading heading="Hi, I'm Jay" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
@@ -29,7 +30,6 @@ export default function Home(props) {
           backend development. I enjoy working collaboratively in a team environment and also
           work well independently."
         />
-        <Showreel />
         <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
     </div>
   )

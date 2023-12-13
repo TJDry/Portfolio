@@ -42,3 +42,12 @@ export const Tag = (item) => (
         <h4>{item.tagTitle}</h4>
     </div>
 );
+
+
+export function Spacer(item){
+    return(
+    <div className={styles.spaceContainer}>
+        <div className={styles.spacer} style={{width: item.width}}/>
+    </div>
+    )
+}

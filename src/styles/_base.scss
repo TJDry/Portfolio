@@ -27,7 +27,7 @@ h1{
     letter-spacing: -0.5px;
     text-align: center;
     margin-top: 1em;
-    font-size: 2.75rem;
+    font-size: 3rem;
     opacity: 100%;
     z-index: 10;
     color: var(--text-colour);
@@ -43,7 +43,7 @@ h1{
         line-height: 150px;
     }
 }h2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     z-index: 10;
     font-weight: 800;
     opacity: 88%;
@@ -54,14 +54,16 @@ h1{
 }h3{
     color: var(--text-colour);
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    padding: 0.2em;
     @media screen and (min-width: 600px) {
+        font-size: 1.8rem;
     }
-}p{
+}p{ 
     font-size: 1.25rem;
     line-height: 2;
     font-weight: 500;
-    color: var(--text-colour);
+    color: var(--text-colour-dark);
     padding-right: 2.5em;
     @media screen and (min-width: 600px) {
     }

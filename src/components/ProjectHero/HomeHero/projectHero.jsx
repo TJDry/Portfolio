@@ -20,8 +20,7 @@ export default function ProjectHero(text) {
   }, []);
 
   const currentProject = projectData.find((project) => project.title === text.projectTitle);
-
-
+  console.log(currentProject.textList);
   return (
     <>
     <div className={styles.container} style={{backgroundImage: `url(${process.env.PUBLIC_URL + `/images/${text.projectTitle}/${text.heroImage}`})`}}>
