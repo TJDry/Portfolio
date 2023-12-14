@@ -40,7 +40,7 @@ export default function SkillGrid() {
                 <Icon icon={item.logo} className={`${styles.icon}`}/>
                 <div className={styles.skillInfo}>
                   <h2>{item.title}</h2>
-                  <h4>{item.description}</h4>
+                  <p>{item.description}</p>
                 </div>
               </div>
           </li>

@@ -3,7 +3,7 @@ import React, {useEffect} from 'react'
 // import Skills from '../components/SkillCard/skill'
 import { projectData } from '../projectData';
 import Navigation from '../components/Navigation/navigation'
-import TextBox, { Heading } from '../components/textBox/text'
+// import TextBox, { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 import Overview from '../components/Overview/overview';
 import { useParams } from 'react-router-dom';
@@ -11,6 +11,8 @@ import ImgContainer from '../components/ImageContainer/imgContainer';
 import ColourCard from '../components/ColourPalette/colourGrid';
 import ProjectHero from '../components/ProjectHero/HomeHero/projectHero';
 import NextPage from '../components/NextProject/nextProject';
+import ProjectProcess from '../components/projectProcess/HomeHero/projectProcess';
+import { Spacer } from '../components/Button/button';
 
 export default function Projects() {
   
@@ -30,7 +32,7 @@ export default function Projects() {
   return (
     <div>
         <ProjectHero headline={project.title} gradientCircleColour={project.gradientColour} heroImage={project.image[0]} projectTitle={project.title}/>
-        <Heading heading={project.title}/>
+        <Spacer width="90%"/>
         <Overview 
           role={project.role} 
           year={project.year} 
@@ -40,17 +42,9 @@ export default function Projects() {
         />
         <ImgContainer image1={project.image[0]} projectTitle={project.title}/>
         <ImgContainer image1={project.image[1]} image2={project.image[2]} projectTitle={project.title}/>
-        <Heading heading="Mission" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <TextBox content={project.text[0]}/>
-        <Heading heading="Objective" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <TextBox content={project.text[1]}/>
-        <Heading heading="Obstacles" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <TextBox content={project.text[2]}/>
-        {/* <Heading heading="Process" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
-        <Heading heading="Colour Palette" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
+        <Spacer/>
+        <ProjectProcess projectTitle={project.title}/>
         <ColourCard colour1={project.colours[0]} colour2={project.colours[1]} colour3={project.colours[2]} colour4={project.colours[3]} colour5={project.colours[4]}/>
-        {/* <Heading heading="Persona" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
-        {/* <ImgContainer image1={project.image[3]} image2={project.image[4]} projectTitle={project.title}/> */}
         <NextPage/>
     </div>
   )
