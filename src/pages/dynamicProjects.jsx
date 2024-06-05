@@ -31,7 +31,7 @@ export default function Projects() {
   }
   return (
     <div>
-        <ProjectHero headline={project.title} gradientCircleColour={project.gradientColour} heroImage={project.image[0]} projectTitle={project.title}/>
+        <ProjectHero headline={project.title} heroImage={project.image[0]} projectTitle={project.title}/>
         <Spacer width="90%"/>
         <Overview 
           role={project.role} 

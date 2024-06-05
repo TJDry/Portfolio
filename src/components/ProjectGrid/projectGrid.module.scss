@@ -1,7 +1,9 @@
 .projectGridBorder{  
   width: 100%;
-  display: flex;
   margin: 10vh 0vh;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 
   justify-content: center;
   align-items: center;
@@ -13,10 +15,10 @@
       gap: 1.25em;
         
       @media only screen and (min-width: 800px) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       @media only screen and (min-width: 1550px) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
 
     
@@ -35,21 +37,20 @@
         border-radius: 2px;
         overflow: hidden;
         position: relative;
-        height: 600px; /* Adjust the height as needed */
+        height: 100vh;
+        width: 100%;
     
         .projectImage {
           width: 100%;
           height: 100%;
-          opacity: 0.2;
+          opacity: 1;
           object-fit: cover; /* Adjust image scaling as needed */
           filter: blur(0px); /* Initial blur effect */
-          transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         }
     
         &:hover .projectImage {
           filter: blur(0); /* Remove the blur effect on hover */
           scale: 1.1;
-          opacity: 0.4;
         }
       }
     
@@ -60,19 +61,12 @@
         text-overflow: ellipsis;
         right: 0;
         background-color: rgba(0, 0, 0, 0);
-        color: white;
         overflow-x: hidden;
         line-height: 1.55;
         padding: 0em 2em;
         overflow: hidden;
         h2{
           font-size: 3em;
-        }
-        h3{
-          color: rgb(205,205,205);
-        }
-        h4{
-          color: rgb(175,175,175);
         }
       }
     }

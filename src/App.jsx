@@ -19,32 +19,12 @@ import Navigation from './components/Navigation/navigation';
 import Footer from './components/Footer/footer';
 
 function App(){
-  // const mouseRefs = useRef([]);
-  // // reset on re-renders
-  // mouseRefs.current = [];
-     
-  // useEffect(() => {
-  //   mouseRefs.current.forEach(ref => ref.moveTo(window.innerWidth, window.innerHeight));
-    
-  //   const onMove = ({ clientX, clientY }) => {      
-  //     mouseRefs.current.forEach(ref => ref.moveTo(clientX, clientY));
-  //   };
-    
-  //   window.addEventListener("pointermove", onMove);
-  //   return () => window.removeEventListener("pointermove", onMove);
-  // }, []); 
-  // const addMouseRef = ref => {
-  //   if (ref) {
-  //     mouseRefs.current.push(ref);
-  //   }    
-  // };
-
   return (  
     <div className="app">
       <Navigation />
       <Suspense>
         <Routes> 
-          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home/>} />
           <Route path="/contactUs" element={<Contact />} />
           <Route path="/projects/:projectTitle" element={<Projects />} /> {/* Use 'element' prop instead of 'component' */}
           <Route path='/projects' element={<ProjectPage />} /> {/* Use 'element' prop instead of 'component' */}

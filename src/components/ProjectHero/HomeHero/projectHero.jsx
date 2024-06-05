@@ -1,5 +1,5 @@
 import React from 'react'
-import { DownButton, GradientCircle} from '../../Button/button'
+import { DownButton, HexagonCluster} from '../../Button/button'
 import styles from './projectHero.module.scss'
 import { useRef } from 'react'
 import { Tag } from '../../Button/button'
@@ -23,7 +23,7 @@ export default function ProjectHero(text) {
   console.log(currentProject.textList);
   return (
     <>
-    <div className={styles.container} style={{backgroundImage: `url(${process.env.PUBLIC_URL + `/images/${text.projectTitle}/${text.heroImage}`})`}}>
+    <div className={styles.container} style={{backgroundImage: `url(${`/images/${text.projectTitle}/${text.heroImage}`})`}}>
     <div className={`${styles.container} ${styles.overlay}`} ref={scrollDarkness}></div>
     <h1 className={styles.bobble}>{text.headline}</h1>
     <div className={styles.projectBorder}>
@@ -39,14 +39,13 @@ export default function ProjectHero(text) {
           </div>
         }
     </div>
-
       <DownButton/>
     </div>
     <div className={styles.bottomLeftCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
+        <HexagonCluster/>
       </div>
       <div className={styles.topRightCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
+        <HexagonCluster/>
       </div>
     </>
   )

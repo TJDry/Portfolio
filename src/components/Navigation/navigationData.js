@@ -9,10 +9,14 @@
         path: '/projects',
     },{
         id:4,
-        title:'About us',
+        title:'About me',
         path: '/about/',
     },{
         id:5,
-        title:'Work With Us',
+        title:'My Process',
+        path: '/',
+    },{
+        id:6,
+        title:'Get in touch',
         path: '/contactUs/',
     }]

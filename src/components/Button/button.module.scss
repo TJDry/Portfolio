@@ -12,27 +12,13 @@
         filter: brightness(100%);
     }
 }
-
-.circle{
-    width: 1202px;
-    height: 1202px;
-    border-radius: 100%;
-}
-
-@keyframes Bounce {
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(-5px) scale(1.01);
-    }
-}
 .tagContainer{
     h4{
         display: inline;
         margin:0.2em;
         padding: 0.5em;
-        border: 1.5px solid white;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.177);
         border-radius: 8px;
     }   
 }
@@ -45,5 +31,31 @@
         height: 1px;
         margin: 2em 0em;
         background-color: rgba(255, 255, 255, 0.177);
+    }
+}
+.hexagonCluster {
+    margin-left: -100px; /* Adjust this value to move the hexagons further outside the bounds */
+    margin-bottom: -100px; /* Adjust this value to move the hexagons further outside the bounds */
+    overflow: visible; /* Allows the hexagons to go outside the bounds */
+    svg g{
+        fill: var(--accent-colour);
+    }
+}
+
+.hexagonContainer {
+    width: 512px;
+    height: 512px;
+    transform: scale(1); /* Make it responsive */
+}
+
+@media (max-width: 768px) {
+    .hexagonContainer {
+        transform: scale(0.3); /* Adjust the scaling for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hexagonContainer {
+        transform: scale(0.2); /* Adjust the scaling for very small screens */
     }
 }

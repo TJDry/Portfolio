@@ -36,18 +36,18 @@ export default function ProjectGrid() {
   return (
     <div className={styles.projectGridBorder}>
       <ul ref={projectReveal} className={styles.projectGrid}>
-        {projectData.map(item => (
+        {projectData.slice(0,4).map(item => (
           <li key={item.id} className={styles.projectItem}>
-            <NavLink to={`${process.env.PUBLIC_URL}/projects/${item.title}`} className={styles.projectLink}>
+            <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
               <div className={styles.projectCard}>
                 <img
-                  src= {process.env.PUBLIC_URL + `/images/${item.title}/${item.image[0]}`}
+                  src= {`/images/${item.title}/${item.image[0]}`}
                   alt={item.title}
                   className={styles.projectImage}
                 />
                 <div className={styles.projectInfo}>
-                  <h2>{item.title}</h2>
-                  <h3>{item.role}</h3>
+                  <h3>{item.title}</h3>
+                  <h4>{item.role}</h4>
                   <div className={styles.tagList}>
                     {item.tagList.map((tag,index) => (
                       <Tag key={index} 

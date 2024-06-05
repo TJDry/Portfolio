@@ -1,8 +1,39 @@
 
 
 export const projectData = [
+  {
+    title: 'RadiantChiropracticCare',
+    role: 'UI UX Designer',
+
+    year: '2023',
+    status: 'Complete',
+    gradientColour: "linear-gradient(180deg, rgba(222,0,0,1) 0%, rgba(212,33,158,1) 100%)",
+    managementStyle: 'Waterfall / Linear',
+    projectType:'Mobile & Tablet App',
+    tagList: ['UI / UX','Project Management','QA Testing'],
+    image:[
+      `hero.jpg`,
+      `product1.webp`,
+      `tablet1.jpg`,
+      `tablet2.jpg`,
+      `tablet3.jpg`,
+    ],
+    textList:[
+      "VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays. I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen",
+      "Although this wont be possible for a period of time, we have started to formally implement it partially as a theme and are waiting on the suppliers to get back to us with the new theme. For this theme I was given the old theme plus a BMW design and given the colour scheme, I utilised this similar layout whilst also combining it with aspects of more modern gradient logos with dropshadows.",
+      "I created a clean design for multiple sections of the software, keeping it simple with no bezels or embossing and making sure its easily accessible and usable whilst also keeping it within reason of an upgrade. I also created a dynamic resting page with multiple gradients to help promote a cleaner and more modern creative look, with gradient bubbles blurred out to create distance between the sharper time and the background colours",
+      "VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays. I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen",        
+    ],
+    colours:
+    [
+      "#590508",
+      "#8A020D",
+      "#901721",
+      "#01011E",
+      "#810182",
+    ]
+  },
     {
-      id: 1,
       title: 'Android12',
       role: 'UI UX Designer',
 
