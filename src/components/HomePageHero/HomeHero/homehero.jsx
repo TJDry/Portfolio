@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { DownButton,HexagonCluster } from '../../Button/button'
+import { DownButton,GradientCircle } from '../../Button/button'
 import styles from './homehero.module.scss'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -40,15 +40,15 @@ export default function HomeHero(text) {
     <>
     <div className={styles.container} ref={scrollFade}>
       <div className={styles.headingContainer}>
-        <h1>Hi, I’m Jay <br></br>a creative designer</h1>
-        <h2>I bring value to web design & development projects by merging technical expertise with creativity and aesthetics.</h2>
+        <h1>Hi, I’m Jay <br></br>UI / UX Specialist</h1>
+        <h2 className={styles.subHeading}>I bring value to design & development projects by merging technical expertise with creativity & emotional considerations.</h2>
       </div>
     </div>
     <div className={styles.bottomLeftCirclePosition} ref={bottomLeftCircle} style={{background: `${text.gradientCircleColour}`}}>
-        <HexagonCluster/>
+        <GradientCircle/>
       </div>
       <div className={styles.topRightCirclePosition} ref={topRightCircle} style={{background: `${text.gradientCircleColour}`}}>
-        <HexagonCluster/>
+        <GradientCircle/>
       </div>
     </>
   )

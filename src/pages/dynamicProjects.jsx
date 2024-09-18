@@ -15,10 +15,7 @@ import ProjectProcess from '../components/projectProcess/HomeHero/projectProcess
 import { Spacer } from '../components/Button/button';
 
 export default function Projects() {
-  
-  useEffect(() => {
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, []);
+
   const { projectTitle } = useParams(); 
   const project = projectData.find((item) => item.title === projectTitle);
   if (!project) {
@@ -31,19 +28,12 @@ export default function Projects() {
   }
   return (
     <div>
-        <ProjectHero headline={project.title} heroImage={project.image[0]} projectTitle={project.title}/>
+        <ProjectHero headline={project.title.replace(/([A-Z])/g, ' $1').trim()} heroImage={project.image[0]} projectTitle={project.title}/>
         <Spacer width="90%"/>
-        <Overview 
-          role={project.role} 
-          year={project.year} 
-          status={project.status} 
-          managementStyle={project.managementStyle} 
-          projectType={project.projectType}
-        />
+        <Overview overview={project.overview}/>
         <ImgContainer image1={project.image[0]} projectTitle={project.title}/>
+        <ProjectProcess projectTitle={project.title} experienceText={project.experienceText}/>
         <ImgContainer image1={project.image[1]} image2={project.image[2]} projectTitle={project.title}/>
-        <Spacer/>
-        <ProjectProcess projectTitle={project.title}/>
         <ColourCard colour1={project.colours[0]} colour2={project.colours[1]} colour3={project.colours[2]} colour4={project.colours[3]} colour5={project.colours[4]}/>
         <NextPage/>
     </div>

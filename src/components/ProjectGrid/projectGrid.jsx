@@ -46,14 +46,11 @@ export default function ProjectGrid() {
                   className={styles.projectImage}
                 />
                 <div className={styles.projectInfo}>
-                  <h3>{item.title}</h3>
+                  <h3>{item.title.replace(/([A-Z])/g, ' $1').trim()}</h3>
                   <h4>{item.role}</h4>
                   <div className={styles.tagList}>
                     {item.tagList.map((tag,index) => (
-                      <Tag key={index} 
-                           tagTitle={tag}
-                           className={styles.tag}
-                      />
+                      <Tag key={index} tagTitle={tag} className={styles.tag} />
                     ))
                     }
                   </div>

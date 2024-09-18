@@ -19,32 +19,44 @@ export function DownButton(){
     </div>
     )
 }
-// export function GradientCircle(){
-//     return(
-//     <>
-//         <motion.div className={styles.circle}/>
-//     </>
-//     )
-// }
-
-export function HexagonCluster() {
-    return (
-        <div className={styles.pageContainer}>
-            <div className={styles.hexagonCluster}>
-                <div className={styles.hexagonContainer}>
-                    <HexGrid width={512} height={512}>
-                        <Layout size={{ x: -24, y: 24 }} flat={true} spacing={1.1} viewBox="-50 -50 100 100" origin={{ x: 24, y: 24 }}>
-                            <Hexagon q={0} r={0} s={0} />
-                            <Hexagon q={0} r={-1} s={1} />
-                            <Hexagon q={1} r={-1} s={0} />
-                            <Path start={new Hex(0, 0, 0)} end={new Hex(-2, 0, 1)} />
-                        </Layout>
-                    </HexGrid>
-                </div>
-            </div>
-        </div>
-    );
+export function GradientCircle(){
+    return(
+    <>
+        <div className={styles.circle}/>
+    </>
+    )
 }
+
+// export function HexagonCluster() {
+//     return (
+//         <div className={styles.pageContainer}>
+//             <svg className={styles.hexagonCluster} width="640" height="640">
+//                 <defs>
+//                     <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+//                         <stop offset="0%" style={{ stopColor: `#2B6DD0`, stopOpacity: 1 }} />
+//                         <stop offset="100%" style={{ stopColor: '#081fa1', stopOpacity: 1 }} />
+//                     </linearGradient>
+//                 </defs>
+//                 <HexGrid width={640} height={640}>
+//                     <Layout
+//                         size={{ x: -24, y: 24 }}
+//                         flat={true}
+//                         spacing={1.1}
+//                         viewBox="-50 -50 100 100"
+//                         origin={{ x: 24, y: 24 }}
+//                     >
+//                         <g fill="url(#hexGradient)">
+//                             <Hexagon q={0} r={0} s={0} />
+//                             <Hexagon q={0} r={-1} s={1} />
+//                             <Hexagon q={1} r={-1} s={0} />
+//                         </g>
+//                         <Path start={new Hex(0, 0, 0)} end={new Hex(-2, 0, 1)} />
+//                     </Layout>
+//                 </HexGrid>
+//             </svg>
+//         </div>
+//     );
+// }
 export function ProjectButton(){
     return(
     <div className={styles.projectButtonContainer}>

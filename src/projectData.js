@@ -7,6 +7,8 @@ export const projectData = [
 
     year: '2023',
     status: 'Complete',
+    overview: 'The task: Creating a usable & accessible chiropractic website',
+    experienceText: 'This is also a test heheheheehe',
     gradientColour: "linear-gradient(180deg, rgba(222,0,0,1) 0%, rgba(212,33,158,1) 100%)",
     managementStyle: 'Waterfall / Linear',
     projectType:'Mobile & Tablet App',
@@ -39,6 +41,7 @@ export const projectData = [
 
       year: '2023',
       status: 'Complete',
+      overview: 'This is just a test, lmfao how could this not work in the Slightest',
       gradientColour: "linear-gradient(180deg, rgba(222,0,0,1) 0%, rgba(212,33,158,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',

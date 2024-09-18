@@ -1,14 +1,40 @@
-:root{
-// Brand
---accent-colour: #0075FF;
---secondary-colour: #2B6DD0;
---text-colour: #00000a;
---text-colour-dark: #00000a;
+// Base colors
+// $accent-colour: #081fa1;
+$accent-colour: #f1f8ff;
+$secondary-colour: #ffffff;
+$text-colour: #dcdce4;
+$text-colour-dark: #00000a;
+$white: #ffffff;
 
+// Lighter and darker shades
+$accent-colour-light: lighten($accent-colour, 20%);
+$accent-colour-dark: darken($accent-colour, 10%);
 
+$secondary-colour-light: lighten($secondary-colour, 20%);
+$secondary-colour-dark: darken($secondary-colour, 20%);
 
+$text-colour-light: lighten($text-colour, 20%);
+$text-colour-dark-variant: darken($text-colour-dark, 20%);
+
+// Output CSS variables
+:root {
+  --accent-colour: #{$accent-colour};
+  --accent-colour-light: #{$accent-colour-light};
+  --accent-colour-dark: #{$accent-colour-dark};
+
+  --secondary-colour: #{$secondary-colour};
+  --secondary-colour-light: #{$secondary-colour-light};
+  --secondary-colour-dark: #{$secondary-colour-dark};
+
+  --text-colour: #{$text-colour};
+  --text-colour-light: #{$text-colour-light};
+  --text-colour-dark: #{$text-colour-dark-variant};
+
+  --white: #{$white};
+  
 // Background
---background-colour: #fffffa;
+--background-colour: #030916;
+// --background-colour: #edeef1;
 // --background-colour: #00000C;
 --primary-font: 'Plus Jakarta Sans';
 --second-font: 'Plus Jakarta Sans','Sans-Serif';

@@ -16,23 +16,29 @@ export default function ProjectProcess(text) {
   }
 
   return (
-    <div className={styles.caseStudyContainer}>
-    <div className={styles.leftCaseStudyTimeline}></div>
-    <div>
-      {headingList.map((heading, i) => (
-    <div className={styles.rightCaseStudyContainer}>
-        <div className={styles.rowBorder} key={i}>
-          <div className={styles.iconBorder}>
-            <Icon icon={IconList[i]} className={styles.icon}/>
+    <div className={styles.borderContainer}>
+      <div className={styles.caseStudyContainer}>
+      <div className={styles.leftCaseStudyTimeline}>
+        <h3>
+          {currentProject.experienceText}
+        </h3>
+      </div>
+      <div>
+        {headingList.map((heading, i) => (
+      <div className={styles.rightCaseStudyContainer}>
+          <div className={styles.rowBorder} key={i}>
+            <div className={styles.iconBorder}>
+              <Icon icon={IconList[i]} className={styles.icon}/>
+            </div>
+            <div className={styles.textBorder}>
+              <h2>{heading}</h2>
+              <p>{currentProject.textList[i]}</p>
+            </div>
           </div>
-          <div className={styles.textBorder}>
-            <h2>{heading}</h2>
-            <p>{currentProject.textList[i]}</p>
-          </div>
+        <Spacer/>
+      </div>
+        ))}
         </div>
-      <Spacer/>
-    </div>
-      ))}
       </div>
     </div>
   );

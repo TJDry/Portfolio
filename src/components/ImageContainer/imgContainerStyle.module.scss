@@ -4,8 +4,8 @@
     justify-content: center;
     flex-wrap: wrap;
     .imgBorder{
-        width: 37.5%;
-        max-width: 800px;
+        width: 80%;
+        max-width: 1000px;
         min-height: 100%;
         padding: 1rem 1rem;
         gap: 1rem;
@@ -17,7 +17,7 @@
         img{
             width: 100%;
             border-radius: 4px;
-            max-width: 100%;
+            max-width: none;
             aspect-ratio: 1 / 1;
             object-fit: cover;
             // filter: drop-shadow(0px 16px 10px rgba(0,0,0,0.2));
@@ -31,10 +31,10 @@
 
     }
     .imgSoloBorder{
-        width: 75%;
+        width: 90%;
         height: 100%;
-        min-width: none;
-        max-width: 1600px;
+        max-width: none;
+        min-width: 200px;
         img{
             aspect-ratio: 3 / 2;
         }

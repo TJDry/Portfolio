@@ -22,7 +22,8 @@
     .icon{
       scale: 6;
       position: relative;
-      left: 15%;
+      left: 20%;
+      color: var(--accent-colour);
       top: 20%;
     }
     .skillItem {
@@ -36,7 +37,7 @@
       border-radius: 8px;
       overflow: hidden;
       position: relative;
-      height: 550px;
+      height: 512px;
       box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.364);
       // background: linear-gradient(-45deg, rgba(255,255,255,0.04),rgba(255, 255, 255, 0.025),rgba(255,255,255,0.04));
     .skillImage {
@@ -50,7 +51,7 @@
       }
     }.skillInfo {
       position: absolute;
-      top: 40%;
+      top: 30%;
       left: 0;
       text-overflow: ellipsis;
       right: 0;
@@ -59,9 +60,10 @@
       overflow-x: hidden;
       padding: 2em;
       overflow: hidden;
-      h4{
-        padding: 2em 0;
+      h2{
+        padding: 0;
         line-height: 2em;
+        text-align: left;
       }
     }
   }

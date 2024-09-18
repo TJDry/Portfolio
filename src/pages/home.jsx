@@ -16,9 +16,8 @@ export default function Home() {
         <HomeHero headline="" subHeadline=""/>
         <Showreel />
         <ProjectGrid/>
-        <SkillGrid />
-        <Heading heading="Hi, I'm Jay" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <AboutUs/>
+        <SkillGrid />
         <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
     </div>
   )
