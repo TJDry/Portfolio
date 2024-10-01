@@ -2,6 +2,7 @@
 
 export const projectData = [
   {
+    id: 0,
     title: 'RadiantChiropracticCare',
     role: 'UI UX Designer',
 
@@ -36,6 +37,7 @@ export const projectData = [
     ]
   },
     {
+      id: 1,
       title: 'Android12',
       role: 'UI UX Designer',
 

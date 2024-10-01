@@ -4,6 +4,13 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig(() => {
   return {
+    css: {
+      preprocessorOptions : {
+          scss: {
+              api: "modern-compiler",
+          },
+      }
+  },
     build: {
       outDir: 'build',
     },

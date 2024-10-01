@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from 'react';
-import { DownButton,GradientCircle } from '../../Button/button'
-import styles from './homehero.module.scss'
-import gsap from 'gsap'
+import { DownButton, GradientCircle } from '../../Button/button';
+import styles from './homehero.module.scss';
+import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ThreeScene from '../../ThreeJS/threejs';
+
 gsap.registerPlugin(ScrollTrigger);
 
-
-
-export default function HomeHero(text) {
-
+export default function HomeHero() {
   const scrollFade = useRef(null);
-  useEffect(()=>{
+
+  useEffect(() => {
     const element = scrollFade.current;
     gsap.fromTo(
       element.children,
@@ -28,28 +28,23 @@ export default function HomeHero(text) {
           trigger: element,
           start: "top top",
           end: "bottom center",
-        }
+        },
       }
     );
   }, []);
 
-  const bottomLeftCircle = useRef(null);
-  const topRightCircle = useRef(null);
-
   return (
-    <>
-    <div className={styles.container} ref={scrollFade}>
-      <div className={styles.headingContainer}>
-        <h1>Hi, I’m Jay <br></br>UI / UX Specialist</h1>
-        <h2 className={styles.subHeading}>I bring value to design & development projects by merging technical expertise with creativity & emotional considerations.</h2>
+    <div className={styles.wrapper}>
+      <ThreeScene />
+      <div className={styles.container} ref={scrollFade}>
+        <div className={styles.headingContainer}>
+          <h1>Hi, I’m Jay <br />UI / UX Specialist</h1>
+          <h2 className={styles.subHeading}>
+            I bring value to design & development projects by merging technical expertise
+            with creativity & emotional considerations.
+          </h2>
+        </div>
       </div>
     </div>
-    <div className={styles.bottomLeftCirclePosition} ref={bottomLeftCircle} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
-      </div>
-      <div className={styles.topRightCirclePosition} ref={topRightCircle} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
-      </div>
-    </>
-  )
+  );
 }

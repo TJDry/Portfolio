@@ -1,20 +1,21 @@
 // Base colors
-// $accent-colour: #081fa1;
+@use "sass:color";
+// Base colors
 $accent-colour: #f1f8ff;
 $secondary-colour: #ffffff;
 $text-colour: #dcdce4;
 $text-colour-dark: #00000a;
 $white: #ffffff;
 
-// Lighter and darker shades
-$accent-colour-light: lighten($accent-colour, 20%);
-$accent-colour-dark: darken($accent-colour, 10%);
+// Lighter and darker shades using color.scale
+$accent-colour-light: color.scale($accent-colour, $lightness: 20%);
+$accent-colour-dark: color.scale($accent-colour, $lightness: -20%);
 
-$secondary-colour-light: lighten($secondary-colour, 20%);
-$secondary-colour-dark: darken($secondary-colour, 20%);
+$secondary-colour-light: color.scale($secondary-colour, $lightness: 20%);
+$secondary-colour-dark: color.scale($secondary-colour, $lightness: -20%);
 
-$text-colour-light: lighten($text-colour, 20%);
-$text-colour-dark-variant: darken($text-colour-dark, 20%);
+$text-colour-light: color.scale($text-colour, $lightness: 20%);
+$text-colour-dark-variant: color.scale($text-colour, $lightness: -20%);
 
 // Output CSS variables
 :root {
@@ -32,10 +33,11 @@ $text-colour-dark-variant: darken($text-colour-dark, 20%);
 
   --white: #{$white};
   
-// Background
---background-colour: #030916;
-// --background-colour: #edeef1;
-// --background-colour: #00000C;
---primary-font: 'Plus Jakarta Sans';
---second-font: 'Plus Jakarta Sans','Sans-Serif';
+  // Background
+  --background-colour: #030916;
+  // --background-colour: #edeef1;
+  // --background-colour: #00000C;
+  
+  --primary-font: 'Plus Jakarta Sans';
+  --second-font: 'Plus Jakarta Sans', 'Sans-Serif';
 }
