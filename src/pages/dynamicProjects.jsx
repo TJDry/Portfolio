@@ -13,6 +13,7 @@ import ProjectHero from '../components/ProjectHero/HomeHero/projectHero';
 import NextPage from '../components/NextProject/nextProject';
 import ProjectProcess from '../components/projectProcess/HomeHero/projectProcess';
 import { Spacer } from '../components/Button/button';
+import { Heading } from '../components/textBox/text';
 
 export default function Projects() {
   

@@ -38,10 +38,10 @@ export default function ProjectGrid() {
       <ul ref={projectReveal} className={styles.projectGrid}>
         {projectData.map(item => (
           <li key={item.id} className={styles.projectItem}>
-            <NavLink to={`${process.env.PUBLIC_URL}/projects/${item.title}`} className={styles.projectLink}>
+            <NavLink to={`${import.meta.env.BASE_URL}/projects/${item.title}`} className={styles.projectLink}>
               <div className={styles.projectCard}>
                 <img
-                  src= {process.env.PUBLIC_URL + `/images/${item.title}/${item.image[0]}`}
+                  src= {`/images/${item.title}/${item.image[0]}`}
                   alt={item.title}
                   className={styles.projectImage}
                 />

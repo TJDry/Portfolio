@@ -14,7 +14,6 @@ export default function Home(props) {
   return (
     <div>
         <HomeHero headline="Creating Unique Digital Experiences" subHeadline="Taking Web & App design to the next level"/>
-
         <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ProjectGrid/>
         {/* <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}

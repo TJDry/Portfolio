@@ -23,7 +23,7 @@ export default function ProjectHero(text) {
   console.log(currentProject.textList);
   return (
     <>
-    <div className={styles.container} style={{backgroundImage: `url(${process.env.PUBLIC_URL + `/images/${text.projectTitle}/${text.heroImage}`})`}}>
+    <div className={styles.container} style={{backgroundImage: `url(${`/images/${text.projectTitle}/${text.heroImage}`})`}}>
     <div className={`${styles.container} ${styles.overlay}`} ref={scrollDarkness}></div>
     <h1 className={styles.bobble}>{text.headline}</h1>
     <div className={styles.projectBorder}>
