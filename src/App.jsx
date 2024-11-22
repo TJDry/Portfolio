@@ -46,8 +46,8 @@ function App(){
         <Routes> 
           <Route path="/" element={<Home />} />
           <Route path="/contactUs" element={<Contact />} />
-          <Route path="/projects/:projectTitle" element={<Projects />} /> {/* Use 'element' prop instead of 'component' */}
-          <Route path='/projects' element={<ProjectPage />} /> {/* Use 'element' prop instead of 'component' */}
+          <Route path="/projects/:projectTitle" element={<Projects />} />
+          <Route path='/projects' element={<ProjectPage />} />
           <Route path='/about' element={<About />} />
         </Routes>
       </Suspense>

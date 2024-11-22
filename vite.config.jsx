@@ -12,9 +12,11 @@ export default defineConfig(() => {
       svgr({ svgrOptions: { icon: true } }),
       
     ],
+    base: '/',
     server: {
       host: 'localhost',
-      port: 3000
+      port: 3000,
+      historyApiFallback: true,
     }
   };
 });
