@@ -90,6 +90,7 @@ export const projectData = [
         `phone3.png`,
         `tablet1.png`,
       ],
+      leftComment:"Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app.",
       textList:[
         "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app.",
         "You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",
@@ -117,9 +118,7 @@ export const projectData = [
       gradientColour: "linear-gradient(180deg, rgba(0,92,222,1) 0%, rgba(255,0,0,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
-
       tagList: ['UI / UX','Project Management','QA Testing'],
-      
       image:[
         `mobileHero.jpg`,
         `mobileOne.jpg`,
@@ -128,7 +127,7 @@ export const projectData = [
         `phone3.png`,
         `phone4.png`,
       ],
-      
+      leftComment:"Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",      
       textList:[
         "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",
         "The app utilises BLE technology to hold up to 4 devices at the same time. It requires a full scale app with all tests, results and report creation as this is an industry standard application usable by the public. To start this project I was presented with an underdeveloped version of the app and the inspiration behind it. From here I researched similar apps and created a list of necessary features that the app should include to be successful.",
@@ -145,11 +144,46 @@ export const projectData = [
         "#132024",
       ]
     },
-    
     {
-    id: 4,
+      id: 4,
+      title: 'Gremio',
+      role: 'UI UX Designer',
+  
+      year: '2023',
+      status: 'Complete',
+      gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
+      managementStyle: 'Waterfall / Linear',
+      projectType:'Mobile & Tablet App',
+  
+      tagList: ['UI / UX','Project Management','QA Testing'],
+      
+      image:[
+        `mobileOne.jpg`,
+        `1.png`,
+        `phone1.png`,
+        `phone2.png`,
+        `phone3.png`,
+        `phone4.png`,
+      ],
+      
+      textList:[
+        "It's an all-in-one inclusive app that uses our OBD2 Scanner to connect your phone to the car via Bluetooth and manage the codes, test various aspects of your vehicle and help to maintain your car & keep it working at its full potential. OBD2 is the physical port where devices can connect to a car's ECU and provide insight into errors and statistics present in the ECU. Our tools utilise the port and decode specific data through calculations named PIDs.As I was handed this project halfway, existing designs for the app were unable to be modified and thus having to stick with the current design style for the new screens I needed to create to finish the app's designs. It's a large-scale app with many APIs and calculations that need to be functional before release.The complexity of this app makes it hard to communicate and clarify functionality with the outsourced dev team responsible to produce the app",
+        "It has been a long and hard year long project, with over 40 APK builds and adjustments. From adding new features to refining performance and functionality, it becomes hard to tell if the project is making any haste towards production level.",
+        "The project needs to be able to run smoothly across all android versions making it hard for the developers i manage communications with to develop the app in a way that can run smoothly on all",
+      ],
+      colours:
+      [
+        "#E90101",
+        "#F55454",
+        "#222222",
+        "#181414",
+        "white",
+      ]
+    },
+    {
+    id: 5,
     title: 'OBD2Scanz',
-    role: 'UI UX Designer',
+    role: 'Project & Design Manager',
 
     year: '2023',
     status: 'Complete',

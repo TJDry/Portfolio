@@ -1,18 +1,21 @@
 
 .textContainer{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     position: relative;
     margin: 15vh 0;
+    text-align: center;
+    flex-direction: row;
     width: 100%;
     padding-left: 0;
     p{
-        padding: 5em;
+        padding: 5em 15em;
+
     }
     @media screen and (min-width: 600px) {
         flex-direction: row;
-        width: 60%;
+        width: 100%;
     }
 }
 

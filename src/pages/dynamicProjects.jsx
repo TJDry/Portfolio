@@ -34,12 +34,11 @@ export default function Projects() {
   return (
     <div>
       <ProjectHero
-        headline={project.title}
+        headline={project.title.replace(/([A-Z])/g, ' $1').trim()}
         gradientCircleColour={project.gradientColour}
         heroImage={project.image[0]}
         projectTitle={project.title}
       />
-      <Spacer width="90%" />
       <Overview
         role={project.role}
         year={project.year}
@@ -53,8 +52,7 @@ export default function Projects() {
         image2={project.image[2]}
         projectTitle={project.title}
       />
-      <Spacer />
-      <ProjectProcess projectTitle={project.title} />
+      <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>
       <ColourCard
         colour1={project.colours?.[0]}
         colour2={project.colours?.[1]}

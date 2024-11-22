@@ -3,6 +3,8 @@
     width: 100%;
     min-height: 940px;
     display: flex;
+    position: relative;
+    overflow-x: hidden;
     justify-content: center;
     .headingContainer{
         display: flex;
@@ -63,10 +65,11 @@
 
 .bottomLeftCirclePosition, .topRightCirclePosition{
     z-index: -1;
-    position: absolute;
     opacity: 0.5;
-    width: 70rem;
-    height: 70rem;
+    overflow: hidden;
+    width: 60rem;
+    position: absolute;
+    height: 60rem;
     transform-origin: 50%;
     filter: blur(10em);
     border-radius: 100%;

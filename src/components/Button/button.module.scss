@@ -13,11 +13,9 @@
     }
 }
 
-.circle{
-    width: 1202px;
-    height: 1202px;
-    border-radius: 100%;
-}
+.circle {
+    overflow: hidden;
+  }
 
 @keyframes Bounce {
     from{
@@ -32,7 +30,8 @@
         display: inline;
         margin:0.2em;
         padding: 0.5em;
-        border: 1.5px solid white;
+        border: 1.5px solid rgba(126, 126, 126, 0.644);
+        background: linear-gradient(135deg, #05081b3f,#090d2e44,#05061a10, #05061827);
         border-radius: 8px;
     }   
 }

@@ -22,7 +22,7 @@ export function DownButton(){
 export function GradientCircle(){
     return(
     <>
-        <motion.div className={styles.circle}/>
+        <div className={styles.circle}/>
     </>
     )
 }

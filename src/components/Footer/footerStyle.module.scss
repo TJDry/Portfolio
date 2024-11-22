@@ -1,8 +1,8 @@
 .flexFoot{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 .textArea{
   width: 100%;
@@ -29,44 +29,4 @@
     @media (max-width: 1000px) {
         padding: 70px 30px;
       }
-    .messageMe{
-      text-decoration: none;
-      display: contents;
-      ul{
-        padding-left: 5%;
-      }
-      li{
-        list-style-type: none;
-      }
-      a{
-        color: white;
-        float: left;
-        padding: 20px 8px;
-        text-align: left;
-        border-bottom: 2px solid white;
-        width: 200px;
-        transition: all 0.2s ease-in-out;
-      }
-      a:hover{
-        background-color: rgba(255,255,255,0.3);
-      }
     }
-    .right{
-      float: right;
-      display: inline;
-  }
-}
-
-.centerCirclePosition{
-  z-index: -1;
-  position: absolute;
-  opacity: 0.5;
-  width: 20rem;
-  height: 20rem;
-  transform-origin: 50%;
-  filter: blur(10em);
-  border-radius: 100%;
-  overflow: hidden;  
-  background: linear-gradient(180deg, #F00 0%, #FA00FF 45%, #F00 100%);
-
-}

@@ -34,10 +34,11 @@ export default function ProjectGrid() {
   }, []);
 
   return (
+  <>
     <div className={styles.projectGridBorder}>
       <ul ref={projectReveal} className={styles.projectGrid}>
-        {projectData.map((item,index) => (
-          <li key={item.index} className={styles.projectItem}>
+        {projectData.slice(0,4).map(item => (
+          <li key={item.id} className={styles.projectItem}>
             <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
               <div className={styles.projectCard}>
                 <img
@@ -46,14 +47,11 @@ export default function ProjectGrid() {
                   className={styles.projectImage}
                 />
                 <div className={styles.projectInfo}>
-                  <h2>{item.title}</h2>
-                  <h3>{item.role}</h3>
+                  <h3>{item.title.replace(/([A-Z])/g, ' $1').trim()}</h3>
+                  <h4>{item.role}</h4>
                   <div className={styles.tagList}>
                     {item.tagList.map((tag,index) => (
-                      <Tag key={index} 
-                           tagTitle={tag}
-                           className={styles.tag}
-                      />
+                      <Tag key={index} tagTitle={tag} className={styles.tag} />
                     ))
                     }
                   </div>
@@ -64,6 +62,29 @@ export default function ProjectGrid() {
         ))}
       </ul>
     </div>
+    {/* EXCESS PROJECT GRID */}
+    <div className={styles.secondaryProjectGridBorder}>
+      <ul ref={projectReveal} className={styles.secondaryProjectGrid}>
+        {projectData.slice(4,10).map(item => (
+          <li key={item.id} className={styles.secondaryProjectItem}>
+            <NavLink to={`/projects/${item.title}`} className={styles.secondaryProjectLink}>
+              <div className={styles.secondaryProjectCard}>
+                <div className={styles.secondaryProjectInfo}>
+                  <h3>{item.title.replace(/([A-Z])/g, ' $1').trim()}</h3>
+                  <h4>{item.role}</h4>
+                  <div className={styles.tagList}>
+                    {item.tagList.map((tag,index) => (
+                      <Tag key={index} tagTitle={tag} className={styles.tag} />
+                    ))
+                    }
+                  </div>
+                </div>
+              </div>
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+      </div>
+    </>
   );
 }
-

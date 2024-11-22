@@ -23,8 +23,7 @@ export default function ProjectHero(text) {
   console.log(currentProject.textList);
   return (
     <>
-    <div className={styles.container} style={{backgroundImage: `url(${`/images/${text.projectTitle}/${text.heroImage}`})`}}>
-    <div className={`${styles.container} ${styles.overlay}`} ref={scrollDarkness}></div>
+    <div className={styles.container}>
     <h1 className={styles.bobble}>{text.headline}</h1>
     <div className={styles.projectBorder}>
         {currentProject &&
@@ -39,15 +38,8 @@ export default function ProjectHero(text) {
           </div>
         }
     </div>
-
-      <DownButton/>
+        <div className={styles.imgContainer} style={{backgroundImage: `url(${`/images/${text.projectTitle}/${text.heroImage}`})`}}></div>
     </div>
-    <div className={styles.bottomLeftCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
-      </div>
-      <div className={styles.topRightCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
-      </div>
     </>
   )
 }

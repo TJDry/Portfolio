@@ -7,7 +7,8 @@
   align-items: center;
   .projectGrid {
       list-style: none;
-      width: 99%;
+      width: 100%;
+      padding: 1em;
       display: grid;
       grid-template-columns: repeat(1, minmax(0px, 1fr));
       gap: 1.25em;
@@ -32,10 +33,11 @@
       }
     
       .projectCard {
-        border-radius: 2px;
+        border-radius: 8px;
         overflow: hidden;
         position: relative;
         height: 600px; /* Adjust the height as needed */
+        border: 0.15em solid linear-gradient(95deg, #05081b,#090d2e,#05061a, #050618);
     
         .projectImage {
           width: 100%;
@@ -49,12 +51,13 @@
         &:hover .projectImage {
           filter: blur(0); /* Remove the blur effect on hover */
           scale: 1.1;
-          opacity: 0.4;
+          opacity: 0.5;
         }
       }
     
       .projectInfo {
         position: absolute;
+        
         bottom: 5vh;
         left: 0;
         text-overflow: ellipsis;
@@ -90,3 +93,66 @@
 }
   
   
+.secondaryProjectGridBorder{  
+  width: 100%;
+  position: relative;
+  margin: 5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .secondaryProjectGrid {
+      list-style: none;
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, minmax(0px, 1fr));
+      height: 30vh;
+        
+      @media only screen and (min-width: 800px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      @media only screen and (min-width: 1550px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+    
+      .secondaryProjectLink {
+        text-decoration: none;
+        color: inherit;
+      }
+    
+      .secondaryProjectCard {
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+    
+        &:hover .secondaryProjectImage {
+          filter: blur(0); /* Remove the blur effect on hover */
+          scale: 1.1;
+          opacity: 0.4;
+        }
+      }
+    
+      .secondaryProjectInfo {
+        position: absolute;
+        display: flex;
+        color: white;
+        border-bottom: 0.1em solid rgba(255, 255, 255, 0.253);
+        overflow-x: hidden;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: center;
+        width: 80vw;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        h2{
+          font-size: 3em;
+        }
+        h3{
+          color: rgb(205,205,205);
+        }
+        h4{
+          color: rgb(175,175,175);
+        }
+      }
+    }
+}

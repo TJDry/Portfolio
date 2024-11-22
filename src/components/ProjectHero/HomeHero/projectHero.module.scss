@@ -4,20 +4,28 @@
     min-height: 940px;
     display: flex;
     justify-content: center;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     h1{
         padding: 1em;
         position: absolute;
-        top: 5vh;
+        top: 8vh;
         width: 100%;
         animation: fade-animate 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate;
     }
 }
-
+.imgContainer{
+    height: 60vh;
+    width: 90vw;
+    display: flex;
+    top: 35%;
+    z-index: -2;
+    position: absolute;
+    opacity: 0.8;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
 .overlay{
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.4);
 }
 
     .scrollContainer{
@@ -103,7 +111,7 @@
 }
 
 .projectBorder{
-    top: 30vh;
+    top: 25vh;
     position: absolute;
     .tagList{
         display: flex;

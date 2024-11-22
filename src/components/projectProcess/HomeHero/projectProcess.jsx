@@ -17,7 +17,9 @@ export default function ProjectProcess(text) {
 
   return (
     <div className={styles.caseStudyContainer}>
-    <div className={styles.leftCaseStudyTimeline}></div>
+    <div className={styles.leftCaseStudyTimeline}>
+      <h3>{text.leftComment}</h3>
+    </div>
     <div>
       {headingList.map((heading, i) => (
     <div className={styles.rightCaseStudyContainer}>

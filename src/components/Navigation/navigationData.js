@@ -9,10 +9,10 @@
         path: '/projects',
     },{
         id:4,
-        title:'About us',
+        title:'About',
         path: '/about/',
     },{
         id:5,
-        title:'Work With Us',
+        title:'Contact Me',
         path: '/contactUs/',
     }]
