@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './button.module.scss'
-import { motion } from "framer-motion"; 
+import { Icon } from '@iconify/react';
 
 
 
@@ -15,7 +15,7 @@ export function DownButton(){
 
     return(
     <div className={styles.container} onClick={clickScroll}>
-        <h4>Start Here!</h4>
+        <h5>Start Here!</h5>
     </div>
     )
 }
@@ -51,3 +51,12 @@ export function Spacer(item){
     </div>
     )
 }
+
+export const SoftwareIcon = (item) => {
+    console.log(item.softwareName)
+    return(
+    <div className={styles.softwareContainer}>
+        <Icon icon={item.softwareName} style={{ fontSize: '36px', color: 'white'}}/>
+    </div>
+    )
+};

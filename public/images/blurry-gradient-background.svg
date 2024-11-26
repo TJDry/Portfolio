@@ -1,0 +1,21 @@
+<svg width="100%" height="100%" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the background -->
+    <linearGradient id="backgroundGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020210" />
+      <stop offset="100%" stop-color="#020848" />
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="100" result="blurred" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)" />
+  <!-- Glowing Circles -->
+  <circle cx="200" cy="300" r="250" fill="#05061a" opacity="0.6" filter="url(#glow)" />
+  <circle cx="500" cy="200" r="300" fill="#05081b" opacity="0.5" filter="url(#glow)" />
+  <circle cx="700" cy="400" r="200" fill="#090d2e" opacity="0.4" filter="url(#glow)" />
+  <circle cx="400" cy="500" r="350" fill="#05061a" opacity="0.3" filter="url(#glow)" />
+  <circle cx="650" cy="150" r="150" fill="#050618" opacity="0.2" filter="url(#glow)" />
+</svg>

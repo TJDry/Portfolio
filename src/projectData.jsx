@@ -4,7 +4,7 @@ export const projectData = [
   {
     id: 0,
     title: 'RadiantChiropracticCare',
-    role: 'UI UX Designer',
+    role: 'UI/UX Design & Development',
 
 
     year: '2023',
@@ -14,7 +14,9 @@ export const projectData = [
     gradientColour: "linear-gradient(180deg, rgba(224,150,34,1) 0%, rgba(255,180,0,1) 100%)",
     managementStyle: 'Waterfall / Linear',
     projectType:'Mobile & Tablet App',
-    tagList: ['UI / UX','Project Management','QA Testing'],
+    tagList: ['UI / UX','Front-End Development','QA Testing'],
+    softwareList: ["file-icons:figma",'file-icons:jsx-atom','file-icons:tailwind'],
+
     image:[
       `hero.jpg`,
       `product1.webp`,
@@ -39,14 +41,16 @@ export const projectData = [
   },{
       id: 1,
       title: 'Android12',
-      role: 'UI UX Designer',
+      role: 'OS Design',
 
       year: '2023',
       status: 'Complete',
       gradientColour: "linear-gradient(180deg, rgba(222,0,0,1) 0%, rgba(212,33,158,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
-      tagList: ['UI / UX','Project Management','QA Testing'],
+      tagList: ['UI / UX'],
+      softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
+
       image:[
         `hero.jpg`,
         `product1.webp`,
@@ -73,7 +77,7 @@ export const projectData = [
     {
       id: 2,
       title: 'TyreWatcher',
-      role: 'Design & Project Manager',
+      role: 'App Design & QA Testing',
 
       year: '2023',
       status: 'Complete, Pending Hardware update',
@@ -82,6 +86,7 @@ export const projectData = [
       projectType:'Mobile & Tablet App',
       
       tagList: ['UI / UX','Project Management','QA Testing'],
+      softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
       image:[
         `hero.png`,
         `Mobile1.jpg`,
@@ -111,14 +116,16 @@ export const projectData = [
     {
       id: 3,
       title: 'BatteryWatcher',
-      role: 'UI UX Designer',
+      role: 'UI/UX App Design',
 
       year: '2023',
       status: 'Complete',
       gradientColour: "linear-gradient(180deg, rgba(0,92,222,1) 0%, rgba(255,0,0,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
-      tagList: ['UI / UX','Project Management','QA Testing'],
+      tagList: ['UI / UX','QA Testing'],
+      softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
+
       image:[
         `mobileHero.jpg`,
         `mobileOne.jpg`,
@@ -147,15 +154,16 @@ export const projectData = [
     {
       id: 4,
       title: 'Gremio',
-      role: 'UI UX Designer',
+      role: 'App Design & Development',
   
       year: '2023',
       status: 'Complete',
       gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
-  
-      tagList: ['UI / UX','Project Management','QA Testing'],
+      softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
+
+      tagList: ['UI / UX','Project Management','Full-Stack Development'],
       
       image:[
         `mobileOne.jpg`,
@@ -182,14 +190,15 @@ export const projectData = [
     },
     {
     id: 5,
-    title: 'OBD2Scanz',
-    role: 'Project & Design Manager',
+    title: 'Obd2Scanz',
+    role: 'App Design & Project Management',
 
     year: '2023',
     status: 'Complete',
     gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
     managementStyle: 'Waterfall / Linear',
     projectType:'Mobile & Tablet App',
+    softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:microsoft-excel'],
 
     tagList: ['UI / UX','Project Management','QA Testing'],
     

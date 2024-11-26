@@ -10,6 +10,7 @@ import ProjectHero from '../components/ProjectHero/HomeHero/projectHero';
 import NextPage from '../components/NextProject/nextProject';
 import ProjectProcess from '../components/projectProcess/HomeHero/projectProcess';
 import { Spacer } from '../components/Button/button';
+import { Heading } from '../components/textBox/text';
 
 export default function Projects() {
   const { projectTitle } = useParams();
@@ -35,6 +36,7 @@ export default function Projects() {
     <div>
       <ProjectHero
         headline={project.title.replace(/([A-Z])/g, ' $1').trim()}
+        role={project.role}
         gradientCircleColour={project.gradientColour}
         heroImage={project.image[0]}
         projectTitle={project.title}
@@ -45,21 +47,18 @@ export default function Projects() {
         status={project.status}
         managementStyle={project.managementStyle}
         projectType={project.projectType}
+        softwareList={project.softwareList} // Pass it properly
       />
       <ImgContainer image1={project.image[0]} projectTitle={project.title} />
+      <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>
       <ImgContainer
         image1={project.image[1]}
         image2={project.image[2]}
         projectTitle={project.title}
       />
-      <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>
-      <ColourCard
-        colour1={project.colours?.[0]}
-        colour2={project.colours?.[1]}
-        colour3={project.colours?.[2]}
-        colour4={project.colours?.[3]}
-        colour5={project.colours?.[4]}
-      />
+      <ColourCard item={project.colours}     />
+      <Heading heading="User Research"/>
+      <Heading heading="Design Process (Wireframes & Variants)"/>
       <NextPage />
     </div>
   );

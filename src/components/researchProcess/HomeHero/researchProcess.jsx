@@ -8,7 +8,7 @@ export default function ProjectProcess(text) {
   const currentProject = projectData.find((project) => project.title === text.projectTitle);
   console.log(text.projectData);
 
-  const headingList = ["Challenge", "Process", "Solution", "Outcome"];
+  const headingList = ["Challenge", "Concept", "Solution", "Outcome"];
   const IconList = ['mynaui:mountain','mynaui:book-open','mynaui:puzzle','mynaui:sun']
 
   if (!currentProject || !currentProject.textList) {

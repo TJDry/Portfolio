@@ -2,7 +2,11 @@
     position: fixed;
     width: 100%;
     inset: 0; /* Covers the entire viewport */
-    background: linear-gradient(135deg, #05081b,#090d2e,#05061a, #050618); /* Gradient colors */
+    background-image: url(/images/blurry-gradient-background.svg);
+    // background: linear-gradient(135deg, #05081b,#090d2e,#05061a, #050618); /* Gradient colors */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     filter: blur(15px); /* Apply blur */
     z-index: -1; /* Push it behind other content */
     pointer-events: none; /* Ignore interactions */
