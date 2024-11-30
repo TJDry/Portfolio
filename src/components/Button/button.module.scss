@@ -58,14 +58,26 @@
     background-color: #4345550e; // Light background for visibility
     border-radius: 8px; // Optional for rounded edges
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
-    transition: transform 0.2s ease;
-  
-    &:hover {
-      transform: scale(1.1); // Add hover effect
-      background-color: #312e5352; // Slightly darker background on hover
+    h5{
+        padding-right: 0.5em;
     }
   }
   
   .softwareContainer .icon {
+    position: absolute;
     color: white;
   }
+
+.conditionalButton button{
+    background: var(--text-colour-dark);
+    text-decoration: none;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5em;
+}
+.conditionalButton button:hover{
+    background: #3784dd;
+    cursor: pointer;
+}

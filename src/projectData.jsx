@@ -3,20 +3,21 @@
 export const projectData = [
   {
     id: 0,
+    // Core
     title: 'RadiantChiropracticCare',
     role: 'UI/UX Design & Development',
-
-
     year: '2023',
     status: 'Complete',
-    overview: 'The task: Creating a usable & accessible chiropractic website',
-    experienceText: 'This is also a test heheheheehe',
-    gradientColour: "linear-gradient(180deg, rgba(224,150,34,1) 0%, rgba(255,180,0,1) 100%)",
+    websiteLink: 'https://radiantchiropracticcare.com.au/',
     managementStyle: 'Waterfall / Linear',
+    // Project Type
     projectType:'Mobile & Tablet App',
+    // Tags
     tagList: ['UI / UX','Front-End Development','QA Testing'],
-    softwareList: ["file-icons:figma",'file-icons:jsx-atom','file-icons:tailwind'],
-
+    // Software Icons
+    softwareTitle: ["Figma",'React','Tailwind','Vite'],
+    softwareList: ["file-icons:figma",'file-icons:jsx-atom','file-icons:tailwind','file-icons:vite'],
+    // Images
     image:[
       `hero.jpg`,
       `product1.webp`,
@@ -24,19 +25,24 @@ export const projectData = [
       `tablet2.jpg`,
       `tablet3.jpg`,
     ],
+    overview: 'James Kang & I co-designed and developed a singlepage formatted website for a blossoming chiropractor locally. Our goal was to create an easy-to-use website to open the gate for clients both new & existing to book appointments & learn about her practice. We utilised figma for the initial design experimentation, sticking closely towards the brand identity and using that as the basis for our palette, we moved swiftly onto Vite with React & Tailwind CSS for development and experimentation of functionality and features we could implement, like the google maps API and FAQ dropdowns.',
     textList:[
-      "VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays. I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen",
-      "Although this wont be possible for a period of time, we have started to formally implement it partially as a theme and are waiting on the suppliers to get back to us with the new theme. For this theme I was given the old theme plus a BMW design and given the colour scheme, I utilised this similar layout whilst also combining it with aspects of more modern gradient logos with dropshadows.",
-      "I created a clean design for multiple sections of the software, keeping it simple with no bezels or embossing and making sure its easily accessible and usable whilst also keeping it within reason of an upgrade. I also created a dynamic resting page with multiple gradients to help promote a cleaner and more modern creative look, with gradient bubbles blurred out to create distance between the sharper time and the background colours",
-      "VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays. I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen",        
+      //Challenge
+      "Being given a short period of time to go from branding to opening doors, creating a full scale website for the start of the next month presented various challenges, especially co-designing and programming on a commercial level whilst liasing with client expectations. We were tasked with creating a site as an entry point into Mikayla's appointment scheduling system with all her client details.",
+      // Process
+      "James & I started with outlining goals & expectations and functionality to build. We then proceeded to discuss features and ensure we were aligned aesthetically before diving into our own sections to experiment with before coming together to discuss prototype layouts and ideate together. Once experimental designs for each section were settled, we mocked up the final high fidelity frame, adjusted sizings to ensure maximum usability & accessibility, checked colour contrast compliance and created our pitch for our client, Mikayla. After we received approval, we got to work, creating a new website utilising Vite as the framework for React & Tailwind CSS, systems we were both familiar with and were able to work swiftly within.",
+      // Solution
+      "Experimenting with Google Maps API, Vertical Scrolling and Responsive Text Cards, we created a full singlepage site aimed at drawing the user towards booking whilst teaching them about Mikayla's practice and specialities and ensured we had all bases covered in regards to both web standards, accessibility & performance wise but also making sure all data in regards to the medical standards of private practice were met i.e privacy policy, terms & conditions, etc. ",      
     ],
+    // Colour palette
+    gradientColour: "linear-gradient(180deg, rgba(224,150,34,1) 0%, rgba(255,180,0,1) 100%)",
     colours:
     [
-      "#590508",
-      "#8A020D",
-      "#901721",
-      "#01011E",
-      "#810182",
+      "#FFC400",
+      "#FDE07E",
+      "#9F842A",
+      "#FEFEFE",
+      "#050505",
     ]
   },{
       id: 1,
@@ -45,10 +51,13 @@ export const projectData = [
 
       year: '2023',
       status: 'Complete',
+      websiteLink: 'https://vhedia.com/',
+
       gradientColour: "linear-gradient(180deg, rgba(222,0,0,1) 0%, rgba(212,33,158,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
       tagList: ['UI / UX'],
+      softwareTitle: ["Figma",'Photoshop','Illustrator'],
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
 
       image:[
@@ -58,11 +67,14 @@ export const projectData = [
         `tablet2.jpg`,
         `tablet3.jpg`,
       ],
+      overview: "While working in cooperation with VHEDIA, I was tasked with the project of creating a custom UI theme design to be developed for their car headunits that came in various designs, models and bases. The theme had to include consideration for custom widgets & personalisation whilst remaining simple enough for all variants of users to be able to troubleshoot either via a provided PDF guide or over the phone from one of the support technicians",
       textList:[
-        "VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays. I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen",
-        "Although this wont be possible for a period of time, we have started to formally implement it partially as a theme and are waiting on the suppliers to get back to us with the new theme. For this theme I was given the old theme plus a BMW design and given the colour scheme, I utilised this similar layout whilst also combining it with aspects of more modern gradient logos with dropshadows.",
-        "I created a clean design for multiple sections of the software, keeping it simple with no bezels or embossing and making sure its easily accessible and usable whilst also keeping it within reason of an upgrade. I also created a dynamic resting page with multiple gradients to help promote a cleaner and more modern creative look, with gradient bubbles blurred out to create distance between the sharper time and the background colours",
-        "VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays. I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen",        
+        //Challenge
+        "Creating an OS design in itself was easy enough, however, the primary limitation in this brief was the software-side limitations. We initially started this project in 2022, creating a fully fledged animated startup screen and enough room for widgets and other personalisations. However this was deemed impossible due to the lacking functionality of Android 10 on the developer's side.",
+        // Process
+        "Through utilising all varities of designs both on development side and my own variations and researching both competitor's functionalities and user preferences. I started to create a design aligning with both the design trends utilising glass morphism & gradient colour-coded icons, with large easy-to-press buttons for both the side menu / core buttons and the homepage buttons. Once the initial prototype was completed, I thoroughly tested every component to ensure full functionality before we standardise it across all of our units.",
+        // Solution
+        "With testing completed, we successfully created an OS theme that works with different coloured backgrounds and can be used as a standard for software across our headunits, allowing our headunits to not only separate themselves from the rest of the market, but relieving stress on the support team, as all headunit's had the same directory structure, allowing the customer to be directed to the solution with ease.",      
       ],
       colours:
       [
@@ -70,7 +82,7 @@ export const projectData = [
         "#8A020D",
         "#901721",
         "#01011E",
-        "#810182",
+        "#fefefe",
       ]
     },
     
@@ -80,12 +92,13 @@ export const projectData = [
       role: 'App Design & QA Testing',
 
       year: '2023',
-      status: 'Complete, Pending Hardware update',
+      status: 'Development Complete Pending Hardware Update. Discontinued',
       gradientColour: "linear-gradient(180deg, rgba(222,106,0,1) 0%, rgba(212,33,33,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
       
       tagList: ['UI / UX','Project Management','QA Testing'],
+      softwareTitle: ["Figma",'Photoshop','Illustrator'],
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
       image:[
         `hero.png`,
@@ -95,13 +108,14 @@ export const projectData = [
         `phone3.png`,
         `tablet1.png`,
       ],
-      leftComment:"Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app.",
+      overview:"Tyrewatcher. A versatile app designed for phones, tablets and car headunits utilising BTE technology to connect our bluetooth tyre pressure sensors to your device ranging from one sensor up to 24+ for trucks and other large vehicles.",
       textList:[
-        "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app.",
-        "You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",
-        "The app utilises BLE technology to hold up to 4 devices at the same time. It requires a full scale app with all tests, results and report creation as this is an industry standard application usable by the public",
-        "VHEDIA currently utilises Android 10 grid-layout to create their theme for their products, I also created a BMW X-Series display aswell to suite wider displays. I was tasked with enhancing this theme for our upgrade to Android 11, where we can start refining the widget system and developing the theme out further with custom app logos and system design beyond the load screen",
-
+        //Challenge
+        "I was initially given the role to QA test version 1.0. Which, upon release, failed when it came to device performance variance beyond what the test APK's performed. Due to the change in direction from Phone only app to Phone & Headunit app, we decided to recreate the design of the app, with me at the lead. So the new challenge was to create an app functional on the old android system for headunits but also on modern android and IOS systems.",
+        // Process
+        "Utilising the key colours from the Tyrewatcher product, I created a fully functional figma prototype with indicators for popups, animations and different scenarios, Including a first time setup for each vehicle type setup. The layout was designed so each sensor would be clickable and have specific details about the readings coming from the sensor and alerts were to be assigned to certain pressures as a warning of too high or too low pressure levels. Once this design was sufficient it was sent to an outsourced development team based in China, who I liased with to ensure functionality and flow was sufficient throughout the development process.",
+        // Solution
+        "The application itself was completed successfully, with all designs intact for the headunit version (mobile TBA) however during final troubleshooting we found that we couldn't connect to the sensors due to the difference in bluetooth modules. This was amended and a build was created by the headunit developers however we were stuck being unable to connect to more than one sensor at a time, and that this was unable to be changed. Our developers for the headunit itself attempted to fix this issue and ended up only partially being able to work. Since then I have not been updated as to the app's status and the business has changed hands.",     
       ],
       colours:
       [
@@ -136,11 +150,12 @@ export const projectData = [
       ],
       leftComment:"Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",      
       textList:[
-        "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",
-        "The app utilises BLE technology to hold up to 4 devices at the same time. It requires a full scale app with all tests, results and report creation as this is an industry standard application usable by the public. To start this project I was presented with an underdeveloped version of the app and the inspiration behind it. From here I researched similar apps and created a list of necessary features that the app should include to be successful.",
-        "I then went on to do design & colour palette research, with the original colour palette being shown as RGB green and red.I researched popular trends and display types for graphs, navigations and data presentation and created a first mockup of the app. From here I utilised Figma to create a fully mocked up prototype after receiving consistent feedback from peers and improving the design of the app to the point where it has 3 new versions that are refined each time.",
-        "Once the app design was mostly finalised, I was tasked to find a suitable development team to develop the app. So I began the interview process via upwork and filtered through the many applicants for the project and ended up interviewing 4 development teams. From those 4 teams, we tested one, who never responded and thus we re-interviewed a couple and are waiting for project approval from my boss for the project to go ahead as we received the communication medium for the BLE device.",
-        "Since those interviews I have been slowly improving the app's UI integrating a better navigation and sizings both for button and text and refining the BattWatcher brand."
+        //Challenge
+        "",
+        // Process
+        "",
+        // Solution
+        "",       
       ],
       colours:
       [
@@ -175,9 +190,12 @@ export const projectData = [
       ],
       
       textList:[
-        "It's an all-in-one inclusive app that uses our OBD2 Scanner to connect your phone to the car via Bluetooth and manage the codes, test various aspects of your vehicle and help to maintain your car & keep it working at its full potential. OBD2 is the physical port where devices can connect to a car's ECU and provide insight into errors and statistics present in the ECU. Our tools utilise the port and decode specific data through calculations named PIDs.As I was handed this project halfway, existing designs for the app were unable to be modified and thus having to stick with the current design style for the new screens I needed to create to finish the app's designs. It's a large-scale app with many APIs and calculations that need to be functional before release.The complexity of this app makes it hard to communicate and clarify functionality with the outsourced dev team responsible to produce the app",
-        "It has been a long and hard year long project, with over 40 APK builds and adjustments. From adding new features to refining performance and functionality, it becomes hard to tell if the project is making any haste towards production level.",
-        "The project needs to be able to run smoothly across all android versions making it hard for the developers i manage communications with to develop the app in a way that can run smoothly on all",
+        //Challenge
+        "",
+        // Process
+        "",
+        // Solution
+        "",      
       ],
       colours:
       [
@@ -212,9 +230,12 @@ export const projectData = [
     ],
     
     textList:[
-      "It's an all-in-one inclusive app that uses our OBD2 Scanner to connect your phone to the car via Bluetooth and manage the codes, test various aspects of your vehicle and help to maintain your car & keep it working at its full potential. OBD2 is the physical port where devices can connect to a car's ECU and provide insight into errors and statistics present in the ECU. Our tools utilise the port and decode specific data through calculations named PIDs.As I was handed this project halfway, existing designs for the app were unable to be modified and thus having to stick with the current design style for the new screens I needed to create to finish the app's designs. It's a large-scale app with many APIs and calculations that need to be functional before release.The complexity of this app makes it hard to communicate and clarify functionality with the outsourced dev team responsible to produce the app",
-      "It has been a long and hard year long project, with over 40 APK builds and adjustments. From adding new features to refining performance and functionality, it becomes hard to tell if the project is making any haste towards production level.",
-      "The project needs to be able to run smoothly across all android versions making it hard for the developers i manage communications with to develop the app in a way that can run smoothly on all",
+      //Challenge
+      "",
+      // Process
+      "",
+      // Solution
+      "",       
     ],
     colours:
     [

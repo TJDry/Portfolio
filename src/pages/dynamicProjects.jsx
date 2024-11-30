@@ -45,9 +45,12 @@ export default function Projects() {
         role={project.role}
         year={project.year}
         status={project.status}
+        overviewContent={project.overview}
         managementStyle={project.managementStyle}
         projectType={project.projectType}
-        softwareList={project.softwareList} // Pass it properly
+        softwareTitle={project.softwareTitle}
+        softwareList={project.softwareList}
+        href={project.websiteLink} // Pass it properly
       />
       <ImgContainer image1={project.image[0]} projectTitle={project.title} />
       <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>

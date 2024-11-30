@@ -9,20 +9,17 @@ export default defineConfig({
     plugins: [
       react(),
       svgr({ svgrOptions: { icon: true } }),
-      
     ],
     base: '/',
     server: {
       host: 'localhost',
       port: 3000,
-      historyApiFallback: true,
     },
     css: {
       preprocessorOptions: {
-        sass: {
-          api: 'modern',
-          silenceDeprecations: ["legacy-js-api"],
+        scss: {
+          api: 'modern-compiler' // or "modern"
         }
-      }
+  }
     }
   })

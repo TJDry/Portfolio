@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './button.module.scss'
 import { Icon } from '@iconify/react';
+import gsap from 'gsap';
 
 
 
@@ -52,11 +53,47 @@ export function Spacer(item){
     )
 }
 
-export const SoftwareIcon = (item) => {
-    console.log(item.softwareName)
-    return(
-    <div className={styles.softwareContainer}>
-        <Icon icon={item.softwareName} style={{ fontSize: '36px', color: 'white'}}/>
-    </div>
-    )
+export const SoftwareIcon = ({ softwareTitle, softwareName }) => {
+    const [hover, setHover] = useState(false);
+    const iconRef = useRef(null); // Attach the ref to the root element
+
+    useEffect(() => {
+        if (iconRef.current) {
+            // Animate only when the component is mounted
+            gsap.fromTo(
+                iconRef.current,
+                { opacity: 0, scale: 0 },
+                { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }
+            );
+        }
+    }, []);
+
+    return (
+        <div
+            ref={iconRef}
+            className={styles.softwareContainer}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            role="button"
+            aria-label={hover ? softwareTitle : 'Software icon'}
+        >
+            {hover && <h5 className={styles.softwareTitle}>{softwareTitle}</h5>}
+            <Icon icon={softwareName} style={{ fontSize: '36px', color: 'white' }} />
+        </div>
+    );
 };
+
+
+const ConditionalButton = ({href}) => {
+    if (!href) {
+      return null; // Do not render anything if href is not provided
+    }
+  
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={styles.conditionalButton}>
+        <button>Visit Site</button>
+      </a>
+    );
+  };
+  
+  export default ConditionalButton;
