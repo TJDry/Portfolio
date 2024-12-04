@@ -60,8 +60,6 @@ export default function Projects() {
         projectTitle={project.title}
       />
       <ColourCard item={project.colours}     />
-      <Heading heading="User Research"/>
-      <Heading heading="Design Process (Wireframes & Variants)"/>
       <NextPage />
     </div>
   );

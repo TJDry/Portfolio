@@ -8,50 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function HomeHero(text) {
-
-  // const scrollFade = useRef(null);
-  // useEffect(()=>{
-  //   const element = scrollFade.current;
-  //   gsap.fromTo(
-  //     element.children,
-  //     {
-  //       y: -40,
-  //       opacity: 0,
-  //     },
-  //     {
-  //       y: 0,
-  //       opacity: 1,
-  //       stagger: 0.5,
-  //       duration: 2,
-  //       ease: "power4.out",
-  //       ScrollTrigger: {
-  //         trigger: element,
-  //         start: "top top",
-  //         end: "bottom center",
-  //       }
-  //     }
-  //   );
-  // }, []);
-
-  // const bottomLeftCircle = useRef(null);
-  // const topRightCircle = useRef(null);
-  // useEffect(() => {
-  //   gsap.fromTo(
-  //     [bottomLeftCircle.current, topRightCircle.current],
-  //     {
-  //       opacity: 0,
-  //       scale: 0.5,
-  //     },
-  //     {
-  //       opacity: 0.6,
-  //       scale: 0.9,
-  //       duration: 3,
-  //       ease: 'power2.out',
-  //       stagger: 0.8, // Adjust the stagger value as needed
-  //     }
-  //   );
-  // }, []);
-
   return (
     <>
     <div className={styles.container}>
@@ -59,13 +15,6 @@ export default function HomeHero(text) {
         <h1>{text.headline}</h1>
         <h3>{text.subHeadline}</h3>
       </div>
-      <DownButton/>
-    {/* <div className={styles.bottomLeftCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
-      </div>
-      <div className={styles.topRightCirclePosition} style={{background: `${text.gradientCircleColour}`}}>
-        <GradientCircle/>
-      </div> */}
     </div>
     </>
   )

@@ -138,8 +138,8 @@ export const projectData = [
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
       tagList: ['UI / UX','QA Testing'],
+      softwareTitle: ["Figma",'Photoshop','Illustrator'],
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
-
       image:[
         `mobileHero.jpg`,
         `mobileOne.jpg`,
@@ -148,14 +148,14 @@ export const projectData = [
         `phone3.png`,
         `phone4.png`,
       ],
-      leftComment:"Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",      
+      overview: "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",      
       textList:[
         //Challenge
-        "",
+        "Batterywatcher was handed to me as a QA Project utilising an old style well overdue for a redesign. My challenge was to create an application for phones to connect to our bluetooth battery monitoring devices aswell as update the branding and ensure full functionality across all devices. I had to create multiple flows of designs for the variety of testing types, setup and having 1-4 battery monitors connected.",
         // Process
-        "",
+        "Utilising our old design and exploring design trends such as glass-morphism, blurred gradients and through redesigning the brand-identity of batterywatcher, moving from a red and white palette to a more electrical based blue meaning neutral, with other colours such as red, green and yellow as accent / section colours for different devices. Once the branding was outlined, I adjusted the app to the new user flow",
         // Solution
-        "",       
+        "After mapping out the user flow using stickynotes and experimenting with different routes I utilised the old app's design with the new flow to create a base set of low fidelity frames, sketching different concepts and layouts, testing the visibility and usability of each as the app's style and goals were becoming clearer in its design, creating something easy to read, use and navigate whilst still maintaining the depth of knowledge on voltage & batteries that users expect, accounting for a whole range of battery types and scales.",
       ],
       colours:
       [
@@ -176,6 +176,7 @@ export const projectData = [
       gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
       managementStyle: 'Waterfall / Linear',
       projectType:'Mobile & Tablet App',
+      softwareTitle: ["Figma",'Photoshop','Illustrator'],
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
 
       tagList: ['UI / UX','Project Management','Full-Stack Development'],
@@ -188,10 +189,10 @@ export const projectData = [
         `phone3.png`,
         `phone4.png`,
       ],
-      
+      overview:["Gremio, a ficticious "],
       textList:[
         //Challenge
-        "",
+        "As a part of a university brief, we were tasked with creating a fullstack application of our own design using a fictional brand of our own creation. The purpose of this assesment was to utilise full-stack development skills including database management, login & updating accordingly whilst attempting to build out a design with features such as a dashboard, search / filtration function, settings and other features we could utilise REST APIs & database models for.",
         // Process
         "",
         // Solution
@@ -216,6 +217,7 @@ export const projectData = [
     gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
     managementStyle: 'Waterfall / Linear',
     projectType:'Mobile & Tablet App',
+    softwareTitle: ["Figma",'Photoshop','Excel'],
     softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:microsoft-excel'],
 
     tagList: ['UI / UX','Project Management','QA Testing'],

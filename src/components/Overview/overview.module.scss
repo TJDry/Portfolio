@@ -1,7 +1,15 @@
 .overviewContainer{
-    display: flex;
+    display: grid;
     position: relative;
     padding: 10em;
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 1.25em;
+    @media only screen and (min-width: 400px) {
+      padding: 1em;
+    }
+    @media only screen and (min-width: 800px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     ul{
         list-style: none;
         li{
@@ -17,7 +25,7 @@
     }
 }
 .leftContainer{
-    width: 50%;
+    width: 100%;
     .overviewSlot{
         padding: 0.75em;
         h4{
@@ -28,7 +36,7 @@
 }
 
 .rightContainer{
-    width: 50%;
+    width: 100%;
     padding: 1em 1.5em;
     background-color: rgba(81, 86, 112, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
