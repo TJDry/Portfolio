@@ -45,22 +45,23 @@
         .projectImage {
           width: 100%;
           height: 100%;
-          opacity: 0.2;
+          opacity: 0.3;
           object-fit: cover; /* Adjust image scaling as needed */
-          filter: blur(0px); /* Initial blur effect */
+          filter: blur(2px); /* Initial blur effect */
           transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         }
     
         &:hover .projectImage {
           filter: blur(0); /* Remove the blur effect on hover */
           scale: 1.1;
-          opacity: 0.5;
+          opacity: 0.6;
+          border: 3px dotted whitesmoke;
         }
       }
     
       .projectInfo {
         position: absolute;
-        
+        pointer-events: none;
         bottom: 5vh;
         left: 0;
         text-overflow: ellipsis;
@@ -86,6 +87,7 @@
 .tagList{
   display: flex;
   flex-wrap: wrap;
+  pointer-events: none;
   flex-direction: row;
   margin: 3em 0;
   gap: 0.5em 0;
@@ -133,7 +135,7 @@
         &:hover .secondaryProjectImage {
           filter: blur(0); /* Remove the blur effect on hover */
           scale: 1.1;
-          opacity: 0.4;
+          opacity: 1;
         }
       }
     
@@ -157,6 +159,10 @@
         }
         h4{
           color: rgb(175,175,175);
+          
+          @media only screen and (min-width: 800px) {
+
+          }
         }
       }
     }

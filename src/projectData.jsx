@@ -19,11 +19,11 @@ export const projectData = [
     softwareList: ["file-icons:figma",'file-icons:jsx-atom','file-icons:tailwind','file-icons:vite'],
     // Images
     image:[
-      `hero.jpg`,
+      `hero.webp`,
       `product1.webp`,
-      `tablet1.jpg`,
-      `tablet2.jpg`,
-      `tablet3.jpg`,
+      `tablet1.webp`,
+      `tablet2.webp`,
+      `tablet3.webp`,
     ],
     overview: 'James Kang & I co-designed and developed a singlepage formatted website for a blossoming chiropractor locally. Our goal was to create an easy-to-use website to open the gate for clients both new & existing to book appointments & learn about her practice. We utilised figma for the initial design experimentation, sticking closely towards the brand identity and using that as the basis for our palette, we moved swiftly onto Vite with React & Tailwind CSS for development and experimentation of functionality and features we could implement, like the google maps API and FAQ dropdowns.',
     textList:[
@@ -61,11 +61,11 @@ export const projectData = [
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
 
       image:[
-        `hero.jpg`,
+        `herodark.webp`,
         `product1.webp`,
-        `tablet1.jpg`,
-        `tablet2.jpg`,
-        `tablet3.jpg`,
+        `tablet1.webp`,
+        `tablet2.webp`,
+        `tablet3.webp`,
       ],
       overview: "While working in cooperation with VHEDIA, I was tasked with the project of creating a custom UI theme design to be developed for their car headunits that came in various designs, models and bases. The theme had to include consideration for custom widgets & personalisation whilst remaining simple enough for all variants of users to be able to troubleshoot either via a provided PDF guide or over the phone from one of the support technicians",
       textList:[
@@ -101,12 +101,10 @@ export const projectData = [
       softwareTitle: ["Figma",'Photoshop','Illustrator'],
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
       image:[
-        `hero.png`,
-        `Mobile1.jpg`,
-        `MobileTablet1.jpg`,
-        `phone2.png`,
-        `phone3.png`,
-        `tablet1.png`,
+        `hero.webp`,
+        `mobileOne.webp`,
+        `Mobile1.webp`,
+        `MobileTablet1.webp`,
       ],
       overview:"Tyrewatcher. A versatile app designed for phones, tablets and car headunits utilising BTE technology to connect our bluetooth tyre pressure sensors to your device ranging from one sensor up to 24+ for trucks and other large vehicles.",
       textList:[
@@ -141,12 +139,12 @@ export const projectData = [
       softwareTitle: ["Figma",'Photoshop','Illustrator'],
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
       image:[
-        `mobileHero.jpg`,
-        `mobileOne.jpg`,
-        `mobileTwo.jpg`,
-        `phone2.png`,
-        `phone3.png`,
-        `phone4.png`,
+        `mobileHero.webp`,
+        `mobileOne.webp`,
+        `mobileTwo.webp`,
+        `phone2.webp`,
+        `phone3.webp`,
+        `phone4.webp`,
       ],
       overview: "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",      
       textList:[
@@ -182,12 +180,12 @@ export const projectData = [
       tagList: ['UI / UX','Project Management','Full-Stack Development'],
       
       image:[
-        `mobileOne.jpg`,
-        `1.png`,
-        `phone1.png`,
-        `phone2.png`,
-        `phone3.png`,
-        `phone4.png`,
+        `hero.webp`,
+        `Mobile1.webp`,
+        `MobileTablet1.webp`,
+        `phone2.webp`,
+        `phone3.webp`,
+        `tablet1.webp`,
       ],
       overview:["Gremio, a ficticious "],
       textList:[
@@ -223,12 +221,12 @@ export const projectData = [
     tagList: ['UI / UX','Project Management','QA Testing'],
     
     image:[
-      `mobileOne.jpg`,
-      `1.png`,
-      `phone1.png`,
-      `phone2.png`,
-      `phone3.png`,
-      `phone4.png`,
+      `hero.webp`,
+      `mobileOne.webp`,
+      `mobileTwo.webp`,
+      `phone2.webp`,
+      `phone3.webp`,
+      `tablet1.webp`,
     ],
     
     textList:[

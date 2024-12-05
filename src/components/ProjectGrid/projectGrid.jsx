@@ -32,7 +32,6 @@ export default function ProjectGrid() {
       }
     );
   }, []);
-
   return (
   <>
     <div className={styles.projectGridBorder}>
@@ -41,13 +40,15 @@ export default function ProjectGrid() {
           <li key={item.id} className={styles.projectItem}>
             <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
               <div className={styles.projectCard}>
-                <img
-                  src= {`/images/${item.title}/${item.image[0]}`}
+              <img
+                  src={`/images/${item.title}/${item.image[0]}`}
+                  onMouseOver={(e) => (e.currentTarget.src = `/images/${item.title}/${item.image[1]}`)}
+                  onMouseOut={(e) => (e.currentTarget.src = `/images/${item.title}/${item.image[0]}`)}
                   alt={item.title}
                   className={styles.projectImage}
                 />
                 <div className={styles.projectInfo}>
-                  <h3>{item.title.replace(/([A-Z])/g, ' $1').trim()}</h3>
+                  <h2>{item.title.replace(/([A-Z])/g, ' $1').trim()}</h2>
                   <h4>{item.role}</h4>
                   <div className={styles.tagList}>
                     {item.tagList.map((tag,index) => (
@@ -70,8 +71,8 @@ export default function ProjectGrid() {
             <NavLink to={`/projects/${item.title}`} className={styles.secondaryProjectLink}>
               <div className={styles.secondaryProjectCard}>
                 <div className={styles.secondaryProjectInfo}>
-                  <h3>{item.title.replace(/([A-Z])/g, ' $1').trim()}</h3>
-                  <h4>{item.role}</h4>
+                  <h2>{item.title.replace(/([A-Z])/g, ' $1').trim()}</h2>
+                  <h5>{item.role}</h5>
                   <div className={styles.tagList}>
                     {item.tagList.map((tag,index) => (
                       <Tag key={index} tagTitle={tag} className={styles.tag} />

@@ -31,7 +31,6 @@
     .scrollContainer{
         position: absolute;
         left: 5vw;
-        animation: fade-animate 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate;
         top: 80vh;
         @media (max-width: 1000px) {
             right: 20vw;
@@ -40,20 +39,9 @@
             right: 30vw;
         }
     }
-
-// @keyframes scale {
-//     from {
-//         transform: scale(1);
-//     }
-//     to {
-//         transform: scale(1.2);
-//     }
-//   }
-
   .socialsContainer{
     position: absolute;
     right:5vw;
-    animation: fade-animate 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate;
     top: 65vh;
     @media (max-width: 1000px) {
         right: 20vw;
@@ -61,48 +49,4 @@
     @media (max-width: 600px) {
         right: 30vw;
     }
-}
-
-.bottomLeftCirclePosition, .topRightCirclePosition{
-    z-index: -1;
-    opacity: 0.5;
-    overflow: hidden;
-    width: 60rem;
-    position: absolute;
-    height: 60rem;
-    transform-origin: 50%;
-    filter: blur(10em);
-    border-radius: 100%;
-    background-size: 400% 400%;
-    -webkit-animation: gradientRotate 5s ease infinite;
-    -moz-animation: gradientRotate 5s ease infinite;
-    animation: gradientRotate 5s ease infinite;
-}
-.bottomLeftCirclePosition{
-    top: 40vh;
-    right:60vw;
-    background: linear-gradient(180deg, #F00 0%, #FA00FF 45%, #F00 100%);
-
-}
-.topRightCirclePosition{
-    top: -30vh;
-    left:60vw;
-    background: linear-gradient(180deg, #0057FF 0%, #00FF85 100%);
-}
-
-
-@-webkit-keyframes gradientRotate {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes gradientRotate {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes gradientRotate {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }

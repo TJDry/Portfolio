@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 15vh 0;
+    margin:0;
     text-align: center;
     flex-direction: row;
     width: 100%;
@@ -12,6 +12,9 @@
     @media screen and (min-width: 600px) {
         flex-direction: row;
         width: 100%;
+    }
+    p{
+        padding: 4em;
     }
 }
 

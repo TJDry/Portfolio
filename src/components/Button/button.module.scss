@@ -34,9 +34,14 @@
         padding: 0.5em;
         color: var(--text-colour);
         border: 1.5px solid rgba(126, 126, 126, 0.644);
-        background: linear-gradient(135deg, #05081b3f,#090d2e44,#05061a10, #05061827);
+        background: linear-gradient(135deg, #6e6f7460,#090d2e44,#cacbd411, #05061827);
         border-radius: 8px;
     }   
+    h4:hover{
+        background: linear-gradient(140deg, #c8cad88f,#090d2e8c,#696a723d, #43444b67);
+        border: 1.5px solid rgba(255, 255, 255, 0.897);
+        transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 }
 .spaceContainer{
     width: 100%;

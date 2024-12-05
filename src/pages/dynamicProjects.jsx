@@ -52,14 +52,14 @@ export default function Projects() {
         softwareList={project.softwareList}
         href={project.websiteLink} // Pass it properly
       />
-      <ImgContainer image1={project.image[0]} projectTitle={project.title} />
+      <ImgContainer image1={project.image[1]} projectTitle={project.title} />
       <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>
+      <ColourCard item={project.colours}     />
       <ImgContainer
-        image1={project.image[1]}
-        image2={project.image[2]}
+        image1={project.image[2]}
+        image2={project.image[3]}
         projectTitle={project.title}
       />
-      <ColourCard item={project.colours}     />
       <NextPage />
     </div>
   );
