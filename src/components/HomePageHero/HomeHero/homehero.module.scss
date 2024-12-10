@@ -18,10 +18,11 @@
             top: -10%;
         }
         h3{
-            font-weight: 300;
-            top: -10%;
+            font-weight: 400;
+            top: -12.5vh;
             position: relative;
-            color: var(--text-colour-dark);
+            color: var(--text-colour);
+            filter: brightness(80%);
             text-align: center;
         }
     }

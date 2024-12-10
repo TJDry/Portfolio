@@ -11,7 +11,7 @@
 }
 
 .header {
-  flex: 1 1 300px;
+  flex: 3 1 300px;
   padding: 4em;
   display: flex;
   flex-direction: column;
@@ -22,28 +22,8 @@
     margin-bottom: 16px;
   }
 }
-
-.header h1 {
-  font-size: 2rem;
-  margin-bottom: 8px;
-  color: #333;
-
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-}
-
-.header p {
-  font-size: 1rem;
-  color: #666;
-
-  @media (max-width: 768px) {
-    font-size: 0.9rem;
-  }
-}
-
 .gridContainer {
-  flex: 2 1 600px;
+  flex: 3 1 600px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -55,7 +35,7 @@
 
 .colourGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
   gap: 16px;
   list-style: none;
   padding: 0;

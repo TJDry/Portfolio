@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   margin: 0;
+  padding: 4em;
 
   justify-content: center;
   align-items: center;
@@ -11,12 +12,13 @@
   }
   .projectGrid {
       list-style: none;
-      width: 100%;
+      width: 80%;
       margin: 0;
       padding: 0;
       display: grid;
       grid-template-columns: repeat(1, minmax(0px, 1fr));
-      gap: 1.25em;
+      gap: 1.5em;
+
       @media only screen and (min-width: 400px) {
         padding: 1em;
       }
@@ -36,18 +38,17 @@
       }
     
       .projectCard {
-        border-radius: 8px;
+        border-radius: 5px;
         overflow: hidden;
         position: relative;
-        height: 600px; /* Adjust the height as needed */
+        height: 800px; /* Adjust the height as needed */
         border: 0.15em solid linear-gradient(95deg, #05081b,#090d2e,#05061a, #050618);
     
         .projectImage {
           width: 100%;
           height: 100%;
-          opacity: 0.3;
+          opacity: 0.5;
           object-fit: cover; /* Adjust image scaling as needed */
-          filter: blur(2px); /* Initial blur effect */
           transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         }
     
