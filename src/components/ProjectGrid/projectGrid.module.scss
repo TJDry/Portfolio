@@ -12,15 +12,16 @@
   }
   .projectGrid {
       list-style: none;
+      position: relative;
       width: 80%;
       margin: 0;
+      overflow: hidden;
       padding: 0;
       display: grid;
       grid-template-columns: repeat(1, minmax(0px, 1fr));
       gap: 1.5em;
 
       @media only screen and (min-width: 400px) {
-        padding: 1em;
       }
       @media only screen and (min-width: 800px) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -40,10 +41,10 @@
       .projectCard {
         border-radius: 5px;
         overflow: hidden;
+        background: rgb(128 128 128 / 0.2);
         position: relative;
-        height: 800px; /* Adjust the height as needed */
-        border: 0.15em solid linear-gradient(95deg, #05081b,#090d2e,#05061a, #050618);
-    
+        padding: 0.4em;
+        height: 800px; /* Adjust the height as needed */    
         .projectImage {
           width: 100%;
           height: 100%;
@@ -54,9 +55,7 @@
     
         &:hover .projectImage {
           filter: blur(0); /* Remove the blur effect on hover */
-          scale: 1.1;
           opacity: 0.6;
-          border: 3px dotted whitesmoke;
         }
       }
     
@@ -84,6 +83,27 @@
         }
       }
     }
+}
+.blob {
+  filter: blur(40px);
+  position: absolute;
+  z-index: -1; /* to keep it at below everything else */
+  top: 0; /* to align it at top */
+  left: 0; /* to align it at left */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* to make it circular */
+  background: rgb(255, 255, 255, 0.5);
+}
+.fakeblob {
+  display: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 .tagList{
   display: flex;
@@ -135,7 +155,6 @@
     
         &:hover .secondaryProjectImage {
           filter: blur(0); /* Remove the blur effect on hover */
-          scale: 1.1;
           opacity: 1;
         }
       }
