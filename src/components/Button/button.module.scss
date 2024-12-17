@@ -1,15 +1,11 @@
 .container{
     position: absolute;
-    top: 75vh;
+    top: 85vh;
     cursor: pointer;
-    padding: 3em 1em;
-    border: 1px solid rgba(255, 255, 255, 0.377);
-    border-radius: 100%;
-    animation: 2s Bounce infinite alternate-reverse;
-    h4{
-        font-weight: 500;
-        font-style: bold;
-        filter: brightness(100%);
+    border-radius: 12px;
+    h5{
+        font-size: 1.5rem;
+        color: var(--accent-colour);
     }
 }
 

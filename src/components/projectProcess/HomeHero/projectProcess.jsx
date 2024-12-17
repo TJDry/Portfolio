@@ -18,7 +18,7 @@ export default function ProjectProcess(text) {
   return (
 <div className={styles.caseStudyContainer}>
   <div className={styles.leftCaseStudyTimeline}>
-    <h3>Project Goals</h3>
+    <h2>Project Process</h2>
     <h4>{text.leftComment}</h4>
   </div>
   <div>

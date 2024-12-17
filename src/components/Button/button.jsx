@@ -8,18 +8,17 @@ import gsap from 'gsap';
 export function DownButton(){
     let clickScroll = () =>{
     window.scrollTo({
-        top: window.screen.height/1.65,
+        top: window.screen.height * 1.5,
         behavior: "smooth",
     });
 }
-        
-
     return(
     <div className={styles.container} onClick={clickScroll}>
-        <h5>Start Here!</h5>
+        <h5>Start scrolling</h5>
     </div>
     )
 }
+
 export function GradientCircle(){
     return(
     <>

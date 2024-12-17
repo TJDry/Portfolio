@@ -4,7 +4,6 @@ import { Icon } from '@iconify/react';
 import Resume from '../../assets/images/JaydenDryResume.pdf'
 import { onHoverEnter, onHoverLeave } from '../../Mouse';
 
-
 export default function Socials(props){
     return (
         <div className= {`${styles.socialContainer}`} style={{top:`${props.top}`,right:`${props.right}`}}>

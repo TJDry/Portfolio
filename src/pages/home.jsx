@@ -18,7 +18,6 @@ export default function Home(props) {
         <HomeHero headline="Creating Unique Digital Experiences" subHeadline="Taking Web & App design to the next level"/>
         <ProjectGrid/>
         <Showreel />
-        <SkillGrid />
         <AboutUs
           heading="Hi, I'm Jay" 
           content="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
@@ -28,6 +27,7 @@ export default function Home(props) {
           backend development. I enjoy working collaboratively in a team environment and also
           work well independently."
         />
+        <SkillGrid />
     </div>
   )
 }

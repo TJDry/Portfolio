@@ -15,6 +15,7 @@ export default function HomeHero(text) {
         <h1>{text.headline}</h1>
         <h3>{text.subHeadline}</h3>
       </div>
+      <DownButton/>
     </div>
     </>
   )
