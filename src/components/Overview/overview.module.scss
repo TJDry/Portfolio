@@ -1,10 +1,15 @@
 .overviewContainer{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    left: 10%;
-    margin-bottom: 5em;
+    display: grid;
     position: relative;
+    padding: 1em;
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 1.25em;
+    @media only screen and (min-width: 600px) {
+      padding: 8em;
+    }
+    @media only screen and (min-width: 1100px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     ul{
         list-style: none;
         li{
@@ -17,5 +22,29 @@
                 text-indent: 50px;
             }
         }
+    }
+}
+.leftContainer{
+    width: 100%;
+    .overviewSlot{
+        padding: 0.75em;
+        h4{
+            color: var(--text-colour);
+            padding: 0;
+        }
+    }
+}
+
+.rightContainer{
+    width: 100%;
+    padding: 1em 1.5em;
+    background-color: rgba(81, 86, 112, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
+    border-radius: 15px;
+    h4{
+        color: var(--text-colour);
+    }
+    p{
+        margin-top: 0.5em;
     }
 }

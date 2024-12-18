@@ -27,7 +27,7 @@ export default function NextPage(){
         <div className={styles.container}>
             <button onClick={navigateToNextProject}
             style={
-                {backgroundImage: `url(${process.env.PUBLIC_URL + `/images/${nextProject.title}/${nextProject.image[0]}`})`}
+                {backgroundImage: `url(${`/images/${nextProject.title}/${nextProject.image[0]}`})`}
             }
             className={styles.nextPageButton}
             >

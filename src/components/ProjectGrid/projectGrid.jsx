@@ -1,23 +1,48 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 import { NavLink } from "react-router-dom";
-import styles from './projectGrid.module.scss'
+import styles from './projectGrid.module.scss';
 import { projectData } from '../../projectData';
 import { Tag } from '../Button/button';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
+gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectGrid() {
   const projectReveal = useRef(null);
-  useEffect(()=>{
+  const blobsRef = useRef([]);
+
+  useEffect(() => {
+    const handleMouseMove = (ev) => {
+      blobsRef.current.forEach((blob) => {
+        const rect = blob.parentElement.getBoundingClientRect(); // Parent container (projectCard)
+        
+        // Calculate position relative to the container
+        const x = ev.clientX - rect.left - rect.width / 100;
+        const y = ev.clientY - rect.top - rect.height + 10;
+  
+        // Apply the correct transformations
+        blob.style.transform = `translate(${x}px, ${y}px)`;
+        blob.style.opacity = "1";
+      });
+    };
+  
+    // Attach mousemove to the project grid
+    const gridElement = projectReveal.current;
+    gridElement.addEventListener("mousemove", handleMouseMove);
+  
+    return () => {
+      gridElement.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+  
+  useEffect(() => {
     const element = projectReveal.current;
+
+    // GSAP animation
     gsap.fromTo(
       element.children,
-      {
-        x: -40,
-        opacity: 0,
-      },
+      { x: -40, opacity: 0 },
       {
         x: 0,
         opacity: 1,
@@ -28,42 +53,49 @@ export default function ProjectGrid() {
           trigger: element,
           start: "top center",
           end: "bottom center",
-        }
+        },
       }
     );
   }, []);
 
   return (
-    <div className={styles.projectGridBorder}>
-      <ul ref={projectReveal} className={styles.projectGrid}>
-        {projectData.map(item => (
-          <li key={item.id} className={styles.projectItem}>
-            <NavLink to={`${process.env.PUBLIC_URL}/projects/${item.title}`} className={styles.projectLink}>
-              <div className={styles.projectCard}>
-                <img
-                  src= {process.env.PUBLIC_URL + `/images/${item.title}/${item.image[0]}`}
-                  alt={item.title}
-                  className={styles.projectImage}
-                />
-                <div className={styles.projectInfo}>
-                  <h2>{item.title}</h2>
-                  <h3>{item.role}</h3>
-                  <div className={styles.tagList}>
-                    {item.tagList.map((tag,index) => (
-                      <Tag key={index} 
-                           tagTitle={tag}
-                           className={styles.tag}
-                      />
-                    ))
+    <>
+      <div className={styles.projectGridBorder}>
+        <ul ref={projectReveal} className={styles.projectGrid}>
+          {projectData.slice(0, 4).map((item, index) => (
+            <li key={item.id} className={styles.projectItem}>
+              <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
+                <div className={styles.projectCard}>
+                  <img
+                    src={`/images/${item.title}/${item.image[0]}`}
+                    onMouseOver={(e) =>
+                      (e.currentTarget.src = `/images/${item.title}/${item.image[1]}`)
                     }
+                    onMouseOut={(e) =>
+                      (e.currentTarget.src = `/images/${item.title}/${item.image[0]}`)
+                    }
+                    alt={item.title}
+                    className={styles.projectImage}
+                  />
+                  <div
+                    ref={(el) => (blobsRef.current[index] = el)}
+                    className={styles.fakeblob}
+                  ></div>
+                  <div className={styles.projectInfo}>
+                    <h2>{item.title.replace(/([A-Z])/g, " $1").trim()}</h2>
+                    <h4>{item.role}</h4>
+                    <div className={styles.tagList}>
+                      {item.tagList.map((tag, idx) => (
+                        <Tag key={idx} tagTitle={tag} className={styles.tag} />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </NavLink>
-          </li>
-        ))}
-      </ul>
-    </div>
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
-

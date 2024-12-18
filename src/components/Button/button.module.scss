@@ -1,23 +1,17 @@
 .container{
     position: absolute;
-    top: 75vh;
+    top: 85vh;
     cursor: pointer;
-    padding: 3em 1em;
-    border: 1px solid rgba(255, 255, 255, 0.377);
-    border-radius: 100%;
-    animation: 2s Bounce infinite alternate-reverse;
-    h4{
-        font-weight: 500;
-        font-style: bold;
-        filter: brightness(100%);
+    border-radius: 12px;
+    h5{
+        font-size: 1.5rem;
+        color: var(--accent-colour);
     }
 }
 
-.circle{
-    width: 1202px;
-    height: 1202px;
-    border-radius: 100%;
-}
+.circle {
+    overflow: hidden;
+  }
 
 @keyframes Bounce {
     from{
@@ -29,12 +23,21 @@
 }
 .tagContainer{
     h4{
+        flex-wrap: nowrap;
         display: inline;
         margin:0.2em;
+        text-wrap: nowrap;
         padding: 0.5em;
-        border: 1.5px solid white;
+        color: var(--text-colour);
+        border: 1.5px solid rgba(126, 126, 126, 0.644);
+        background: linear-gradient(135deg, #6e6f7460,#090d2e44,#cacbd411, #05061827);
         border-radius: 8px;
     }   
+    h4:hover{
+        background: linear-gradient(140deg, #c8cad88f,#090d2e8c,#696a723d, #43444b67);
+        border: 1.5px solid rgba(255, 255, 255, 0.897);
+        transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 }
 .spaceContainer{
     width: 100%;
@@ -46,4 +49,37 @@
         margin: 2em 0em;
         background-color: rgba(255, 255, 255, 0.177);
     }
+}
+.softwareContainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #4345550e; // Light background for visibility
+    border-radius: 8px; // Optional for rounded edges
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
+    h5{
+        padding-right: 0.5em;
+    }
+  }
+  
+  .softwareContainer .icon {
+    position: absolute;
+    color: white;
+  }
+
+.conditionalButton button{
+    background: var(--text-colour-dark);
+    text-decoration: none;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5em;
+}
+.conditionalButton button:hover{
+    background: #3784dd;
+    cursor: pointer;
 }

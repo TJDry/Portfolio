@@ -8,7 +8,7 @@ export default function ProjectProcess(text) {
   const currentProject = projectData.find((project) => project.title === text.projectTitle);
   console.log(text.projectData);
 
-  const headingList = ["Challenge", "Process", "Solution",];
+  const headingList = ["Challenge", "Concept", "Solution", "Outcome"];
   const IconList = ['mynaui:mountain','mynaui:book-open','mynaui:puzzle','mynaui:sun']
 
   if (!currentProject || !currentProject.textList) {
@@ -18,7 +18,7 @@ export default function ProjectProcess(text) {
   return (
 <div className={styles.caseStudyContainer}>
   <div className={styles.leftCaseStudyTimeline}>
-    <h2>Project Process</h2>
+    <h3>Project Goals</h3>
     <h4>{text.leftComment}</h4>
   </div>
   <div>

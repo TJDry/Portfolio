@@ -1,4 +1,5 @@
 import styles from './socialsStyle.module.scss'
+import React from 'react'
 import { Icon } from '@iconify/react';
 import Resume from '../../assets/images/JaydenDryResume.pdf'
 import { onHoverEnter, onHoverLeave } from '../../Mouse';

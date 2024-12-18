@@ -1,13 +1,22 @@
-rules: [
-    {
-        test: /\.(png|jpe?g|gif)$/i,
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
         use: [
+          "style-loader",
+          "css-loader",
           {
-            loader: 'file-loader',
+            loader: "sass-loader",
             options: {
-              esModule: false,
+              api: "modern-compiler",
+              sassOptions: {
+                // Your sass options
+              },
             },
           },
         ],
       },
-    ]
+    ],
+  },
+};

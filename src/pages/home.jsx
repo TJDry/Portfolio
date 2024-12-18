@@ -5,6 +5,7 @@ import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 import ProjectGrid from '../components/ProjectGrid/projectGrid';
 import AboutUs from '../components/About/About';
 import SkillGrid from '../components/SkillGrid/skillGrid';
+import GradientBackground from '../components/background/background';
 
 export default function Home(props) {
   useEffect(() => {
@@ -13,16 +14,12 @@ export default function Home(props) {
 
   return (
     <div>
+        <GradientBackground/>
         <HomeHero headline="Creating Unique Digital Experiences" subHeadline="Taking Web & App design to the next level"/>
-
-        <Heading heading="PROJECTS" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
         <ProjectGrid/>
-        {/* <Heading heading="APPROACH" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/> */}
         <Showreel />
-        <Heading heading="ABILITIES" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <SkillGrid />
-        <Heading heading="Hi, I'm Jay" backgroundColor="var(--background-colour)" colorFlat="var(--text-colour)"/>
-        <AboutUs 
+        <AboutUs
+          heading="Hi, I'm Jay" 
           content="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
           Majoring in Experience and Interaction Design. I have been working as a project & design
           manager for the past year, working with teams of international app developers to create
@@ -30,7 +27,7 @@ export default function Home(props) {
           backend development. I enjoy working collaboratively in a team environment and also
           work well independently."
         />
-        <TextBox heading="" contentA="" backgroundColor="" colorFlat="var(--text-colour)"/>
+        <SkillGrid />
     </div>
   )
 }
