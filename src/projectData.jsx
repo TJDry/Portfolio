@@ -20,7 +20,7 @@ export const projectData = [
     // Images
     image:[
       `hero.webp`,
-      `product1.webp`,
+      `hero.webp`,
       `tablet1.webp`,
       `tablet2.webp`,
       `tablet3.webp`,
@@ -140,7 +140,7 @@ export const projectData = [
       softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:adobe-illustrator'],
       image:[
         `mobileHero.webp`,
-        `mobileOne.webp`,
+        `mobileHero.webp`,
         `mobileTwo.webp`,
         `phone2.webp`,
         `phone3.webp`,
