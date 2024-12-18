@@ -2,26 +2,27 @@
   width: 100%;
   display: flex;
   margin: 0;
-  padding: 4em;
-
+  
   justify-content: center;
   align-items: center;
-
+  
   @media only screen and (min-width: 400px) {
+    padding: 4em;
     margin: 10vh 0vh;
   }
   .projectGrid {
       list-style: none;
       position: relative;
-      width: 80%;
       margin: 0;
       overflow: hidden;
       padding: 0;
       display: grid;
+      width: 100%;
       grid-template-columns: repeat(1, minmax(0px, 1fr));
       gap: 1.5em;
-
+      
       @media only screen and (min-width: 400px) {
+        width: 80%;
       }
       @media only screen and (min-width: 800px) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -44,7 +45,7 @@
         background: rgba(128, 128, 128, 0);
         position: relative;
         padding: 0.4em;
-        height: 800px; /* Adjust the height as needed */    
+        height: 600px; /* Adjust the height as needed */    
         .projectImage {
           width: 100%;
           height: 100%;
@@ -78,9 +79,6 @@
         line-height: 1.55;
         padding: 0em 2em;
         overflow: hidden;
-        h2{
-          font-size: 3em;
-        }
       }
     }
 }
