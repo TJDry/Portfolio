@@ -37,9 +37,10 @@
       border-radius: 8px;
       overflow: hidden;
       position: relative;
-      height: 550px;
-      background: rgba(33, 33, 54, 0.364);
+      height: 540px;
+      background: var(--background-gradient);
       transition: all 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      border: var(--border-style);
       box-shadow: inset 2px 2px 4px rgba(41, 41, 44, 0.205);
       &:hover {
         transform: translateY(-10px);
@@ -61,7 +62,6 @@
       left: 0;
       text-overflow: ellipsis;
       right: 0;
-      background-color: rgba(0, 0, 0, 0);
       color: white;
       overflow-x: hidden;
       padding: 2em;

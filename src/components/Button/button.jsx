@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import gsap from 'gsap';
 
 
-
+// DOWN BUTTON ------------------------------------------------------------------------------------------->
 export function DownButton(){
     let clickScroll = () =>{
     window.scrollTo({
@@ -18,7 +18,7 @@ export function DownButton(){
     </div>
     )
 }
-
+// GRADIENT CIRCLE ------------------------------------------------------------------------------------------->
 export function GradientCircle(){
     return(
     <>
@@ -27,7 +27,7 @@ export function GradientCircle(){
     )
 }
 
-
+// PROJECT BUTTON ------------------------------------------------------------------------------------------->
 export function ProjectButton(){
     return(
     <div className={styles.projectButtonContainer}>
@@ -36,14 +36,14 @@ export function ProjectButton(){
     )
 }
 
-
+// TAG ------------------------------------------------------------------------------------------->
 export const Tag = (item) => (
     <div className={styles.tagContainer}>
         <h4>{item.tagTitle}</h4>
     </div>
 );
 
-
+// SPACER ------------------------------------------------------------------------------------------->
 export function Spacer(item){
     return(
     <div className={styles.spaceContainer}>
@@ -51,38 +51,21 @@ export function Spacer(item){
     </div>
     )
 }
-
+// SOFTWARE ICON ------------------------------------------------------------------------------------------->
 export const SoftwareIcon = ({ softwareTitle, softwareName }) => {
-    const [hover, setHover] = useState(false);
-    const iconRef = useRef(null); // Attach the ref to the root element
-
-    useEffect(() => {
-        if (iconRef.current) {
-            // Animate only when the component is mounted
-            gsap.fromTo(
-                iconRef.current,
-                { opacity: 0, scale: 0 },
-                { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }
-            );
-        }
-    }, []);
 
     return (
         <div
-            ref={iconRef}
             className={styles.softwareContainer}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
             role="button"
-            aria-label={hover ? softwareTitle : 'Software icon'}
+            aria-label={softwareTitle}
         >
-            {hover && <h5 className={styles.softwareTitle}>{softwareTitle}</h5>}
             <Icon icon={softwareName} style={{ fontSize: '36px', color: 'white' }} />
         </div>
     );
 };
 
-
+// CONDITIONAL BUTTON ------------------------------------------------------------------------------------------->
 const ConditionalButton = ({href}) => {
     if (!href) {
       return null; // Do not render anything if href is not provided
@@ -96,3 +79,33 @@ const ConditionalButton = ({href}) => {
   };
   
   export default ConditionalButton;
+  
+// CUSTOM TOOLTIP ------------------------------------------------------------------------------------------->
+export const TooltipCustom =({text,children}) =>{
+    const [showTooltip, setTooltip] = useState(false);
+    return(
+        <div className={styles.tooltipContainer}
+        onMouseEnter={()=> setTooltip(true)}
+        onMouseLeave={()=> setTooltip(false)}
+        >
+            {children}
+            {showTooltip &&(
+                
+            <div className={`${styles.tooltip} ${showTooltip ? `${styles.open}` : ""}`}>
+                <p>{text}</p>
+                <div className={styles.arrowContainer}></div>
+            </div>
+            )}
+        </div>
+    );
+  };
+
+  export function ScrollArrow(props){
+
+    return(
+    <div className= {styles.scrollContainer}>
+        <h5>Scroll</h5>
+        <div className={styles.hexagonShape}></div>
+    </div>
+    )
+}

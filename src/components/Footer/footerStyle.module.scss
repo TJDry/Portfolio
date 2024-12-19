@@ -4,18 +4,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.textArea{
-  width: 100%;
-  h1, h3{
-    color: var(--text-colour);
-    overflow-wrap: break-word;
-  }
-  a:hover{
-    text-decoration: underline;
-    color: var(--accent-colour);
-    transition: all 1s ease-in-out;
-  }
-}
 .footContainer{
     // margin-top: 15em;
     padding: 170px 60px;
@@ -25,7 +13,15 @@
     text-align: center;
     background: var(--secondary-color);
     opacity: 1;
-    
+    h2, h4{
+      text-align: left;
+      overflow-wrap: break-word;
+    }
+    a:hover{
+      text-decoration: underline;
+      color: var(--accent-colour);
+      transition: all 1s ease-in-out;
+    }
     @media (max-width: 1000px) {
         padding: 70px 30px;
       }

@@ -14,14 +14,14 @@ const Showreel = () =>{
           scale: 0.8,
         },
         {
-          scale: 1,
+          scale: 1.2,
           duration: 5,
           ease: "power1",
           scrollTrigger: {
             trigger: element,
             scrub: true,
             start: "-100%",
-            end: "top center",
+            end: "center center",
           }
         }
       );

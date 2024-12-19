@@ -22,7 +22,7 @@
       gap: 1.5em;
       
       @media only screen and (min-width: 400px) {
-        width: 80%;
+        width: 100%;
       }
       @media only screen and (min-width: 800px) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -42,7 +42,7 @@
       .projectCard {
         border-radius: 5px;
         overflow: hidden;
-        background: rgba(128, 128, 128, 0);
+        background: rgba(0, 17, 255, 0.062);
         position: relative;
         padding: 0.4em;
         height: 600px; /* Adjust the height as needed */    
@@ -91,14 +91,14 @@
   width: 200px;
   height: 200px;
   border-radius: 50%; /* to make it circular */
-  background: rgb(255, 255, 255, 1);
+  background: rgb(255, 0, 0);
 }
 .fakeblob {
   position: absolute;
   width: 100px; // Adjust size
   height: 100px;
   filter: blur(100px);
-  background: rgba(255, 255, 255, 1); // Example color
+  background: rgb(255, 255, 255); // Example color
   border-radius: 50%;
   pointer-events: none; // Avoid interfering with mouse events
   opacity: 0;

@@ -38,8 +38,9 @@
 .rightContainer{
     width: 100%;
     padding: 1em 1.5em;
-    background-color: rgba(81, 86, 112, 0.2);
+    background: var(--background-gradient);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
+    border: var(--border-style);
     border-radius: 15px;
     h4{
         color: var(--text-colour);

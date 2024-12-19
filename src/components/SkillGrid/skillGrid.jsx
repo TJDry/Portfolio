@@ -25,7 +25,7 @@ export default function SkillGrid() {
         ease: "power4.out",
         scrollTrigger: {
           trigger: element,
-          start: "top center",
+          start: "-200%",
           end: "bottom center",
         }
       }

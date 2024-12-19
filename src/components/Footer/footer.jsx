@@ -1,15 +1,15 @@
 import React from "react";
-import { SocialsMinimal } from "../Socials/socials";
+import Socials from "../Socials/socials";
 import styles from './footerStyle.module.scss'
-import { GradientCircle } from "../Button/button";
 const Footer = (props) => {
   return (
    <div className={styles.footContainer}>
     <div className={styles.flexFoot}>
         <div>
-        Jayden Dry 2024<br/>
+        <h2>Find me on</h2>
+        <h4>© Jayden Dry 2024</h4><br/>
         </div>  
-        <SocialsMinimal />
+        <Socials />
       </div>
     </div>
   );

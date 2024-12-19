@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { DownButton, GradientCircle } from '../../Button/button'
+import { DownButton, GradientCircle, ScrollArrow } from '../../Button/button'
 import styles from './homehero.module.scss'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,7 +15,7 @@ export default function HomeHero(text) {
         <h1>{text.headline}</h1>
         <h3>{text.subHeadline}</h3>
       </div>
-      <DownButton/>
+      <ScrollArrow/>
     </div>
     </>
   )

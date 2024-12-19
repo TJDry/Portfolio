@@ -37,7 +37,7 @@
     .icon{
         -webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
                 clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
-        background-color: rgba(#000000, $alpha: 0.1);
+        background: rgba(175, 175, 175, 0.144);
         margin-left: 0.5em;
         position: relative;
         padding: 0.75em;
@@ -105,7 +105,7 @@
         font-size: 13pt;
     }
     h4{
-        background-color: rgba($color: #000000, $alpha: 0.15);
+        background-color: rgba($color: #a39393, $alpha: 0.15);
         -webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
                 clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
         display: inline;
@@ -139,34 +139,3 @@
   }
 
 
-.scrollContainer{
-    position: absolute;
-    transform: rotate(90deg);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    h3{
-        color: var(--text-colour);
-    }
-    .hexagonShape{
-        width: 14px;
-        height: 15px;
-        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-        background: var(--text-colour);
-        margin: 1em;
-        animation: scrollButton-animate 2s infinite;
-    }
-}
-
-@keyframes scrollButton-animate {
-    0% {
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(40px);
-
-    }
-    100% {
-        transform: translateX(0px);
-    }
-  }

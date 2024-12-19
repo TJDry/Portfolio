@@ -16,8 +16,6 @@ export default function Home(props) {
     <div>
         <GradientBackground/>
         <HomeHero headline="Creating Unique Digital Experiences" subHeadline="Taking Web & App design to the next level"/>
-        <ProjectGrid/>
-        <Showreel />
         <AboutUs
           heading="Hi, I'm Jay" 
           content="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
@@ -28,6 +26,8 @@ export default function Home(props) {
           work well independently."
         />
         <SkillGrid />
+        <ProjectGrid/>
+        <Showreel />
     </div>
   )
 }
