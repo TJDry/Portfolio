@@ -9,12 +9,20 @@ export default function Overview(text){
 
     <div className={styles.overviewContainer}>
         <div className={styles.leftContainer}>
-            <div className={styles.overviewSlot}><h4>Date</h4><h5>{text.year}</h5></div>
-            <div className={styles.overviewSlot}><h4>Role</h4><h5>{text.role}</h5></div>
-            <div className={styles.overviewSlot}><h4>Status</h4><h5>{text.status}</h5></div>
-            <div className={styles.overviewSlot}><h4>Structure</h4><h5>{text.managementStyle}</h5></div>
-            <div className={styles.overviewSlot}><h4>Project Type</h4><h5>{text.projectType}</h5></div>
-            <div className={styles.overviewSlot}>
+            <div className={styles.overviewSlot}><h4>Date</h4><p>{text.year}</p></div>
+            <div className={styles.overviewSlot}><h4>Role</h4><p>{text.role}</p></div>
+            <div className={styles.overviewSlot}><h4>Status</h4><p>{text.status}</p></div>
+            <div className={styles.overviewSlot}><h4>Structure</h4><p>{text.managementStyle}</p></div>
+            <div className={styles.overviewSlot}><h4>Project Type</h4><p>{text.projectType}</p></div>
+        </div>
+        <div className={styles.rightContainer}>
+            <div className={styles.overviewText}>
+                <h4>Overview</h4>
+                <p>{text.overviewContent}</p>
+                <ConditionalButton href={text.href} className={styles.button}/>
+            </div>
+        </div>
+        <div className={styles.softwareContainer}>
             <h4>Software Used</h4>
             {Array.isArray(text.softwareList) && Array.isArray(text.softwareTitle) && (
                 <div className={styles.softwareList}>
@@ -31,14 +39,6 @@ export default function Overview(text){
                 ))}
                 </div>
             )}
-            </div>
-                </div>
-        <div className={styles.rightContainer}>
-            <div className={styles.overviewText}>
-                <h4>Overview</h4>
-                <p>{text.overviewContent}</p>
-                <ConditionalButton href={text.href} className={styles.button}/>
-            </div>
         </div>
     </div>
     )

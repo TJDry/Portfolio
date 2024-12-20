@@ -24,14 +24,14 @@ export default function NextPage(){
       };
     
     return(
-        <div className={styles.container}>
-            <button onClick={navigateToNextProject}
+        <div className={styles.container} onClick={navigateToNextProject}>
+            <h2>Next Project: {nextProject.title}</h2>
+            <button 
             style={
                 {backgroundImage: `url(${`/images/${nextProject.title}/${nextProject.image[0]}`})`}
             }
             className={styles.nextPageButton}
             >
-                <h2>Next Project: {nextProject.title}</h2>
             </button>
         </div>
     )

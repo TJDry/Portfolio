@@ -13,41 +13,25 @@
         align-items: center;
         justify-content: center;
         h1{
-            padding: 1em;
+            padding: 0.2em;
             position: relative;
-            top: -10%;
+            top: -25vh;
+            @media only screen and (min-width: 400px) {
+                top: -8vh;
+                padding: 1em;
+            }
         }
         h3{
             font-weight: 400;
-            top: -12.5vh;
+            top: -15vh;
             position: relative;
             color: var(--text-colour);
             filter: brightness(80%);
             text-align: center;
+            @media only screen and (min-width: 400px) {
+                top: -12.5vh;
+            }
         }
     }
 
-}
-
-    .scrollContainer{
-        position: absolute;
-        left: 5vw;
-        top: 80vh;
-        @media (max-width: 1000px) {
-            right: 20vw;
-        }
-        @media (max-width: 600px) {
-            right: 30vw;
-        }
-    }
-  .socialsContainer{
-    position: absolute;
-    right:5vw;
-    top: 65vh;
-    @media (max-width: 1000px) {
-        right: 20vw;
-    }
-    @media (max-width: 600px) {
-        right: 30vw;
-    }
 }
