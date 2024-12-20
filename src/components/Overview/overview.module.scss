@@ -61,6 +61,11 @@
     gap: 2em;
     height: 20vh;
     justify-content: center;
+    align-items: center;
+    @media only screen and (min-width: 600px) {
+        padding: 6em 15em;
+        align-items: flex-start;
+      }
 }
 .softwareList{
     display: flex;

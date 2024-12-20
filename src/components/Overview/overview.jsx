@@ -6,40 +6,41 @@ import { Tooltip } from 'react-tooltip';
 
 export default function Overview(text){
     return(
-
-    <div className={styles.overviewContainer}>
-        <div className={styles.leftContainer}>
-            <div className={styles.overviewSlot}><h4>Date</h4><p>{text.year}</p></div>
-            <div className={styles.overviewSlot}><h4>Role</h4><p>{text.role}</p></div>
-            <div className={styles.overviewSlot}><h4>Status</h4><p>{text.status}</p></div>
-            <div className={styles.overviewSlot}><h4>Structure</h4><p>{text.managementStyle}</p></div>
-            <div className={styles.overviewSlot}><h4>Project Type</h4><p>{text.projectType}</p></div>
-        </div>
-        <div className={styles.rightContainer}>
-            <div className={styles.overviewText}>
-                <h4>Overview</h4>
-                <p>{text.overviewContent}</p>
-                <ConditionalButton href={text.href} className={styles.button}/>
+    <>
+        <div className={styles.overviewContainer}>
+            <div className={styles.leftContainer}>
+                <div className={styles.overviewSlot}><h4>Date</h4><p>{text.year}</p></div>
+                <div className={styles.overviewSlot}><h4>Role</h4><p>{text.role}</p></div>
+                <div className={styles.overviewSlot}><h4>Status</h4><p>{text.status}</p></div>
+                <div className={styles.overviewSlot}><h4>Structure</h4><p>{text.managementStyle}</p></div>
+                <div className={styles.overviewSlot}><h4>Project Type</h4><p>{text.projectType}</p></div>
+            </div>
+            <div className={styles.rightContainer}>
+                <div className={styles.overviewText}>
+                    <h4>Overview</h4>
+                    <p>{text.overviewContent}</p>
+                    <ConditionalButton href={text.href} className={styles.button}/>
+                </div>
             </div>
         </div>
-        <div className={styles.softwareContainer}>
-            <h4>Software Used</h4>
-            {Array.isArray(text.softwareList) && Array.isArray(text.softwareTitle) && (
-                <div className={styles.softwareList}>
-                {text.softwareList.map((icon, index) => (
-                    <TooltipCustom
-                    key={index} // Key applied here for the TooltipCustom wrapper
-                    text={text.softwareTitle[index]}
-                    >
-                    <SoftwareIcon
-                        softwareTitle={text.softwareTitle[index]}
-                        softwareName={icon}
-                    />
-                    </TooltipCustom>
-                ))}
-                </div>
-            )}
+            <div className={styles.softwareContainer}>
+                <h4>Software Used</h4>
+                {Array.isArray(text.softwareList) && Array.isArray(text.softwareTitle) && (
+                    <div className={styles.softwareList}>
+                    {text.softwareList.map((icon, index) => (
+                        <TooltipCustom
+                        key={index} // Key applied here for the TooltipCustom wrapper
+                        text={text.softwareTitle[index]}
+                        >
+                        <SoftwareIcon
+                            softwareTitle={text.softwareTitle[index]}
+                            softwareName={icon}
+                        />
+                        </TooltipCustom>
+                    ))}
+            </div>
+                )}
         </div>
-    </div>
+    </>
     )
 }
