@@ -4,7 +4,6 @@ import styles from './aboutUs.module.scss'
 export default function AboutUs(text){
     return(
     <div className={styles.gridContainer}>
-    <div></div>
         <div className={styles.textContainer}>
             <div><h4>About me</h4></div>
             <div>
@@ -14,6 +13,7 @@ export default function AboutUs(text){
                 <p>{text.content}</p>
             </div>
         </div>
+    <div></div>
     </div>
     )
 }
