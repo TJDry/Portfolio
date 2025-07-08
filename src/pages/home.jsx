@@ -14,11 +14,11 @@ export default function Home(props) {
 
   return (
     <div>
-        <HomeHero   headline={
+        <HomeHero headline={
           <>
             I am Jay –{" "}
             <span className="accent">Design & Project Manager</span>{" "}
-            who creates experiences that are meant to be lived
+            creating experiences that are meant to be lived
           </>
         } />
         <AboutUs
@@ -26,9 +26,12 @@ export default function Home(props) {
           Creating digital solutions working with international developers, 
           aswell as utilising his skills to create his own creative solutions."
         />
-        <SkillGrid />
+        <Heading heading="Proper about me"/>
+        <Heading heading="Specialities"/>
+        <Heading heading="Approach"/>
         <ProjectGrid/>
-        <Showreel />
+        <Heading heading=""/>
+        <Heading heading="Have an idea? We can help"/>
     </div>
   )
 }

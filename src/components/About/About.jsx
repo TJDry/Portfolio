@@ -20,7 +20,7 @@ export default function AboutUs(text){
 export function Heading(text){
         return(
         <div className={`${styles.borderSolo}`}>
-            <h2 className={styles.headingSolo} style={{color: `${text.brandColour}`}}>{text.heading}</h2>
+            <h4 className={styles.headingSolo} style={{color: `${text.brandColour}`}}>{text.heading}</h4>
         </div>
         )
 }

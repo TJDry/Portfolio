@@ -46,7 +46,6 @@ export default function Navigation() {
 
   return (
     <>
-      <div className={styles.logoContainer}><Logo/></div>
       {isMobile ? (
            <>
            <div className={styles.navigation} onClick={() => setIsOpen(!isOpen)}>
@@ -68,7 +67,7 @@ export default function Navigation() {
                            key={item.id} 
                            style={isOpen 
                            ? {
-                               width: "40%",
+                               width: "100%",
                                opacity: "1",
                            }:{
                                width: "0",
@@ -96,6 +95,7 @@ export default function Navigation() {
         transition={{ ease: [0.2, 0.3, 0.4, 1], duration: 0.3 }}
       >
           <ul className={styles.navigation}>
+          <div className={styles.logoContainer}><Logo/></div>
           {navigationData.map(item => {
             return(
                 <li key={item.id}>

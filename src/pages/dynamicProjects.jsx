@@ -34,6 +34,7 @@ export default function Projects() {
 
   return (
     <div>
+      {/*HERO*/}
       <ProjectHero
         headline={project.title.replace(/([A-Z])/g, ' $1').trim()}
         role={project.role}
@@ -41,6 +42,8 @@ export default function Projects() {
         heroImage={project.image[0]}
         projectTitle={project.title}
       />
+
+      {/*OVERVIEW*/}
       <Overview
         role={project.role}
         year={project.year}
@@ -52,15 +55,64 @@ export default function Projects() {
         softwareList={project.softwareList}
         href={project.websiteLink} // Pass it properly
       />
+
       <ImgContainer image1={project.image[1]} projectTitle={project.title} />
-      <ColourCard item={project.colours}     />
-      <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>
+      <ProjectProcess
+        projectTitle={project.title}
+        text="processTextList"
+        headings={["Goals", "The challenge"]}
+      />    
       <ImgContainer
         image1={project.image[2]}
         image2={project.image[3]}
         projectTitle={project.title}
       />
-      <NextPage />
+      
+      {/*PROCESS*/}
+      <ProjectProcess
+        projectTitle={project.title}
+        text="processTextList"
+        headings={["Process"]}
+      />
+            <ImgContainer
+        image1={project.image[2]}
+        image2={project.image[3]}
+        projectTitle={project.title}
+      />
+      <ProjectProcess
+        projectTitle={project.title}
+        text="processTextList"
+        headings={["Research"]}
+      />
+      <ProjectProcess
+        projectTitle={project.title}
+        text="processTextList"
+        headings={["Brand Identity System"]}
+      />
+      <ColourCard item={project.colours}     />
+        <ProjectProcess
+        projectTitle={project.title}
+        text="processTextList"
+        headings={["Wireframing"]}
+      />
+      <ImgContainer
+        image1={project.image[2]}
+        image2={project.image[3]}
+        projectTitle={project.title}
+      />
+      
+      {/*PRODUCTION*/}
+      <ProjectProcess
+        projectTitle={project.title}
+        text="processTextList"
+        headings={["UI Design"]}
+      />
+      <ProjectProcess
+        projectTitle={project.title}
+        text="processTextList"
+        headings={["Development Process"]}
+      />     
+      <NextPage /> {/*Redo this*/}
     </div>
   );
 }

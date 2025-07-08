@@ -20,7 +20,7 @@ export default function ProjectHero(text) {
   }, []);
 
   const currentProject = projectData.find((project) => project.title === text.projectTitle);
-  console.log(currentProject.textList);
+  console.log(currentProject.processTextList);
   return (
     <>
     <div className={styles.container}>

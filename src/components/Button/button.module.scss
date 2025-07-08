@@ -58,11 +58,8 @@
     justify-content: center;
     font-size: 2rem;
     margin: 0.25em;
-    width: 2em;
-    height: 2em;
-    background-color: rgba(58, 58, 82, 0.267); // Light background for visibility
-    border-radius: 8px; // Optional for rounded edges
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
+    width: 1.5em;
+    height: 1.5em;
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover{
         transform: translateY(-3px);
@@ -149,6 +146,42 @@
         background: var(--accent-colour);
         margin: 1em;
         animation: scrollButton-animate 2s infinite;
+    }
+}
+
+.callToAction{
+    position: absolute;
+    width: 0;
+    transform: rotate(90deg);
+    display: none;
+    z-index: 5;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    @media only screen and (min-width: 400px) {
+        display: grid;         /* new; nested grid container */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        right: 3em;
+        bottom: 2em;
+        width: 4em;
+        height: 4em;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 100%;
+        backdrop-filter: blur(5px);
+        border: none;
+        z-index: 0;
+    }
+
+    img{
+        width: 4em;
+        grid-column: 1;
+        grid-row: 1 / -1;      /* from first line at start, to first line at end */
+        align-self: center; 
+        rotate: -45deg;
+        pointer-events: none;
+        :hover{
+         transform: scale(1.2);
+        }
     }
 }
 

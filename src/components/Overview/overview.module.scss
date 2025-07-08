@@ -51,22 +51,6 @@
         margin-top: 0.5em;
     }
 }
-.softwareContainer{
-    display: flex;
-    align-items: flex-start;
-    grid-column: 2;
-    flex-direction: column;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    gap: 2em;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    @media only screen and (min-width: 600px) {
-        padding: 4em 7em;
-        align-items: flex-start;
-      }
-}
 .softwareList{
     display: flex;
     gap: 1em;

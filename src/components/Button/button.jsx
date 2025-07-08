@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './button.module.scss'
 import { Icon } from '@iconify/react';
+import Arrow from '../../assets/svgs/arrow.svg'
 import gsap from 'gsap';
 
 
@@ -60,7 +61,7 @@ export const SoftwareIcon = ({ softwareTitle, softwareName }) => {
             role="button"
             aria-label={softwareTitle}
         >
-            <Icon icon={softwareName} style={{ fontSize: '36px', color: 'white' }} />
+            <Icon icon={softwareName} style={{ fontSize: '34px', color: 'white' }} />
         </div>
     );
 };
@@ -107,5 +108,35 @@ export const TooltipCustom =({text,children}) =>{
         <h5>Scroll</h5>
         <div className={styles.hexagonShape}></div>
     </div>
+    )
+}
+
+  export const CallToActionButton =({active}) =>{
+    const buttonRef = useRef(null);
+
+    useEffect(() => {
+        if (active) {
+        gsap.to(buttonRef.current, {
+            opacity: 1,
+            scale: 1,
+            rotation:'+90',
+            border: '1px white',
+            duration: 0.8,
+            ease: 'power3.out',
+        });
+        } else {
+        gsap.to(buttonRef.current, {
+            opacity: 0,
+            scale: 0.9,
+            rotation:'0',
+            duration: 0.8,
+            ease: 'power3.in',
+        });
+        }
+    }, [active]);
+    return(
+    <button ref={buttonRef} className= {active ? `${styles.callToAction} ${styles.active}` : `${styles.callToAction}`}>
+        <img src={Arrow} alt="React Logo" />
+    </button>
     )
 }

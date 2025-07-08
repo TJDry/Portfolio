@@ -11,7 +11,7 @@ export default function ProjectProcess(text) {
   const headingList = ["Challenge", "Concept", "Solution", "Outcome"];
   const IconList = ['mynaui:mountain','mynaui:book-open','mynaui:puzzle','mynaui:sun']
 
-  if (!currentProject || !currentProject.textList) {
+  if (!currentProject || !currentProject.processTextList) {
     return <p>No data available for this project.</p>;
   }
 
@@ -30,7 +30,7 @@ export default function ProjectProcess(text) {
           </div>
           <div className={styles.textBorder}>
             <h2>{heading}</h2>
-            <p>{currentProject.textList[i]}</p>
+            <p>{currentProject.processTextList[i]}</p>
           </div>
         </div>
         <Spacer />
