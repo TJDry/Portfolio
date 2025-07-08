@@ -46,7 +46,7 @@ export default function Navigation() {
 
   return (
     <>
-      <h3 className={styles.logoContainer}><Logo/></h3>
+      <div className={styles.logoContainer}><Logo/></div>
       {isMobile ? (
            <>
            <div className={styles.navigation} onClick={() => setIsOpen(!isOpen)}>
@@ -80,7 +80,7 @@ export default function Navigation() {
                                 isActive ? activeClass : undefined
                             }
                               >
-                              <span>{item.title}</span>
+                              <h5>{item.title}</h5>
                           </NavLink>
                            </li>
                            </>

@@ -62,7 +62,7 @@ export default function ProjectGrid() {
     <>
       <div className={styles.projectGridBorder}>
         <ul ref={projectReveal} className={styles.projectGrid}>
-          {projectData.slice(0, 4).map((item, index) => (
+          {projectData.slice(0, 5).map((item, index) => (
             <li key={item.id} className={styles.projectItem}>
               <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
                 <div className={styles.projectCard}>

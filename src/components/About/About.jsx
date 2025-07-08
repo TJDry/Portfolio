@@ -5,7 +5,6 @@ export default function AboutUs(text){
     return(
     <div className={styles.gridContainer}>
         <div className={styles.textContainer}>
-            <div><h4>About me</h4></div>
             <div>
                 <h3>{text.heading}</h3>
             </div>

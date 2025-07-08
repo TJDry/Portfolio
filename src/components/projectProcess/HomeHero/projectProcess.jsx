@@ -17,23 +17,18 @@ export default function ProjectProcess(text) {
 
   return (
 <div className={styles.caseStudyContainer}>
-  <div className={styles.leftCaseStudyTimeline}>
-    <h2>Project Process</h2>
-    <h4>{text.leftComment}</h4>
-  </div>
   <div>
     {headingList.map((heading, i) => (
       <div className={styles.rightCaseStudyContainer} key={heading}>
         <div className={styles.rowBorder}>
-          <div className={styles.iconBorder}>
-            <Icon icon={IconList[i]} className={styles.icon} />
+          <div className={styles.headerBorder}>
+            <h2>{heading}</h2>
           </div>
           <div className={styles.textBorder}>
-            <h2>{heading}</h2>
+            <h4>{heading}</h4>
             <p>{currentProject.textList[i]}</p>
           </div>
         </div>
-        <Spacer />
       </div>
     ))}
   </div>

@@ -14,16 +14,17 @@ export default function Home(props) {
 
   return (
     <div>
-        <GradientBackground/>
-        <HomeHero headline="Creating Unique Digital Experiences" subHeadline="Taking Web & App design to the next level"/>
+        <HomeHero   headline={
+          <>
+            I am Jay –{" "}
+            <span className="accent">Design & Project Manager</span>{" "}
+            who creates experiences that are meant to be lived
+          </>
+        } />
         <AboutUs
-          heading="Hi, I'm Jay" 
-          content="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
-          Majoring in Experience and Interaction Design. I have been working as a project & design
-          manager for the past year, working with teams of international app developers to create
-          digital solutions. I am passionate about human-centred design & enjoy both front end &
-          backend development. I enjoy working collaboratively in a team environment and also
-          work well independently."
+          heading="Working as a project & design manager for 2 years. 
+          Creating digital solutions working with international developers, 
+          aswell as utilising his skills to create his own creative solutions."
         />
         <SkillGrid />
         <ProjectGrid/>

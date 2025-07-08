@@ -22,42 +22,39 @@ Link{
     color: var(--text-colour);
 }
 h1{
-    font-size: clamp(2.8rem,2rem + 5.14vw,6.6rem);
+    font-size: clamp(1.8rem,1rem + 5.14vw,4rem);
     font-family: var(--accent-font);
-    font-weight: 600;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
     z-index: 10;
     color: var(--text-colour);
 }h2{
     font-size: clamp(1.8rem,1.2rem + 1vw,2.8rem);
     z-index: 10;
-    font-weight: 800;
+    font-weight: 500;
     word-wrap: break-word;
 }h3{
-    font-size: clamp(0rem,1.2rem + 2vw,2.6rem);
+    font-size: clamp(1rem,1.2rem + 1vw,2.4rem);
     color: var(--text-colour);
     font-family: var(--primary-font);
-    font-weight: 600;
+    font-weight: 400;
 }h4{
     font-size: clamp(1.2rem,0.6rem + 1vw,2rem);
     color: var(--text-colour-dark);
-    font-weight: 600;
+    font-weight: 300;
 }h5{
-    font-size: clamp(1rem,1.2rem + 2vw,1.8rem);
+    font-size: clamp(1rem,0.4rem + 2vw,1.6rem);
     color: var(--text-colour-dark);
-    font-weight: 500;
+    font-weight: 200;
 }
 p{ 
     font-size: clamp(0.8rem,0.4rem + 0.6vw,1.2rem);
-    font-weight: 500;
+    font-weight: 100;
     line-height: 1.75;
     color: var(--text-colour-dark);
-}span{
-    color: var(--text-colour);
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    font-size: 1rem;
-    filter: brightness(90%);
+}
+h1 .accent {
+  color: var(--accent-colour);
 }
 .mouse{
     display: none;

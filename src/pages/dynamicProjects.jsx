@@ -53,8 +53,8 @@ export default function Projects() {
         href={project.websiteLink} // Pass it properly
       />
       <ImgContainer image1={project.image[1]} projectTitle={project.title} />
-      <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>
       <ColourCard item={project.colours}     />
+      <ProjectProcess projectTitle={project.title} leftComment={project.leftComment}/>
       <ImgContainer
         image1={project.image[2]}
         image2={project.image[3]}
