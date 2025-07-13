@@ -11,7 +11,7 @@ export default function TextBox(text){
 
 export function Heading(text){
         return(
-        <div>
+        <div className={styles.borderSolo}>
             <h2 className={styles.headingSolo} style={{color: `${text.brandColour}`}}>{text.heading}</h2>
         </div>
         )

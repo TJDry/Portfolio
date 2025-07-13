@@ -1,16 +1,17 @@
 import React, { useEffect, useRef } from 'react'
-import styles from './skillGrid.module.scss'
+import styles from './approach.module.scss'
 import { Icon } from '@iconify/react';
-import { skillData } from './skillData.js';
+import { approachData } from './approachData.js';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Heading } from '../textBox/text.jsx';
 gsap.registerPlugin(ScrollTrigger);
 
 
-export default function SkillGrid() {
-  const skillReveal = useRef(null);
+export default function Approach() {
+  const approachReveal = useRef(null);
   useEffect(()=>{
-    const element = skillReveal.current;
+    const element = approachReveal.current;
     gsap.fromTo(
       element.children,
       {
@@ -32,13 +33,15 @@ export default function SkillGrid() {
     );
   }, []);
   return (
-    <div className={styles.skillGridBorder}>
-      <ul ref={skillReveal} className={styles.skillGrid}>
-        {skillData.map(item => (
-          <li key={item.id} className={styles.skillItem}>
-              <div className={styles.skillCard}>
+    <>
+    <h2 className={styles.header}>From modern minimalism to timeless classics, Relied upon by a fresh generation of companies.</h2>
+    <div className={styles.approachGridBorder}>
+      <ul ref={approachReveal} className={styles.approachGrid}>
+        {approachData.map(item => (
+          <li key={item.id} className={styles.approachItem}>
+              <div className={styles.approachCard}>
                 <Icon icon={item.logo} className={`${styles.icon}`}/>
-                <div className={styles.skillInfo}>
+                <div className={styles.approachInfo}>
                   <h2>{item.title}</h2>
                   <p>{item.description}</p>
                 </div>
@@ -47,6 +50,6 @@ export default function SkillGrid() {
         ))}
       </ul>
     </div>
+    </>
   );
 }
-

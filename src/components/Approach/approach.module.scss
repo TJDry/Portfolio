@@ -1,14 +1,14 @@
-.skillGridBorder{  
+.approachGridBorder{  
   width: 100%;
   display: flex;
   margin: 5vh 0vh;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
-.skillGrid {
+.approachGrid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1em 1em;
   width: 90vw;
   justify-items: center;
@@ -17,60 +17,55 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   @media only screen and (min-width: 1550px) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
     .icon{
-      scale: 6;
+      scale: 4;
       position: relative;
-      left: 15%;
+      left: 5%;
+      color: var(--text-colour);
       top: 30%;
     }
-    .skillItem {
+    .approachItem {
       flex: 1;
       // max-width: 450px;
       min-width: 300px;
       width: 100%;
     }
     
-    .skillCard {
+    .approachCard {
       border-radius: 8px;
       overflow: hidden;
+      height: 300px;
       position: relative;
-      height: 400px;
       // background: var(--background-gradient);
       transition: all 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
       // border: var(--border-style);
       // box-shadow: inset 2px 2px 4px rgba(41, 41, 44, 0.205);
       &:hover {
         transform: translateY(-10px);
-        scale: 1.12;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
       }
-    .skillImage {
-        width: 64px;
-        height: 64px;
+    .approachImage {
         // background: white;
         opacity: 0.5;
         object-fit: cover; /* Adjust image scaling as needed */
         filter: blur(5px); /* Initial blur effect */
         transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
       }
-    }.skillInfo {
-      position: absolute;
-      top: 40%;
-      left: 0;
+    }.approachInfo {
       text-overflow: ellipsis;
-      right: 0;
       overflow-x: hidden;
-      padding: 2em 1em;
+      padding: 2em 6em;
       overflow: hidden;
       h2{
-        color: var(--accent-colour);
         line-height: 2em;
       }
     }
   }
+}
+.header{
+  padding: 0 3em;
 }
   
   

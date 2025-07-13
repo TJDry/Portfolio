@@ -79,7 +79,7 @@ export default function Navigation() {
                                 isActive ? activeClass : undefined
                             }
                               >
-                              <h5>{item.title}</h5>
+                              <span>{item.title}</span>
                           </NavLink>
                            </li>
                            </>
