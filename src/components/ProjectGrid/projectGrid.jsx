@@ -70,10 +70,13 @@ export default function ProjectGrid() {
                   <img
                     src={`/images/${item.title}/${item.image[0]}`}
                     onMouseOver={(e) =>
-                      (e.currentTarget.src = `/images/${item.title}/${item.image[1]}`) & setIsHovered(index)
+                      // (e.currentTarget.src = `/images/${item.title}/${item.image[1]}`) 
+                      // & 
+                      setIsHovered(index)
                     }
                     onMouseOut={(e) =>
-                      (e.currentTarget.src = `/images/${item.title}/${item.image[0]}`) & setIsHovered(null)
+                      // (e.currentTarget.src = `/images/${item.title}/${item.image[0]}`) & 
+                      setIsHovered(null)
                     }
                     alt={item.title}
                     className={styles.projectImage}

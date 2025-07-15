@@ -102,41 +102,63 @@ export const TooltipCustom =({text,children}) =>{
   };
 
   export function ScrollArrow(props){
+    const scrollButtonRef = useRef(null);
+    useEffect(() =>{
+        gsap.to(scrollButtonRef.current, {
+            duration: 0.5,   // speed of bounce
+            repeat: -1,
+            y: 30,
+            yoyo: true,      // bounce back
+            ease: "power.inOut"
+        }
 
+        )
+    }
+)
     return(
     <div className= {styles.scrollContainer}>
-        <h5>Scroll</h5>
-        <div className={styles.hexagonShape}></div>
+        <h5 style={{ transform: 'rotate(90deg)' }}>Scroll</h5>
+        <div ref={scrollButtonRef} className={styles.hexagonShape}></div>
     </div>
     )
 }
 
   export const CallToActionButton =({active}) =>{
     const buttonRef = useRef(null);
+    const arrowRef = useRef(null);
 
     useEffect(() => {
         if (active) {
         gsap.to(buttonRef.current, {
             opacity: 1,
             scale: 1,
-            rotation:'+90',
-            border: '1px white',
+            rotation:'+135',
+            border: '0',
+            background: 'rgba(117, 117, 117, 0.81)',
             duration: 0.8,
             ease: 'power3.out',
         });
+        gsap.to(arrowRef.current, {
+            filter: "invert(0)"
+        })
         } else {
         gsap.to(buttonRef.current, {
-            opacity: 0,
-            scale: 0.9,
-            rotation:'0',
+            opacity: 0.6,
+            scale: 0.8,
+            rotation:'+90',
             duration: 0.8,
+            background: 'rgba(116, 116, 116, 0)',
+            border: '2px solid rgba(122, 122, 122, 0.33)',
             ease: 'power3.in',
         });
+            gsap.to(arrowRef.current, {
+                filter: "invert(0.6)"
+            })
         }
     }, [active]);
     return(
     <button ref={buttonRef} className= {active ? `${styles.callToAction} ${styles.active}` : `${styles.callToAction}`}>
-        <img src={Arrow} alt="React Logo" />
+        <img ref={arrowRef} src={Arrow} alt="React Logo" />
     </button>
     )
 }

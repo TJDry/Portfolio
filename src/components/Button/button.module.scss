@@ -126,25 +126,26 @@
 .scrollContainer{
     position: absolute;
     width: 0;
-    transform: rotate(90deg);
     display: none;
     z-index: 5;
     grid-template-columns: auto auto auto;
     align-items: center;
     @media only screen and (min-width: 400px) {
         top: 80%;
-        display: grid;
         right: 5%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: auto;
     }
     h3{
         color: var(--text-colour);
     }
     .hexagonShape{
+        margin: 1.5em 0;
         width: 14px;
         height: 15px;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
         background: var(--accent-colour);
-        margin: 1em;
         animation: scrollButton-animate 2s infinite;
     }
 }
@@ -184,34 +185,3 @@
         }
     }
 }
-
-@keyframes scrollButton-animate {
-    0% {
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(40px);
-
-    }
-    100% {
-        transform: translateX(0px);
-    }
-  }
-
-  @keyframes hue-shift {
-    0% {
-        border: 1px solid rgba(65, 65, 65, 0.25);
-        color: var(--text-colour);
-    }
-    50%{
-        border: 1px solid rgba(156, 156, 156, 0.5);
-
-    }
-    75% {
-        border: 1px solid rgba(212, 212, 212, 0.75);
-    }
-    100% {
-        border: 1px solid rgba(255, 255, 255, 1);
-        color: var(--accent-colour);
-    }
-  }

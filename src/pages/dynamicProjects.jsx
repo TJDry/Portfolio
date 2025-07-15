@@ -56,15 +56,19 @@ export default function Projects() {
         href={project.websiteLink} // Pass it properly
       />
 
-      <ImgContainer image1={project.image[1]} projectTitle={project.title} />
+      <ImgContainer
+        image1={project.image[1]}
+        image2={project.image[2]}
+        projectTitle={project.title}
+      />
       <ProjectProcess
         projectTitle={project.title}
         text="processTextList"
         headings={["Goals", "The challenge"]}
       />    
       <ImgContainer
-        image1={project.image[2]}
-        image2={project.image[3]}
+        image1={project.image[3]}
+        image2={project.image[4]}
         projectTitle={project.title}
       />
       
@@ -75,8 +79,8 @@ export default function Projects() {
         headings={["Process"]}
       />
             <ImgContainer
-        image1={project.image[2]}
-        image2={project.image[3]}
+        image1={project.image[5]}
+        image2={project.image[6]}
         projectTitle={project.title}
       />
       <ProjectProcess
@@ -96,8 +100,8 @@ export default function Projects() {
         headings={["Wireframing"]}
       />
       <ImgContainer
-        image1={project.image[2]}
-        image2={project.image[3]}
+        image1={project.image[7]}
+        image2={project.image[8]}
         projectTitle={project.title}
       />
       

@@ -6,7 +6,7 @@ export default function AboutUs(text){
     <div className={styles.gridContainer}>
         <div className={styles.textContainer}>
             <div>
-                <h3>{text.heading}</h3>
+                <h2>{text.heading}</h2>
             </div>
             <div>
                 <p>{text.content}</p>

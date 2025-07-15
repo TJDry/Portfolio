@@ -5,6 +5,7 @@ import ProjectGrid from '../components/ProjectGrid/projectGrid';
 import AboutUs from '../components/About/About';
 import Approach from '../components/Approach/Approach';
 import gsap from 'gsap';
+import { Spacer } from '../components/Button/button';
 
 export default function Home(props) {
   useEffect(() => {
@@ -32,15 +33,12 @@ export default function Home(props) {
           </>
         } />
         <Approach/>
-        <Heading heading="Proper about me"/>
+        <ProjectGrid/>
         <AboutUs
-          heading="Working as a project & design manager for 2 years. 
-          Creating digital solutions working with international developers, 
-          aswell as utilising his skills to create his own creative solutions."
+          heading="Hi, I'm Jay" 
+          content="Friendly and motivated retail professional with a background in customer-facing roles and a passion for creating positive shopping experiences. Skilled in assisting customers, managing point-of-sale systems, handling stock, and maintaining store presentation standards. I thrive in fast-paced environments, enjoy working with diverse teams, and take pride in helping customers find what they need."
         />
         <Heading heading="Specialities"/>
-        <Heading heading="Approach"/>
-        <ProjectGrid/>
         <Heading heading=""/>
         <Heading heading="Have an idea? We can help"/>
     </div>
