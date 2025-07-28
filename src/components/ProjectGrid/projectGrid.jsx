@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ProjectGrid() {
   const projectReveal = useRef(null);
   const blobsRef = useRef([]);
+  const wrapperRef = useRef(null);
 
   useEffect(() => {
     const handleMouseMove = (ev) => {
@@ -39,62 +40,99 @@ export default function ProjectGrid() {
   const [isHovered, setIsHovered] = useState(null);
 
   useEffect(() => {
-    const element = projectReveal.current;
+  if (!projectReveal.current) return;
 
-    // GSAP animation
+  Array.from(projectReveal.current.children).forEach((child, i) => {
     gsap.fromTo(
-      element.children,
-      { x: -40, opacity: 0 },
+      child,
+      { x: 60, opacity: 0 },
       {
         x: 0,
         opacity: 1,
-        stagger: 0.4,
-        duration: 2,
-        ease: "power4.out",
+        duration: 1.2,
+        ease: "power3.out",
         scrollTrigger: {
-          trigger: element,
-          start: "top center",
-          end: "bottom center",
+          trigger: child,
+          scroller: ".projectGridWrapper",
+          start: "left 80%",
+          end: "right 20%",
+          toggleActions: "play none none reverse",
         },
       }
     );
-  }, []);
+  });
+}, []);
+
+useEffect(() => {
+  const container = wrapperRef.current;
+  if (!container) return;
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  const onMouseDown = (e) => {
+    isDown = true;
+    container.classList.add('dragging');
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+  };
+  const onMouseLeave = () => {
+    isDown = false;
+    container.classList.remove('dragging');
+  };
+  const onMouseUp = () => {
+    isDown = false;
+    container.classList.remove('dragging');
+  };
+  const onMouseMove = (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    container.scrollLeft = scrollLeft - walk;
+  };
+
+  container.addEventListener("mousedown", onMouseDown);
+  container.addEventListener("mouseleave", onMouseLeave);
+  container.addEventListener("mouseup", onMouseUp);
+  container.addEventListener("mousemove", onMouseMove);
+
+  return () => {
+    container.removeEventListener("mousedown", onMouseDown);
+    container.removeEventListener("mouseleave", onMouseLeave);
+    container.removeEventListener("mouseup", onMouseUp);
+    container.removeEventListener("mousemove", onMouseMove);
+  };
+}, []);
+
+
+
   return (
-    <>
-      <div className={styles.projectGridBorder}>
-        <ul ref={projectReveal} className={styles.projectGrid}>
-          {projectData.slice(0, 5).map((item, index) => (
-            <li key={item.id} className={styles.projectItem}>
-              <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
-                <div className={styles.projectCard}>
-                  <img
-                    src={`/images/${item.title}/${item.image[0]}`}
-                    onMouseOver={(e) =>
-                      // (e.currentTarget.src = `/images/${item.title}/${item.image[1]}`) 
-                      // & 
-                      setIsHovered(index)
-                    }
-                    onMouseOut={(e) =>
-                      // (e.currentTarget.src = `/images/${item.title}/${item.image[0]}`) & 
-                      setIsHovered(null)
-                    }
-                    alt={item.title}
-                    className={styles.projectImage}
-                  />
-                  <div
-                    ref={(el) => (blobsRef.current[index] = el)}
-                    className={styles.fakeblob}
-                  ></div>
-                  <div className={styles.projectInfo}>
-                    <h2>{item.title.replace(/([A-Z])/g, " $1").trim()}</h2>
-                    <CallToActionButton active={isHovered === index}/>
-                  </div>
+    <div ref={wrapperRef} className={`${styles.projectGridWrapper} projectGridWrapper`}>
+      <ul ref={projectReveal} className={styles.projectGrid}>
+        {projectData.slice(0, 5).map((item, index) => (
+          <li key={item.id} className={styles.projectItem}                   style={{
+                    backgroundImage: `url(/images/${item.title}/${item.image[0]})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}>
+            <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
+              <div className={styles.projectCard}>
+                <div
+                  className={styles.projectImage}
+                />
+                <div ref={(el) => (blobsRef.current[index] = el)} className={styles.fakeblob}>
                 </div>
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
-  );
+                <div className={styles.projectInfo}>
+                  <h2>{item.title.replace(/([A-Z])/g, " $1").trim()}</h2>
+                  <CallToActionButton active={isHovered === index} />
+                </div>          
+              </div>
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
