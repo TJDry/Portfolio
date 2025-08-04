@@ -8,7 +8,7 @@ export default function ProjectProcess({ projectTitle, text, headings }) {
     return <p>No data available for this project.</p>;
   }
   return (
-    <div>
+    <div className={styles.processContainer}>
       {headings.map((heading, i) => (
         <div className={styles.caseStudyContainer} key={i}>
           <h2>{heading}</h2>

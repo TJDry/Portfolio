@@ -15,7 +15,7 @@ export default function Navigation() {
 
   useEffect(() => {
     function handleResize() {
-      setIsMobile(window.innerWidth <= 850);
+      setIsMobile(window.innerWidth <= 980);
     }
 
     handleResize(); // Set initial isMobile value on component mount.
@@ -40,53 +40,57 @@ export default function Navigation() {
 
   const variants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -5 }
+    hidden: { opacity: 0, y: 0 }
   };
 
 
   return (
     <>
       {isMobile ? (
-           <>
-           <div className={styles.navigation} onClick={() => setIsOpen(!isOpen)}>
-               <div className={isOpen ? `${styles.navBtn} ${styles.active}` : `${styles.navBtn}`}></div>
-           </div>
-           <div className={styles.container}
+        <>
+          <motion.div
+            className={styles.navigation}
+            variants={variants}
+            animate={hidden ? "hidden" : "visible"}
+            transition={{ ease: [0.2, 0.3, 0.4, 1], duration: 0.3 }}
+          >
+            <div
+              onClick={() => setIsOpen(!isOpen)}
+              className={isOpen ? `${styles.navBtn} ${styles.active}` : `${styles.navBtn}`}
+            ></div>
+            <div className={styles.logoContainer}><Logo /></div>
+          </motion.div>
+
+          <motion.div
+            className={styles.container}
+            style={isOpen 
+              ? { width: "100vw" }
+              : { width: "0px" }
+            }
+            variants={variants}
+            animate={hidden ? "hidden" : "visible"}
+            transition={{ ease: [0.2, 0.3, 0.4, 1], duration: 0.3 }}
+          >
+            <ul>
+              {navigationData.map(item => (
+                <li 
+                  key={item.id}
                   style={isOpen 
-                   ? {
-                       width: "100vw",
-                   }:{
-                       width: "0px",
-                   }}
-                   >
-               <ul>
-                   {navigationData.map(item => {
-                       return(
-                           <>
-                           <li 
-                           key={item.id} 
-                           style={isOpen 
-                           ? {
-                               width: "100%",
-                               opacity: "1",
-                           }:{
-                               width: "0",
-                               opacity: "0"
-                           }}
-                           >
-                          <NavLink to={`${item.path}`} onClick={() => setIsOpen(!isOpen)}
-                              className={({ isActive }) =>
-                                isActive ? activeClass : undefined
-                            }
-                              >
-                              <span>{item.title}</span>
-                          </NavLink>
-                           </li>
-                           </>
-                       );
-                   })}
-               </ul>
-           </div>
+                    ? { width: "100%", opacity: "1" }
+                    : { width: "0", opacity: "0" }
+                  }
+                >
+                  <NavLink
+                    to={`${item.path}`}
+                    onClick={() => setIsOpen(false)}
+                    className={({ isActive }) => (isActive ? activeClass : undefined)}
+                  >
+                    <span>{item.title}</span>
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         </>
       ):(
         <motion.div className={styles.container}

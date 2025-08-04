@@ -5,14 +5,14 @@
         path:'/'
     },{
         id:3,
-        title:'Projects',
-        path: '/projects',
+        title:'About Us',
+        path: '/about/',
     },{
         id:4,
-        title:'About',
+        title:'Our Projects',
         path: '/about/',
     },{
         id:5,
-        title:'Contact Me',
+        title:'Get in Touch',
         path: '/contactUs/',
     }]

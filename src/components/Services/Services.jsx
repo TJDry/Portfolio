@@ -1,17 +1,17 @@
 import React, { useEffect, useRef } from 'react'
-import styles from './approach.module.scss'
+import styles from './services.module.scss'
 import { Icon } from '@iconify/react';
-import { approachData } from './approachData.js';
+import { serviceData } from './serviceData.js';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Heading } from '../textBox/text.jsx';
 gsap.registerPlugin(ScrollTrigger);
 
 
-export default function Approach() {
-  const approachReveal = useRef(null);
+export default function Services() {
+  const serviceReveal = useRef(null);
   useEffect(()=>{
-    const element = approachReveal.current;
+    const element = serviceReveal.current;
     gsap.fromTo(
       element.children,
       {
@@ -33,17 +33,17 @@ export default function Approach() {
     );
   }, []);
   return (
-    <>
-    <h2 className={styles.header}>From modern minimalism to timeless classics, Relied upon by a fresh generation of companies.</h2>
-    <div className={styles.approachGridBorder}>
-      <ul ref={approachReveal} className={styles.approachGrid}>
-        {approachData.map(item => (
-          <li key={item.id} className={styles.approachItem}>
-              <div className={styles.approachCard}>
+    <div style={{marginTop:'2em'}}>
+    <h2 className={styles.header}>Specialities</h2>
+    <div className={styles.servicesGridBorder}>
+      <ul ref={serviceReveal} className={styles.servicesGrid}>
+        {serviceData.map(item => (
+          <li key={item.id} className={styles.servicesItem}>
+              <div className={styles.servicesCard}>
                 <div className={styles.iconSector}>
                   <Icon icon={item.logo} className={`${styles.icon}`} width="56" height="64"/>
                 </div>
-                <div className={styles.approachInfo}>
+                <div className={styles.servicesInfo}>
                   <h2>{item.title}</h2>
                   <p>{item.description}</p>
                 </div>
@@ -52,6 +52,6 @@ export default function Approach() {
         ))}
       </ul>
     </div>
-    </>
+    </div>
   );
 }

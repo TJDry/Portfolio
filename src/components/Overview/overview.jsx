@@ -6,7 +6,7 @@ import { Tooltip } from 'react-tooltip';
 
 export default function Overview(text){
     return(
-    <>
+    <div style={{display:"grid", alignItems: 'center', justifyContent:'center'}}>
         <div className={styles.overviewContainer}>
             <div className={styles.leftContainer}>
                 <div className={styles.overviewSlot}><h4>Role</h4><p>{text.role}</p></div>
@@ -40,6 +40,6 @@ export default function Overview(text){
                 </div>
             </div>
         </div>
-    </>
+    </div>
     )
 }

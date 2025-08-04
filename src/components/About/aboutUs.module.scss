@@ -4,7 +4,6 @@
     width: 100%;
     margin: 0;
     overflow: hidden;
-    padding: 5em;
     display: grid;
     grid-template-columns: repeat(1, minmax(0px, 1fr));
 
@@ -27,20 +26,15 @@
         flex-direction: row;
         width: 100%;
     }
-    p{
-        padding: 1em 3em;
-    }
 }
 
 
 
 .borderSolo{
-    padding: 4em 0em;
     justify-content: left;
     height: 0vh;
     .headingSolo{
         position: relative;
         padding-left: 0;
-        left: 2em;
     }
 }

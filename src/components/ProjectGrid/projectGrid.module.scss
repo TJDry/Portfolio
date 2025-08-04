@@ -5,10 +5,10 @@
   overflow: hidden;
   padding: 0;
   display: grid;
-  width: 100%;
+  width: 80%;
   gap: 0em;
   @media only screen and (min-width: 400px) {
-    width: 92%;
+    width: 80%;
   }
 
   @media only screen and (min-width: 800px) {
@@ -34,7 +34,7 @@
     background: rgba(0, 0, 0, 0);
     position: relative;
     padding: 0.4em;
-    height: 600px;
+    height: 40vh;
 
     .projectImage {
       width: 100%;

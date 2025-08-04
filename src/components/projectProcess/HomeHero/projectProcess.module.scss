@@ -1,8 +1,15 @@
-.caseStudyContainer{
-    h2{
-        margin: 2em 3.5em;
-    }
-    p{
-        padding: 4em 8em;
+.processContainer{
+    display: grid;
+    justify-content: center;
+    margin: 3em;
+    .caseStudyContainer{
+        h2{
+            margin: 1em 2em;
+
+        }
+        p{
+            padding: 0em 4em;
+            max-width: 800px;
+        }
     }
 }

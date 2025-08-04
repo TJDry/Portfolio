@@ -1,0 +1,30 @@
+.contactContainer{
+    width: 100%;
+    margin: 3em 0;
+    h2{
+        padding: 0 1.5em;
+    }
+    .contactForm{
+        width: 100%;
+        margin: 1em 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactBox{
+        margin: 0.5em 0;
+        width: 80vw;
+    }
+    .input{
+        width: 100%;
+        border-radius: 3px;
+        padding: 1em;
+        border: none;
+    }
+    .sendButton{
+        padding: 1em;
+        border: none;
+        background-color: var(--accent-colour);
+        color: var(--text-colour);
+    }
+}
