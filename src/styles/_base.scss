@@ -24,6 +24,15 @@ Link{
 h1 .accent {
   color: var(--accent-colour);
 }
+h1{
+    font-family: var(--accent-font);
+    font-weight: 400;
+}
+h2{
+    font-family: var(--accent-font);
+    font-weight: 400;
+    font-size: 2.8rem;
+}
 p{
     letter-spacing: 0.25pt;
     line-height: 1.15;
@@ -32,9 +41,9 @@ p{
 .gradientText {
   background: linear-gradient(
   90deg,
-  #2672f2,
-  rgb(115, 187, 183),
-  #2672f2,
+  #2a3c54,
+  rgb(62, 123, 255),
+  #2a3c54,
   );
   background-size: 300% 300%;
   background-position: 0% 50%;
@@ -42,4 +51,9 @@ p{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+@font-face {
+    font-family: "Acier BAT Gris";
+    src: url(/src/assets/fonts/acierdisplay-gris.otf);
 }

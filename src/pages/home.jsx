@@ -29,8 +29,8 @@ export default function Home(props) {
     <div>
         <HomeHero headline={
           <>
-            I am Jay –{" "}
-            <span ref={textRef} className="gradientText">Design & Project Manager</span>{" "}
+            Jayden Dry –{" "}
+            <span style={{fontFamily:"var(--accent-font)"}}ref={textRef} className="gradientText">Design & Project Manager</span>{" "}
             creating experiences that are meant to be lived
           </>
         } />
