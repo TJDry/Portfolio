@@ -3,12 +3,14 @@
     justify-content: center;
     margin: 3em;
     .caseStudyContainer{
+      width: 100vw;
+      max-width: 1000px;
         h2{
-            margin: 0.6em;
+            margin: 0em 0.5em 0.5em 0em;
 
         }
         p{
-            padding: 0em 4em 2em;
+            padding: 1em 0.5em 0.5em 1em;
             max-width: 1000px;
         }
     }

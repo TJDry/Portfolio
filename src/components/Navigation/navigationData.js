@@ -10,7 +10,7 @@
     },{
         id:4,
         title:'Our Projects',
-        path: '/about/',
+        path: '/projects/',
     },{
         id:5,
         title:'Get in Touch',

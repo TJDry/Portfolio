@@ -31,7 +31,7 @@ const ContactForm = () => {
 
   return (
     <div className={styles.contactContainer}>
-      <h2>Got an idea? Let's See what we can do about it</h2>
+      <h2>Got an idea? Let's Create.</h2>
       <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
         <div className={styles.contactBox}>
           <input type="text" name="user_name" required className={styles.input} placeholder="First Name"/>
@@ -42,7 +42,7 @@ const ContactForm = () => {
         <div className={styles.contactBox}>
           <textarea name="message" rows="4" required className={styles.input} placeholder="Enter a message"/>
         </div>
-        <button type="submit" className={styles.sendButton}><span>Send!</span></button>
+        <button type="submit" className={styles.sendButton}><span>Send email!</span></button>
       </form>
       {status && <p className={styles.input}>{status}</p>}
     </div>

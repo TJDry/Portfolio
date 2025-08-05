@@ -147,7 +147,7 @@ export const TooltipCustom =({text,children}) =>{
             scale: 0.8,
             rotation:'+90',
             duration: 0.8,
-            background: 'rgba(116, 116, 116, 0)',
+            background: 'linear-gradient(60deg, rgba(255,255,255,0.1),rgba(255,255,255,0.3),rgba(255,255,255,0.1) )',
             border: '2px solid rgba(122, 122, 122, 0.33)',
             ease: 'power3.in',
         });

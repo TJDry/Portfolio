@@ -1,31 +1,96 @@
-.gridContainer{
-    list-style: none;
-    position: relative;
-    width: 100%;
-    margin: 1em;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0px, 1fr));
-
-    @media only screen and (min-width: 400px) {
-    }
-    @media only screen and (min-width: 800px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+.about {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
 }
-.textContainer{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0;
-    text-align: left;
-    flex-direction: row;
-    max-width: 100%;
-    @media only screen and (min-width: 600px) {
-        flex-direction: row;
-        width: 100%;
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.imageContainer {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.info {
+  flex: 2;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--primary-colour);
+  }
+}
+
+.timeline {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .year {
+        font-weight: bold;
+        color: var(--primary-colour);
+        min-width: 60px;
+      }
+
+      .details {
+        h3 {
+          margin: 0 0 0.5rem;
+        }
+
+        p {
+          margin: 0;
+          color: var(--primary-colour);
+        }
+      }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imageContainer {
+    max-width: 100%;
+  }
+
+  .info h1 {
+    font-size: 2rem;
+  }
 }
 
 
