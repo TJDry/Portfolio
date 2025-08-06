@@ -31,10 +31,14 @@ export const projectData = [
       ],
     overview: 'James Kang & I co-designed and developed a singlepage formatted website for a blossoming chiropractor locally. Our goal was to create an easy-to-use website to open the gate for clients both new & existing to book appointments & learn about her practice. We utilised figma for the initial design experimentation, sticking closely towards the brand identity and using that as the basis for our palette, we moved swiftly onto Vite with React & Tailwind CSS for development and experimentation of functionality and features we could implement, like the google maps API and FAQ dropdowns.',
     processTextList:[
+      // Goals
+      "Create an intuitive, single-page website that simplifies appointment booking and provides clear information about the practice to both new and existing clients.",
       // Challenge
       "Being given a short period of time to go from branding to opening doors, creating a full scale website for the start of the next month presented various challenges, especially co-designing and programming on a commercial level whilst liasing with client expectations. We were tasked with creating a site as an entry point into Mikayla's appointment scheduling system with all her client details.",
       // Process
       "We began by defining project goals, target audience needs, and core site functionality, creating a clear roadmap from concept to launch. Each phase—from research to deployment—was structured to ensure alignment with the client’s vision and user expectations.",
+      // Research
+      "Investigated user needs and competitor sites to understand booking workflows and effective communication of health service information.",
       // Solution
       "Design decisions were anchored in the existing brand identity, using the established palette, typography, and visual cues to reflect the practice’s warmth and professionalism while ensuring a cohesive digital presence.",
       // Wireframing
@@ -83,10 +87,14 @@ export const projectData = [
       ],
       overview: "While working in cooperation with VHEDIA, I was tasked with the project of creating a custom UI theme design to be developed for their car headunits that came in various designs, models and bases. The theme had to include consideration for custom widgets & personalisation whilst remaining simple enough for all variants of users to be able to troubleshoot either via a provided PDF guide or over the phone from one of the support technicians",
       processTextList:[
+        // Goals
+        "Design a flexible, easy-to-use UI theme compatible across multiple car headunit models, supporting custom widgets and straightforward troubleshooting.",
         // Challenge
         "Designing a universal UI theme for VHEDIA’s range of car headunits posed the challenge of catering to multiple hardware designs, models, and operating bases, while ensuring usability for a wide range of drivers.",
         // Process
         "We began by identifying the technical constraints and understanding user scenarios across different headunit configurations. This informed a design framework adaptable to various screen sizes, resolutions, and layouts.",
+        // Research
+        "Analyzed hardware variations, user scenarios, and support documentation needs to ensure universal usability and effective customer support.",
         // Solution
         "The theme was designed with a balance of customisation and simplicity, supporting personal widgets and user preferences while maintaining an intuitive, streamlined interface for everyday use.",
         // Wireframing
@@ -133,10 +141,13 @@ export const projectData = [
       ],
       overview:"Tyrewatcher. A versatile app designed for phones, tablets and car headunits utilising BTE technology to connect our bluetooth tyre pressure sensors to your device ranging from one sensor up to 24+ for trucks and other large vehicles.",
       processTextList:[
+        "Develop a cross-platform app that reliably connects Bluetooth tyre pressure sensors to devices ranging from personal cars to large trucks, providing clear status and alerts.",
         // Challenge
         "Tyrewatcher needed to operate seamlessly across phones, tablets, and in-car headunits, supporting anywhere from a single tyre sensor to over 24 for large trucks, all while maintaining reliable Bluetooth connectivity via BTE technology.",
         // Process
         "We began by mapping out user requirements for different vehicle types, from solo drivers to fleet operators, and assessing how interface complexity should scale with the number of connected sensors.",
+        // Research
+        "Examined user requirements for varying vehicle types and sensor counts, alongside Bluetooth connectivity challenges and in-car display constraints.",
         // Solution
         "The app was designed with a modular interface that dynamically adapts to the number of sensors, providing clear tyre status indicators, alerts, and easy access to detailed readings.",
         // Wireframing
@@ -182,10 +193,12 @@ export const projectData = [
       ],
       overview: "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",      
       processTextList:[
+        "Deliver real-time battery health monitoring and diagnostics with easy-to-understand tests and live data for everyday users and enthusiasts.",
         // Challenge
         "Battery Watcher needed to deliver accurate, real-time diagnostics from the BattWatcher device to a user’s phone via Bluetooth, while presenting data in a way that was both detailed for enthusiasts and approachable for everyday drivers.",
         // Process
         "We started by identifying the key performance metrics drivers value most — voltage, health, and power consumption — and mapping out how these should be monitored, displayed, and tested within the app.",
+        "Studied key battery performance metrics and typical user behaviors to design meaningful test procedures and intuitive data presentation.",
         // Solution
         "The app integrates live battery status with detailed diagnostic tools, including Cranking, Charging, and Battery tests, giving users both quick health checks and deeper performance insights.",
         // Wireframing
@@ -230,14 +243,20 @@ export const projectData = [
           `image-7-wireframe.png`,
           `image-8-wireframe.png`,
       ],
-      overview:["Gremio, a ficticious "],
+      overview:["As part of a university brief, this project involved designing and developing a full-stack application centered on a fictional brand. The goal was to apply comprehensive development skills including database management, user authentication, and REST API integration. Key features such as a dashboard, search and filtration functions, and user settings were implemented to create an interactive, dynamic user experience."],
       processTextList:[
-        //Challenge
-        "As a part of a university brief, we were tasked with creating a fullstack application of our own design using a fictional brand of our own creation. The purpose of this assesment was to utilise full-stack development skills including database management, login & updating accordingly whilst attempting to build out a design with features such as a dashboard, search / filtration function, settings and other features we could utilise REST APIs & database models for.",
-        // Process
-        "",
+        // Goals
+        "Develop a full-stack application from scratch using a fictional brand, incorporating user authentication, data management, and dynamic features to demonstrate practical development skills.",
+        // Research
+        "Researched full-stack architectures, REST API integration, and best practices for database design to support robust login, data updates, and feature implementations.",
         // Solution
-        "",      
+        "Built a scalable application with a dashboard, search and filtration tools, user settings, and real-time data handling using RESTful APIs and database models.",
+        // Wireframing
+        "Created wireframes mapping out key UI components including dashboard layouts and navigation flows to ensure a seamless user experience.",
+        // UI Design
+        "Designed a clean, user-friendly interface focusing on usability and accessibility, balancing functionality with aesthetic simplicity.",
+        // Development Process
+        "Implemented front-end and back-end features with a focus on modular code, responsive design, and efficient database queries to deliver a polished final product."
       ],
       colours:
       [

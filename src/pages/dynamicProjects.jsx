@@ -65,6 +65,7 @@ export default function Projects() {
         projectTitle={project.title}
         text="processTextList"
         headings={["Goals", "The challenge"]}
+        startIndex={0}
       />    
       <ImgContainer
         image1={project.image[3]}
@@ -77,6 +78,7 @@ export default function Projects() {
         projectTitle={project.title}
         text="processTextList"
         headings={["Process"]}
+        startIndex={2}
       />
             <ImgContainer
         image1={project.image[5]}
@@ -87,17 +89,20 @@ export default function Projects() {
         projectTitle={project.title}
         text="processTextList"
         headings={["Research"]}
+        startIndex={3}
       />
       <ProjectProcess
         projectTitle={project.title}
         text="processTextList"
         headings={["Brand Identity System"]}
+        startIndex={4}
       />
       <ColourCard item={project.colours}     />
         <ProjectProcess
         projectTitle={project.title}
         text="processTextList"
         headings={["Wireframing"]}
+        startIndex={5}
       />
       <ImgContainer
         image1={project.image[7]}
@@ -110,11 +115,13 @@ export default function Projects() {
         projectTitle={project.title}
         text="processTextList"
         headings={["UI Design"]}
+        startIndex={6}
       />
       <ProjectProcess
         projectTitle={project.title}
         text="processTextList"
         headings={["Development Process"]}
+        startIndex={7}
       />     
       <NextPage /> {/*Redo this*/}
     </div>
