@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
+import { webcrypto } from 'node:crypto';
+
 
 export default defineConfig({
     build: {
@@ -18,8 +20,15 @@ export default defineConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          api: 'modern-compiler' // or "modern"
+          // api: 'modern-compiler' // or "modern"
         }
   }
     }
   })
+
+if (!globalThis.crypto?.getRandomValues) {
+  Object.defineProperty(globalThis, 'crypto', {
+    value: webcrypto,
+    configurable: true,
+  });
+}
