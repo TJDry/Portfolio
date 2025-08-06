@@ -267,49 +267,50 @@ export const projectData = [
         "white",
       ]
     },
-    {
-    id: 5,
-    title: 'Obd2Scanz',
-    role: 'App Design & Project Management',
+];
+  //   {
+  //   id: 10,
+  //   title: 'Obd2Scanz',
+  //   role: 'App Design & Project Management',
 
-    year: '2023',
-    status: 'Complete',
-    gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
-    managementStyle: 'Waterfall / Linear',
-    projectType:'Mobile & Tablet App',
-    softwareTitle: ["Figma",'Photoshop','Excel'],
-    softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:microsoft-excel'],
+  //   year: '2023',
+  //   status: 'Complete',
+  //   gradientColour: "linear-gradient(180deg, rgba(120,13,13,1) 0%, rgba(255,0,0,1) 100%)",
+  //   managementStyle: 'Waterfall / Linear',
+  //   projectType:'Mobile & Tablet App',
+  //   softwareTitle: ["Figma",'Photoshop','Excel'],
+  //   softwareList: ["file-icons:figma",'file-icons:adobe-photoshop','file-icons:microsoft-excel'],
 
-    tagList: ['UI / UX','Project Management','QA Testing'],
+  //   tagList: ['UI / UX','Project Management','QA Testing'],
     
-    image:[
-        `hero.png`,
-        `image-1.png`,
-        `image-2.png`,
-        `image-3.png`,
-        `image-4.png`,
-        `image-5.png`,
-        `image-6.png`,
-        `image-7-wireframe.png`,
-        `image-8-wireframe.png`,
-      ],
+  //   image:[
+  //       `hero.png`,
+  //       `image-1.png`,
+  //       `image-2.png`,
+  //       `image-3.png`,
+  //       `image-4.png`,
+  //       `image-5.png`,
+  //       `image-6.png`,
+  //       `image-7-wireframe.png`,
+  //       `image-8-wireframe.png`,
+  //     ],
     
-    processTextList:[
-      //Challenge
-      "",
-      // Process
-      "",
-      // Solution
-      "",       
-    ],
-    colours:
-    [
-      "#E90101",
-      "#F55454",
-      "#222222",
-      "#181414",
-      "white",
-    ]
-  },
-  ];
+  //   processTextList:[
+  //     //Challenge
+  //     "",
+  //     // Process
+  //     "",
+  //     // Solution
+  //     "",       
+  //   ],
+  //   colours:
+  //   [
+  //     "#E90101",
+  //     "#F55454",
+  //     "#222222",
+  //     "#181414",
+  //     "white",
+  //   ]
+  // },
+  // ];
   
