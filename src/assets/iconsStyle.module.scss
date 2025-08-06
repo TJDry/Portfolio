@@ -1,9 +1,4 @@
-// .logoContainer{
-//     position: fixed;
-//     top: 4vh;
-//     left: 3vw;
-//     z-index: 100;
-//     a{
-//         margin: 2em;
-//     }
-// }
+.logoContainer {
+  pointer-events: auto !important;
+  z-index: 9999;
+}

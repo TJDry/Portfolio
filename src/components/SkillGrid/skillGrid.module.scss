@@ -8,7 +8,7 @@
 .skillGrid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1em 1em;
   width: 90vw;
   justify-items: center;
@@ -24,7 +24,7 @@
       scale: 6;
       position: relative;
       left: 15%;
-      top: 20%;
+      top: 30%;
     }
     .skillItem {
       flex: 1;
@@ -37,11 +37,11 @@
       border-radius: 8px;
       overflow: hidden;
       position: relative;
-      height: 540px;
-      background: var(--background-gradient);
+      height: 400px;
+      // background: var(--background-gradient);
       transition: all 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-      border: var(--border-style);
-      box-shadow: inset 2px 2px 4px rgba(41, 41, 44, 0.205);
+      // border: var(--border-style);
+      // box-shadow: inset 2px 2px 4px rgba(41, 41, 44, 0.205);
       &:hover {
         transform: translateY(-10px);
         scale: 1.12;
@@ -50,7 +50,7 @@
     .skillImage {
         width: 64px;
         height: 64px;
-        background: white;
+        // background: white;
         opacity: 0.5;
         object-fit: cover; /* Adjust image scaling as needed */
         filter: blur(5px); /* Initial blur effect */
@@ -62,13 +62,11 @@
       left: 0;
       text-overflow: ellipsis;
       right: 0;
-      color: white;
       overflow-x: hidden;
       padding: 2em 1em;
       overflow: hidden;
-
-      h4{
-        padding: 2em 0;
+      h2{
+        color: var(--accent-colour);
         line-height: 2em;
       }
     }

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './button.module.scss'
 import { Icon } from '@iconify/react';
+import Arrow from '../../assets/svgs/arrow.svg'
 import gsap from 'gsap';
 
 
@@ -60,7 +61,7 @@ export const SoftwareIcon = ({ softwareTitle, softwareName }) => {
             role="button"
             aria-label={softwareTitle}
         >
-            <Icon icon={softwareName} style={{ fontSize: '36px', color: 'white' }} />
+            <Icon icon={softwareName} style={{ fontSize: '34px', color: 'white' }} />
         </div>
     );
 };
@@ -101,11 +102,63 @@ export const TooltipCustom =({text,children}) =>{
   };
 
   export function ScrollArrow(props){
+    const scrollButtonRef = useRef(null);
+    useEffect(() =>{
+        gsap.to(scrollButtonRef.current, {
+            duration: 0.5,   // speed of bounce
+            repeat: -1,
+            y: 30,
+            yoyo: true,      // bounce back
+            ease: "power.inOut"
+        }
 
+        )
+    }
+)
     return(
     <div className= {styles.scrollContainer}>
-        <h5>Scroll</h5>
-        <div className={styles.hexagonShape}></div>
+        <h5 style={{ transform: 'rotate(90deg)' }}>Scroll</h5>
+        <div ref={scrollButtonRef} className={styles.hexagonShape}></div>
     </div>
+    )
+}
+
+  export const CallToActionButton =({active}) =>{
+    const buttonRef = useRef(null);
+    const arrowRef = useRef(null);
+
+    useEffect(() => {
+        if (active) {
+        gsap.to(buttonRef.current, {
+            opacity: 1,
+            scale: 1,
+            rotation:'+135',
+            border: '0',
+            background: 'rgba(117, 117, 117, 0.81)',
+            duration: 0.8,
+            ease: 'power3.out',
+        });
+        gsap.to(arrowRef.current, {
+            filter: "invert(0)"
+        })
+        } else {
+        gsap.to(buttonRef.current, {
+            opacity: 0.6,
+            scale: 0.8,
+            rotation:'+90',
+            duration: 0.8,
+            background: 'linear-gradient(60deg, rgba(255,255,255,0.1),rgba(255,255,255,0.3),rgba(255,255,255,0.1) )',
+            border: '2px solid rgba(122, 122, 122, 0.33)',
+            ease: 'power3.in',
+        });
+            gsap.to(arrowRef.current, {
+                filter: "invert(0.6)"
+            })
+        }
+    }, [active]);
+    return(
+    <button ref={buttonRef} className= {active ? `${styles.callToAction} ${styles.active}` : `${styles.callToAction}`}>
+        <img ref={arrowRef} src={Arrow} alt="React Logo" />
+    </button>
     )
 }

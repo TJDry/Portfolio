@@ -4,8 +4,8 @@ import styles from './colourGrid.module.scss'
 export default function ColourGrid({ item }) {
   const colourPalette=["Primary","Secondary","Tertiary","Other","Alternative","Black"]
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
+    <div className={styles.processContainer}>
+      <div className={styles.caseStudyContainer}>
         <h2>Colour Palette</h2>
         <p>
           Explore this palette of colors, each representing a unique shade with space for a description or additional content.

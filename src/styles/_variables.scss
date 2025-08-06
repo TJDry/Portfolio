@@ -1,22 +1,25 @@
 :root{
 // Brand
---accent-colour: #f6fbff;
---secondary-colour: #171b9b;
---text-colour: rgb(224, 226, 235);
---text-colour-dark: rgb(168, 176, 199);
+--accent-colour: #4e6fa0;
+--secondary-colour: #252638;
+--text-colour: rgb(240, 240, 255);
+--text-colour-dark: rgb(229, 233, 245);
 
 
 
 // Background
---background-colour: #000011;
+// --background-colour: #060b1f;
+--background-colour: #2a3c54;
 --background-colour-light: rgba(58, 58, 82, 0.267);
 --background-gradient: linear-gradient(135deg, #6e6f7411,#090d2e11,#cacbd407, #05061827);
 --background-gradient-bright: linear-gradient(135deg, #6574be77,#1923819a,#cacbd407, #05061827);
 
 --border-style: 2px solid rgba(255, 255, 255, 0.171);
 // --background-colour: #00000C;
---primary-font: 'questrial','raleway';
+--primary-font: 'questrial','raleway', 'Arial', 'Sans-Serif';
 --second-font: 'raleway', 'Arial', 'Sans-Serif';
---accent-font: "questrial","League Script", 'cursive';
+--accent-font: 'Acier BAT Gris',"League Script", 'cursive';
 
 }
+
+//#f6fbff

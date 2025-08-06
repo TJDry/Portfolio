@@ -1,0 +1,43 @@
+.contactContainer{
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    padding: 6em 0;
+    h2{
+        padding: 1.5em;
+    }
+    .contactForm{
+        width: 100%;
+        margin: 1em 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactBox{
+        margin: 0.5em 0;
+        width: 80vw;
+    }
+    .input{
+        background: linear-gradient(60deg, rgba(255, 255, 255, 0.055),rgba(255, 255, 255, 0.151),rgba(255, 255, 255, 0.055) );
+        box-shadow: inset 0.2em 0.3em 0.4em rgba(0, 0, 0, 0.1);
+        border: none;
+        color: white;
+        &::placeholder{
+            color: rgba($color: #ffffff, $alpha: 0.6);
+            font-size: 1rem;
+        }
+        &::-moz-placeholder{
+            color: white;
+        }
+    }
+    .input, .sendButton{
+        width: 100%;
+        border-radius: 3px;
+        padding: 1em;
+        margin: 0.5em;
+    }
+    .sendButton{
+        background-color: var(--accent-colour);
+        color: var(--text-colour);
+        border: none;
+    }
+}

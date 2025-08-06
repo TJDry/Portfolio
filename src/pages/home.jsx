@@ -1,33 +1,43 @@
-import React, {useEffect} from 'react'
-import Showreel from '../components/Showreel/showreel'
+import {useRef, useEffect} from 'react'
 import TextBox, { Heading } from '../components/textBox/text'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
 import ProjectGrid from '../components/ProjectGrid/projectGrid';
 import AboutUs from '../components/About/About';
-import SkillGrid from '../components/SkillGrid/skillGrid';
-import GradientBackground from '../components/background/background';
+import Approach from '../components/Approach/Approach';
+import gsap from 'gsap';
+import { Spacer } from '../components/Button/button';
+import Services from '../components/Services/Services';
+import ContactForm from '../components/Contact/contact';
 
 export default function Home(props) {
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
+  const textRef = useRef();
 
+  useEffect(() => {
+    gsap.to(textRef.current, {
+      backgroundPosition: "200% 50%",
+      duration: 10,
+      ease: "linear",
+      repeat: -1,
+      yoyo: true,
+    });
+  }, []);
+  
   return (
     <div>
-        <GradientBackground/>
-        <HomeHero headline="Creating Unique Digital Experiences" subHeadline="Taking Web & App design to the next level"/>
-        <AboutUs
-          heading="Hi, I'm Jay" 
-          content="I have recently graduated from Curtin University with a Bachelor of Design in Digital,
-          Majoring in Experience and Interaction Design. I have been working as a project & design
-          manager for the past year, working with teams of international app developers to create
-          digital solutions. I am passionate about human-centred design & enjoy both front end &
-          backend development. I enjoy working collaboratively in a team environment and also
-          work well independently."
-        />
-        <SkillGrid />
+        <HomeHero headline={
+          <>
+            Jayden Dry –{" "}
+            <span style={{fontFamily:"var(--accent-font)"}}ref={textRef} className="gradientText">Design & Project Manager</span>{" "}
+            creating experiences that are meant to be lived
+          </>
+        } />
+        <Approach/>
         <ProjectGrid/>
-        <Showreel />
+        <Services/>
+        <ContactForm/>
     </div>
   )
 }

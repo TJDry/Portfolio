@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import HomeHero from '../components/HomePageHero/HomeHero/homehero';
+import ContactForm from '../components/Contact/contact';
 
 export default function Contact() {
   useEffect(() => {
@@ -11,6 +12,7 @@ export default function Contact() {
   return (
     <div>
         <HomeHero headline="Work with Us"/>
+        <ContactForm/>
     </div>
   )
 }

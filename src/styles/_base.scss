@@ -5,7 +5,7 @@
     margin: 0;
     text-decoration: none;
 }
-/* width */
+/* scrollbar */
 ::-webkit-scrollbar {
 width: 0px;
 }
@@ -21,70 +21,39 @@ a:-webkit-any-link {
 Link{
     color: var(--text-colour);
 }
+h1 .accent {
+  color: var(--accent-colour);
+}
 h1{
-    font-size: clamp(2.8rem,2rem + 5.14vw,6.6rem);
     font-family: var(--accent-font);
-    font-weight: 600;
-    text-align: center;
-    z-index: 10;
-    color: var(--text-colour);
-}h2{
-    font-size: clamp(1.8rem,1.2rem + 1vw,2.8rem);
-    z-index: 10;
-    font-weight: 800;
-    word-wrap: break-word;
-}h3{
-    font-size: clamp(0rem,1.2rem + 2vw,2.6rem);
-    color: var(--text-colour);
-    font-family: var(--primary-font);
-    font-weight: 600;
-}h4{
-    font-size: clamp(1.2rem,0.6rem + 1vw,2rem);
-    color: var(--text-colour-dark);
-    font-weight: 600;
-}h5{
-    font-size: clamp(1rem,1.2rem + 2vw,1.8rem);
-    color: var(--text-colour-dark);
-    font-weight: 500;
+    font-weight: 400;
 }
-p{ 
-    font-size: clamp(0.8rem,0.4rem + 0.6vw,1.2rem);
-    font-weight: 500;
-    line-height: 1.75;
-    color: var(--text-colour-dark);
-}span{
-    color: var(--text-colour);
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    font-size: 1rem;
-    filter: brightness(90%);
+h2{
+    font-family: var(--accent-font);
+    font-weight: 400;
+    font-size: 2.8rem;
 }
-.mouse{
-    display: none;
-    @media screen and (min-width: 600px) {
-        display: block;
-        user-select: none;
-        position: fixed;
-        padding: 0.5rem;
-        border-radius: 50%;
-        mix-blend-mode: difference;
-        transition: transform 0.1s ease;
-        clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
-        --webkit-clip-path: polygon(95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%, 50% 0%);
-        z-index: 10;
-    }
+p{
+    letter-spacing: 0.25pt;
+    line-height: 1.15;
 }
 
-.privacy-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--accent-colour);
-    z-index: 12;
-  }
-.AboutContainer{
-    width: 100vw;
-    height: 100vh;
+.gradientText {
+  background: linear-gradient(
+  90deg,
+  #2a3c54,
+  rgb(62, 123, 255),
+  #2a3c54,
+  );
+  background-size: 300% 300%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@font-face {
+    font-family: "Acier BAT Gris";
+    src: url(/src/assets/fonts/acierdisplay-gris.otf);
 }

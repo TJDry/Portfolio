@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from "react-router-dom";
 import styles from './projectGrid.module.scss';
 import { projectData } from '../../projectData';
-import { Tag } from '../Button/button';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { CallToActionButton } from '../Button/button';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +36,8 @@ export default function ProjectGrid() {
     };
   }, []);
   
+  const [isHovered, setIsHovered] = useState(null);
+
   useEffect(() => {
     const element = projectReveal.current;
 
@@ -57,22 +59,24 @@ export default function ProjectGrid() {
       }
     );
   }, []);
-
   return (
     <>
       <div className={styles.projectGridBorder}>
         <ul ref={projectReveal} className={styles.projectGrid}>
-          {projectData.slice(0, 4).map((item, index) => (
+          {projectData.slice(0, 5).map((item, index) => (
             <li key={item.id} className={styles.projectItem}>
               <NavLink to={`/projects/${item.title}`} className={styles.projectLink}>
                 <div className={styles.projectCard}>
                   <img
                     src={`/images/${item.title}/${item.image[0]}`}
                     onMouseOver={(e) =>
-                      (e.currentTarget.src = `/images/${item.title}/${item.image[1]}`)
+                      // (e.currentTarget.src = `/images/${item.title}/${item.image[1]}`) 
+                      // & 
+                      setIsHovered(index)
                     }
                     onMouseOut={(e) =>
-                      (e.currentTarget.src = `/images/${item.title}/${item.image[0]}`)
+                      // (e.currentTarget.src = `/images/${item.title}/${item.image[0]}`) & 
+                      setIsHovered(null)
                     }
                     alt={item.title}
                     className={styles.projectImage}
@@ -83,12 +87,7 @@ export default function ProjectGrid() {
                   ></div>
                   <div className={styles.projectInfo}>
                     <h2>{item.title.replace(/([A-Z])/g, " $1").trim()}</h2>
-                    <h4>{item.role}</h4>
-                    <div className={styles.tagList}>
-                      {item.tagList.map((tag, idx) => (
-                        <Tag key={idx} tagTitle={tag} className={styles.tag} />
-                      ))}
-                    </div>
+                    <CallToActionButton active={isHovered === index}/>
                   </div>
                 </div>
               </NavLink>
