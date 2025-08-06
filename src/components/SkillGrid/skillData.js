@@ -20,5 +20,5 @@ export const skillData = [
     id: 4,
     logo: 'mdi:photography',
     title: 'Photography',
-    description: 'my braoad range of photography skills - everything from street photography, to portraits and nature / travel photography complement my design skills',
+    description: 'My braoad range of photography skills - everything from street photography, to portraits and nature / travel photography complement my design skills',
   },];

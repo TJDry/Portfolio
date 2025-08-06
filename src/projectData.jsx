@@ -31,12 +31,18 @@ export const projectData = [
       ],
     overview: 'James Kang & I co-designed and developed a singlepage formatted website for a blossoming chiropractor locally. Our goal was to create an easy-to-use website to open the gate for clients both new & existing to book appointments & learn about her practice. We utilised figma for the initial design experimentation, sticking closely towards the brand identity and using that as the basis for our palette, we moved swiftly onto Vite with React & Tailwind CSS for development and experimentation of functionality and features we could implement, like the google maps API and FAQ dropdowns.',
     processTextList:[
-      //Challenge
+      // Challenge
       "Being given a short period of time to go from branding to opening doors, creating a full scale website for the start of the next month presented various challenges, especially co-designing and programming on a commercial level whilst liasing with client expectations. We were tasked with creating a site as an entry point into Mikayla's appointment scheduling system with all her client details.",
       // Process
-      "James & I started with outlining goals & expectations and functionality to build. We then proceeded to discuss features and ensure we were aligned aesthetically before diving into our own sections to experiment with before coming together to discuss prototype layouts and ideate together. Once experimental designs for each section were settled, we mocked up the final high fidelity frame, adjusted sizings to ensure maximum usability & accessibility, checked colour contrast compliance and created our pitch for our client, Mikayla. After we received approval, we got to work, creating a new website utilising Vite as the framework for React & Tailwind CSS, systems we were both familiar with and were able to work swiftly within.",
+      "We began by defining project goals, target audience needs, and core site functionality, creating a clear roadmap from concept to launch. Each phase—from research to deployment—was structured to ensure alignment with the client’s vision and user expectations.",
       // Solution
-      "Experimenting with Google Maps API, Vertical Scrolling and Responsive Text Cards, we created a full singlepage site aimed at drawing the user towards booking whilst teaching them about Mikayla's practice and specialities and ensured we had all bases covered in regards to both web standards, accessibility & performance wise but also making sure all data in regards to the medical standards of private practice were met i.e privacy policy, terms & conditions, etc. ",      
+      "Design decisions were anchored in the existing brand identity, using the established palette, typography, and visual cues to reflect the practice’s warmth and professionalism while ensuring a cohesive digital presence.",
+      // Wireframing
+      "Low-fidelity wireframes in Figma outlined structure, content hierarchy, and user flow, enabling us to validate functionality and navigation before refining the visual design.",
+      // UI Design
+      "A clean, approachable interface was designed with accessibility and ease of use in mind, balancing whitespace, typography, and iconography to create a welcoming yet professional experience that aligned seamlessly with the brand.",
+      // Development Process
+      "The site was built using Vite, React, and Tailwind CSS for speed, responsiveness, and maintainability, with integrated features such as Google Maps for location access and interactive FAQ dropdowns to enhance usability."
     ],
     // Colour palette
     gradientColour: "linear-gradient(180deg, rgba(224,150,34,1) 0%, rgba(255,180,0,1) 100%)",
@@ -77,12 +83,18 @@ export const projectData = [
       ],
       overview: "While working in cooperation with VHEDIA, I was tasked with the project of creating a custom UI theme design to be developed for their car headunits that came in various designs, models and bases. The theme had to include consideration for custom widgets & personalisation whilst remaining simple enough for all variants of users to be able to troubleshoot either via a provided PDF guide or over the phone from one of the support technicians",
       processTextList:[
-        //Challenge
-        "Creating an OS design in itself was easy enough, however, the primary limitation in this brief was the software-side limitations. We initially started this project in 2022, creating a fully fledged animated startup screen and enough room for widgets and other personalisations. However this was deemed impossible due to the lacking functionality of Android 10 on the developer's side.",
+        // Challenge
+        "Designing a universal UI theme for VHEDIA’s range of car headunits posed the challenge of catering to multiple hardware designs, models, and operating bases, while ensuring usability for a wide range of drivers.",
         // Process
-        "Through utilising all varities of designs both on development side and my own variations and researching both competitor's functionalities and user preferences. I started to create a design aligning with both the design trends utilising glass morphism & gradient colour-coded icons, with large easy-to-press buttons for both the side menu / core buttons and the homepage buttons. Once the initial prototype was completed, I thoroughly tested every component to ensure full functionality before we standardise it across all of our units.",
+        "We began by identifying the technical constraints and understanding user scenarios across different headunit configurations. This informed a design framework adaptable to various screen sizes, resolutions, and layouts.",
         // Solution
-        "With testing completed, we successfully created an OS theme that works with different coloured backgrounds and can be used as a standard for software across our headunits, allowing our headunits to not only separate themselves from the rest of the market, but relieving stress on the support team, as all headunit's had the same directory structure, allowing the customer to be directed to the solution with ease.",      
+        "The theme was designed with a balance of customisation and simplicity, supporting personal widgets and user preferences while maintaining an intuitive, streamlined interface for everyday use.",
+        // Wireframing
+        "Wireframes mapped out navigation flows, widget placement, and key user interactions, allowing us to test adaptability across different model dimensions before committing to final visuals.",
+        // UI Design
+        "The visual design emphasised clarity and accessibility, using a clean, bold interface style optimised for in-car visibility, with clear iconography and consistent placement of core functions.",
+        // Development Considerations
+        "Design assets and specifications were documented for integration by the development team, with built-in support for PDF-based troubleshooting guides and remote assistance by VHEDIA’s technical staff."
       ],
       colours:
       [
@@ -121,12 +133,18 @@ export const projectData = [
       ],
       overview:"Tyrewatcher. A versatile app designed for phones, tablets and car headunits utilising BTE technology to connect our bluetooth tyre pressure sensors to your device ranging from one sensor up to 24+ for trucks and other large vehicles.",
       processTextList:[
-        //Challenge
-        "I was initially given the role to QA test version 1.0. Which, upon release, failed when it came to device performance variance beyond what the test APK's performed. Due to the change in direction from Phone only app to Phone & Headunit app, we decided to recreate the design of the app, with me at the lead. So the new challenge was to create an app functional on the old android system for headunits but also on modern android and IOS systems.",
+        // Challenge
+        "Tyrewatcher needed to operate seamlessly across phones, tablets, and in-car headunits, supporting anywhere from a single tyre sensor to over 24 for large trucks, all while maintaining reliable Bluetooth connectivity via BTE technology.",
         // Process
-        "Utilising the key colours from the Tyrewatcher product, I created a fully functional figma prototype with indicators for popups, animations and different scenarios, Including a first time setup for each vehicle type setup. The layout was designed so each sensor would be clickable and have specific details about the readings coming from the sensor and alerts were to be assigned to certain pressures as a warning of too high or too low pressure levels. Once this design was sufficient it was sent to an outsourced development team based in China, who I liased with to ensure functionality and flow was sufficient throughout the development process.",
+        "We began by mapping out user requirements for different vehicle types, from solo drivers to fleet operators, and assessing how interface complexity should scale with the number of connected sensors.",
         // Solution
-        "The application itself was completed successfully, with all designs intact for the headunit version (mobile TBA) however during final troubleshooting we found that we couldn't connect to the sensors due to the difference in bluetooth modules. This was amended and a build was created by the headunit developers however we were stuck being unable to connect to more than one sensor at a time, and that this was unable to be changed. Our developers for the headunit itself attempted to fix this issue and ended up only partially being able to work. Since then I have not been updated as to the app's status and the business has changed hands.",     
+        "The app was designed with a modular interface that dynamically adapts to the number of sensors, providing clear tyre status indicators, alerts, and easy access to detailed readings.",
+        // Wireframing
+        "Low-fidelity wireframes defined layouts for various screen sizes, ensuring critical information like pressure warnings and connection status remained prominent across all devices.",
+        // UI Design
+        "The design focused on legibility and quick-glance usability, using bold status colours, intuitive icons, and scalable typography optimised for both mobile and in-car visibility.",
+        // Development Considerations
+        "Cross-platform compatibility and Bluetooth stability were prioritised, with the interface built to handle rapid sensor data updates while minimising latency for safety-critical alerts."
       ],
       colours:
       [
@@ -164,12 +182,18 @@ export const projectData = [
       ],
       overview: "Battery Watcher utilises our BattWatcher product to connect to your car battery and transmits data directly to your phone through a Bluetooth connection to this app. You can view the voltage and health of your battery,the consumption of power per second and run various tests such as the Cranking, Charging and Battery tests to make sure you get the most out of your battery.",      
       processTextList:[
-        //Challenge
-        "Batterywatcher was handed to me as a QA Project utilising an old style well overdue for a redesign. My challenge was to create an application for phones to connect to our bluetooth battery monitoring devices aswell as update the branding and ensure full functionality across all devices. I had to create multiple flows of designs for the variety of testing types, setup and having 1-4 battery monitors connected.",
+        // Challenge
+        "Battery Watcher needed to deliver accurate, real-time diagnostics from the BattWatcher device to a user’s phone via Bluetooth, while presenting data in a way that was both detailed for enthusiasts and approachable for everyday drivers.",
         // Process
-        "Utilising our old design and exploring design trends such as glass-morphism, blurred gradients and through redesigning the brand-identity of batterywatcher, moving from a red and white palette to a more electrical based blue meaning neutral, with other colours such as red, green and yellow as accent / section colours for different devices. Once the branding was outlined, I adjusted the app to the new user flow",
+        "We started by identifying the key performance metrics drivers value most — voltage, health, and power consumption — and mapping out how these should be monitored, displayed, and tested within the app.",
         // Solution
-        "After mapping out the user flow using stickynotes and experimenting with different routes I utilised the old app's design with the new flow to create a base set of low fidelity frames, sketching different concepts and layouts, testing the visibility and usability of each as the app's style and goals were becoming clearer in its design, creating something easy to read, use and navigate whilst still maintaining the depth of knowledge on voltage & batteries that users expect, accounting for a whole range of battery types and scales.",
+        "The app integrates live battery status with detailed diagnostic tools, including Cranking, Charging, and Battery tests, giving users both quick health checks and deeper performance insights.",
+        // Wireframing
+        "Wireframes prioritised a clear hierarchy between at-a-glance metrics and in-depth reports, ensuring users could access both without navigating through unnecessary screens.",
+        // UI Design
+        "A clean, data-focused interface was created with clear typography, colour-coded indicators, and intuitive test controls, allowing users to easily interpret results and take action.",
+        // Development Considerations
+        "Optimised for Bluetooth stability and low-latency data transfer, the app was built to handle continuous monitoring without draining device resources, ensuring accurate readings in real time."
       ],
       colours:
       [

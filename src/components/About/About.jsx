@@ -3,22 +3,22 @@ import styles from './aboutUs.module.scss'
 
 const workHistory = [
   {
-    year: '2025',
-    title: 'Senior UX Designer',
-    company: 'PixelCraft Co.',
-    description: 'Led a team of 5 in redesigning enterprise platforms.'
+    year: '2021 - 2023',
+    title: 'Project & Design Manager',
+    company: 'OBD2 Australia & VHEDIA',
+    description: 'Led end-to-end UI/UX design for international app and web projects, creating design systems, conducting user research, producing interactive prototypes, and overseeing milestone-based development and quality testing.'
   },
   {
-    year: '2023',
-    title: 'UI Designer',
-    company: 'Dreamloop Studios',
-    description: 'Designed interactive experiences for mobile games.'
+    year: '2017 - Present',
+    title: 'UI/UX Designer, Graphic Designer & Photographer',
+    company: 'Freelance',
+    description: 'Designed responsive websites, developed branding strategies, created high-fidelity prototypes, and conducted A/B testing to optimise user engagement and conversion rates.'
   },
   {
-    year: '2021',
-    title: 'Design Intern',
-    company: 'Noble Minds',
-    description: 'Supported the design team with brand identity projects.'
+    year: '2018 - 2019',
+    title: 'Co-Creative Director',
+    company: 'ASTRO Clothing',
+    description: 'Collaborated with fellow designers to create a small-scale clothing brand, managing creative direction across live web and social media. Directed and photographed model and product shoots, handling editing and formatting for promotional and web use.'
   }
 ];
 
