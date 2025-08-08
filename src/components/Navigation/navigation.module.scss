@@ -8,9 +8,14 @@
     display: flex;
     position: fixed;
     z-index: 101;
-    left: 4.5vw;
+    left: 2em;
+    top: 1.5em;
     justify-content: flex-start;
-  }
+    @media only screen and (min-width: 980px) {
+      top: 0em;
+      left: 4.5vw;
+    }
+}
 }
 .container{
   width: 100vw;

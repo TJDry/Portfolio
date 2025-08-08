@@ -47,7 +47,7 @@
         color: var(--text-colour);
         transition: scale 2s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
-        @media (max-width: 400px) {
+        @media (max-width: 480px) {
             .icon{
                 clip-path: none;
             }

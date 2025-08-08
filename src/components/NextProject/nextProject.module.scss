@@ -19,7 +19,7 @@
         -moz-transition:all 0.5s ;
         opacity: 1;
         background-repeat: no-repeat;
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 480px) {
             .nextPageButton{
                 height: 30vh;
             }

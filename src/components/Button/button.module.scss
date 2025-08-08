@@ -130,7 +130,7 @@
     z-index: 5;
     grid-template-columns: auto auto auto;
     align-items: center;
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: 480px) {
         top: 80%;
         right: 5%;
         display: grid;
@@ -158,7 +158,7 @@
     z-index: 5;
     grid-template-columns: auto auto auto;
     align-items: center;
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: 480px) {
         display: grid;         /* new; nested grid container */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;

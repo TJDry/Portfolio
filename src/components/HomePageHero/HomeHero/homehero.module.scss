@@ -16,7 +16,7 @@
         flex-direction: column;
         align-items: left;
         justify-content: center;
-            @media only screen and (min-width: 400px) {
+            @media only screen and (min-width: 480px) {
                 width: 80%;
             }
             @media only screen and (min-width: 980px) {
@@ -31,7 +31,7 @@
             bottom: 0em;
             font-weight: 500;
             text-align: left;
-            @media only screen and (min-width: 400px) {
+            @media only screen and (min-width: 480px) {
                 bottom: -15vh;
                 padding: 1em;
                 font-size: 3.6em;
@@ -51,7 +51,7 @@
             color: var(--text-colour);
             filter: brightness(80%);
             text-align: center;
-            @media only screen and (min-width: 400px) {
+            @media only screen and (min-width: 480px) {
                 top: -12.5vh;
             }
         }
