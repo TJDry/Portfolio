@@ -27,13 +27,19 @@ const AboutUs = () => {
     <section className={styles.about}>
       <div className={styles.profile}>
         <div className={styles.imageContainer}>
-          <img src="/images/portraitImage.jpg" alt="Your Portrait" />
+          <img src="/images/portraitImage.webp" alt="Portrait of Jayden Dry" />
         </div>
         <div className={styles.info}>
-          <h1>Jay Licht</h1>
+          <h1>Jayden Dry</h1>
           <p>
-            I’m a designer who merges softness and structure—equally in love with clean lines and creative expression. 
-            From fashion to UX, I care deeply about meaningful design and magical interactions.
+            Passionate UI/UX Designer with a strong background in
+            digital experience and interaction design. Skilled in user
+            research, wireframing, prototyping, and usability testing,
+            with expertise in Figma, React and design systems. I love
+            collaborating with developers internationally to create
+            human-centered digital solutions, designing responsive
+            interfaces, conducting A/B testing, and improving user
+            engagement.
           </p>
           <p>
             Passionate about inclusive design, story-rich experiences, and shimmering chrome aesthetics.

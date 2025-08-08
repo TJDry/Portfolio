@@ -20,7 +20,7 @@ export default function ImgContainer(props) {
                         className={images.length === 1 ? `${styles.imgSoloBorder} ${styles.imgBorder}` : styles.imgBorder}
                     >
                         {/* Check if image file exists by setting a valid src */}
-                        <img src={imgPath} alt="" onError={(e) => (e.target.style.display = 'none')} />
+                        <img src={imgPath} alt={`Photo of ${props.projectTitle} Product`} onError={(e) => (e.target.style.display = 'none')} />
                     </div>
                 );
             })}
