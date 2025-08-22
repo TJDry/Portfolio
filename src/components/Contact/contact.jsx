@@ -16,12 +16,11 @@ const ContactForm = () => {
       timeInput.value = new Date().toLocaleString(); // you can format this however you like
     }
 
-    emailjs
-      .sendForm(
+      emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        "I83m-ZyyEOESi88Zw"  // public key directly
       )
       .then(
         () => {
